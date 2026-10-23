@@ -1,0 +1,17 @@
+# Data processing
+pandas
+
+# PostgreSQL database connection
+psycopg2-binary
+
+# MongoDB database connection
+pymongo
+
+# Web application
+streamlit
+
+# Data visualisation
+plotly
+
+# Environment variables
+python-dotenv
