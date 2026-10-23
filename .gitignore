@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Valorant datasets
+/data/raw/
+/data/cleaned/
