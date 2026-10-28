@@ -1,0 +1,39 @@
+[server]
+enableStaticServing = true
+headless = true
+[browser]
+gatherUsageStats = false
+[theme]
+base = "light"
+primaryColor = "#C62E42"
+backgroundColor = "#F4F6F8"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#17212D"
+font = "IBM Plex Sans"
+headingFont = "Barlow Condensed"
+baseRadius = "2px"
+[[theme.fontFaces]]
+family = "IBM Plex Sans"
+url = "app/static/ibm-plex-sans-400.ttf"
+weight = 400
+[[theme.fontFaces]]
+family = "IBM Plex Sans"
+url = "app/static/ibm-plex-sans-500.ttf"
+weight = 500
+[[theme.fontFaces]]
+family = "IBM Plex Sans"
+url = "app/static/ibm-plex-sans-600.ttf"
+weight = 600
+[[theme.fontFaces]]
+family = "Barlow Condensed"
+url = "app/static/barlow-condensed-600.ttf"
+weight = 600
+[[theme.fontFaces]]
+family = "Barlow Condensed"
+url = "app/static/barlow-condensed-700.ttf"
+weight = 700
+[theme.sidebar]
+primaryColor = "#FF6572"
+backgroundColor = "#101821"
+secondaryBackgroundColor = "#273541"
+textColor = "#F1F4F7"
