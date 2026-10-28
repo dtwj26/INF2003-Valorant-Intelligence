@@ -1,7 +1,7 @@
 """Inspect player records with blank map names across VCT 2021-2026.
 
 Run from the repository root:
-    python scripts/data_cleaning/homepage/check_blank_maps.py
+    python scripts/data_cleaning/shared/check_blank_maps.py
 
 Read-only: does not modify any CSVs.
 """

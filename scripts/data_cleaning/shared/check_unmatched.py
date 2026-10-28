@@ -1,7 +1,7 @@
 """Check which player-map records cannot match a game lookup for all seasons.
 
 Run from the repository root:
-    python scripts/data_cleaning/homepage/check_unmatched.py
+    python scripts/data_cleaning/shared/check_unmatched.py
 
 Read-only diagnostic. 'All Maps' denotes an aggregate, not an individual map.
 """

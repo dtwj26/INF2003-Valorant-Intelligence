@@ -1,9 +1,9 @@
 """Read-only data quality and coverage profile for the INF2003 Homepage.
 
-Save this file as scripts/data_cleaning/homepage/homepage_profile.py and run from the
-repository root: python scripts/data_cleaning/homepage/homepage_profile.py
+Save this file as scripts/data_cleaning/shared/homepage_profile.py and run from the
+repository root: python scripts/data_cleaning/shared/homepage_profile.py
 
-Outputs a summary CSV and notes TXT inside docs/homepage/. Does not modify
+Outputs a summary CSV and notes TXT inside docs/shared/. Does not modify
 original datasets and requires only Python's standard library.
 """
 from collections import Counter, defaultdict
@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 RAW = ROOT / "data" / "raw"
-OUT = ROOT / "docs" / "homepage"
+OUT = ROOT / "docs" / "shared"
 OUT.mkdir(parents=True, exist_ok=True)
 
 KEY = ("Tournament", "Stage", "Match Type", "Match Name", "Map")
@@ -177,4 +177,4 @@ with (OUT / "homepage_profile.csv").open("w", newline="", encoding="utf-8") as f
     "A map game is not necessarily completed just because it has a Game ID.\n\n"
     + "\n".join(notes) + "\n", encoding="utf-8"
 )
-print("Finished. Upload docs/homepage/homepage_profile.csv and docs/homepage/homepage_profile_notes.txt")
+print("Finished. Upload docs/shared/homepage_profile.csv and docs/shared/homepage_profile_notes.txt")
