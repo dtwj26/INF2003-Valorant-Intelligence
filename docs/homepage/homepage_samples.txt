@@ -1,0 +1,138 @@
+
+============================================================
+FILE: all_ids\all_matches_games_ids.csv
+COLUMNS: ['Tournament', 'Tournament ID', 'Stage', 'Stage ID', 'Match Type', 'Match Type ID', 'Match Name', 'Match ID', 'Map', 'Game ID', 'Year']
+{"Tournament": "Valorant Champions 2021", "Tournament ID": "449", "Stage": "Group Stage", "Stage ID": "945", "Match Type": "Opening (D)", "Match Type ID": "8272", "Match Name": "Vision Strikers vs FULL SENSE", "Match ID": "51282", "Map": "Haven", "Game ID": "57948", "Year": "2021"}
+{"Tournament": "Valorant Champions 2021", "Tournament ID": "449", "Stage": "Group Stage", "Stage ID": "945", "Match Type": "Opening (D)", "Match Type ID": "8272", "Match Name": "Vision Strikers vs FULL SENSE", "Match ID": "51282", "Map": "Breeze", "Game ID": "57949", "Year": "2021"}
+
+============================================================
+FILE: all_ids\all_players_ids.csv
+COLUMNS: ['Player', 'Player ID']
+{"Player": "MaKo", "Player ID": "4462"}
+{"Player": "stax", "Player ID": "485"}
+
+============================================================
+FILE: all_ids\all_teams_ids.csv
+COLUMNS: ['Team', 'Team ID']
+{"Team": "Vision Strikers", "Team ID": "198"}
+{"Team": "FULL SENSE", "Team ID": "4050"}
+
+============================================================
+FILE: all_ids\all_teams_mapping.csv
+COLUMNS: ['Abbreviated', 'Full Name']
+{"Abbreviated": "VS", "Full Name": "Vision Strikers"}
+{"Abbreviated": "FS", "Full Name": "FULL SENSE"}
+
+============================================================
+FILE: all_ids\all_tournaments_stages_match_types_ids.csv
+COLUMNS: ['Tournament', 'Tournament ID', 'Stage', 'Stage ID', 'Match Type', 'Match Type ID', 'Year']
+{"Tournament": "Champions Tour Asia-Pacific: Last Chance Qualifier", "Tournament ID": "560", "Stage": "All Stages", "Stage ID": "", "Match Type": "All Match Types", "Match Type ID": "", "Year": "2021"}
+{"Tournament": "Champions Tour Asia-Pacific: Last Chance Qualifier", "Tournament ID": "560", "Stage": "Main Event", "Stage ID": "1096", "Match Type": "Upper Round 1", "Match Type ID": "", "Year": "2021"}
+
+============================================================
+FILE: vct_2023\agents\agents_pick_rates.csv
+COLUMNS: ['Tournament', 'Stage', 'Match Type', 'Map', 'Agent', 'Pick Rate']
+{"Tournament": "Champions Tour 2023: Americas Last Chance Qualifier", "Stage": "Main Event", "Match Type": "Upper Round 1", "Map": "All Maps", "Agent": "viper", "Pick Rate": "100%"}
+{"Tournament": "Champions Tour 2023: Americas Last Chance Qualifier", "Stage": "Main Event", "Match Type": "Upper Round 1", "Map": "All Maps", "Agent": "skye", "Pick Rate": "100%"}
+
+============================================================
+FILE: vct_2023\agents\maps_stats.csv
+COLUMNS: ['Tournament', 'Stage', 'Match Type', 'Map', 'Total Maps Played', 'Attacker Side Win Percentage', 'Defender Side Win Percentage']
+{"Tournament": "Champions Tour 2023: Americas Last Chance Qualifier", "Stage": "Main Event", "Match Type": "Upper Round 1", "Map": "All Maps", "Total Maps Played": "2", "Attacker Side Win Percentage": "51%", "Defender Side Win Percentage": "49%"}
+{"Tournament": "Champions Tour 2023: Americas Last Chance Qualifier", "Stage": "Main Event", "Match Type": "Upper Round 1", "Map": "Bind", "Total Maps Played": "1", "Attacker Side Win Percentage": "35%", "Defender Side Win Percentage": "65%"}
+
+============================================================
+FILE: vct_2023\agents\teams_picked_agents.csv
+COLUMNS: ['Tournament', 'Stage', 'Match Type', 'Map', 'Team', 'Agent', 'Total Wins By Map', 'Total Loss By Map', 'Total Maps Played']
+{"Tournament": "Champions Tour 2023: Americas Last Chance Qualifier", "Stage": "Main Event", "Match Type": "Upper Round 1", "Map": "Bind", "Team": "MIBR", "Agent": "viper", "Total Wins By Map": "0", "Total Loss By Map": "1", "Total Maps Played": "1"}
+{"Tournament": "Champions Tour 2023: Americas Last Chance Qualifier", "Stage": "Main Event", "Match Type": "Upper Round 1", "Map": "Bind", "Team": "MIBR", "Agent": "skye", "Total Wins By Map": "0", "Total Loss By Map": "1", "Total Maps Played": "1"}
+
+============================================================
+FILE: vct_2023\ids\players_ids.csv
+COLUMNS: ['Player', 'Player ID']
+{"Player": "nAts", "Player ID": "457"}
+{"Player": "Sayf", "Player ID": "312"}
+
+============================================================
+FILE: vct_2023\ids\teams_ids.csv
+COLUMNS: ['Team', 'Team ID']
+{"Team": "Team Liquid", "Team ID": "474"}
+{"Team": "Natus Vincere", "Team ID": "4915"}
+
+============================================================
+FILE: vct_2023\ids\tournaments_stages_match_types_ids.csv
+COLUMNS: ['Tournament', 'Tournament ID', 'Stage', 'Stage ID', 'Match Type', 'Match Type ID']
+{"Tournament": "Champions Tour 2023: Americas Last Chance Qualifier", "Tournament ID": "1658", "Stage": "Main Event", "Stage ID": "3146", "Match Type": "Upper Round 1", "Match Type ID": "19693"}
+{"Tournament": "Champions Tour 2023: Americas Last Chance Qualifier", "Tournament ID": "1658", "Stage": "Main Event", "Stage ID": "3146", "Match Type": "Upper Quarterfinals", "Match Type ID": "19694"}
+
+============================================================
+FILE: vct_2023\ids\tournaments_stages_matches_games_ids.csv
+COLUMNS: ['Tournament', 'Tournament ID', 'Stage', 'Stage ID', 'Match Type', 'Match Name', 'Match ID', 'Map', 'Game ID']
+{"Tournament": "Valorant Champions 2023", "Tournament ID": "1657", "Stage": "Group Stage", "Stage ID": "3145", "Match Type": "Opening (D)", "Match Name": "Team Liquid vs Natus Vincere", "Match ID": "247100", "Map": "Fracture", "Game ID": "137395"}
+{"Tournament": "Valorant Champions 2023", "Tournament ID": "1657", "Stage": "Group Stage", "Stage ID": "3145", "Match Type": "Opening (D)", "Match Name": "Team Liquid vs Natus Vincere", "Match ID": "247100", "Map": "Bind", "Game ID": "137396"}
+
+============================================================
+FILE: vct_2023\matches\maps_played.csv
+COLUMNS: ['Tournament', 'Stage', 'Match Type', 'Match Name', 'Map']
+{"Tournament": "Valorant Champions 2023", "Stage": "Group Stage", "Match Type": "Opening (D)", "Match Name": "Team Liquid vs Natus Vincere", "Map": "Fracture"}
+{"Tournament": "Valorant Champions 2023", "Stage": "Group Stage", "Match Type": "Opening (D)", "Match Name": "Team Liquid vs Natus Vincere", "Map": "Bind"}
+
+============================================================
+FILE: vct_2023\matches\overview.csv
+COLUMNS: ['Tournament', 'Stage', 'Match Type', 'Match Name', 'Map', 'Player', 'Team', 'Agents', 'Rating', 'Average Combat Score', 'Kills', 'Deaths', 'Assists', 'Kills - Deaths (KD)', 'Kill, Assist, Trade, Survive %', 'Average Damage Per Round', 'Headshot %', 'First Kills', 'First Deaths', 'Kills - Deaths (FKD)', 'Side']
+{"Tournament": "Valorant Champions 2023", "Stage": "Group Stage", "Match Type": "Opening (D)", "Match Name": "Team Liquid vs Natus Vincere", "Map": "Fracture", "Player": "nAts", "Team": "Team Liquid", "Agents": "viper", "Rating": "1.2", "Average Combat Score": "242", "Kills": "20", "Deaths": "15", "Assists": "3", "Kills - Deaths (KD)": "5", "Kill, Assist, Trade, Survive %": "67%", "Average Damage Per Round": "144", "Headshot %": "33%", "First Kills": "3", "First Deaths": "3", "Kills - Deaths (FKD)": "0", "Side": "both"}
+{"Tournament": "Valorant Champions 2023", "Stage": "Group Stage", "Match Type": "Opening (D)", "Match Name": "Team Liquid vs Natus Vincere", "Map": "Fracture", "Player": "nAts", "Team": "Team Liquid", "Agents": "viper", "Rating": "1.4", "Average Combat Score": "268", "Kills": "12", "Deaths": "7", "Assists": "1", "Kills - Deaths (KD)": "5", "Kill, Assist, Trade, Survive %": "75%", "Average Damage Per Round": "162", "Headshot %": "46%", "First Kills": "1", "First Deaths": "1", "Kills - Deaths (FKD)": "0", "Side": "attack"}
+
+============================================================
+FILE: vct_2026\agents\agents_pick_rates.csv
+COLUMNS: ['Tournament', 'Stage', 'Match Type', 'Map', 'Agent', 'Pick Rate']
+{"Tournament": "VCT 2026: Americas Stage 1", "Stage": "Playoffs", "Match Type": "Upper Round 1", "Map": "All Maps", "Agent": "neon", "Pick Rate": "80%"}
+{"Tournament": "VCT 2026: Americas Stage 1", "Stage": "Playoffs", "Match Type": "Upper Round 1", "Map": "All Maps", "Agent": "fade", "Pick Rate": "70%"}
+
+============================================================
+FILE: vct_2026\agents\maps_stats.csv
+COLUMNS: ['Tournament', 'Stage', 'Match Type', 'Map', 'Total Maps Played', 'Attacker Side Win Percentage', 'Defender Side Win Percentage']
+{"Tournament": "VCT 2026: Americas Stage 1", "Stage": "Playoffs", "Match Type": "Upper Round 1", "Map": "All Maps", "Total Maps Played": "5", "Attacker Side Win Percentage": "44%", "Defender Side Win Percentage": "56%"}
+{"Tournament": "VCT 2026: Americas Stage 1", "Stage": "Playoffs", "Match Type": "Upper Round 1", "Map": "Pearl", "Total Maps Played": "2", "Attacker Side Win Percentage": "39%", "Defender Side Win Percentage": "61%"}
+
+============================================================
+FILE: vct_2026\agents\teams_picked_agents.csv
+COLUMNS: ['Tournament', 'Stage', 'Match Type', 'Map', 'Team', 'Agent', 'Total Wins By Map', 'Total Loss By Map', 'Total Maps Played']
+{"Tournament": "VCT 2026: Americas Stage 1", "Stage": "Playoffs", "Match Type": "Upper Round 1", "Map": "Breeze", "Team": "FURIA", "Agent": "viper", "Total Wins By Map": "1", "Total Loss By Map": "0", "Total Maps Played": "1"}
+{"Tournament": "VCT 2026: Americas Stage 1", "Stage": "Playoffs", "Match Type": "Upper Round 1", "Map": "Breeze", "Team": "FURIA", "Agent": "sova", "Total Wins By Map": "1", "Total Loss By Map": "0", "Total Maps Played": "1"}
+
+============================================================
+FILE: vct_2026\ids\players_ids.csv
+COLUMNS: ['Player', 'Player ID']
+{"Player": "NoMan", "Player ID": "11527"}
+{"Player": "Lysoar", "Player ID": "37489"}
+
+============================================================
+FILE: vct_2026\ids\teams_ids.csv
+COLUMNS: ['Team', 'Team ID']
+{"Team": "Xi Lai Gaming", "Team ID": "13581"}
+{"Team": "NRG", "Team ID": "1034"}
+
+============================================================
+FILE: vct_2026\ids\tournaments_stages_match_types_ids.csv
+COLUMNS: ['Tournament', 'Tournament ID', 'Stage', 'Stage ID', 'Match Type', 'Match Type ID']
+{"Tournament": "VCT 2026: Americas Stage 1", "Tournament ID": "2860", "Stage": "Playoffs", "Stage ID": "5557", "Match Type": "Upper Round 1", "Match Type ID": "37954"}
+{"Tournament": "VCT 2026: Americas Stage 1", "Tournament ID": "2860", "Stage": "Playoffs", "Stage ID": "5557", "Match Type": "Upper Semifinals", "Match Type ID": "37955"}
+
+============================================================
+FILE: vct_2026\ids\tournaments_stages_matches_games_ids.csv
+COLUMNS: ['Tournament', 'Tournament ID', 'Stage', 'Stage ID', 'Match Type', 'Match Name', 'Match ID', 'Map', 'Game ID']
+{"Tournament": "Valorant Masters London 2026", "Tournament ID": "2765", "Stage": "Swiss Stage", "Stage ID": "5767", "Match Type": "Round 1", "Match Name": "Xi Lai Gaming vs NRG", "Match ID": "684613", "Map": "Pearl", "Game ID": "270746"}
+{"Tournament": "Valorant Masters London 2026", "Tournament ID": "2765", "Stage": "Swiss Stage", "Stage ID": "5767", "Match Type": "Round 1", "Match Name": "Xi Lai Gaming vs NRG", "Match ID": "684613", "Map": "Lotus", "Game ID": "270747"}
+
+============================================================
+FILE: vct_2026\matches\maps_played.csv
+COLUMNS: ['Tournament', 'Stage', 'Match Type', 'Match Name', 'Map']
+{"Tournament": "Valorant Masters London 2026", "Stage": "Swiss Stage", "Match Type": "Round 1", "Match Name": "Xi Lai Gaming vs NRG", "Map": "Pearl"}
+{"Tournament": "Valorant Masters London 2026", "Stage": "Swiss Stage", "Match Type": "Round 1", "Match Name": "Xi Lai Gaming vs NRG", "Map": "Lotus"}
+
+============================================================
+FILE: vct_2026\matches\overview.csv
+COLUMNS: ['Tournament', 'Stage', 'Match Type', 'Match Name', 'Map', 'Player', 'Team', 'Agents', 'Rating', 'Average Combat Score', 'Kills', 'Deaths', 'Assists', 'Kills - Deaths (KD)', 'Kill, Assist, Trade, Survive %', 'Average Damage Per Round', 'Headshot %', 'First Kills', 'First Deaths', 'Kills - Deaths (FKD)', 'Side']
+{"Tournament": "Valorant Masters London 2026", "Stage": "Swiss Stage", "Match Type": "Round 1", "Match Name": "Xi Lai Gaming vs NRG", "Map": "Pearl", "Player": "NoMan", "Team": "Xi Lai Gaming", "Agents": "jett", "Rating": "1.17", "Average Combat Score": "236", "Kills": "15", "Deaths": "14", "Assists": "2", "Kills - Deaths (KD)": "1", "Kill, Assist, Trade, Survive %": "68%", "Average Damage Per Round": "139", "Headshot %": "52%", "First Kills": "2", "First Deaths": "3", "Kills - Deaths (FKD)": "-1", "Side": "both"}
+{"Tournament": "Valorant Masters London 2026", "Stage": "Swiss Stage", "Match Type": "Round 1", "Match Name": "Xi Lai Gaming vs NRG", "Map": "Pearl", "Player": "NoMan", "Team": "Xi Lai Gaming", "Agents": "jett", "Rating": "0.89", "Average Combat Score": "214", "Kills": "5", "Deaths": "6", "Assists": "1", "Kills - Deaths (KD)": "-1", "Kill, Assist, Trade, Survive %": "57%", "Average Damage Per Round": "121", "Headshot %": "56%", "First Kills": "1", "First Deaths": "2", "Kills - Deaths (FKD)": "-1", "Side": "attack"}
