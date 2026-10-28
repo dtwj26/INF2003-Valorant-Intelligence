@@ -1,9 +1,9 @@
 """Prepare candidate player-map agent observations for each VCT season.
 
 Run from repository root:
-    python scripts/data_cleaning/homepage/clean_homepage.py
+    python scripts/data_cleaning/shared/clean_homepage.py
 
-Outputs in data/cleaned/homepage/. This is preliminary preparation, NOT
+Outputs in data/cleaned/shared/. This is preliminary preparation, NOT
 completed validation or database import. Raw files remain unchanged.
 """
 from pathlib import Path
@@ -11,7 +11,7 @@ import csv
 
 ROOT = Path(__file__).resolve().parents[3]
 RAW = ROOT / "data" / "raw"
-OUTPUT = ROOT / "data" / "cleaned" / "homepage"
+OUTPUT = ROOT / "data" / "cleaned" / "shared"
 OUTPUT.mkdir(parents=True, exist_ok=True)
 
 FIELDS = [

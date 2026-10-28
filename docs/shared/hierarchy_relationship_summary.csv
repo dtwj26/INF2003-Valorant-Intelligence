@@ -1,0 +1,7 @@
+﻿Year,Total Game Rows,Exact Season Hierarchy Matches,"Missing Season, Present Global",Season Stage / Type Mismatch,Global Stage / Type Mismatch,"Tournament Found, Stage Mismatch",Tournament ID Missing Everywhere,Season Hierarchy Rows,Global Hierarchy Rows,Season Aggregate Rows With Blank IDs,Season Other Rows With Blank IDs
+2021,14489,14484,5,0,0,0,0,1777,1778,142,0
+2022,8864,8864,0,0,0,0,0,1076,1076,58,0
+2023,830,830,0,0,0,0,0,137,137,10,0
+2024,1104,1104,0,0,0,0,0,197,197,15,0
+2025,1277,1272,5,0,0,0,0,202,207,15,0
+2026,886,501,65,0,0,320,0,132,144,9,0

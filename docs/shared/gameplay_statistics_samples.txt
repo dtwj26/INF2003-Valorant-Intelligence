@@ -1,0 +1,294 @@
+
+=================================================================
+YEAR 2021: matches/overview.csv
+Rows: 599,355
+Columns: Tournament, Stage, Match Type, Match Name, Map, Player, Team, Agents, Rating, Average Combat Score, Kills, Deaths, Assists, Kills - Deaths (KD), Kill, Assist, Trade, Survive %, Average Damage Per Round, Headshot %, First Kills, First Deaths, Kills - Deaths (FKD), Side
+Sample 1: {'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Player': 'MaKo', 'Team': 'Vision Strikers', 'Agents': 'astra', 'Rating': '1.36', 'Average Combat Score': '209', 'Kills': '13', 'Deaths': '8', 'Assists': '6', 'Kills - Deaths (KD)': '5'}
+Sample 2: {'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Player': 'MaKo', 'Team': 'Vision Strikers', 'Agents': 'astra', 'Rating': '1.38', 'Average Combat Score': '211', 'Kills': '9', 'Deaths': '5', 'Assists': '4', 'Kills - Deaths (KD)': '4'}
+
+=================================================================
+YEAR 2021: matches/maps_played.csv
+Rows: 14,486
+Columns: Tournament, Stage, Match Type, Match Name, Map
+Sample 1: {'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven'}
+Sample 2: {'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Breeze'}
+
+=================================================================
+YEAR 2021: matches/maps_scores.csv
+Rows: 14,503
+Columns: Tournament, Stage, Match Type, Match Name, Map, Team A, Team A Score, Team A Attacker Score, Team A Defender Score, Team A Overtime Score, Team B, Team B Score, Team B Attacker Score, Team B Defender Score, Team B Overtime Score, Duration
+Sample 1: {'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Team A': 'Vision Strikers', 'Team A Score': '13', 'Team A Attacker Score': '9', 'Team A Defender Score': '4', 'Team A Overtime Score': '', 'Team B': 'FULL SENSE', 'Team B Score': '5', 'Team B Attacker Score': '2', 'Team B Defender Score': '3'}
+Sample 2: {'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Breeze', 'Team A': 'Vision Strikers', 'Team A Score': '13', 'Team A Attacker Score': '9', 'Team A Defender Score': '4', 'Team A Overtime Score': '', 'Team B': 'FULL SENSE', 'Team B Score': '5', 'Team B Attacker Score': '2', 'Team B Defender Score': '3'}
+
+=================================================================
+YEAR 2021: matches/scores.csv
+Rows: 7,224
+Columns: Tournament, Stage, Match Type, Match Name, Team A, Team B, Team A Score, Team B Score, Match Result
+Sample 1: {'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Team A': 'Vision Strikers', 'Team B': 'FULL SENSE', 'Team A Score': '2', 'Team B Score': '0', 'Match Result': 'Vision Strikers won'}
+Sample 2: {'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (C)', 'Match Name': 'Team Vikings vs Crazy Raccoon', 'Team A': 'Team Vikings', 'Team B': 'Crazy Raccoon', 'Team A Score': '2', 'Team B Score': '0', 'Match Result': 'Team Vikings won'}
+
+=================================================================
+YEAR 2021: agents/agents_pick_rates.csv
+Rows: 192,120
+Columns: Tournament, Stage, Match Type, Map, Agent, Pick Rate
+Sample 1: {'Tournament': 'Champions Tour North America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Map': 'All Maps', 'Agent': 'jett', 'Pick Rate': '91%'}
+Sample 2: {'Tournament': 'Champions Tour North America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Map': 'All Maps', 'Agent': 'sova', 'Pick Rate': '77%'}
+
+=================================================================
+YEAR 2021: agents/maps_stats.csv
+Rows: 8,005
+Columns: Tournament, Stage, Match Type, Map, Total Maps Played, Attacker Side Win Percentage, Defender Side Win Percentage
+Sample 1: {'Tournament': 'Champions Tour North America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Map': 'All Maps', 'Total Maps Played': '11', 'Attacker Side Win Percentage': '46%', 'Defender Side Win Percentage': '54%'}
+Sample 2: {'Tournament': 'Champions Tour North America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Map': 'Breeze', 'Total Maps Played': '3', 'Attacker Side Win Percentage': '61%', 'Defender Side Win Percentage': '39%'}
+
+=================================================================
+YEAR 2021: agents/teams_picked_agents.csv
+Rows: 224,050
+Columns: Tournament, Stage, Match Type, Map, Team, Agent, Total Wins By Map, Total Loss By Map, Total Maps Played
+Sample 1: {'Tournament': 'Champions Tour North America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Map': 'Breeze', 'Team': '100 Thieves', 'Agent': 'jett', 'Total Wins By Map': '0', 'Total Loss By Map': '1', 'Total Maps Played': '1'}
+Sample 2: {'Tournament': 'Champions Tour North America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Map': 'Breeze', 'Team': '100 Thieves', 'Agent': 'sova', 'Total Wins By Map': '0', 'Total Loss By Map': '1', 'Total Maps Played': '1'}
+
+=================================================================
+YEAR 2022: matches/overview.csv
+Rows: 379,378
+Columns: Tournament, Stage, Match Type, Match Name, Map, Player, Team, Agents, Rating, Average Combat Score, Kills, Deaths, Assists, Kills - Deaths (KD), Kill, Assist, Trade, Survive %, Average Damage Per Round, Headshot %, First Kills, First Deaths, Kills - Deaths (FKD), Side
+Sample 1: {'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Player': 'Benkai', 'Team': 'Paper Rex', 'Agents': 'fade', 'Rating': '1.31', 'Average Combat Score': '242', 'Kills': '22', 'Deaths': '16', 'Assists': '13', 'Kills - Deaths (KD)': '6'}
+Sample 2: {'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Player': 'Benkai', 'Team': 'Paper Rex', 'Agents': 'fade', 'Rating': '1.18', 'Average Combat Score': '243', 'Kills': '11', 'Deaths': '9', 'Assists': '5', 'Kills - Deaths (KD)': '2'}
+
+=================================================================
+YEAR 2022: matches/maps_played.csv
+Rows: 8,864
+Columns: Tournament, Stage, Match Type, Match Name, Map
+Sample 1: {'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl'}
+Sample 2: {'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Icebox'}
+
+=================================================================
+YEAR 2022: matches/maps_scores.csv
+Rows: 8,884
+Columns: Tournament, Stage, Match Type, Match Name, Map, Team A, Team A Score, Team A Attacker Score, Team A Defender Score, Team A Overtime Score, Team B, Team B Score, Team B Attacker Score, Team B Defender Score, Team B Overtime Score, Duration
+Sample 1: {'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Team A': 'Paper Rex', 'Team A Score': '13', 'Team A Attacker Score': '6', 'Team A Defender Score': '7', 'Team A Overtime Score': '', 'Team B': 'EDward Gaming', 'Team B Score': '11', 'Team B Attacker Score': '5', 'Team B Defender Score': '6'}
+Sample 2: {'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Icebox', 'Team A': 'Paper Rex', 'Team A Score': '5', 'Team A Attacker Score': '2', 'Team A Defender Score': '3', 'Team A Overtime Score': '', 'Team B': 'EDward Gaming', 'Team B Score': '13', 'Team B Attacker Score': '3', 'Team B Defender Score': '10'}
+
+=================================================================
+YEAR 2022: matches/scores.csv
+Rows: 3,842
+Columns: Tournament, Stage, Match Type, Match Name, Team A, Team B, Team A Score, Team B Score, Match Result
+Sample 1: {'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Team A': 'Paper Rex', 'Team B': 'EDward Gaming', 'Team A Score': '2', 'Team B Score': '1', 'Match Result': 'Paper Rex won'}
+Sample 2: {'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'LEVIATÁN vs Team Liquid', 'Team A': 'LEVIATÁN', 'Team B': 'Team Liquid', 'Team A Score': '2', 'Team B Score': '0', 'Match Result': 'Leviatán won'}
+
+=================================================================
+YEAR 2022: agents/agents_pick_rates.csv
+Rows: 132,336
+Columns: Tournament, Stage, Match Type, Map, Agent, Pick Rate
+Sample 1: {'Tournament': 'Champions Tour South America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Map': 'All Maps', 'Agent': 'chamber', 'Pick Rate': '80%'}
+Sample 2: {'Tournament': 'Champions Tour South America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Map': 'All Maps', 'Agent': 'fade', 'Pick Rate': '50%'}
+
+=================================================================
+YEAR 2022: agents/maps_stats.csv
+Rows: 5,514
+Columns: Tournament, Stage, Match Type, Map, Total Maps Played, Attacker Side Win Percentage, Defender Side Win Percentage
+Sample 1: {'Tournament': 'Champions Tour South America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Map': 'All Maps', 'Total Maps Played': '10', 'Attacker Side Win Percentage': '52%', 'Defender Side Win Percentage': '48%'}
+Sample 2: {'Tournament': 'Champions Tour South America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Map': 'Ascent', 'Total Maps Played': '3', 'Attacker Side Win Percentage': '48%', 'Defender Side Win Percentage': '52%'}
+
+=================================================================
+YEAR 2022: agents/teams_picked_agents.csv
+Rows: 131,546
+Columns: Tournament, Stage, Match Type, Map, Team, Agent, Total Wins By Map, Total Loss By Map, Total Maps Played
+Sample 1: {'Tournament': 'Champions Tour South America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Map': 'Haven', 'Team': 'Ninjas In Pyjamas', 'Agent': 'chamber', 'Total Wins By Map': '0', 'Total Loss By Map': '1', 'Total Maps Played': '1'}
+Sample 2: {'Tournament': 'Champions Tour South America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Map': 'Haven', 'Team': 'Ninjas In Pyjamas', 'Agent': 'kayo', 'Total Wins By Map': '0', 'Total Loss By Map': '1', 'Total Maps Played': '1'}
+
+=================================================================
+YEAR 2023: matches/overview.csv
+Rows: 34,944
+Columns: Tournament, Stage, Match Type, Match Name, Map, Player, Team, Agents, Rating, Average Combat Score, Kills, Deaths, Assists, Kills - Deaths (KD), Kill, Assist, Trade, Survive %, Average Damage Per Round, Headshot %, First Kills, First Deaths, Kills - Deaths (FKD), Side
+Sample 1: {'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Player': 'nAts', 'Team': 'Team Liquid', 'Agents': 'viper', 'Rating': '1.2', 'Average Combat Score': '242', 'Kills': '20', 'Deaths': '15', 'Assists': '3', 'Kills - Deaths (KD)': '5'}
+Sample 2: {'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Player': 'nAts', 'Team': 'Team Liquid', 'Agents': 'viper', 'Rating': '1.4', 'Average Combat Score': '268', 'Kills': '12', 'Deaths': '7', 'Assists': '1', 'Kills - Deaths (KD)': '5'}
+
+=================================================================
+YEAR 2023: matches/maps_played.csv
+Rows: 830
+Columns: Tournament, Stage, Match Type, Match Name, Map
+Sample 1: {'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture'}
+Sample 2: {'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Bind'}
+
+=================================================================
+YEAR 2023: matches/maps_scores.csv
+Rows: 830
+Columns: Tournament, Stage, Match Type, Match Name, Map, Team A, Team A Score, Team A Attacker Score, Team A Defender Score, Team A Overtime Score, Team B, Team B Score, Team B Attacker Score, Team B Defender Score, Team B Overtime Score, Duration
+Sample 1: {'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Team A': 'Team Liquid', 'Team A Score': '11', 'Team A Attacker Score': '6', 'Team A Defender Score': '5', 'Team A Overtime Score': '', 'Team B': 'Natus Vincere', 'Team B Score': '13', 'Team B Attacker Score': '7', 'Team B Defender Score': '6'}
+Sample 2: {'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Bind', 'Team A': 'Team Liquid', 'Team A Score': '15', 'Team A Attacker Score': '7', 'Team A Defender Score': '5', 'Team A Overtime Score': '3', 'Team B': 'Natus Vincere', 'Team B Score': '17', 'Team B Attacker Score': '7', 'Team B Defender Score': '5'}
+
+=================================================================
+YEAR 2023: matches/scores.csv
+Rows: 331
+Columns: Tournament, Stage, Match Type, Match Name, Team A, Team B, Team A Score, Team B Score, Match Result
+Sample 1: {'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Team A': 'Team Liquid', 'Team B': 'Natus Vincere', 'Team A Score': '0', 'Team B Score': '2', 'Match Result': 'Natus Vincere won'}
+Sample 2: {'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'DRX vs LOUD', 'Team A': 'DRX', 'Team B': 'LOUD', 'Team A Score': '2', 'Team B Score': '1', 'Match Result': 'DRX won'}
+
+=================================================================
+YEAR 2023: agents/agents_pick_rates.csv
+Rows: 17,712
+Columns: Tournament, Stage, Match Type, Map, Agent, Pick Rate
+Sample 1: {'Tournament': 'Champions Tour 2023: Americas Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Round 1', 'Map': 'All Maps', 'Agent': 'viper', 'Pick Rate': '100%'}
+Sample 2: {'Tournament': 'Champions Tour 2023: Americas Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Round 1', 'Map': 'All Maps', 'Agent': 'skye', 'Pick Rate': '100%'}
+
+=================================================================
+YEAR 2023: agents/maps_stats.csv
+Rows: 738
+Columns: Tournament, Stage, Match Type, Map, Total Maps Played, Attacker Side Win Percentage, Defender Side Win Percentage
+Sample 1: {'Tournament': 'Champions Tour 2023: Americas Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Round 1', 'Map': 'All Maps', 'Total Maps Played': '2', 'Attacker Side Win Percentage': '51%', 'Defender Side Win Percentage': '49%'}
+Sample 2: {'Tournament': 'Champions Tour 2023: Americas Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Round 1', 'Map': 'Bind', 'Total Maps Played': '1', 'Attacker Side Win Percentage': '35%', 'Defender Side Win Percentage': '65%'}
+
+=================================================================
+YEAR 2023: agents/teams_picked_agents.csv
+Rows: 11,751
+Columns: Tournament, Stage, Match Type, Map, Team, Agent, Total Wins By Map, Total Loss By Map, Total Maps Played
+Sample 1: {'Tournament': 'Champions Tour 2023: Americas Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Round 1', 'Map': 'Bind', 'Team': 'MIBR', 'Agent': 'viper', 'Total Wins By Map': '0', 'Total Loss By Map': '1', 'Total Maps Played': '1'}
+Sample 2: {'Tournament': 'Champions Tour 2023: Americas Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Round 1', 'Map': 'Bind', 'Team': 'MIBR', 'Agent': 'skye', 'Total Wins By Map': '0', 'Total Loss By Map': '1', 'Total Maps Played': '1'}
+
+=================================================================
+YEAR 2024: matches/overview.csv
+Rows: 46,152
+Columns: Tournament, Stage, Match Type, Match Name, Map, Player, Team, Agents, Rating, Average Combat Score, Kills, Deaths, Assists, Kills - Deaths (KD), Kill, Assist, Trade, Survive %, Average Damage Per Round, Headshot %, First Kills, First Deaths, Kills - Deaths (FKD), Side
+Sample 1: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Player': 't3xture', 'Team': 'Gen.G', 'Agents': 'jett', 'Rating': '1.6', 'Average Combat Score': '305', 'Kills': '24', 'Deaths': '12', 'Assists': '4', 'Kills - Deaths (KD)': '12'}
+Sample 2: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Player': 't3xture', 'Team': 'Gen.G', 'Agents': 'jett', 'Rating': '1.71', 'Average Combat Score': '364', 'Kills': '12', 'Deaths': '5', 'Assists': '2', 'Kills - Deaths (KD)': '7'}
+
+=================================================================
+YEAR 2024: matches/maps_played.csv
+Rows: 1,104
+Columns: Tournament, Stage, Match Type, Match Name, Map
+Sample 1: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven'}
+Sample 2: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Ascent'}
+
+=================================================================
+YEAR 2024: matches/maps_scores.csv
+Rows: 1,104
+Columns: Tournament, Stage, Match Type, Match Name, Map, Team A, Team A Score, Team A Attacker Score, Team A Defender Score, Team A Overtime Score, Team B, Team B Score, Team B Attacker Score, Team B Defender Score, Team B Overtime Score, Duration
+Sample 1: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Team A': 'Gen.G', 'Team A Score': '13', 'Team A Attacker Score': '7', 'Team A Defender Score': '6', 'Team A Overtime Score': '', 'Team B': 'Sentinels', 'Team B Score': '8', 'Team B Attacker Score': '3', 'Team B Defender Score': '5'}
+Sample 2: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Ascent', 'Team A': 'Gen.G', 'Team A Score': '13', 'Team A Attacker Score': '8', 'Team A Defender Score': '5', 'Team A Overtime Score': '', 'Team B': 'Sentinels', 'Team B Score': '7', 'Team B Attacker Score': '3', 'Team B Defender Score': '4'}
+
+=================================================================
+YEAR 2024: matches/scores.csv
+Rows: 434
+Columns: Tournament, Stage, Match Type, Match Name, Team A, Team B, Team A Score, Team B Score, Match Result
+Sample 1: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Team A': 'Gen.G', 'Team B': 'Sentinels', 'Team A Score': '2', 'Team B Score': '0', 'Match Result': 'Gen.G won'}
+Sample 2: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'FunPlus Phoenix vs Team Heretics', 'Team A': 'FunPlus Phoenix', 'Team B': 'Team Heretics', 'Team A Score': '1', 'Team B Score': '2', 'Match Result': 'Team Heretics won'}
+
+=================================================================
+YEAR 2024: agents/agents_pick_rates.csv
+Rows: 24,840
+Columns: Tournament, Stage, Match Type, Map, Agent, Pick Rate
+Sample 1: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Map': 'All Maps', 'Agent': 'sova', 'Pick Rate': '69%'}
+Sample 2: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Map': 'All Maps', 'Agent': 'cypher', 'Pick Rate': '56%'}
+
+=================================================================
+YEAR 2024: agents/maps_stats.csv
+Rows: 1,035
+Columns: Tournament, Stage, Match Type, Map, Total Maps Played, Attacker Side Win Percentage, Defender Side Win Percentage
+Sample 1: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Map': 'All Maps', 'Total Maps Played': '8', 'Attacker Side Win Percentage': '53%', 'Defender Side Win Percentage': '47%'}
+Sample 2: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Map': 'Sunset', 'Total Maps Played': '2', 'Attacker Side Win Percentage': '36%', 'Defender Side Win Percentage': '64%'}
+
+=================================================================
+YEAR 2024: agents/teams_picked_agents.csv
+Rows: 15,647
+Columns: Tournament, Stage, Match Type, Map, Team, Agent, Total Wins By Map, Total Loss By Map, Total Maps Played
+Sample 1: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Map': 'Sunset', 'Team': 'DRX', 'Agent': 'sova', 'Total Wins By Map': '0', 'Total Loss By Map': '1', 'Total Maps Played': '1'}
+Sample 2: {'Tournament': 'Valorant Champions 2024', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Map': 'Sunset', 'Team': 'DRX', 'Agent': 'cypher', 'Total Wins By Map': '0', 'Total Loss By Map': '1', 'Total Maps Played': '1'}
+
+=================================================================
+YEAR 2025: matches/overview.csv
+Rows: 53,226
+Columns: Tournament, Stage, Match Type, Match Name, Map, Player, Team, Agents, Rating, Average Combat Score, Kills, Deaths, Assists, Kills - Deaths (KD), Kill, Assist, Trade, Survive %, Average Damage Per Round, Headshot %, First Kills, First Deaths, Kills - Deaths (FKD), Side
+Sample 1: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Bind', 'Player': 'something', 'Team': 'Paper Rex', 'Agents': 'yoru', 'Rating': '1.63', 'Average Combat Score': '258', 'Kills': '21', 'Deaths': '12', 'Assists': '12', 'Kills - Deaths (KD)': '9'}
+Sample 2: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Bind', 'Player': 'something', 'Team': 'Paper Rex', 'Agents': 'yoru', 'Rating': '1.33', 'Average Combat Score': '199', 'Kills': '7', 'Deaths': '5', 'Assists': '6', 'Kills - Deaths (KD)': '2'}
+
+=================================================================
+YEAR 2025: matches/maps_played.csv
+Rows: 1,277
+Columns: Tournament, Stage, Match Type, Match Name, Map
+Sample 1: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Bind'}
+Sample 2: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Sunset'}
+
+=================================================================
+YEAR 2025: matches/maps_scores.csv
+Rows: 1,277
+Columns: Tournament, Stage, Match Type, Match Name, Map, Team A, Team A Score, Team A Attacker Score, Team A Defender Score, Team A Overtime Score, Team B, Team B Score, Team B Attacker Score, Team B Defender Score, Team B Overtime Score, Duration
+Sample 1: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Bind', 'Team A': 'Paper Rex', 'Team A Score': '13', 'Team A Attacker Score': '6', 'Team A Defender Score': '7', 'Team A Overtime Score': '', 'Team B': 'Xi Lai Gaming', 'Team B Score': '9', 'Team B Attacker Score': '3', 'Team B Defender Score': '6'}
+Sample 2: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Sunset', 'Team A': 'Paper Rex', 'Team A Score': '13', 'Team A Attacker Score': '8', 'Team A Defender Score': '5', 'Team A Overtime Score': '', 'Team B': 'Xi Lai Gaming', 'Team B Score': '5', 'Team B Attacker Score': '1', 'Team B Defender Score': '4'}
+
+=================================================================
+YEAR 2025: matches/scores.csv
+Rows: 503
+Columns: Tournament, Stage, Match Type, Match Name, Team A, Team B, Team A Score, Team B Score, Match Result
+Sample 1: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Team A': 'Paper Rex', 'Team B': 'Xi Lai Gaming', 'Team A Score': '2', 'Team B Score': '0', 'Match Result': 'Paper Rex won'}
+Sample 2: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'GIANTX vs Sentinels', 'Team A': 'GIANTX', 'Team B': 'Sentinels', 'Team A Score': '2', 'Team B Score': '1', 'Match Result': 'GIANTX won'}
+
+=================================================================
+YEAR 2025: agents/agents_pick_rates.csv
+Rows: 30,294
+Columns: Tournament, Stage, Match Type, Map, Agent, Pick Rate
+Sample 1: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Map': 'All Maps', 'Agent': 'omen', 'Pick Rate': '95%'}
+Sample 2: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Map': 'All Maps', 'Agent': 'yoru', 'Pick Rate': '60%'}
+
+=================================================================
+YEAR 2025: agents/maps_stats.csv
+Rows: 1,122
+Columns: Tournament, Stage, Match Type, Map, Total Maps Played, Attacker Side Win Percentage, Defender Side Win Percentage
+Sample 1: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Map': 'All Maps', 'Total Maps Played': '10', 'Attacker Side Win Percentage': '62%', 'Defender Side Win Percentage': '38%'}
+Sample 2: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Map': 'Lotus', 'Total Maps Played': '3', 'Attacker Side Win Percentage': '56%', 'Defender Side Win Percentage': '44%'}
+
+=================================================================
+YEAR 2025: agents/teams_picked_agents.csv
+Rows: 18,396
+Columns: Tournament, Stage, Match Type, Map, Team, Agent, Total Wins By Map, Total Loss By Map, Total Maps Played
+Sample 1: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Map': 'Haven', 'Team': 'FNATIC', 'Agent': 'omen', 'Total Wins By Map': '1', 'Total Loss By Map': '0', 'Total Maps Played': '1'}
+Sample 2: {'Tournament': 'Valorant Champions 2025', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Map': 'Haven', 'Team': 'FNATIC', 'Agent': 'yoru', 'Total Wins By Map': '1', 'Total Loss By Map': '0', 'Total Maps Played': '1'}
+
+=================================================================
+YEAR 2026: matches/overview.csv
+Rows: 36,840
+Columns: Tournament, Stage, Match Type, Match Name, Map, Player, Team, Agents, Rating, Average Combat Score, Kills, Deaths, Assists, Kills - Deaths (KD), Kill, Assist, Trade, Survive %, Average Damage Per Round, Headshot %, First Kills, First Deaths, Kills - Deaths (FKD), Side
+Sample 1: {'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Player': 'NoMan', 'Team': 'Xi Lai Gaming', 'Agents': 'jett', 'Rating': '1.17', 'Average Combat Score': '236', 'Kills': '15', 'Deaths': '14', 'Assists': '2', 'Kills - Deaths (KD)': '1'}
+Sample 2: {'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Player': 'NoMan', 'Team': 'Xi Lai Gaming', 'Agents': 'jett', 'Rating': '0.89', 'Average Combat Score': '214', 'Kills': '5', 'Deaths': '6', 'Assists': '1', 'Kills - Deaths (KD)': '-1'}
+
+=================================================================
+YEAR 2026: matches/maps_played.csv
+Rows: 886
+Columns: Tournament, Stage, Match Type, Match Name, Map
+Sample 1: {'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl'}
+Sample 2: {'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Lotus'}
+
+=================================================================
+YEAR 2026: matches/maps_scores.csv
+Rows: 886
+Columns: Tournament, Stage, Match Type, Match Name, Map, Team A, Team A Score, Team A Attacker Score, Team A Defender Score, Team A Overtime Score, Team B, Team B Score, Team B Attacker Score, Team B Defender Score, Team B Overtime Score, Duration
+Sample 1: {'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Team A': 'Xi Lai Gaming', 'Team A Score': '6', 'Team A Attacker Score': '5', 'Team A Defender Score': '1', 'Team A Overtime Score': '', 'Team B': 'Mega Minors', 'Team B Score': '13', 'Team B Attacker Score': '6', 'Team B Defender Score': '7'}
+Sample 2: {'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Lotus', 'Team A': 'Xi Lai Gaming', 'Team A Score': '11', 'Team A Attacker Score': '7', 'Team A Defender Score': '4', 'Team A Overtime Score': '', 'Team B': 'Mega Minors', 'Team B Score': '13', 'Team B Attacker Score': '8', 'Team B Defender Score': '5'}
+
+=================================================================
+YEAR 2026: matches/scores.csv
+Rows: 342
+Columns: Tournament, Stage, Match Type, Match Name, Team A, Team B, Team A Score, Team B Score, Match Result
+Sample 1: {'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Team A': 'Xi Lai Gaming', 'Team B': 'Mega Minors', 'Team A Score': '0', 'Team B Score': '2', 'Match Result': 'NRG won'}
+Sample 2: {'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Team Vitality vs Dragon Ranger Gaming', 'Team A': 'Team Vitality', 'Team B': 'Dragon Ranger Gaming', 'Team A Score': '2', 'Team B Score': '0', 'Match Result': 'Team Vitality won'}
+
+=================================================================
+YEAR 2026: agents/agents_pick_rates.csv
+Rows: 21,547
+Columns: Tournament, Stage, Match Type, Map, Agent, Pick Rate
+Sample 1: {'Tournament': 'VCT 2026: Americas Stage 1', 'Stage': 'Playoffs', 'Match Type': 'Upper Round 1', 'Map': 'All Maps', 'Agent': 'neon', 'Pick Rate': '80%'}
+Sample 2: {'Tournament': 'VCT 2026: Americas Stage 1', 'Stage': 'Playoffs', 'Match Type': 'Upper Round 1', 'Map': 'All Maps', 'Agent': 'fade', 'Pick Rate': '70%'}
+
+=================================================================
+YEAR 2026: agents/maps_stats.csv
+Rows: 743
+Columns: Tournament, Stage, Match Type, Map, Total Maps Played, Attacker Side Win Percentage, Defender Side Win Percentage
+Sample 1: {'Tournament': 'VCT 2026: Americas Stage 1', 'Stage': 'Playoffs', 'Match Type': 'Upper Round 1', 'Map': 'All Maps', 'Total Maps Played': '5', 'Attacker Side Win Percentage': '44%', 'Defender Side Win Percentage': '56%'}
+Sample 2: {'Tournament': 'VCT 2026: Americas Stage 1', 'Stage': 'Playoffs', 'Match Type': 'Upper Round 1', 'Map': 'Pearl', 'Total Maps Played': '2', 'Attacker Side Win Percentage': '39%', 'Defender Side Win Percentage': '61%'}
+
+=================================================================
+YEAR 2026: agents/teams_picked_agents.csv
+Rows: 11,848
+Columns: Tournament, Stage, Match Type, Map, Team, Agent, Total Wins By Map, Total Loss By Map, Total Maps Played
+Sample 1: {'Tournament': 'VCT 2026: Americas Stage 1', 'Stage': 'Playoffs', 'Match Type': 'Upper Round 1', 'Map': 'Breeze', 'Team': 'FURIA', 'Agent': 'viper', 'Total Wins By Map': '1', 'Total Loss By Map': '0', 'Total Maps Played': '1'}
+Sample 2: {'Tournament': 'VCT 2026: Americas Stage 1', 'Stage': 'Playoffs', 'Match Type': 'Upper Round 1', 'Map': 'Breeze', 'Team': 'FURIA', 'Agent': 'sova', 'Total Wins By Map': '1', 'Total Loss By Map': '0', 'Total Maps Played': '1'}

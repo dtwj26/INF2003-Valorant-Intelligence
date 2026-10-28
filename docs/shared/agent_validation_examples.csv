@@ -1,0 +1,79 @@
+Year,Issue,Tournament,Match Name,Map,Team,Player,Agent,Game ID,Detail
+2021,ambiguous_game_id,Valorant Conquerors Championship,Enigma Gaming vs W Gaming,Ascent,Enigma Gaming,BadmaN,killjoy,,"Possible IDs: 42052,42053"
+2021,ambiguous_game_id,Valorant Conquerors Championship,Enigma Gaming vs W Gaming,Ascent,Enigma Gaming,rawfiul,reyna,,"Possible IDs: 42052,42053"
+2021,ambiguous_game_id,Valorant Conquerors Championship,Enigma Gaming vs W Gaming,Ascent,Enigma Gaming,Ghost,jett,,"Possible IDs: 42052,42053"
+2021,ambiguous_game_id,Valorant Conquerors Championship,Enigma Gaming vs W Gaming,Ascent,Enigma Gaming,godvexy,sova,,"Possible IDs: 42052,42053"
+2021,ambiguous_game_id,Valorant Conquerors Championship,Enigma Gaming vs W Gaming,Ascent,Enigma Gaming,ezzy,astra,,"Possible IDs: 42052,42053"
+2021,ambiguous_game_id,Valorant Conquerors Championship,Enigma Gaming vs W Gaming,Ascent,W Gaming,shQwzeNNrêve,phoenix,,"Possible IDs: 42052,42053"
+2021,ambiguous_game_id,Valorant Conquerors Championship,Enigma Gaming vs W Gaming,Ascent,W Gaming,BRZ,jett,,"Possible IDs: 42052,42053"
+2021,ambiguous_game_id,Valorant Conquerors Championship,Enigma Gaming vs W Gaming,Ascent,W Gaming,Sukuna,astra,,"Possible IDs: 42052,42053"
+2021,ambiguous_game_id,Valorant Conquerors Championship,Enigma Gaming vs W Gaming,Ascent,W Gaming,DASH,reyna,,"Possible IDs: 42052,42053"
+2021,ambiguous_game_id,Valorant Conquerors Championship,Enigma Gaming vs W Gaming,Ascent,W Gaming,Rac,sage,,"Possible IDs: 42052,42053"
+2021,ambiguous_game_id,Champions Tour Vietnam Stage 3: Challengers 3,StormiG vs HE Gaming,Bind,StormiG,zicool,kayo,,"Possible IDs: 47518,47519"
+2021,ambiguous_game_id,Champions Tour Vietnam Stage 3: Challengers 3,StormiG vs HE Gaming,Bind,StormiG,SANZA,brimstone,,"Possible IDs: 47518,47519"
+2021,ambiguous_game_id,Champions Tour Vietnam Stage 3: Challengers 3,StormiG vs HE Gaming,Bind,StormiG,ImHoldingWalkKey,jett,,"Possible IDs: 47518,47519"
+2021,ambiguous_game_id,Champions Tour Vietnam Stage 3: Challengers 3,StormiG vs HE Gaming,Bind,StormiG,Yu Hong,reyna,,"Possible IDs: 47518,47519"
+2021,ambiguous_game_id,Champions Tour Vietnam Stage 3: Challengers 3,StormiG vs HE Gaming,Bind,StormiG,Nyz,viper,,"Possible IDs: 47518,47519"
+2021,player_game_multiple_agents_example,,,,jo clan,matery,"jett, reyna",41108,Review player/game agent assignment
+2021,player_game_multiple_agents_example,,,,galaxy rangers,elterror,"killjoy, sova",24945,Review player/game agent assignment
+2021,player_game_multiple_agents_example,,,,galaxy rangers,elterror,"raze, sage",24946,Review player/game agent assignment
+2021,player_game_multiple_agents_example,,,,galaxy rangers,elterror,"raze, sova",24984,Review player/game agent assignment
+2021,player_game_multiple_agents_example,,,,galaxy rangers,elterror,"jett, sova",24985,Review player/game agent assignment
+2021,game_not_10_players_example,,,,,,,50861,Unique player-team pairs found: 9
+2021,game_not_10_players_example,,,,,,,50869,Unique player-team pairs found: 9
+2021,game_not_10_players_example,,,,,,,42061,Unique player-team pairs found: 8
+2021,game_not_10_players_example,,,,,,,42062,Unique player-team pairs found: 8
+2021,game_not_10_players_example,,,,,,,46988,Unique player-team pairs found: 9
+2021,game_not_10_players_example,,,,,,,42189,Unique player-team pairs found: 9
+2021,game_not_10_players_example,,,,,,,43023,Unique player-team pairs found: 8
+2021,game_not_10_players_example,,,,,,,43024,Unique player-team pairs found: 8
+2021,game_not_10_players_example,,,,,,,43871,Unique player-team pairs found: 8
+2021,game_not_10_players_example,,,,,,,43874,Unique player-team pairs found: 9
+2021,game_not_10_players_example,,,,,,,43875,Unique player-team pairs found: 8
+2021,game_not_10_players_example,,,,,,,43876,Unique player-team pairs found: 8
+2021,game_not_10_players_example,,,,,,,43887,Unique player-team pairs found: 8
+2021,game_not_10_players_example,,,,,,,43888,Unique player-team pairs found: 8
+2021,game_not_10_players_example,,,,,,,43896,Unique player-team pairs found: 8
+2022,ambiguous_game_id,Champions Tour Brazil Stage 1: Challengers 1,Utah Bless vs mira fofinha,Breeze,Utah Bless,Soyokaze,chamber,,"Possible IDs: 63550,63551"
+2022,ambiguous_game_id,Champions Tour Brazil Stage 1: Challengers 1,Utah Bless vs mira fofinha,Breeze,Utah Bless,Kanove,jett,,"Possible IDs: 63550,63551"
+2022,ambiguous_game_id,Champions Tour Brazil Stage 1: Challengers 1,Utah Bless vs mira fofinha,Breeze,Utah Bless,CRMESSI,sova,,"Possible IDs: 63550,63551"
+2022,ambiguous_game_id,Champions Tour Brazil Stage 1: Challengers 1,Utah Bless vs mira fofinha,Breeze,Utah Bless,Heart,viper,,"Possible IDs: 63550,63551"
+2022,ambiguous_game_id,Champions Tour Brazil Stage 1: Challengers 1,Utah Bless vs mira fofinha,Breeze,Utah Bless,Horakawa,reyna,,"Possible IDs: 63550,63551"
+2022,ambiguous_game_id,Champions Tour Brazil Stage 1: Challengers 1,Utah Bless vs mira fofinha,Breeze,mira fofinha,mSzera1,jett,,"Possible IDs: 63550,63551"
+2022,ambiguous_game_id,Champions Tour Brazil Stage 1: Challengers 1,Utah Bless vs mira fofinha,Breeze,mira fofinha,japo,viper,,"Possible IDs: 63550,63551"
+2022,ambiguous_game_id,Champions Tour Brazil Stage 1: Challengers 1,Utah Bless vs mira fofinha,Breeze,mira fofinha,MGl,kayo,,"Possible IDs: 63550,63551"
+2022,ambiguous_game_id,Champions Tour Brazil Stage 1: Challengers 1,Utah Bless vs mira fofinha,Breeze,mira fofinha,discovery,sova,,"Possible IDs: 63550,63551"
+2022,ambiguous_game_id,Champions Tour Brazil Stage 1: Challengers 1,Utah Bless vs mira fofinha,Breeze,mira fofinha,Phobia,cypher,,"Possible IDs: 63550,63551"
+2022,ambiguous_game_id,Champions Tour Malaysia & Singapore Stage 1: Challengers,Delta Heat vs Ghosty Esports,Breeze,Delta Heat,R3m,cypher,,"Possible IDs: 68477,68478"
+2022,ambiguous_game_id,Champions Tour Malaysia & Singapore Stage 1: Challengers,Delta Heat vs Ghosty Esports,Breeze,Delta Heat,WooS3,sova,,"Possible IDs: 68477,68478"
+2022,ambiguous_game_id,Champions Tour Malaysia & Singapore Stage 1: Challengers,Delta Heat vs Ghosty Esports,Breeze,Delta Heat,Seafone,viper,,"Possible IDs: 68477,68478"
+2022,ambiguous_game_id,Champions Tour Malaysia & Singapore Stage 1: Challengers,Delta Heat vs Ghosty Esports,Breeze,Delta Heat,Vionix,skye,,"Possible IDs: 68477,68478"
+2022,ambiguous_game_id,Champions Tour Malaysia & Singapore Stage 1: Challengers,Delta Heat vs Ghosty Esports,Breeze,Delta Heat,Jack,jett,,"Possible IDs: 68477,68478"
+2022,player_game_multiple_agents_example,,,,excend,zen,"jett, viper",65645,Review player/game agent assignment
+2022,player_game_multiple_agents_example,,,,excend,zen,"astra, jett",65646,Review player/game agent assignment
+2022,player_game_multiple_agents_example,,,,excend,zen,"astra, jett",65647,Review player/game agent assignment
+2022,player_game_multiple_agents_example,,,,excend,zen,"brimstone, jett",65730,Review player/game agent assignment
+2022,player_game_multiple_agents_example,,,,excend,zen,"astra, jett",65731,Review player/game agent assignment
+2022,player_game_multiple_agents_example,,,,excend,zen,"astra, jett",65732,Review player/game agent assignment
+2022,player_game_multiple_agents_example,,,,excend,zen,"jett, viper",66034,Review player/game agent assignment
+2022,player_game_multiple_agents_example,,,,excend,zen,"astra, raze",66035,Review player/game agent assignment
+2022,player_game_multiple_agents_example,,,,excend,zen,"jett, omen",66147,Review player/game agent assignment
+2022,player_game_multiple_agents_example,,,,excend,zen,"astra, jett",66148,Review player/game agent assignment
+2022,player_game_multiple_agents_example,,,,excend,zen,"astra, raze",66149,Review player/game agent assignment
+2022,player_game_multiple_agents_example,,,,underdogs,buyko,"sage, sova",64488,Review player/game agent assignment
+2022,player_game_multiple_agents_example,,,,underdogs,buyko,"cypher, sova",65240,Review player/game agent assignment
+2022,game_not_10_players_example,,,,,,,78899,Unique player-team pairs found: 8
+2022,game_not_10_players_example,,,,,,,78900,Unique player-team pairs found: 8
+2022,game_not_10_players_example,,,,,,,73985,Unique player-team pairs found: 9
+2022,game_not_10_players_example,,,,,,,73986,Unique player-team pairs found: 9
+2022,game_not_10_players_example,,,,,,,73987,Unique player-team pairs found: 9
+2022,game_not_10_players_example,,,,,,,74009,Unique player-team pairs found: 9
+2022,game_not_10_players_example,,,,,,,74010,Unique player-team pairs found: 9
+2022,game_not_10_players_example,,,,,,,75060,Unique player-team pairs found: 9
+2022,game_not_10_players_example,,,,,,,75061,Unique player-team pairs found: 9
+2022,game_not_10_players_example,,,,,,,85118,Unique player-team pairs found: 9
+2022,game_not_10_players_example,,,,,,,84244,Unique player-team pairs found: 9
+2022,game_not_10_players_example,,,,,,,83856,Unique player-team pairs found: 9
+2022,game_not_10_players_example,,,,,,,80860,Unique player-team pairs found: 9
+2022,game_not_10_players_example,,,,,,,84147,Unique player-team pairs found: 9
+2022,game_not_10_players_example,,,,,,,84148,Unique player-team pairs found: 9

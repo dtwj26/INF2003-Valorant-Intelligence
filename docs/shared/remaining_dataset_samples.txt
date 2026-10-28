@@ -1,0 +1,1260 @@
+
+=================================================================
+YEAR: 2021
+FILE: ids/players_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 11,190
+COLUMNS: Player, Player ID
+ID COLUMNS: Player ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Player': 'MaKo', 'Player ID': '4462'}
+
+Sample 2:
+{'Player': 'stax', 'Player ID': '485'}
+
+=================================================================
+YEAR: 2021
+FILE: ids/teams_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 2,741
+COLUMNS: Team, Team ID
+ID COLUMNS: Team ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Team': 'Vision Strikers', 'Team ID': '198'}
+
+Sample 2:
+{'Team': 'FULL SENSE', 'Team ID': '4050'}
+
+=================================================================
+YEAR: 2021
+FILE: ids/tournaments_stages_match_types_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 1,777
+COLUMNS: Tournament, Tournament ID, Stage, Stage ID, Match Type, Match Type ID
+ID COLUMNS: Tournament ID, Stage ID, Match Type ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Champions Tour North America: Last Chance Qualifier', 'Tournament ID': '558', 'Stage': 'Main Event', 'Stage ID': '1094', 'Match Type': 'Upper Quarterfinals', 'Match Type ID': '7644'}
+
+Sample 2:
+{'Tournament': 'Champions Tour North America: Last Chance Qualifier', 'Tournament ID': '558', 'Stage': 'Main Event', 'Stage ID': '1094', 'Match Type': 'Upper Semifinals', 'Match Type ID': '7645'}
+
+=================================================================
+YEAR: 2021
+FILE: ids/tournaments_stages_matches_games_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 14,489
+COLUMNS: Tournament, Tournament ID, Stage, Stage ID, Match Type, Match Name, Match ID, Map, Game ID
+ID COLUMNS: Tournament ID, Stage ID, Match ID, Game ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2021', 'Tournament ID': '449', 'Stage': 'Group Stage', 'Stage ID': '945', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Match ID': '51282', 'Map': 'Haven', 'Game ID': '57948'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2021', 'Tournament ID': '449', 'Stage': 'Group Stage', 'Stage ID': '945', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Match ID': '51282', 'Map': 'Breeze', 'Game ID': '57949'}
+
+=================================================================
+YEAR: 2021
+FILE: matches/draft_phase.csv
+CATEGORY: Other dataset
+ROWS: 3,378
+COLUMNS: Tournament, Stage, Match Type, Match Name, Team, Action, Map
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Team': 'FULL SENSE', 'Action': 'ban', 'Map': 'Fracture'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Team': 'Vision Strikers', 'Action': 'ban', 'Map': 'Ascent'}
+
+=================================================================
+YEAR: 2021
+FILE: matches/eco_rounds.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 363,518
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Team, Loadout Value, Remaining Credits, Type, Outcome
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Round Number': '1', 'Team': 'Vision Strikers', 'Loadout Value': '3.9k', 'Remaining Credits': '0.4k', 'Type': 'Eco: 0-5k', 'Outcome': 'Win'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Round Number': '1', 'Team': 'FULL SENSE', 'Loadout Value': '3.4k', 'Remaining Credits': '0.2k', 'Type': 'Eco: 0-5k', 'Outcome': 'Loss'}
+
+=================================================================
+YEAR: 2021
+FILE: matches/eco_stats.csv
+CATEGORY: Other dataset
+ROWS: 126,250
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Type, Initiated, Won
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Team': 'Vision Strikers', 'Type': 'Pistol Won', 'Initiated': '', 'Won': '2'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Team': 'Vision Strikers', 'Type': 'Eco (won)', 'Initiated': '3', 'Won': '2'}
+
+=================================================================
+YEAR: 2021
+FILE: matches/kills.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 946,875
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Player Team, Player, Enemy Team, Enemy, Player Kills, Enemy Kills, Difference, Kill Type
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'All Maps', 'Player Team': 'Vision Strikers', 'Player': 'MaKo', 'Enemy Team': 'FULL SENSE', 'Enemy': 'PTC', 'Player Kills': '3', 'Enemy Kills': '7', 'Difference': '-4', 'Kill Type': 'All Kills'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'All Maps', 'Player Team': 'Vision Strikers', 'Player': 'MaKo', 'Enemy Team': 'FULL SENSE', 'Enemy': 'LAMMYSNAX', 'Player Kills': '5', 'Enemy Kills': '1', 'Difference': '4', 'Kill Type': 'All Kills'}
+
+=================================================================
+YEAR: 2021
+FILE: matches/kills_stats.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 125,783
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Player, Agents, 2k, 3k, 4k, 5k, 1v1, 1v2, 1v3, 1v4, 1v5, Econ, Spike Plants, Spike Defuses
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'All Maps', 'Team': 'Vision Strikers', 'Player': 'stax', 'Agents': 'breach, skye', '2k': '3', '3k': '3', '4k': '', '5k': '', '1v1': '', '1v2': '', '1v3': '', '1v4': '', '1v5': '', 'Econ': '38', 'Spike Plants': '19', 'Spike Defuses': '0'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'All Maps', 'Team': 'Vision Strikers', 'Player': 'Rb', 'Agents': 'skye, sova', '2k': '6', '3k': '1', '4k': '', '5k': '', '1v1': '', '1v2': '1', '1v3': '', '1v4': '', '1v5': '', 'Econ': '64', 'Spike Plants': '1', 'Spike Defuses': '1'}
+
+=================================================================
+YEAR: 2021
+FILE: matches/rounds_kills.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 788,047
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Eliminator Team, Eliminator, Eliminator Agent, Eliminated Team, Eliminated, Eliminated Agent, Kill Type
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Round Number': '11', 'Eliminator Team': 'Vision Strikers', 'Eliminator': 'stax', 'Eliminator Agent': 'breach', 'Eliminated Team': 'FULL SENSE', 'Eliminated': 'PTC', 'Eliminated Agent': 'breach', 'Kill Type': '2k'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Round Number': '11', 'Eliminator Team': 'Vision Strikers', 'Eliminator': 'stax', 'Eliminator Agent': 'breach', 'Eliminated Team': 'FULL SENSE', 'Eliminated': 'JohnOlsen', 'Eliminated Agent': 'jett', 'Kill Type': '2k'}
+
+=================================================================
+YEAR: 2021
+FILE: matches/team_mapping.csv
+CATEGORY: Player / team data
+ROWS: 2,377
+COLUMNS: Abbreviated, Full Name
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Abbreviated': 'VS', 'Full Name': 'Vision Strikers'}
+
+Sample 2:
+{'Abbreviated': 'FS', 'Full Name': 'FULL SENSE'}
+
+=================================================================
+YEAR: 2021
+FILE: matches/win_loss_methods_count.csv
+CATEGORY: Other dataset
+ROWS: 28,972
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Elimination, Detonated, Defused, Time Expiry (No Plant), Eliminated, Defused Failed, Detonation Denied, Time Expiry (Failed to Plant)
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Team': 'Vision Strikers', 'Elimination': '9', 'Detonated': '2', 'Defused': '2', 'Time Expiry (No Plant)': '0', 'Eliminated': '4', 'Defused Failed': '0', 'Detonation Denied': '1', 'Time Expiry (Failed to Plant)': '0'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Team': 'FULL SENSE', 'Elimination': '4', 'Detonated': '0', 'Defused': '1', 'Time Expiry (No Plant)': '0', 'Eliminated': '9', 'Defused Failed': '2', 'Detonation Denied': '2', 'Time Expiry (Failed to Plant)': '0'}
+
+=================================================================
+YEAR: 2021
+FILE: matches/win_loss_methods_round_number.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 580,342
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Team, Method, Outcome
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Round Number': '1', 'Team': 'Vision Strikers', 'Method': 'Elimination', 'Outcome': 'Win'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2021', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Vision Strikers vs FULL SENSE', 'Map': 'Haven', 'Round Number': '1', 'Team': 'FULL SENSE', 'Method': 'Eliminated', 'Outcome': 'Loss'}
+
+=================================================================
+YEAR: 2021
+FILE: players_stats/players_stats.csv
+CATEGORY: Player / team data
+ROWS: 194,966
+COLUMNS: Tournament, Stage, Match Type, Player, Teams, Agents, Rounds Played, Rating, Average Combat Score, Kills:Deaths, Kill, Assist, Trade, Survive %, Average Damage Per Round, Kills Per Round, Assists Per Round, First Kills Per Round, First Deaths Per Round, Headshot %, Clutch Success %, Clutches (won/played), Maximum Kills in a Single Map, Kills, Deaths, Assists, First Kills, First Deaths
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Champions Tour North America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Player': 'Ethan', 'Teams': '100 Thieves', 'Agents': 'skye', 'Rounds Played': '44', 'Rating': '1.29', 'Average Combat Score': '236', 'Kills:Deaths': '1.5', 'Kill, Assist, Trade, Survive %': '75%', 'Average Damage Per Round': '146', 'Kills Per Round': '0.89', 'Assists Per Round': '0.36', 'First Kills Per Round': '0.07', 'First Deaths Per Round': '0.11', 'Headshot %': '31%', 'Clutch Success %': '20%', 'Clutches (won/played)': '1/5', 'Maximum Kills in a Single Map': '29', 'Kills': '39', 'Deaths': '26', 'Assists': '16', 'First Kills': '3', 'First Deaths': '5'}
+
+Sample 2:
+{'Tournament': 'Champions Tour North America: Last Chance Qualifier', 'Stage': 'Main Event', 'Match Type': 'Upper Quarterfinals', 'Player': 'Ethan', 'Teams': '100 Thieves', 'Agents': 'sage', 'Rounds Played': '17', 'Rating': '1.17', 'Average Combat Score': '197', 'Kills:Deaths': '1.3', 'Kill, Assist, Trade, Survive %': '82%', 'Average Damage Per Round': '124', 'Kills Per Round': '0.76', 'Assists Per Round': '0.24', 'First Kills Per Round': '0.06', 'First Deaths Per Round': '0.06', 'Headshot %': '24%', 'Clutch Success %': '', 'Clutches (won/played)': '', 'Maximum Kills in a Single Map': '13', 'Kills': '13', 'Deaths': '10', 'Assists': '4', 'First Kills': '1', 'First Deaths': '1'}
+
+=================================================================
+YEAR: 2022
+FILE: ids/players_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 7,568
+COLUMNS: Player, Player ID
+ID COLUMNS: Player ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Player': 'Benkai', 'Player ID': '9802'}
+
+Sample 2:
+{'Player': 'd4v41', 'Player ID': '9803'}
+
+=================================================================
+YEAR: 2022
+FILE: ids/teams_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 1,572
+COLUMNS: Team, Team ID
+ID COLUMNS: Team ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Team': 'Paper Rex', 'Team ID': '624'}
+
+Sample 2:
+{'Team': 'EDward Gaming', 'Team ID': '1120'}
+
+=================================================================
+YEAR: 2022
+FILE: ids/tournaments_stages_match_types_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 1,076
+COLUMNS: Tournament, Tournament ID, Stage, Stage ID, Match Type, Match Type ID
+ID COLUMNS: Tournament ID, Stage ID, Match Type ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Champions Tour South America: Last Chance Qualifier', 'Tournament ID': '1111', 'Stage': 'Main Event', 'Stage ID': '2154', 'Match Type': 'Upper Quarterfinals', 'Match Type ID': '13253'}
+
+Sample 2:
+{'Tournament': 'Champions Tour South America: Last Chance Qualifier', 'Tournament ID': '1111', 'Stage': 'Main Event', 'Stage ID': '2154', 'Match Type': 'Upper Semifinals', 'Match Type ID': '13254'}
+
+=================================================================
+YEAR: 2022
+FILE: ids/tournaments_stages_matches_games_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 8,864
+COLUMNS: Tournament, Tournament ID, Stage, Stage ID, Match Type, Match Name, Match ID, Map, Game ID
+ID COLUMNS: Tournament ID, Stage ID, Match ID, Game ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2022', 'Tournament ID': '1015', 'Stage': 'Group Stage', 'Stage ID': '2183', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Match ID': '130617', 'Map': 'Pearl', 'Game ID': '95029'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2022', 'Tournament ID': '1015', 'Stage': 'Group Stage', 'Stage ID': '2183', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Match ID': '130617', 'Map': 'Icebox', 'Game ID': '95030'}
+
+=================================================================
+YEAR: 2022
+FILE: matches/draft_phase.csv
+CATEGORY: Other dataset
+ROWS: 7,432
+COLUMNS: Tournament, Stage, Match Type, Match Name, Team, Action, Map
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Team': 'EDward Gaming', 'Action': 'ban', 'Map': 'Bind'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Team': 'Paper Rex', 'Action': 'ban', 'Map': 'Fracture'}
+
+=================================================================
+YEAR: 2022
+FILE: matches/eco_rounds.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 358,798
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Team, Loadout Value, Remaining Credits, Type, Outcome
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Round Number': '1', 'Team': 'Paper Rex', 'Loadout Value': '3.7k', 'Remaining Credits': '0.1k', 'Type': 'Eco: 0-5k', 'Outcome': 'Loss'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Round Number': '1', 'Team': 'EDward Gaming', 'Loadout Value': '4.0k', 'Remaining Credits': '0.2k', 'Type': 'Eco: 0-5k', 'Outcome': 'Win'}
+
+=================================================================
+YEAR: 2022
+FILE: matches/eco_stats.csv
+CATEGORY: Other dataset
+ROWS: 126,110
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Type, Initiated, Won
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Team': 'Paper Rex', 'Type': 'Pistol Won', 'Initiated': '', 'Won': '1'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Team': 'Paper Rex', 'Type': 'Eco (won)', 'Initiated': '3', 'Won': '1'}
+
+=================================================================
+YEAR: 2022
+FILE: matches/kills.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 945,825
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Player Team, Player, Enemy Team, Enemy, Player Kills, Enemy Kills, Difference, Kill Type
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'All Maps', 'Player Team': 'Paper Rex', 'Player': 'd4v41', 'Enemy Team': 'EDward Gaming', 'Enemy': 'Haodong', 'Player Kills': '8', 'Enemy Kills': '8', 'Difference': '0', 'Kill Type': 'All Kills'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'All Maps', 'Player Team': 'Paper Rex', 'Player': 'd4v41', 'Enemy Team': 'EDward Gaming', 'Enemy': 'nobody', 'Player Kills': '12', 'Enemy Kills': '9', 'Difference': '3', 'Kill Type': 'All Kills'}
+
+=================================================================
+YEAR: 2022
+FILE: matches/kills_stats.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 126,337
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Player, Agents, 2k, 3k, 4k, 5k, 1v1, 1v2, 1v3, 1v4, 1v5, Econ, Spike Plants, Spike Defuses
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'All Maps', 'Team': 'Paper Rex', 'Player': 'Jinggg', 'Agents': 'raze, reyna, sage', '2k': '13', '3k': '3', '4k': '1', '5k': '', '1v1': '', '1v2': '', '1v3': '', '1v4': '', '1v5': '', 'Econ': '59', 'Spike Plants': '1', 'Spike Defuses': '0'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'All Maps', 'Team': 'Paper Rex', 'Player': 'mindfreak', 'Agents': 'astra, viper', '2k': '4', '3k': '1', '4k': '2', '5k': '', '1v1': '1', '1v2': '', '1v3': '', '1v4': '', '1v5': '1.0', 'Econ': '48', 'Spike Plants': '2', 'Spike Defuses': '1'}
+
+=================================================================
+YEAR: 2022
+FILE: matches/rounds_kills.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 776,476
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Eliminator Team, Eliminator, Eliminator Agent, Eliminated Team, Eliminated, Eliminated Agent, Kill Type
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Round Number': '2', 'Eliminator Team': 'Paper Rex', 'Eliminator': 'Jinggg', 'Eliminator Agent': 'raze', 'Eliminated Team': 'EDward Gaming', 'Eliminated': 'Smoggy', 'Eliminated Agent': 'kayo', 'Kill Type': '2k'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Round Number': '2', 'Eliminator Team': 'Paper Rex', 'Eliminator': 'Jinggg', 'Eliminator Agent': 'raze', 'Eliminated Team': 'EDward Gaming', 'Eliminated': 'ZmjjKK', 'Eliminated Agent': 'chamber', 'Kill Type': '2k'}
+
+=================================================================
+YEAR: 2022
+FILE: matches/team_mapping.csv
+CATEGORY: Player / team data
+ROWS: 1,399
+COLUMNS: Abbreviated, Full Name
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Abbreviated': 'PRX', 'Full Name': 'Paper Rex'}
+
+Sample 2:
+{'Abbreviated': 'EDG', 'Full Name': 'EDward Gaming'}
+
+=================================================================
+YEAR: 2022
+FILE: matches/win_loss_methods_count.csv
+CATEGORY: Other dataset
+ROWS: 17,728
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Elimination, Detonated, Defused, Time Expiry (No Plant), Eliminated, Defused Failed, Detonation Denied, Time Expiry (Failed to Plant)
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Team': 'Paper Rex', 'Elimination': '11', 'Detonated': '0', 'Defused': '1', 'Time Expiry (No Plant)': '1', 'Eliminated': '7', 'Defused Failed': '1', 'Detonation Denied': '3', 'Time Expiry (Failed to Plant)': '0'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Team': 'EDward Gaming', 'Elimination': '7', 'Detonated': '1', 'Defused': '3', 'Time Expiry (No Plant)': '0', 'Eliminated': '11', 'Defused Failed': '0', 'Detonation Denied': '1', 'Time Expiry (Failed to Plant)': '1'}
+
+=================================================================
+YEAR: 2022
+FILE: matches/win_loss_methods_round_number.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 359,210
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Team, Method, Outcome
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Round Number': '1', 'Team': 'EDward Gaming', 'Method': 'Elimination', 'Outcome': 'Win'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2022', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs EDward Gaming', 'Map': 'Pearl', 'Round Number': '1', 'Team': 'Paper Rex', 'Method': 'Eliminated', 'Outcome': 'Loss'}
+
+=================================================================
+YEAR: 2022
+FILE: players_stats/players_stats.csv
+CATEGORY: Player / team data
+ROWS: 126,641
+COLUMNS: Tournament, Stage, Match Type, Player, Teams, Agents, Rounds Played, Rating, Average Combat Score, Kills:Deaths, Kill, Assist, Trade, Survive %, Average Damage Per Round, Kills Per Round, Assists Per Round, First Kills Per Round, First Deaths Per Round, Headshot %, Clutch Success %, Clutches (won/played), Maximum Kills in a Single Map, Kills, Deaths, Assists, First Kills, First Deaths
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Champions Tour LATAM/BR Stage 2: Last Chance Qualifier', 'Stage': 'Decider', 'Match Type': 'Decider', 'Player': 'xand', 'Teams': 'Ninjas In Pyjamas', 'Agents': 'killjoy', 'Rounds Played': '23', 'Rating': '0.92', 'Average Combat Score': '227', 'Kills:Deaths': '1.25', 'Kill, Assist, Trade, Survive %': '74%', 'Average Damage Per Round': '138', 'Kills Per Round': '0.87', 'Assists Per Round': '0.09', 'First Kills Per Round': '0.0', 'First Deaths Per Round': '0.13', 'Headshot %': '23%', 'Clutch Success %': '0%', 'Clutches (won/played)': '0/6', 'Maximum Kills in a Single Map': '20', 'Kills': '20', 'Deaths': '16', 'Assists': '2', 'First Kills': '0', 'First Deaths': '3'}
+
+Sample 2:
+{'Tournament': 'Champions Tour LATAM/BR Stage 2: Last Chance Qualifier', 'Stage': 'Decider', 'Match Type': 'Decider', 'Player': 'xand', 'Teams': 'Ninjas In Pyjamas', 'Agents': 'chamber', 'Rounds Played': '18', 'Rating': '0.55', 'Average Combat Score': '175', 'Kills:Deaths': '0.59', 'Kill, Assist, Trade, Survive %': '44%', 'Average Damage Per Round': '104', 'Kills Per Round': '0.56', 'Assists Per Round': '0.11', 'First Kills Per Round': '0.11', 'First Deaths Per Round': '0.22', 'Headshot %': '35%', 'Clutch Success %': '0%', 'Clutches (won/played)': '0/2', 'Maximum Kills in a Single Map': '10', 'Kills': '10', 'Deaths': '17', 'Assists': '2', 'First Kills': '2', 'First Deaths': '4'}
+
+=================================================================
+YEAR: 2023
+FILE: ids/players_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 284
+COLUMNS: Player, Player ID
+ID COLUMNS: Player ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Player': 'nAts', 'Player ID': '457'}
+
+Sample 2:
+{'Player': 'Sayf', 'Player ID': '312'}
+
+=================================================================
+YEAR: 2023
+FILE: ids/teams_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 51
+COLUMNS: Team, Team ID
+ID COLUMNS: Team ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Team': 'Team Liquid', 'Team ID': '474'}
+
+Sample 2:
+{'Team': 'Natus Vincere', 'Team ID': '4915'}
+
+=================================================================
+YEAR: 2023
+FILE: ids/tournaments_stages_match_types_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 137
+COLUMNS: Tournament, Tournament ID, Stage, Stage ID, Match Type, Match Type ID
+ID COLUMNS: Tournament ID, Stage ID, Match Type ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Champions Tour 2023: Americas Last Chance Qualifier', 'Tournament ID': '1658', 'Stage': 'Main Event', 'Stage ID': '3146', 'Match Type': 'Upper Round 1', 'Match Type ID': '19693'}
+
+Sample 2:
+{'Tournament': 'Champions Tour 2023: Americas Last Chance Qualifier', 'Tournament ID': '1658', 'Stage': 'Main Event', 'Stage ID': '3146', 'Match Type': 'Upper Quarterfinals', 'Match Type ID': '19694'}
+
+=================================================================
+YEAR: 2023
+FILE: ids/tournaments_stages_matches_games_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 830
+COLUMNS: Tournament, Tournament ID, Stage, Stage ID, Match Type, Match Name, Match ID, Map, Game ID
+ID COLUMNS: Tournament ID, Stage ID, Match ID, Game ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2023', 'Tournament ID': '1657', 'Stage': 'Group Stage', 'Stage ID': '3145', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Match ID': '247100', 'Map': 'Fracture', 'Game ID': '137395'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2023', 'Tournament ID': '1657', 'Stage': 'Group Stage', 'Stage ID': '3145', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Match ID': '247100', 'Map': 'Bind', 'Game ID': '137396'}
+
+=================================================================
+YEAR: 2023
+FILE: matches/draft_phase.csv
+CATEGORY: Other dataset
+ROWS: 1,898
+COLUMNS: Tournament, Stage, Match Type, Match Name, Team, Action, Map
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Team': 'Natus Vincere', 'Action': 'ban', 'Map': 'Haven'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Team': 'Team Liquid', 'Action': 'ban', 'Map': 'Pearl'}
+
+=================================================================
+YEAR: 2023
+FILE: matches/eco_rounds.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 33,032
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Team, Loadout Value, Remaining Credits, Type, Outcome
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Round Number': '1', 'Team': 'Team Liquid', 'Loadout Value': '3.6k', 'Remaining Credits': '0.4k', 'Type': 'Eco: 0-5k', 'Outcome': 'Win'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Round Number': '1', 'Team': 'Natus Vincere', 'Loadout Value': '3.5k', 'Remaining Credits': '0.3k', 'Type': 'Eco: 0-5k', 'Outcome': 'Loss'}
+
+=================================================================
+YEAR: 2023
+FILE: matches/eco_stats.csv
+CATEGORY: Other dataset
+ROWS: 10,830
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Type, Initiated, Won
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Team': 'Team Liquid', 'Type': 'Pistol Won', 'Initiated': '', 'Won': '2'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Team': 'Team Liquid', 'Type': 'Eco (won)', 'Initiated': '2', 'Won': '2'}
+
+=================================================================
+YEAR: 2023
+FILE: matches/kills.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 81,225
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Player Team, Player, Enemy Team, Enemy, Player Kills, Enemy Kills, Difference, Kill Type
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'All Maps', 'Player Team': 'Team Liquid', 'Player': 'Jamppi', 'Enemy Team': 'Natus Vincere', 'Enemy': 'ANGE1', 'Player Kills': '9', 'Enemy Kills': '12', 'Difference': '-3', 'Kill Type': 'All Kills'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'All Maps', 'Player Team': 'Team Liquid', 'Player': 'Jamppi', 'Enemy Team': 'Natus Vincere', 'Enemy': 'SUYGETSU', 'Player Kills': '6', 'Enemy Kills': '10', 'Difference': '-4', 'Kill Type': 'All Kills'}
+
+=================================================================
+YEAR: 2023
+FILE: matches/kills_stats.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 10,868
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Player, Agents, 2k, 3k, 4k, 5k, 1v1, 1v2, 1v3, 1v4, 1v5, Econ, Spike Plants, Spike Defuses
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'All Maps', 'Team': 'Team Liquid', 'Player': 'soulcas', 'Agents': 'astra, skye', '2k': '4', '3k': '1', '4k': '', '5k': '', '1v1': '1', '1v2': '', '1v3': '', '1v4': '', '1v5': '', 'Econ': '30', 'Spike Plants': '2', 'Spike Defuses': '0'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'All Maps', 'Team': 'Team Liquid', 'Player': 'Sayf', 'Agents': 'breach, raze', '2k': '8', '3k': '3', '4k': '', '5k': '', '1v1': '1', '1v2': '', '1v3': '', '1v4': '', '1v5': '', 'Econ': '48', 'Spike Plants': '4', 'Spike Defuses': '1'}
+
+=================================================================
+YEAR: 2023
+FILE: matches/rounds_kills.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 70,078
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Eliminator Team, Eliminator, Eliminator Agent, Eliminated Team, Eliminated, Eliminated Agent, Kill Type
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Round Number': '1', 'Eliminator Team': 'Team Liquid', 'Eliminator': 'soulcas', 'Eliminator Agent': 'astra', 'Eliminated Team': 'Natus Vincere', 'Eliminated': 'cNed', 'Eliminated Agent': 'killjoy', 'Kill Type': '2k'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Round Number': '1', 'Eliminator Team': 'Team Liquid', 'Eliminator': 'soulcas', 'Eliminator Agent': 'astra', 'Eliminated Team': 'Natus Vincere', 'Eliminated': 'Shao', 'Eliminated Agent': 'fade', 'Kill Type': '2k'}
+
+=================================================================
+YEAR: 2023
+FILE: matches/team_mapping.csv
+CATEGORY: Player / team data
+ROWS: 51
+COLUMNS: Abbreviated, Full Name
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Abbreviated': 'TL', 'Full Name': 'Team Liquid'}
+
+Sample 2:
+{'Abbreviated': 'NAVI', 'Full Name': 'Natus Vincere'}
+
+=================================================================
+YEAR: 2023
+FILE: matches/win_loss_methods_count.csv
+CATEGORY: Other dataset
+ROWS: 1,660
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Elimination, Detonated, Defused, Time Expiry (No Plant), Eliminated, Defused Failed, Detonation Denied, Time Expiry (Failed to Plant)
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Team': 'Team Liquid', 'Elimination': '8', 'Detonated': '2', 'Defused': '1', 'Time Expiry (No Plant)': '0', 'Eliminated': '6', 'Defused Failed': '5', 'Detonation Denied': '1', 'Time Expiry (Failed to Plant)': '1'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Team': 'Natus Vincere', 'Elimination': '6', 'Detonated': '5', 'Defused': '1', 'Time Expiry (No Plant)': '1', 'Eliminated': '8', 'Defused Failed': '2', 'Detonation Denied': '1', 'Time Expiry (Failed to Plant)': '0'}
+
+=================================================================
+YEAR: 2023
+FILE: matches/win_loss_methods_round_number.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 35,514
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Team, Method, Outcome
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Round Number': '1', 'Team': 'Team Liquid', 'Method': 'Elimination', 'Outcome': 'Win'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2023', 'Stage': 'Group Stage', 'Match Type': 'Opening (D)', 'Match Name': 'Team Liquid vs Natus Vincere', 'Map': 'Fracture', 'Round Number': '1', 'Team': 'Natus Vincere', 'Method': 'Eliminated', 'Outcome': 'Loss'}
+
+=================================================================
+YEAR: 2023
+FILE: players_stats/players_stats.csv
+CATEGORY: Player / team data
+ROWS: 11,249
+COLUMNS: Tournament, Stage, Match Type, Player, Teams, Agents, Rounds Played, Rating, Average Combat Score, Kills:Deaths, Kill, Assist, Trade, Survive %, Average Damage Per Round, Kills Per Round, Assists Per Round, First Kills Per Round, First Deaths Per Round, Headshot %, Clutch Success %, Clutches (won/played), Maximum Kills in a Single Map, Kills, Deaths, Assists, First Kills, First Deaths
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Champions Tour 2023: EMEA Last Chance Qualifier', 'Stage': 'Playoffs', 'Match Type': 'Knockout Round', 'Player': 'Wolfen', 'Teams': 'KOI', 'Agents': 'cypher', 'Rounds Played': '21', 'Rating': '1.03', 'Average Combat Score': '209', 'Kills:Deaths': '1.0', 'Kill, Assist, Trade, Survive %': '86%', 'Average Damage Per Round': '140', 'Kills Per Round': '0.76', 'Assists Per Round': '0.33', 'First Kills Per Round': '0.14', 'First Deaths Per Round': '0.1', 'Headshot %': '21%', 'Clutch Success %': '0%', 'Clutches (won/played)': '0/2', 'Maximum Kills in a Single Map': '16', 'Kills': '16', 'Deaths': '16', 'Assists': '7', 'First Kills': '3', 'First Deaths': '2'}
+
+Sample 2:
+{'Tournament': 'Champions Tour 2023: EMEA Last Chance Qualifier', 'Stage': 'Playoffs', 'Match Type': 'Knockout Round', 'Player': 'Wolfen', 'Teams': 'KOI', 'Agents': 'jett', 'Rounds Played': '42', 'Rating': '1.25', 'Average Combat Score': '300', 'Kills:Deaths': '1.36', 'Kill, Assist, Trade, Survive %': '71%', 'Average Damage Per Round': '180', 'Kills Per Round': '1.07', 'Assists Per Round': '0.14', 'First Kills Per Round': '0.29', 'First Deaths Per Round': '0.29', 'Headshot %': '26%', 'Clutch Success %': '0%', 'Clutches (won/played)': '0/1', 'Maximum Kills in a Single Map': '25', 'Kills': '45', 'Deaths': '33', 'Assists': '6', 'First Kills': '12', 'First Deaths': '12'}
+
+=================================================================
+YEAR: 2024
+FILE: ids/players_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 260
+COLUMNS: Player, Player ID
+ID COLUMNS: Player ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Player': 't3xture', 'Player ID': '9196'}
+
+Sample 2:
+{'Player': 'Meteor', 'Player ID': '13039'}
+
+=================================================================
+YEAR: 2024
+FILE: ids/teams_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 44
+COLUMNS: Team, Team ID
+ID COLUMNS: Team ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Team': 'Gen.G', 'Team ID': '17'}
+
+Sample 2:
+{'Team': 'Sentinels', 'Team ID': '2'}
+
+=================================================================
+YEAR: 2024
+FILE: ids/tournaments_stages_match_types_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 197
+COLUMNS: Tournament, Tournament ID, Stage, Stage ID, Match Type, Match Type ID
+ID COLUMNS: Tournament ID, Stage ID, Match Type ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2024', 'Tournament ID': '2097', 'Stage': 'Playoffs', 'Stage ID': '4131', 'Match Type': 'Upper Quarterfinals', 'Match Type ID': '26235'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2024', 'Tournament ID': '2097', 'Stage': 'Playoffs', 'Stage ID': '4131', 'Match Type': 'Upper Semifinals', 'Match Type ID': '26236'}
+
+=================================================================
+YEAR: 2024
+FILE: ids/tournaments_stages_matches_games_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 1,104
+COLUMNS: Tournament, Tournament ID, Stage, Stage ID, Match Type, Match Name, Match ID, Map, Game ID
+ID COLUMNS: Tournament ID, Stage ID, Match ID, Game ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2024', 'Tournament ID': '2097', 'Stage': 'Group Stage', 'Stage ID': '4035', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Match ID': '378662', 'Map': 'Haven', 'Game ID': '180369'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2024', 'Tournament ID': '2097', 'Stage': 'Group Stage', 'Stage ID': '4035', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Match ID': '378662', 'Map': 'Ascent', 'Game ID': '180370'}
+
+=================================================================
+YEAR: 2024
+FILE: matches/draft_phase.csv
+CATEGORY: Other dataset
+ROWS: 2,604
+COLUMNS: Tournament, Stage, Match Type, Match Name, Team, Action, Map
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Team': 'Sentinels', 'Action': 'ban', 'Map': 'Icebox'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Team': 'Gen.G', 'Action': 'ban', 'Map': 'Sunset'}
+
+=================================================================
+YEAR: 2024
+FILE: matches/eco_rounds.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 34,514
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Team, Loadout Value, Remaining Credits, Type, Outcome
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Round Number': '1', 'Team': 'Gen.G', 'Loadout Value': '3.9k', 'Remaining Credits': '0.3k', 'Type': 'Eco: 0-5k', 'Outcome': 'Win'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Round Number': '1', 'Team': 'Sentinels', 'Loadout Value': '3.8k', 'Remaining Credits': '0.2k', 'Type': 'Eco: 0-5k', 'Outcome': 'Loss'}
+
+=================================================================
+YEAR: 2024
+FILE: matches/eco_stats.csv
+CATEGORY: Other dataset
+ROWS: 11,350
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Type, Initiated, Won
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Team': 'Gen.G', 'Type': 'Pistol Won', 'Initiated': '', 'Won': '2'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Team': 'Gen.G', 'Type': 'Eco (won)', 'Initiated': '2', 'Won': '2'}
+
+=================================================================
+YEAR: 2024
+FILE: matches/kills.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 85,125
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Player Team, Player, Enemy Team, Enemy, Player Kills, Enemy Kills, Difference, Kill Type
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'All Maps', 'Player Team': 'Gen.G', 'Player': 'Lakia', 'Enemy Team': 'Sentinels', 'Enemy': 'zekken', 'Player Kills': '2', 'Enemy Kills': '2', 'Difference': '0', 'Kill Type': 'All Kills'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'All Maps', 'Player Team': 'Gen.G', 'Player': 'Lakia', 'Enemy Team': 'Sentinels', 'Enemy': 'johnqt', 'Player Kills': '5', 'Enemy Kills': '7', 'Difference': '-2', 'Kill Type': 'All Kills'}
+
+=================================================================
+YEAR: 2024
+FILE: matches/kills_stats.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 11,354
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Player, Agents, 2k, 3k, 4k, 5k, 1v1, 1v2, 1v3, 1v4, 1v5, Econ, Spike Plants, Spike Defuses
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'All Maps', 'Team': 'Gen.G', 'Player': 'Lakia', 'Agents': 'skye, sova', '2k': '6', '3k': '', '4k': '', '5k': '', '1v1': '', '1v2': '', '1v3': '', '1v4': '', '1v5': '', 'Econ': '40', 'Spike Plants': '6', 'Spike Defuses': '0'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'All Maps', 'Team': 'Gen.G', 'Player': 'Munchkin', 'Agents': 'kayo, viper', '2k': '3', '3k': '3', '4k': '', '5k': '', '1v1': '', '1v2': '', '1v3': '', '1v4': '', '1v5': '', 'Econ': '49', 'Spike Plants': '6', 'Spike Defuses': '0'}
+
+=================================================================
+YEAR: 2024
+FILE: matches/rounds_kills.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 72,660
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Eliminator Team, Eliminator, Eliminator Agent, Eliminated Team, Eliminated, Eliminated Agent, Kill Type
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Round Number': '9', 'Eliminator Team': 'Gen.G', 'Eliminator': 'Lakia', 'Eliminator Agent': 'skye', 'Eliminated Team': 'Sentinels', 'Eliminated': 'TenZ', 'Eliminated Agent': 'omen', 'Kill Type': '2k'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Round Number': '9', 'Eliminator Team': 'Gen.G', 'Eliminator': 'Lakia', 'Eliminator Agent': 'skye', 'Eliminated Team': 'Sentinels', 'Eliminated': 'Zellsis', 'Eliminated Agent': 'breach', 'Kill Type': '2k'}
+
+=================================================================
+YEAR: 2024
+FILE: matches/team_mapping.csv
+CATEGORY: Player / team data
+ROWS: 44
+COLUMNS: Abbreviated, Full Name
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Abbreviated': 'GEN', 'Full Name': 'Gen.G'}
+
+Sample 2:
+{'Abbreviated': 'SEN', 'Full Name': 'Sentinels'}
+
+=================================================================
+YEAR: 2024
+FILE: matches/win_loss_methods_count.csv
+CATEGORY: Other dataset
+ROWS: 2,208
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Elimination, Detonated, Defused, Time Expiry (No Plant), Eliminated, Defused Failed, Detonation Denied, Time Expiry (Failed to Plant)
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Team': 'Gen.G', 'Elimination': '7', 'Detonated': '1', 'Defused': '4', 'Time Expiry (No Plant)': '1', 'Eliminated': '3', 'Defused Failed': '2', 'Detonation Denied': '3', 'Time Expiry (Failed to Plant)': '0'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Team': 'Sentinels', 'Elimination': '3', 'Detonated': '2', 'Defused': '3', 'Time Expiry (No Plant)': '0', 'Eliminated': '7', 'Defused Failed': '1', 'Detonation Denied': '4', 'Time Expiry (Failed to Plant)': '1'}
+
+=================================================================
+YEAR: 2024
+FILE: matches/win_loss_methods_round_number.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 46,754
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Team, Method, Outcome
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Round Number': '1', 'Team': 'Gen.G', 'Method': 'Defused', 'Outcome': 'Win'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Group Stage', 'Match Type': 'Opening (B)', 'Match Name': 'Gen.G vs Sentinels', 'Map': 'Haven', 'Round Number': '1', 'Team': 'Sentinels', 'Method': 'Detonated Denied', 'Outcome': 'Loss'}
+
+=================================================================
+YEAR: 2024
+FILE: players_stats/players_stats.csv
+CATEGORY: Player / team data
+ROWS: 15,030
+COLUMNS: Tournament, Stage, Match Type, Player, Teams, Agents, Rounds Played, Rating, Average Combat Score, Kills:Deaths, Kill, Assist, Trade, Survive %, Average Damage Per Round, Kills Per Round, Assists Per Round, First Kills Per Round, First Deaths Per Round, Headshot %, Clutch Success %, Clutches (won/played), Maximum Kills in a Single Map, Kills, Deaths, Assists, First Kills, First Deaths
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Player': 'Boo', 'Teams': 'Team Heretics', 'Agents': 'astra', 'Rounds Played': '26', 'Rating': '0.75', 'Average Combat Score': '138', 'Kills:Deaths': '0.58', 'Kill, Assist, Trade, Survive %': '73%', 'Average Damage Per Round': '92', 'Kills Per Round': '0.42', 'Assists Per Round': '0.54', 'First Kills Per Round': '0.04', 'First Deaths Per Round': '0.08', 'Headshot %': '21%', 'Clutch Success %': '22%', 'Clutches (won/played)': '2/9', 'Maximum Kills in a Single Map': '11', 'Kills': '11', 'Deaths': '19', 'Assists': '14', 'First Kills': '1', 'First Deaths': '2'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2024', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Player': 'Boo', 'Teams': 'Team Heretics', 'Agents': 'fade', 'Rounds Played': '16', 'Rating': '1.1', 'Average Combat Score': '185', 'Kills:Deaths': '1.38', 'Kill, Assist, Trade, Survive %': '81%', 'Average Damage Per Round': '122', 'Kills Per Round': '0.69', 'Assists Per Round': '0.19', 'First Kills Per Round': '0.13', 'First Deaths Per Round': '0.0', 'Headshot %': '21%', 'Clutch Success %': '', 'Clutches (won/played)': '', 'Maximum Kills in a Single Map': '11', 'Kills': '11', 'Deaths': '8', 'Assists': '3', 'First Kills': '2', 'First Deaths': '0'}
+
+=================================================================
+YEAR: 2025
+FILE: ids/players_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 349
+COLUMNS: Player, Player ID
+ID COLUMNS: Player ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Player': 'something', 'Player ID': '17086'}
+
+Sample 2:
+{'Player': 'Jinggg', 'Player ID': '7378'}
+
+=================================================================
+YEAR: 2025
+FILE: ids/teams_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 58
+COLUMNS: Team, Team ID
+ID COLUMNS: Team ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Team': 'Paper Rex', 'Team ID': '624'}
+
+Sample 2:
+{'Team': 'Xi Lai Gaming', 'Team ID': '13581'}
+
+=================================================================
+YEAR: 2025
+FILE: ids/tournaments_stages_match_types_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 202
+COLUMNS: Tournament, Tournament ID, Stage, Stage ID, Match Type, Match Type ID
+ID COLUMNS: Tournament ID, Stage ID, Match Type ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2025', 'Tournament ID': '2283', 'Stage': 'Playoffs', 'Stage ID': '5080', 'Match Type': 'Upper Quarterfinals', 'Match Type ID': '33667'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2025', 'Tournament ID': '2283', 'Stage': 'Playoffs', 'Stage ID': '5080', 'Match Type': 'Upper Semifinals', 'Match Type ID': '33668'}
+
+=================================================================
+YEAR: 2025
+FILE: ids/tournaments_stages_matches_games_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 1,277
+COLUMNS: Tournament, Tournament ID, Stage, Stage ID, Match Type, Match Name, Match ID, Map, Game ID
+ID COLUMNS: Tournament ID, Stage ID, Match ID, Game ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2025', 'Tournament ID': '2283', 'Stage': 'Group Stage', 'Stage ID': '5079', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Match ID': '542195', 'Map': 'Bind', 'Game ID': '233397'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2025', 'Tournament ID': '2283', 'Stage': 'Group Stage', 'Stage ID': '5079', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Match ID': '542195', 'Map': 'Sunset', 'Game ID': '233398'}
+
+=================================================================
+YEAR: 2025
+FILE: matches/draft_phase.csv
+CATEGORY: Other dataset
+ROWS: 2,988
+COLUMNS: Tournament, Stage, Match Type, Match Name, Team, Action, Map
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Team': 'Xi Lai Gaming', 'Action': 'ban', 'Map': 'Lotus'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Team': 'Paper Rex', 'Action': 'ban', 'Map': 'Abyss'}
+
+=================================================================
+YEAR: 2025
+FILE: matches/eco_rounds.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 25,182
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Team, Loadout Value, Remaining Credits, Type, Outcome
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Masters Toronto 2025', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Team Heretics vs Paper Rex', 'Map': 'Pearl', 'Round Number': '1', 'Team': 'Team Heretics', 'Loadout Value': '', 'Remaining Credits': '0.2k', 'Type': 'Eco: 0-5k', 'Outcome': 'Loss'}
+
+Sample 2:
+{'Tournament': 'Valorant Masters Toronto 2025', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Team Heretics vs Paper Rex', 'Map': 'Pearl', 'Round Number': '1', 'Team': 'Paper Rex', 'Loadout Value': '', 'Remaining Credits': '0.5k', 'Type': 'Eco: 0-5k', 'Outcome': 'Win'}
+
+=================================================================
+YEAR: 2025
+FILE: matches/eco_stats.csv
+CATEGORY: Other dataset
+ROWS: 13,940
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Type, Initiated, Won
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Bind', 'Team': 'Paper Rex', 'Type': 'Pistol Won', 'Initiated': '', 'Won': '1'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Bind', 'Team': 'Paper Rex', 'Type': 'Eco (won)', 'Initiated': '4', 'Won': '2'}
+
+=================================================================
+YEAR: 2025
+FILE: matches/kills.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 104,325
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Player Team, Player, Enemy Team, Enemy, Player Kills, Enemy Kills, Difference, Kill Type
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'All Maps', 'Player Team': 'Paper Rex', 'Player': 'PatMen', 'Enemy Team': 'Xi Lai Gaming', 'Enemy': 'NoMan', 'Player Kills': '4', 'Enemy Kills': '6', 'Difference': '-2', 'Kill Type': 'All Kills'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'All Maps', 'Player Team': 'Paper Rex', 'Player': 'PatMen', 'Enemy Team': 'Xi Lai Gaming', 'Enemy': 'happywei', 'Player Kills': '3', 'Enemy Kills': '7', 'Difference': '-4', 'Kill Type': 'All Kills'}
+
+=================================================================
+YEAR: 2025
+FILE: matches/kills_stats.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 13,912
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Player, Agents, 2k, 3k, 4k, 5k, 1v1, 1v2, 1v3, 1v4, 1v5, Econ, Spike Plants, Spike Defuses
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'All Maps', 'Team': 'Paper Rex', 'Player': 'Jinggg', 'Agents': 'raze', '2k': '8', '3k': '5', '4k': '', '5k': '', '1v1': '', '1v2': '', '1v3': '', '1v4': '', '1v5': '', 'Econ': '73', 'Spike Plants': '0', 'Spike Defuses': '2'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'All Maps', 'Team': 'Paper Rex', 'Player': 'f0rsakeN', 'Agents': 'brimstone, omen', '2k': '5', '3k': '1', '4k': '3', '5k': '', '1v1': '', '1v2': '1', '1v3': '', '1v4': '', '1v5': '', 'Econ': '66', 'Spike Plants': '1', 'Spike Defuses': '0'}
+
+=================================================================
+YEAR: 2025
+FILE: matches/rounds_kills.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 89,088
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Eliminator Team, Eliminator, Eliminator Agent, Eliminated Team, Eliminated, Eliminated Agent, Kill Type
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Bind', 'Round Number': '3', 'Eliminator Team': 'Paper Rex', 'Eliminator': 'Jinggg', 'Eliminator Agent': 'raze', 'Eliminated Team': 'Xi Lai Gaming', 'Eliminated': 'coconut', 'Eliminated Agent': 'gekko', 'Kill Type': '2k'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Bind', 'Round Number': '3', 'Eliminator Team': 'Paper Rex', 'Eliminator': 'Jinggg', 'Eliminator Agent': 'raze', 'Eliminated Team': 'Xi Lai Gaming', 'Eliminated': 'NoMan', 'Eliminated Agent': 'skye', 'Kill Type': '2k'}
+
+=================================================================
+YEAR: 2025
+FILE: matches/team_mapping.csv
+CATEGORY: Player / team data
+ROWS: 58
+COLUMNS: Abbreviated, Full Name
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Abbreviated': 'PRX', 'Full Name': 'Paper Rex'}
+
+Sample 2:
+{'Abbreviated': 'XLG', 'Full Name': 'Xi Lai Gaming'}
+
+=================================================================
+YEAR: 2025
+FILE: matches/win_loss_methods_count.csv
+CATEGORY: Other dataset
+ROWS: 2,554
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Elimination, Detonated, Defused, Time Expiry (No Plant), Eliminated, Defused Failed, Detonation Denied, Time Expiry (Failed to Plant)
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Bind', 'Team': 'Paper Rex', 'Elimination': '8', 'Detonated': '1', 'Defused': '3', 'Time Expiry (No Plant)': '1', 'Eliminated': '3', 'Defused Failed': '3', 'Detonation Denied': '2', 'Time Expiry (Failed to Plant)': '1'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Bind', 'Team': 'Xi Lai Gaming', 'Elimination': '3', 'Detonated': '3', 'Defused': '2', 'Time Expiry (No Plant)': '1', 'Eliminated': '8', 'Defused Failed': '1', 'Detonation Denied': '3', 'Time Expiry (Failed to Plant)': '1'}
+
+=================================================================
+YEAR: 2025
+FILE: matches/win_loss_methods_round_number.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 53,950
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Team, Method, Outcome
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Bind', 'Round Number': '1', 'Team': 'Xi Lai Gaming', 'Method': 'Elimination', 'Outcome': 'Win'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Group Stage', 'Match Type': 'Opening (A)', 'Match Name': 'Paper Rex vs Xi Lai Gaming', 'Map': 'Bind', 'Round Number': '1', 'Team': 'Paper Rex', 'Method': 'Eliminated', 'Outcome': 'Loss'}
+
+=================================================================
+YEAR: 2025
+FILE: players_stats/players_stats.csv
+CATEGORY: Player / team data
+ROWS: 17,996
+COLUMNS: Tournament, Stage, Match Type, Player, Teams, Agents, Rounds Played, Rating, Average Combat Score, Kills:Deaths, Kill, Assist, Trade, Survive %, Average Damage Per Round, Kills Per Round, Assists Per Round, First Kills Per Round, First Deaths Per Round, Headshot %, Clutch Success %, Clutches (won/played), Maximum Kills in a Single Map, Kills, Deaths, Assists, First Kills, First Deaths
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Player': 'Boo', 'Teams': 'Team Heretics', 'Agents': 'astra', 'Rounds Played': '26', 'Rating': '0.68', 'Average Combat Score': '129', 'Kills:Deaths': '0.61', 'Kill, Assist, Trade, Survive %': '69%', 'Average Damage Per Round': '89', 'Kills Per Round': '0.42', 'Assists Per Round': '0.15', 'First Kills Per Round': '0.12', 'First Deaths Per Round': '0.12', 'Headshot %': '44%', 'Clutch Success %': '', 'Clutches (won/played)': '0/4', 'Maximum Kills in a Single Map': '11', 'Kills': '11', 'Deaths': '18', 'Assists': '4', 'First Kills': '3', 'First Deaths': '3'}
+
+Sample 2:
+{'Tournament': 'Valorant Champions 2025', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Player': 'Boo', 'Teams': 'Team Heretics', 'Agents': 'omen', 'Rounds Played': '19', 'Rating': '0.46', 'Average Combat Score': '98', 'Kills:Deaths': '0.4', 'Kill, Assist, Trade, Survive %': '42%', 'Average Damage Per Round': '55', 'Kills Per Round': '0.32', 'Assists Per Round': '0.26', 'First Kills Per Round': '0.05', 'First Deaths Per Round': '0.26', 'Headshot %': '37%', 'Clutch Success %': '33%', 'Clutches (won/played)': '1/3', 'Maximum Kills in a Single Map': '6', 'Kills': '6', 'Deaths': '15', 'Assists': '5', 'First Kills': '1', 'First Deaths': '5'}
+
+=================================================================
+YEAR: 2026
+FILE: ids/players_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 284
+COLUMNS: Player, Player ID
+ID COLUMNS: Player ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Player': 'NoMan', 'Player ID': '11527'}
+
+Sample 2:
+{'Player': 'Lysoar', 'Player ID': '37489'}
+
+=================================================================
+YEAR: 2026
+FILE: ids/teams_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 49
+COLUMNS: Team, Team ID
+ID COLUMNS: Team ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Team': 'Xi Lai Gaming', 'Team ID': '13581'}
+
+Sample 2:
+{'Team': 'NRG', 'Team ID': '1034'}
+
+=================================================================
+YEAR: 2026
+FILE: ids/tournaments_stages_match_types_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 132
+COLUMNS: Tournament, Tournament ID, Stage, Stage ID, Match Type, Match Type ID
+ID COLUMNS: Tournament ID, Stage ID, Match Type ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'VCT 2026: Americas Stage 1', 'Tournament ID': '2860', 'Stage': 'Playoffs', 'Stage ID': '5557', 'Match Type': 'Upper Round 1', 'Match Type ID': '37954'}
+
+Sample 2:
+{'Tournament': 'VCT 2026: Americas Stage 1', 'Tournament ID': '2860', 'Stage': 'Playoffs', 'Stage ID': '5557', 'Match Type': 'Upper Semifinals', 'Match Type ID': '37955'}
+
+=================================================================
+YEAR: 2026
+FILE: ids/tournaments_stages_matches_games_ids.csv
+CATEGORY: Identifier mappings
+ROWS: 886
+COLUMNS: Tournament, Tournament ID, Stage, Stage ID, Match Type, Match Name, Match ID, Map, Game ID
+ID COLUMNS: Tournament ID, Stage ID, Match ID, Game ID
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Masters London 2026', 'Tournament ID': '2765', 'Stage': 'Swiss Stage', 'Stage ID': '5767', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Match ID': '684613', 'Map': 'Pearl', 'Game ID': '270746'}
+
+Sample 2:
+{'Tournament': 'Valorant Masters London 2026', 'Tournament ID': '2765', 'Stage': 'Swiss Stage', 'Stage ID': '5767', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Match ID': '684613', 'Map': 'Lotus', 'Game ID': '270747'}
+
+=================================================================
+YEAR: 2026
+FILE: matches/draft_phase.csv
+CATEGORY: Other dataset
+ROWS: 2,052
+COLUMNS: Tournament, Stage, Match Type, Match Name, Team, Action, Map
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Team': 'Mega Minors', 'Action': 'ban', 'Map': 'Split'}
+
+Sample 2:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Team': 'Xi Lai Gaming', 'Action': 'ban', 'Map': 'Breeze'}
+
+=================================================================
+YEAR: 2026
+FILE: matches/eco_rounds.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 28,944
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Team, Loadout Value, Remaining Credits, Type, Outcome
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Round Number': '1', 'Team': 'Xi Lai Gaming', 'Loadout Value': '', 'Remaining Credits': '0.3k', 'Type': 'Eco: 0-5k', 'Outcome': 'Loss'}
+
+Sample 2:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Round Number': '1', 'Team': 'Mega Minors', 'Loadout Value': '', 'Remaining Credits': '0.1k', 'Type': 'Eco: 0-5k', 'Outcome': 'Win'}
+
+=================================================================
+YEAR: 2026
+FILE: matches/eco_stats.csv
+CATEGORY: Other dataset
+ROWS: 9,440
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Type, Initiated, Won
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Team': 'Xi Lai Gaming', 'Type': 'Pistol Won', 'Initiated': '', 'Won': '0'}
+
+Sample 2:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Team': 'Xi Lai Gaming', 'Type': 'Eco (won)', 'Initiated': '4', 'Won': '1'}
+
+=================================================================
+YEAR: 2026
+FILE: matches/kills.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 70,800
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Player Team, Player, Enemy Team, Enemy, Player Kills, Enemy Kills, Difference, Kill Type
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'All Maps', 'Player Team': 'Xi Lai Gaming', 'Player': 'happywei', 'Enemy Team': 'Mega Minors', 'Enemy': 'skuba', 'Player Kills': '5', 'Enemy Kills': '6', 'Difference': '-1', 'Kill Type': 'All Kills'}
+
+Sample 2:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'All Maps', 'Player Team': 'Xi Lai Gaming', 'Player': 'happywei', 'Enemy Team': 'Mega Minors', 'Enemy': 'Ethan', 'Player Kills': '12', 'Enemy Kills': '8', 'Difference': '4', 'Kill Type': 'All Kills'}
+
+=================================================================
+YEAR: 2026
+FILE: matches/kills_stats.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 9,440
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Player, Agents, 2k, 3k, 4k, 5k, 1v1, 1v2, 1v3, 1v4, 1v5, Econ, Spike Plants, Spike Defuses
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'All Maps', 'Team': 'Xi Lai Gaming', 'Player': 'NoMan', 'Agents': 'deadlock, jett', '2k': '5', '3k': '2', '4k': '', '5k': '', '1v1': '1', '1v2': '', '1v3': '', '1v4': '', '1v5': '', 'Econ': '52', 'Spike Plants': '0', 'Spike Defuses': '1'}
+
+Sample 2:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'All Maps', 'Team': 'Xi Lai Gaming', 'Player': 'Rarga', 'Agents': 'phoenix, sage', '2k': '4', '3k': '2', '4k': '', '5k': '', '1v1': '1', '1v2': '1', '1v3': '', '1v4': '', '1v5': '', 'Econ': '41', 'Spike Plants': '0', 'Spike Defuses': '1'}
+
+=================================================================
+YEAR: 2026
+FILE: matches/rounds_kills.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 60,895
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Eliminator Team, Eliminator, Eliminator Agent, Eliminated Team, Eliminated, Eliminated Agent, Kill Type
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Round Number': '1', 'Eliminator Team': 'Xi Lai Gaming', 'Eliminator': 'NoMan', 'Eliminator Agent': 'jett', 'Eliminated Team': 'Mega Minors', 'Eliminated': 'mada', 'Eliminated Agent': 'waylay', 'Kill Type': '2k'}
+
+Sample 2:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Round Number': '1', 'Eliminator Team': 'Xi Lai Gaming', 'Eliminator': 'NoMan', 'Eliminator Agent': 'jett', 'Eliminated Team': 'Mega Minors', 'Eliminated': 'keiko', 'Eliminated Agent': 'vyse', 'Kill Type': '2k'}
+
+=================================================================
+YEAR: 2026
+FILE: matches/team_mapping.csv
+CATEGORY: Player / team data
+ROWS: 49
+COLUMNS: Abbreviated, Full Name
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Abbreviated': 'XLG', 'Full Name': 'Xi Lai Gaming'}
+
+Sample 2:
+{'Abbreviated': 'NRG', 'Full Name': 'NRG'}
+
+=================================================================
+YEAR: 2026
+FILE: matches/win_loss_methods_count.csv
+CATEGORY: Other dataset
+ROWS: 1,772
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Team, Elimination, Detonated, Defused, Time Expiry (No Plant), Eliminated, Defused Failed, Detonation Denied, Time Expiry (Failed to Plant)
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Team': 'Xi Lai Gaming', 'Elimination': '3', 'Detonated': '0', 'Defused': '3', 'Time Expiry (No Plant)': '0', 'Eliminated': '6', 'Defused Failed': '2', 'Detonation Denied': '4', 'Time Expiry (Failed to Plant)': '1'}
+
+Sample 2:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Team': 'Mega Minors', 'Elimination': '6', 'Detonated': '2', 'Defused': '4', 'Time Expiry (No Plant)': '1', 'Eliminated': '3', 'Defused Failed': '0', 'Detonation Denied': '3', 'Time Expiry (Failed to Plant)': '0'}
+
+=================================================================
+YEAR: 2026
+FILE: matches/win_loss_methods_round_number.csv
+CATEGORY: Potential detailed gameplay / MongoDB
+ROWS: 37,502
+COLUMNS: Tournament, Stage, Match Type, Match Name, Map, Round Number, Team, Method, Outcome
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Round Number': '1', 'Team': 'Mega Minors', 'Method': 'Elimination', 'Outcome': 'Win'}
+
+Sample 2:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Swiss Stage', 'Match Type': 'Round 1', 'Match Name': 'Xi Lai Gaming vs NRG', 'Map': 'Pearl', 'Round Number': '1', 'Team': 'Xi Lai Gaming', 'Method': 'Eliminated', 'Outcome': 'Loss'}
+
+=================================================================
+YEAR: 2026
+FILE: players_stats/players_stats.csv
+CATEGORY: Player / team data
+ROWS: 11,821
+COLUMNS: Tournament, Stage, Match Type, Player, Teams, Agents, Rounds Played, Rating, Average Combat Score, Kills:Deaths, Kill, Assist, Trade, Survive %, Average Damage Per Round, Kills Per Round, Assists Per Round, First Kills Per Round, First Deaths Per Round, Headshot %, Clutch Success %, Clutches (won/played), Maximum Kills in a Single Map, Kills, Deaths, Assists, First Kills, First Deaths
+ID COLUMNS: None
+POTENTIAL DATE COLUMNS: None
+
+Sample 1:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Player': 'CHICHOO', 'Teams': 'EDward Gaming', 'Agents': 'astra', 'Rounds Played': '26', 'Rating': '1.27', 'Average Combat Score': '204', 'Kills:Deaths': '1.36', 'Kill, Assist, Trade, Survive %': '69%', 'Average Damage Per Round': '136', 'Kills Per Round': '0.73', 'Assists Per Round': '0.46', 'First Kills Per Round': '0.0', 'First Deaths Per Round': '0.08', 'Headshot %': '23%', 'Clutch Success %': '20%', 'Clutches (won/played)': '1/5', 'Maximum Kills in a Single Map': '19', 'Kills': '19', 'Deaths': '14', 'Assists': '12', 'First Kills': '0', 'First Deaths': '2'}
+
+Sample 2:
+{'Tournament': 'Valorant Masters London 2026', 'Stage': 'Playoffs', 'Match Type': 'Upper Quarterfinals', 'Player': 'CHICHOO', 'Teams': 'EDward Gaming', 'Agents': 'cypher', 'Rounds Played': '18', 'Rating': '1.14', 'Average Combat Score': '192', 'Kills:Deaths': '1.56', 'Kill, Assist, Trade, Survive %': '78%', 'Average Damage Per Round': '136', 'Kills Per Round': '0.78', 'Assists Per Round': '0.17', 'First Kills Per Round': '0.11', 'First Deaths Per Round': '0.06', 'Headshot %': '28%', 'Clutch Success %': '100%', 'Clutches (won/played)': '1/1', 'Maximum Kills in a Single Map': '14', 'Kills': '14', 'Deaths': '9', 'Assists': '3', 'First Kills': '2', 'First Deaths': '1'}

@@ -1,0 +1,7 @@
+Year,candidate_rows,matched_rows,no_game_id_match,ambiguous_game_id,no_matching_map_score,blank_player_or_team,duplicate_same_selection,player_game_with_multiple_agents,games_with_candidates,games_not_10_players,unique_player_game_team_pairs,game_ids_with_conflicting_contexts
+2021,143676,143480,0,196,0,0,0,5,14413,226,143475,0
+2022,88349,88309,0,40,0,0,0,13,8841,72,88296,0
+2023,8300,8300,0,0,0,0,0,0,830,0,8300,0
+2024,11040,11040,0,0,0,0,0,0,1104,0,11040,0
+2025,12760,12760,0,0,0,0,0,0,1276,0,12760,0
+2026,8860,8860,0,0,0,0,0,0,886,0,8860,0

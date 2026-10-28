@@ -1,0 +1,5 @@
+Read-only exploratory audit.
+Counts describe CSV rows, not confirmed games, matches, or agent picks.
+'All Maps' rows and Side attack/defend may be aggregates.
+Comma-separated agent values require review, not automatic splitting.
+Missing fields and duplicated records need analysis before import.

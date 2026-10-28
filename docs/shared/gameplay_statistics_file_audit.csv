@@ -1,0 +1,43 @@
+﻿Year,File,Status,Rows,Columns,Side Values,Side Both Rows,All Maps Rows,Blank Map Rows,Blank Agent Rows,Multi-Agent Values,Date Columns,Potentially Useful Columns
+2021,matches/overview.csv,OK,599355,21,both=199785; attack=199785; defend=199785,199785,168177,60,0,90408,,"Map; Player; Team; Agents; Average Combat Score; Kills; Deaths; Kills - Deaths (KD); Kill, Assist, Trade, Survive %; Average Damage Per Round; First Kills; First Deaths; Kills - Deaths (FKD)"
+2021,matches/maps_played.csv,OK,14486,5,,,0,5,,,,Map
+2021,matches/maps_scores.csv,OK,14503,16,,,0,21,,,Team A Overtime Score; Team B Overtime Score,Map; Team A; Team A Score; Team A Attacker Score; Team A Defender Score; Team A Overtime Score; Team B; Team B Score; Team B Attacker Score; Team B Defender Score; Team B Overtime Score
+2021,matches/scores.csv,OK,7224,9,,,,,,,,Team A; Team B; Team A Score; Team B Score
+2021,agents/agents_pick_rates.csv,OK,192120,6,,,42648,0,0,0,,Map; Agent
+2021,agents/maps_stats.csv,OK,8005,7,,,1777,0,,,,Map; Total Maps Played; Attacker Side Win Percentage; Defender Side Win Percentage
+2021,agents/teams_picked_agents.csv,OK,224050,9,,,0,0,0,0,,Map; Team; Agent; Total Wins By Map; Total Loss By Map; Total Maps Played
+2022,matches/overview.csv,OK,379378,21,both=126466; attack=126456; defend=126456,126466,114240,0,10,76551,,"Map; Player; Team; Agents; Average Combat Score; Kills; Deaths; Kills - Deaths (KD); Kill, Assist, Trade, Survive %; Average Damage Per Round; First Kills; First Deaths; Kills - Deaths (FKD)"
+2022,matches/maps_played.csv,OK,8864,5,,,0,0,,,,Map
+2022,matches/maps_scores.csv,OK,8884,16,,,0,20,,,Team A Overtime Score; Team B Overtime Score,Map; Team A; Team A Score; Team A Attacker Score; Team A Defender Score; Team A Overtime Score; Team B; Team B Score; Team B Attacker Score; Team B Defender Score; Team B Overtime Score
+2022,matches/scores.csv,OK,3842,9,,,,,,,,Team A; Team B; Team A Score; Team B Score
+2022,agents/agents_pick_rates.csv,OK,132336,6,,,25824,0,0,0,,Map; Agent
+2022,agents/maps_stats.csv,OK,5514,7,,,1076,0,,,,Map; Total Maps Played; Attacker Side Win Percentage; Defender Side Win Percentage
+2022,agents/teams_picked_agents.csv,OK,131546,9,,,0,0,0,0,,Map; Team; Agent; Total Wins By Map; Total Loss By Map; Total Maps Played
+2023,matches/overview.csv,OK,34944,21,both=11648; attack=11648; defend=11648,11648,10044,0,0,7434,,"Map; Player; Team; Agents; Average Combat Score; Kills; Deaths; Kills - Deaths (KD); Kill, Assist, Trade, Survive %; Average Damage Per Round; First Kills; First Deaths; Kills - Deaths (FKD)"
+2023,matches/maps_played.csv,OK,830,5,,,0,0,,,,Map
+2023,matches/maps_scores.csv,OK,830,16,,,0,0,,,Team A Overtime Score; Team B Overtime Score,Map; Team A; Team A Score; Team A Attacker Score; Team A Defender Score; Team A Overtime Score; Team B; Team B Score; Team B Attacker Score; Team B Defender Score; Team B Overtime Score
+2023,matches/scores.csv,OK,331,9,,,,,,,,Team A; Team B; Team A Score; Team B Score
+2023,agents/agents_pick_rates.csv,OK,17712,6,,,3288,0,0,0,,Map; Agent
+2023,agents/maps_stats.csv,OK,738,7,,,137,0,,,,Map; Total Maps Played; Attacker Side Win Percentage; Defender Side Win Percentage
+2023,agents/teams_picked_agents.csv,OK,11751,9,,,0,0,0,0,,Map; Team; Agent; Total Wins By Map; Total Loss By Map; Total Maps Played
+2024,matches/overview.csv,OK,46152,21,both=15384; attack=15384; defend=15384,15384,13032,0,0,10470,,"Map; Player; Team; Agents; Average Combat Score; Kills; Deaths; Kills - Deaths (KD); Kill, Assist, Trade, Survive %; Average Damage Per Round; First Kills; First Deaths; Kills - Deaths (FKD)"
+2024,matches/maps_played.csv,OK,1104,5,,,0,0,,,,Map
+2024,matches/maps_scores.csv,OK,1104,16,,,0,0,,,Team A Overtime Score; Team B Overtime Score,Map; Team A; Team A Score; Team A Attacker Score; Team A Defender Score; Team A Overtime Score; Team B; Team B Score; Team B Attacker Score; Team B Defender Score; Team B Overtime Score
+2024,matches/scores.csv,OK,434,9,,,,,,,,Team A; Team B; Team A Score; Team B Score
+2024,agents/agents_pick_rates.csv,OK,24840,6,,,4728,0,0,0,,Map; Agent
+2024,agents/maps_stats.csv,OK,1035,7,,,197,0,,,,Map; Total Maps Played; Attacker Side Win Percentage; Defender Side Win Percentage
+2024,agents/teams_picked_agents.csv,OK,15647,9,,,0,0,0,0,,Map; Team; Agent; Total Wins By Map; Total Loss By Map; Total Maps Played
+2025,matches/overview.csv,OK,53226,21,both=17742; attack=17742; defend=17742,17742,14946,0,0,11910,,"Map; Player; Team; Agents; Average Combat Score; Kills; Deaths; Kills - Deaths (KD); Kill, Assist, Trade, Survive %; Average Damage Per Round; First Kills; First Deaths; Kills - Deaths (FKD)"
+2025,matches/maps_played.csv,OK,1277,5,,,0,0,,,,Map
+2025,matches/maps_scores.csv,OK,1277,16,,,0,0,,,Team A Overtime Score; Team B Overtime Score,Map; Team A; Team A Score; Team A Attacker Score; Team A Defender Score; Team A Overtime Score; Team B; Team B Score; Team B Attacker Score; Team B Defender Score; Team B Overtime Score
+2025,matches/scores.csv,OK,503,9,,,,,,,,Team A; Team B; Team A Score; Team B Score
+2025,agents/agents_pick_rates.csv,OK,30294,6,,,5454,0,0,0,,Map; Agent
+2025,agents/maps_stats.csv,OK,1122,7,,,202,0,,,,Map; Total Maps Played; Attacker Side Win Percentage; Defender Side Win Percentage
+2025,agents/teams_picked_agents.csv,OK,18396,9,,,0,0,0,0,,Map; Team; Agent; Total Wins By Map; Total Loss By Map; Total Maps Played
+2026,matches/overview.csv,OK,36840,21,both=12280; attack=12280; defend=12280,12280,10260,0,0,7761,,"Map; Player; Team; Agents; Average Combat Score; Kills; Deaths; Kills - Deaths (KD); Kill, Assist, Trade, Survive %; Average Damage Per Round; First Kills; First Deaths; Kills - Deaths (FKD)"
+2026,matches/maps_played.csv,OK,886,5,,,0,0,,,,Map
+2026,matches/maps_scores.csv,OK,886,16,,,0,0,,,Team A Overtime Score; Team B Overtime Score,Map; Team A; Team A Score; Team A Attacker Score; Team A Defender Score; Team A Overtime Score; Team B; Team B Score; Team B Attacker Score; Team B Defender Score; Team B Overtime Score
+2026,matches/scores.csv,OK,342,9,,,,,,,,Team A; Team B; Team A Score; Team B Score
+2026,agents/agents_pick_rates.csv,OK,21547,6,,,3828,0,0,0,,Map; Agent
+2026,agents/maps_stats.csv,OK,743,7,,,132,0,,,,Map; Total Maps Played; Attacker Side Win Percentage; Defender Side Win Percentage
+2026,agents/teams_picked_agents.csv,OK,11848,9,,,0,0,0,0,,Map; Team; Agent; Total Wins By Map; Total Loss By Map; Total Maps Played

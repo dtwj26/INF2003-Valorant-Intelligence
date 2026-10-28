@@ -1,9 +1,9 @@
 """Inventory every VCT CSV and sample Homepage-related files.
 
 Run from the repository root:
-    python scripts/data_cleaning/homepage/inventory_homepage.py
+    python scripts/data_cleaning/shared/inventory_homepage.py
 
-Writes only to docs/homepage/. Original CSV files are not changed.
+Writes only to docs/shared/. Original CSV files are not changed.
 """
 from pathlib import Path
 import csv
@@ -11,7 +11,7 @@ import json
 
 ROOT = Path(__file__).resolve().parents[3]
 RAW = ROOT / "data" / "raw"
-DOCS = ROOT / "docs" / "homepage"
+DOCS = ROOT / "docs" / "shared"
 DOCS.mkdir(parents=True, exist_ok=True)
 
 if not RAW.is_dir():

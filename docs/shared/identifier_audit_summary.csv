@@ -1,0 +1,25 @@
+﻿Year,Record Type,File Present,Rows,Unique IDs,Unique Match IDs,Duplicate Full Rows,Missing IDs,IDs With Multiple Names/Contexts,ID Identity Conflicts,Text Match-Map Keys With Multiple Game IDs,IDs Missing From Global,Records Differing From Global,Global IDs Missing From Season,Game Rows Missing Hierarchy Reference,Notes
+2021,Games and matches,Yes,14489,14488,7225,0,1,0,Game IDs: 0; Match IDs: 0,19,0,0,0,5,Repeated maps may be real; do not deduplicate by match text alone.
+2021,Players,Yes,11190,10779,,0,411,0,0,,0,0,,,"Names can change or repeat; treat differences as review flags, not deletions."
+2021,Teams,Yes,2741,2740,,0,1,0,0,,0,0,,,"Names can change or repeat; treat differences as review flags, not deletions."
+2021,Tournament/stage/match-type IDs,Yes,1777,142,,0,142,Tournament: 0; Stage: 0; Match type: 0,0,,,0,1,,Unique IDs = tournament IDs. Other IDs may be scoped to parents; investigate reuse.
+2022,Games and matches,Yes,8864,8864,3842,0,0,0,Game IDs: 0; Match IDs: 0,4,0,0,0,0,Repeated maps may be real; do not deduplicate by match text alone.
+2022,Players,Yes,7568,7567,,0,1,0,0,,0,0,,,"Names can change or repeat; treat differences as review flags, not deletions."
+2022,Teams,Yes,1572,1572,,0,0,0,0,,0,0,,,"Names can change or repeat; treat differences as review flags, not deletions."
+2022,Tournament/stage/match-type IDs,Yes,1076,58,,0,58,Tournament: 0; Stage: 0; Match type: 0,0,,,0,0,,Unique IDs = tournament IDs. Other IDs may be scoped to parents; investigate reuse.
+2023,Games and matches,Yes,830,830,331,0,0,0,Game IDs: 0; Match IDs: 0,0,0,0,0,0,Repeated maps may be real; do not deduplicate by match text alone.
+2023,Players,Yes,284,284,,0,0,0,0,,0,0,,,"Names can change or repeat; treat differences as review flags, not deletions."
+2023,Teams,Yes,51,51,,0,0,0,0,,0,0,,,"Names can change or repeat; treat differences as review flags, not deletions."
+2023,Tournament/stage/match-type IDs,Yes,137,10,,0,10,Tournament: 0; Stage: 0; Match type: 0,0,,,0,0,,Unique IDs = tournament IDs. Other IDs may be scoped to parents; investigate reuse.
+2024,Games and matches,Yes,1104,1104,434,0,0,0,Game IDs: 0; Match IDs: 0,0,0,0,0,0,Repeated maps may be real; do not deduplicate by match text alone.
+2024,Players,Yes,260,260,,0,0,0,0,,0,0,,,"Names can change or repeat; treat differences as review flags, not deletions."
+2024,Teams,Yes,44,44,,0,0,0,0,,0,0,,,"Names can change or repeat; treat differences as review flags, not deletions."
+2024,Tournament/stage/match-type IDs,Yes,197,15,,0,15,Tournament: 0; Stage: 0; Match type: 0,0,,,0,0,,Unique IDs = tournament IDs. Other IDs may be scoped to parents; investigate reuse.
+2025,Games and matches,Yes,1277,1277,503,0,0,0,Game IDs: 0; Match IDs: 0,0,0,0,0,5,Repeated maps may be real; do not deduplicate by match text alone.
+2025,Players,Yes,349,347,,0,2,0,0,,0,0,,,"Names can change or repeat; treat differences as review flags, not deletions."
+2025,Teams,Yes,58,58,,0,0,0,0,,0,0,,,"Names can change or repeat; treat differences as review flags, not deletions."
+2025,Tournament/stage/match-type IDs,Yes,202,15,,0,15,Tournament: 0; Stage: 0; Match type: 0,0,,,0,5,,Unique IDs = tournament IDs. Other IDs may be scoped to parents; investigate reuse.
+2026,Games and matches,Yes,886,886,342,0,0,0,Game IDs: 0; Match IDs: 0,0,0,0,0,385,Repeated maps may be real; do not deduplicate by match text alone.
+2026,Players,Yes,284,284,,0,0,0,0,,0,0,,,"Names can change or repeat; treat differences as review flags, not deletions."
+2026,Teams,Yes,49,49,,0,0,0,0,,0,0,,,"Names can change or repeat; treat differences as review flags, not deletions."
+2026,Tournament/stage/match-type IDs,Yes,132,9,,0,9,Tournament: 0; Stage: 0; Match type: 0,0,,,0,12,,Unique IDs = tournament IDs. Other IDs may be scoped to parents; investigate reuse.
