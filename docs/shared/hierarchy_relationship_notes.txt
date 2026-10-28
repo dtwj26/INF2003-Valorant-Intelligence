@@ -1,0 +1,29 @@
+HIERARCHY RELATIONSHIP AUDIT (2021-2026)
+
+Input: per-season game and hierarchy mappings plus global hierarchy mappings.
+
+Exact matches require:
+Tournament, Tournament ID, Stage, Stage ID, Match Type.
+
+Match Type ID is unavailable in the game mapping,
+so it is not used as a join key.
+
+The global hierarchy is filtered to the game's year.
+
+Counts refer to game rows, not necessarily completed games.
+
+'Missing in season; exact match in global' suggests
+the global mapping has additional hierarchy coverage.
+
+Other mismatch classifications are diagnostic hints,
+not automatic corrections.
+
+'All Stages' / 'All Match Types' with blank IDs
+are treated as aggregate-level labels.
+
+Other blank Match Type IDs are flagged but are not
+automatically treated as errors.
+
+No raw or cleaned dataset is modified.
+
+Do not import mismatched foreign key references blindly.

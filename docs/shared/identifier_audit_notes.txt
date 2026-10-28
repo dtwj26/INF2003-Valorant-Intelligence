@@ -1,0 +1,18 @@
+SHARED IDENTIFIER AUDIT - 2021 THROUGH 2026
+Read-only: no raw or cleaned dataset was changed.
+
+Summary has four rows per season:
+Games/matches, Players, Teams, Tournament/stage/match-type IDs.
+
+Global comparison uses data/raw/all_ids and the same Year for year-specific tables.
+Game ID = one map game.
+Match ID = one match series, potentially several games.
+Game mappings are checked against tournament hierarchy rows.
+Repeated match-map text is NOT proof of duplication.
+Multiple display names for one ID may indicate renaming or a data issue.
+Cross-season reused IDs are reported but are NOT automatically treated as wrong.
+Missing mapping records and conflicting contexts are investigation flags only.
+Per-season player/team ID files are checked when available.
+At most 12 examples per year, entity type and issue are included.
+This audit does not check score, kills, economy or full player statistics.
+Text comparisons are exact except for trimming surrounding whitespace.

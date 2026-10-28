@@ -1,0 +1,853 @@
+﻿Year,File,Column,Nonempty Rows,Empty Rows,Example Values
+2021,ids/players_ids.csv,Player,11190,0,MaKo | stax | Rb
+2021,ids/players_ids.csv,Player ID,10779,411,4462 | 485 | 488
+2021,ids/teams_ids.csv,Team,2741,0,Vision Strikers | FULL SENSE | Team Vikings
+2021,ids/teams_ids.csv,Team ID,2740,1,198 | 4050 | 420
+2021,ids/tournaments_stages_match_types_ids.csv,Tournament,1777,0,Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier | Champions Tour Asia-Pacific: Last Chance Qualifier
+2021,ids/tournaments_stages_match_types_ids.csv,Tournament ID,1777,0,558 | 561 | 560
+2021,ids/tournaments_stages_match_types_ids.csv,Stage,1777,0,Main Event | All Stages | Playoffs
+2021,ids/tournaments_stages_match_types_ids.csv,Stage ID,1635,142,1094 | 1376 | 1097
+2021,ids/tournaments_stages_match_types_ids.csv,Match Type,1777,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2021,ids/tournaments_stages_match_types_ids.csv,Match Type ID,1635,142,7644 | 7645 | 7646
+2021,ids/tournaments_stages_matches_games_ids.csv,Tournament,14489,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,ids/tournaments_stages_matches_games_ids.csv,Tournament ID,14489,0,449 | 558 | 561
+2021,ids/tournaments_stages_matches_games_ids.csv,Stage,14489,0,Group Stage | Playoffs | Main Event
+2021,ids/tournaments_stages_matches_games_ids.csv,Stage ID,14489,0,945 | 1486 | 1094
+2021,ids/tournaments_stages_matches_games_ids.csv,Match Type,14489,0,Opening (D) | Opening (C) | Opening (B)
+2021,ids/tournaments_stages_matches_games_ids.csv,Match Name,14489,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,ids/tournaments_stages_matches_games_ids.csv,Match ID,14489,0,51282 | 51278 | 51283
+2021,ids/tournaments_stages_matches_games_ids.csv,Map,14487,2,Haven | Breeze | Icebox
+2021,ids/tournaments_stages_matches_games_ids.csv,Game ID,14488,1,57948 | 57949 | 57936
+2021,matches/draft_phase.csv,Tournament,3378,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,matches/draft_phase.csv,Stage,3378,0,Group Stage | Playoffs | Main Event
+2021,matches/draft_phase.csv,Match Type,3378,0,Opening (D) | Opening (C) | Opening (B)
+2021,matches/draft_phase.csv,Match Name,3378,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,matches/draft_phase.csv,Team,3378,0,FULL SENSE | Vision Strikers | Crazy Raccoon
+2021,matches/draft_phase.csv,Action,3378,0,ban | pick
+2021,matches/draft_phase.csv,Map,3378,0,Fracture | Ascent | Haven
+2021,matches/eco_rounds.csv,Tournament,363518,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,matches/eco_rounds.csv,Stage,363518,0,Group Stage | Playoffs | Main Event
+2021,matches/eco_rounds.csv,Match Type,363518,0,Opening (D) | Opening (C) | Opening (B)
+2021,matches/eco_rounds.csv,Match Name,363518,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,matches/eco_rounds.csv,Map,363518,0,Haven | Breeze | Icebox
+2021,matches/eco_rounds.csv,Round Number,363518,0,1 | 2 | 3
+2021,matches/eco_rounds.csv,Team,363518,0,Vision Strikers | FULL SENSE | Team Vikings
+2021,matches/eco_rounds.csv,Loadout Value,363518,0,3.9k | 3.4k | 14.4k
+2021,matches/eco_rounds.csv,Remaining Credits,363518,0,0.4k | 0.2k | 5.2k
+2021,matches/eco_rounds.csv,Type,363518,0,Eco: 0-5k | Semi-buy: 10-20k | Full buy: 20k+
+2021,matches/eco_rounds.csv,Outcome,363518,0,Win | Loss
+2021,matches/eco_stats.csv,Tournament,126250,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,matches/eco_stats.csv,Stage,126250,0,Group Stage | Playoffs | Main Event
+2021,matches/eco_stats.csv,Match Type,126250,0,Opening (D) | Opening (C) | Opening (B)
+2021,matches/eco_stats.csv,Match Name,126250,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,matches/eco_stats.csv,Map,126250,0,Haven | Breeze | All Maps
+2021,matches/eco_stats.csv,Team,126250,0,Vision Strikers | FULL SENSE | Team Vikings
+2021,matches/eco_stats.csv,Type,126250,0,Pistol Won | Eco (won) | $ (won)
+2021,matches/eco_stats.csv,Initiated,101000,25250,3 | 0 | 12
+2021,matches/eco_stats.csv,Won,126250,0,2 | 0 | 1
+2021,matches/kills.csv,Tournament,946875,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,matches/kills.csv,Stage,946875,0,Group Stage | Playoffs | Main Event
+2021,matches/kills.csv,Match Type,946875,0,Opening (D) | Opening (C) | Opening (B)
+2021,matches/kills.csv,Match Name,946875,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,matches/kills.csv,Map,946875,0,All Maps | Haven | Breeze
+2021,matches/kills.csv,Player Team,946875,0,Vision Strikers | Team Vikings | FNATIC
+2021,matches/kills.csv,Player,943155,3720,MaKo | BuZz | Rb
+2021,matches/kills.csv,Enemy Team,946875,0,FULL SENSE | Crazy Raccoon | Cloud9
+2021,matches/kills.csv,Enemy,936945,9930,PTC | LAMMYSNAX | ChAlalala
+2021,matches/kills.csv,Player Kills,554220,392655,3 | 5 | 0
+2021,matches/kills.csv,Enemy Kills,554220,392655,7 | 1 | 3
+2021,matches/kills.csv,Difference,549177,397698,-4 | 4 | -3
+2021,matches/kills.csv,Kill Type,946875,0,All Kills | First Kills | Op Kills
+2021,matches/kills_stats.csv,Tournament,125783,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,matches/kills_stats.csv,Stage,125783,0,Group Stage | Playoffs | Main Event
+2021,matches/kills_stats.csv,Match Type,125783,0,Opening (D) | Opening (C) | Opening (B)
+2021,matches/kills_stats.csv,Match Name,125783,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,matches/kills_stats.csv,Map,125783,0,All Maps | Haven | Breeze
+2021,matches/kills_stats.csv,Team,125783,0,Vision Strikers | FULL SENSE | Team Vikings
+2021,matches/kills_stats.csv,Player,125490,293,stax | Rb | k1Ng
+2021,matches/kills_stats.csv,Agents,125783,0,"breach, skye | skye, sova | cypher, killjoy"
+2021,matches/kills_stats.csv,2k,116871,8912,3 | 6 | 10
+2021,matches/kills_stats.csv,3k,75694,50089,3 | 1 | 2
+2021,matches/kills_stats.csv,4k,23873,101910,1 | 2 | 3
+2021,matches/kills_stats.csv,5k,3247,122536,1 | 2 | 3
+2021,matches/kills_stats.csv,1v1,28438,97345,1 | 2 | 3
+2021,matches/kills_stats.csv,1v2,15616,110167,1 | 2 | 3
+2021,matches/kills_stats.csv,1v3,4393,121390,1 | 2 | 3
+2021,matches/kills_stats.csv,1v4,828,124955,1 | 2
+2021,matches/kills_stats.csv,1v5,80,125703,1.0
+2021,matches/kills_stats.csv,Econ,125782,1,38 | 64 | 63
+2021,matches/kills_stats.csv,Spike Plants,125782,1,19 | 1 | 0
+2021,matches/kills_stats.csv,Spike Defuses,125782,1,0 | 1 | 2
+2021,matches/rounds_kills.csv,Tournament,788047,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,matches/rounds_kills.csv,Stage,788047,0,Group Stage | Playoffs | Main Event
+2021,matches/rounds_kills.csv,Match Type,788047,0,Opening (D) | Opening (C) | Opening (B)
+2021,matches/rounds_kills.csv,Match Name,788047,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,matches/rounds_kills.csv,Map,788047,0,Haven | Breeze | Icebox
+2021,matches/rounds_kills.csv,Round Number,788047,0,11 | 12 | 14
+2021,matches/rounds_kills.csv,Eliminator Team,788047,0,Vision Strikers | FULL SENSE | Team Vikings
+2021,matches/rounds_kills.csv,Eliminator,786924,1123,stax | Rb | k1Ng
+2021,matches/rounds_kills.csv,Eliminator Agent,788047,0,breach | skye | killjoy
+2021,matches/rounds_kills.csv,Eliminated Team,788047,0,FULL SENSE | Vision Strikers | Crazy Raccoon
+2021,matches/rounds_kills.csv,Eliminated,782286,5761,PTC | JohnOlsen | LAMMYSNAX
+2021,matches/rounds_kills.csv,Eliminated Agent,788047,0,breach | jett | skye
+2021,matches/rounds_kills.csv,Kill Type,788047,0,2k | 3k | 1v2
+2021,matches/team_mapping.csv,Abbreviated,2376,1,VS | FS | VKS
+2021,matches/team_mapping.csv,Full Name,2377,0,Vision Strikers | FULL SENSE | Team Vikings
+2021,matches/win_loss_methods_count.csv,Tournament,28972,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,matches/win_loss_methods_count.csv,Stage,28972,0,Group Stage | Playoffs | Main Event
+2021,matches/win_loss_methods_count.csv,Match Type,28972,0,Opening (D) | Opening (C) | Opening (B)
+2021,matches/win_loss_methods_count.csv,Match Name,28972,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,matches/win_loss_methods_count.csv,Map,28962,10,Haven | Breeze | Icebox
+2021,matches/win_loss_methods_count.csv,Team,28972,0,Vision Strikers | FULL SENSE | Team Vikings
+2021,matches/win_loss_methods_count.csv,Elimination,28972,0,9 | 4 | 3
+2021,matches/win_loss_methods_count.csv,Detonated,28972,0,2 | 0 | 3
+2021,matches/win_loss_methods_count.csv,Defused,28972,0,2 | 1 | 3
+2021,matches/win_loss_methods_count.csv,Time Expiry (No Plant),28972,0,0 | 1 | 2
+2021,matches/win_loss_methods_count.csv,Eliminated,28972,0,4 | 9 | 3
+2021,matches/win_loss_methods_count.csv,Defused Failed,28972,0,0 | 2 | 3
+2021,matches/win_loss_methods_count.csv,Detonation Denied,28972,0,1 | 2 | 5
+2021,matches/win_loss_methods_count.csv,Time Expiry (Failed to Plant),28972,0,0 | 1 | 2
+2021,matches/win_loss_methods_round_number.csv,Tournament,580342,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,matches/win_loss_methods_round_number.csv,Stage,580342,0,Group Stage | Playoffs | Main Event
+2021,matches/win_loss_methods_round_number.csv,Match Type,580342,0,Opening (D) | Opening (C) | Opening (B)
+2021,matches/win_loss_methods_round_number.csv,Match Name,580342,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,matches/win_loss_methods_round_number.csv,Map,580342,0,Haven | Breeze | Icebox
+2021,matches/win_loss_methods_round_number.csv,Round Number,580342,0,1 | 2 | 3
+2021,matches/win_loss_methods_round_number.csv,Team,580342,0,Vision Strikers | FULL SENSE | Team Vikings
+2021,matches/win_loss_methods_round_number.csv,Method,580342,0,Elimination | Eliminated | Detonated
+2021,matches/win_loss_methods_round_number.csv,Outcome,580342,0,Win | Loss
+2021,players_stats/players_stats.csv,Tournament,194966,0,Champions Tour North America: Last Chance Qualifier | Strike Arabia Championship: Finals | Champions Tour EMEA: Last Chance Qualifier
+2021,players_stats/players_stats.csv,Stage,194966,0,Main Event | All Stages | Playoffs
+2021,players_stats/players_stats.csv,Match Type,194966,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2021,players_stats/players_stats.csv,Player,194966,0,Ethan | Asuna | b0i
+2021,players_stats/players_stats.csv,Teams,194966,0,100 Thieves | Rise | Gen.G
+2021,players_stats/players_stats.csv,Agents,194966,0,"skye | sage | sage, skye"
+2021,players_stats/players_stats.csv,Rounds Played,194966,0,44 | 17 | 61
+2021,players_stats/players_stats.csv,Rating,126304,68662,1.29 | 1.17 | 1.25
+2021,players_stats/players_stats.csv,Average Combat Score,194911,55,236 | 197 | 223
+2021,players_stats/players_stats.csv,Kills:Deaths,194942,24,1.5 | 1.3 | 1.44
+2021,players_stats/players_stats.csv,"Kill, Assist, Trade, Survive %",126309,68657,75% | 82% | 77%
+2021,players_stats/players_stats.csv,Average Damage Per Round,194748,218,146 | 124 | 140
+2021,players_stats/players_stats.csv,Kills Per Round,194966,0,0.89 | 0.76 | 0.85
+2021,players_stats/players_stats.csv,Assists Per Round,194966,0,0.36 | 0.24 | 0.33
+2021,players_stats/players_stats.csv,First Kills Per Round,194897,69,0.07 | 0.06 | 0.08
+2021,players_stats/players_stats.csv,First Deaths Per Round,194748,218,0.11 | 0.06 | 0.1
+2021,players_stats/players_stats.csv,Headshot %,194571,395,31% | 24% | 29%
+2021,players_stats/players_stats.csv,Clutch Success %,180529,14437,20% | 50% | 0%
+2021,players_stats/players_stats.csv,Clutches (won/played),180529,14437,1/5 | 1/2 | 0/4
+2021,players_stats/players_stats.csv,Maximum Kills in a Single Map,194966,0,29 | 13 | 23
+2021,players_stats/players_stats.csv,Kills,194966,0,39 | 13 | 52
+2021,players_stats/players_stats.csv,Deaths,194966,0,26 | 10 | 36
+2021,players_stats/players_stats.csv,Assists,194966,0,16 | 4 | 20
+2021,players_stats/players_stats.csv,First Kills,194966,0,3 | 1 | 4
+2021,players_stats/players_stats.csv,First Deaths,194966,0,5 | 1 | 6
+2022,ids/players_ids.csv,Player,7568,0,Benkai | d4v41 | mindfreak
+2022,ids/players_ids.csv,Player ID,7567,1,9802 | 9803 | 9800
+2022,ids/teams_ids.csv,Team,1572,0,Paper Rex | EDward Gaming | LEVIATÁN
+2022,ids/teams_ids.csv,Team ID,1572,0,624 | 1120 | 2359
+2022,ids/tournaments_stages_match_types_ids.csv,Tournament,1076,0,Champions Tour South America: Last Chance Qualifier | Champions Tour EMEA: Last Chance Qualifier | Champions Tour East Asia: Last Chance Qualifier
+2022,ids/tournaments_stages_match_types_ids.csv,Tournament ID,1076,0,1111 | 1117 | 1083
+2022,ids/tournaments_stages_match_types_ids.csv,Stage,1076,0,Main Event | All Stages | Playoffs
+2022,ids/tournaments_stages_match_types_ids.csv,Stage ID,1018,58,2154 | 2163 | 2130
+2022,ids/tournaments_stages_match_types_ids.csv,Match Type,1076,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2022,ids/tournaments_stages_match_types_ids.csv,Match Type ID,1018,58,13253 | 13254 | 13255
+2022,ids/tournaments_stages_matches_games_ids.csv,Tournament,8864,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,ids/tournaments_stages_matches_games_ids.csv,Tournament ID,8864,0,1015 | 1111 | 1130
+2022,ids/tournaments_stages_matches_games_ids.csv,Stage,8864,0,Group Stage | Playoffs | Main Event
+2022,ids/tournaments_stages_matches_games_ids.csv,Stage ID,8864,0,2183 | 2184 | 2154
+2022,ids/tournaments_stages_matches_games_ids.csv,Match Type,8864,0,Opening (A) | Opening (B) | Winner's (A)
+2022,ids/tournaments_stages_matches_games_ids.csv,Match Name,8864,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,ids/tournaments_stages_matches_games_ids.csv,Match ID,8864,0,130617 | 130618 | 130623
+2022,ids/tournaments_stages_matches_games_ids.csv,Map,8864,0,Pearl | Icebox | Haven
+2022,ids/tournaments_stages_matches_games_ids.csv,Game ID,8864,0,95029 | 95030 | 95031
+2022,matches/draft_phase.csv,Tournament,7432,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,matches/draft_phase.csv,Stage,7432,0,Group Stage | Playoffs | Main Event
+2022,matches/draft_phase.csv,Match Type,7432,0,Opening (A) | Opening (B) | Winner's (A)
+2022,matches/draft_phase.csv,Match Name,7432,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,matches/draft_phase.csv,Team,7432,0,EDward Gaming | Paper Rex | Team Liquid
+2022,matches/draft_phase.csv,Action,7432,0,ban | pick
+2022,matches/draft_phase.csv,Map,7432,0,Bind | Fracture | Pearl
+2022,matches/eco_rounds.csv,Tournament,358798,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,matches/eco_rounds.csv,Stage,358798,0,Group Stage | Playoffs | Main Event
+2022,matches/eco_rounds.csv,Match Type,358798,0,Opening (A) | Opening (B) | Winner's (A)
+2022,matches/eco_rounds.csv,Match Name,358798,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,matches/eco_rounds.csv,Map,358798,0,Pearl | Icebox | Haven
+2022,matches/eco_rounds.csv,Round Number,358798,0,1 | 2 | 3
+2022,matches/eco_rounds.csv,Team,358798,0,Paper Rex | EDward Gaming | LEVIATÁN
+2022,matches/eco_rounds.csv,Loadout Value,358798,0,3.7k | 4.0k | 1.2k
+2022,matches/eco_rounds.csv,Remaining Credits,358798,0,0.1k | 0.2k | 9.6k
+2022,matches/eco_rounds.csv,Type,358798,0,Eco: 0-5k | Semi-buy: 10-20k | Full buy: 20k+
+2022,matches/eco_rounds.csv,Outcome,358798,0,Loss | Win
+2022,matches/eco_stats.csv,Tournament,126110,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,matches/eco_stats.csv,Stage,126110,0,Group Stage | Playoffs | Main Event
+2022,matches/eco_stats.csv,Match Type,126110,0,Opening (A) | Opening (B) | Winner's (A)
+2022,matches/eco_stats.csv,Match Name,126110,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,matches/eco_stats.csv,Map,126110,0,Pearl | Icebox | Haven
+2022,matches/eco_stats.csv,Team,126110,0,Paper Rex | EDward Gaming | LEVIATÁN
+2022,matches/eco_stats.csv,Type,126110,0,Pistol Won | Eco (won) | $ (won)
+2022,matches/eco_stats.csv,Initiated,100888,25222,3 | 2 | 8
+2022,matches/eco_stats.csv,Won,126110,0,1 | 5 | 6
+2022,matches/kills.csv,Tournament,945825,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,matches/kills.csv,Stage,945825,0,Group Stage | Playoffs | Main Event
+2022,matches/kills.csv,Match Type,945825,0,Opening (A) | Opening (B) | Winner's (A)
+2022,matches/kills.csv,Match Name,945825,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,matches/kills.csv,Map,945825,0,All Maps | Pearl | Icebox
+2022,matches/kills.csv,Player Team,945825,0,Paper Rex | LEVIATÁN | ZETA DIVISION
+2022,matches/kills.csv,Player,945300,525,d4v41 | f0rsakeN | mindfreak
+2022,matches/kills.csv,Enemy Team,945825,0,EDward Gaming | Team Liquid | LOUD
+2022,matches/kills.csv,Enemy,945465,360,Haodong | nobody | CHICHOO
+2022,matches/kills.csv,Player Kills,565896,379929,8 | 12 | 6
+2022,matches/kills.csv,Enemy Kills,565896,379929,8 | 9 | 10
+2022,matches/kills.csv,Difference,560427,385398,0 | 3 | -4
+2022,matches/kills.csv,Kill Type,945825,0,All Kills | First Kills | Op Kills
+2022,matches/kills_stats.csv,Tournament,126337,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,matches/kills_stats.csv,Stage,126337,0,Group Stage | Playoffs | Main Event
+2022,matches/kills_stats.csv,Match Type,126337,0,Opening (A) | Opening (B) | Winner's (A)
+2022,matches/kills_stats.csv,Match Name,126337,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,matches/kills_stats.csv,Map,126337,0,All Maps | Pearl | Icebox
+2022,matches/kills_stats.csv,Team,126337,0,Paper Rex | EDward Gaming | LEVIATÁN
+2022,matches/kills_stats.csv,Player,126288,49,Jinggg | mindfreak | f0rsakeN
+2022,matches/kills_stats.csv,Agents,126337,0,"raze, reyna, sage | astra, viper | chamber, jett"
+2022,matches/kills_stats.csv,2k,117560,8777,13 | 4 | 9
+2022,matches/kills_stats.csv,3k,77153,49184,3 | 1 | 4
+2022,matches/kills_stats.csv,4k,24764,101573,1 | 2 | 3
+2022,matches/kills_stats.csv,5k,3168,123169,1 | 2 | 3
+2022,matches/kills_stats.csv,1v1,29199,97138,1 | 2 | 3
+2022,matches/kills_stats.csv,1v2,16191,110146,1 | 2 | 3
+2022,matches/kills_stats.csv,1v3,4586,121751,1 | 2
+2022,matches/kills_stats.csv,1v4,822,125515,1 | 2
+2022,matches/kills_stats.csv,1v5,118,126219,1.0
+2022,matches/kills_stats.csv,Econ,126337,0,59 | 48 | 56
+2022,matches/kills_stats.csv,Spike Plants,126337,0,1 | 2 | 3
+2022,matches/kills_stats.csv,Spike Defuses,126337,0,0 | 1 | 3
+2022,matches/rounds_kills.csv,Tournament,776476,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,matches/rounds_kills.csv,Stage,776476,0,Group Stage | Playoffs | Main Event
+2022,matches/rounds_kills.csv,Match Type,776476,0,Opening (A) | Opening (B) | Winner's (A)
+2022,matches/rounds_kills.csv,Match Name,776476,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,matches/rounds_kills.csv,Map,776476,0,Pearl | Icebox | Haven
+2022,matches/rounds_kills.csv,Round Number,776476,0,2 | 11 | 14
+2022,matches/rounds_kills.csv,Eliminator Team,776476,0,Paper Rex | EDward Gaming | LEVIATÁN
+2022,matches/rounds_kills.csv,Eliminator,776206,270,Jinggg | mindfreak | f0rsakeN
+2022,matches/rounds_kills.csv,Eliminator Agent,776476,0,raze | astra | chamber
+2022,matches/rounds_kills.csv,Eliminated Team,776476,0,EDward Gaming | Paper Rex | Team Liquid
+2022,matches/rounds_kills.csv,Eliminated,776074,402,Smoggy | ZmjjKK | Haodong
+2022,matches/rounds_kills.csv,Eliminated Agent,776476,0,kayo | chamber | astra
+2022,matches/rounds_kills.csv,Kill Type,776476,0,2k | 3k | 4k
+2022,matches/team_mapping.csv,Abbreviated,1398,1,PRX | EDG | LEV
+2022,matches/team_mapping.csv,Full Name,1399,0,Paper Rex | EDward Gaming | Leviatán
+2022,matches/win_loss_methods_count.csv,Tournament,17728,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,matches/win_loss_methods_count.csv,Stage,17728,0,Group Stage | Playoffs | Main Event
+2022,matches/win_loss_methods_count.csv,Match Type,17728,0,Opening (A) | Opening (B) | Winner's (A)
+2022,matches/win_loss_methods_count.csv,Match Name,17728,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,matches/win_loss_methods_count.csv,Map,17728,0,Pearl | Icebox | Haven
+2022,matches/win_loss_methods_count.csv,Team,17728,0,Paper Rex | EDward Gaming | LEVIATÁN
+2022,matches/win_loss_methods_count.csv,Elimination,17728,0,11 | 7 | 5
+2022,matches/win_loss_methods_count.csv,Detonated,17728,0,0 | 1 | 2
+2022,matches/win_loss_methods_count.csv,Defused,17728,0,1 | 3 | 0
+2022,matches/win_loss_methods_count.csv,Time Expiry (No Plant),17728,0,1 | 0 | 2
+2022,matches/win_loss_methods_count.csv,Eliminated,17728,0,7 | 11 | 5
+2022,matches/win_loss_methods_count.csv,Defused Failed,17728,0,1 | 0 | 2
+2022,matches/win_loss_methods_count.csv,Detonation Denied,17728,0,3 | 1 | 0
+2022,matches/win_loss_methods_count.csv,Time Expiry (Failed to Plant),17728,0,0 | 1 | 3
+2022,matches/win_loss_methods_round_number.csv,Tournament,359210,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,matches/win_loss_methods_round_number.csv,Stage,359210,0,Group Stage | Playoffs | Main Event
+2022,matches/win_loss_methods_round_number.csv,Match Type,359210,0,Opening (A) | Opening (B) | Winner's (A)
+2022,matches/win_loss_methods_round_number.csv,Match Name,359210,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,matches/win_loss_methods_round_number.csv,Map,359210,0,Pearl | Icebox | Haven
+2022,matches/win_loss_methods_round_number.csv,Round Number,359210,0,1 | 2 | 3
+2022,matches/win_loss_methods_round_number.csv,Team,359210,0,EDward Gaming | Paper Rex | LEVIATÁN
+2022,matches/win_loss_methods_round_number.csv,Method,359210,0,Elimination | Eliminated | Defused
+2022,matches/win_loss_methods_round_number.csv,Outcome,359210,0,Win | Loss
+2022,players_stats/players_stats.csv,Tournament,126641,0,Champions Tour LATAM/BR Stage 2: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier | Oceania Tour: Championship
+2022,players_stats/players_stats.csv,Stage,126641,0,Decider | All Stages | Main Event
+2022,players_stats/players_stats.csv,Match Type,126641,0,Decider | All Match Types | Upper Quarterfinals
+2022,players_stats/players_stats.csv,Player,126641,0,xand | v1xen | bezn1
+2022,players_stats/players_stats.csv,Teams,126641,0,Ninjas In Pyjamas | KRÜ Esports | 100 Thieves
+2022,players_stats/players_stats.csv,Agents,126641,0,killjoy | chamber | kayo
+2022,players_stats/players_stats.csv,Rounds Played,126641,0,23 | 18 | 21
+2022,players_stats/players_stats.csv,Rating,126505,136,0.92 | 0.55 | 1.07
+2022,players_stats/players_stats.csv,Average Combat Score,126625,16,227 | 175 | 191
+2022,players_stats/players_stats.csv,Kills:Deaths,126640,1,1.25 | 0.59 | 0.82
+2022,players_stats/players_stats.csv,"Kill, Assist, Trade, Survive %",126563,78,74% | 44% | 81%
+2022,players_stats/players_stats.csv,Average Damage Per Round,126565,76,138 | 104 | 133
+2022,players_stats/players_stats.csv,Kills Per Round,126641,0,0.87 | 0.56 | 0.67
+2022,players_stats/players_stats.csv,Assists Per Round,126641,0,0.09 | 0.11 | 0.33
+2022,players_stats/players_stats.csv,First Kills Per Round,126625,16,0.0 | 0.11 | 0.14
+2022,players_stats/players_stats.csv,First Deaths Per Round,126565,76,0.13 | 0.22 | 0.0
+2022,players_stats/players_stats.csv,Headshot %,126481,160,23% | 35% | 26%
+2022,players_stats/players_stats.csv,Clutch Success %,117288,9353,0% | 67% | 18%
+2022,players_stats/players_stats.csv,Clutches (won/played),117288,9353,0/6 | 0/2 | 2/3
+2022,players_stats/players_stats.csv,Maximum Kills in a Single Map,126641,0,20 | 10 | 14
+2022,players_stats/players_stats.csv,Kills,126641,0,20 | 10 | 14
+2022,players_stats/players_stats.csv,Deaths,126641,0,16 | 17 | 50
+2022,players_stats/players_stats.csv,Assists,126641,0,2 | 7 | 11
+2022,players_stats/players_stats.csv,First Kills,126641,0,0 | 2 | 3
+2022,players_stats/players_stats.csv,First Deaths,126641,0,3 | 4 | 0
+2023,ids/players_ids.csv,Player,284,0,nAts | Sayf | soulcas
+2023,ids/players_ids.csv,Player ID,284,0,457 | 312 | 101
+2023,ids/teams_ids.csv,Team,51,0,Team Liquid | Natus Vincere | DRX
+2023,ids/teams_ids.csv,Team ID,51,0,474 | 4915 | 8185
+2023,ids/tournaments_stages_match_types_ids.csv,Tournament,137,0,Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: Pacific Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,ids/tournaments_stages_match_types_ids.csv,Tournament ID,137,0,1658 | 1660 | 1659
+2023,ids/tournaments_stages_match_types_ids.csv,Stage,137,0,Main Event | All Stages | Playoffs
+2023,ids/tournaments_stages_match_types_ids.csv,Stage ID,127,10,3146 | 3148 | 3147
+2023,ids/tournaments_stages_match_types_ids.csv,Match Type,137,0,Upper Round 1 | Upper Quarterfinals | Upper Semifinals
+2023,ids/tournaments_stages_match_types_ids.csv,Match Type ID,127,10,19693 | 19694 | 19695
+2023,ids/tournaments_stages_matches_games_ids.csv,Tournament,830,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,ids/tournaments_stages_matches_games_ids.csv,Tournament ID,830,0,1657 | 1658 | 1659
+2023,ids/tournaments_stages_matches_games_ids.csv,Stage,830,0,Group Stage | Playoffs | Main Event
+2023,ids/tournaments_stages_matches_games_ids.csv,Stage ID,830,0,3145 | 3264 | 3146
+2023,ids/tournaments_stages_matches_games_ids.csv,Match Type,830,0,Opening (D) | Opening (B) | Winner's (D)
+2023,ids/tournaments_stages_matches_games_ids.csv,Match Name,830,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,ids/tournaments_stages_matches_games_ids.csv,Match ID,830,0,247100 | 247101 | 247087
+2023,ids/tournaments_stages_matches_games_ids.csv,Map,830,0,Fracture | Bind | Lotus
+2023,ids/tournaments_stages_matches_games_ids.csv,Game ID,830,0,137395 | 137396 | 137398
+2023,matches/draft_phase.csv,Tournament,1898,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,matches/draft_phase.csv,Stage,1898,0,Group Stage | Playoffs | Main Event
+2023,matches/draft_phase.csv,Match Type,1898,0,Opening (D) | Opening (B) | Winner's (D)
+2023,matches/draft_phase.csv,Match Name,1898,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,matches/draft_phase.csv,Team,1898,0,Natus Vincere | Team Liquid | LOUD
+2023,matches/draft_phase.csv,Action,1898,0,ban | pick
+2023,matches/draft_phase.csv,Map,1898,0,Haven | Pearl | Fracture
+2023,matches/eco_rounds.csv,Tournament,33032,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,matches/eco_rounds.csv,Stage,33032,0,Group Stage | Playoffs | Main Event
+2023,matches/eco_rounds.csv,Match Type,33032,0,Opening (D) | Opening (B) | Winner's (D)
+2023,matches/eco_rounds.csv,Match Name,33032,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,matches/eco_rounds.csv,Map,33032,0,Fracture | Bind | Lotus
+2023,matches/eco_rounds.csv,Round Number,33032,0,1 | 2 | 3
+2023,matches/eco_rounds.csv,Team,33032,0,Team Liquid | Natus Vincere | DRX
+2023,matches/eco_rounds.csv,Loadout Value,33032,0,3.6k | 3.5k | 15.6k
+2023,matches/eco_rounds.csv,Remaining Credits,33032,0,0.4k | 0.3k | 4.1k
+2023,matches/eco_rounds.csv,Type,33032,0,Eco: 0-5k | Semi-buy: 10-20k | Full buy: 20k+
+2023,matches/eco_rounds.csv,Outcome,33032,0,Win | Loss
+2023,matches/eco_stats.csv,Tournament,10830,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,matches/eco_stats.csv,Stage,10830,0,Group Stage | Playoffs | Main Event
+2023,matches/eco_stats.csv,Match Type,10830,0,Opening (D) | Opening (B) | Winner's (D)
+2023,matches/eco_stats.csv,Match Name,10830,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,matches/eco_stats.csv,Map,10830,0,Fracture | Bind | All Maps
+2023,matches/eco_stats.csv,Team,10830,0,Team Liquid | Natus Vincere | DRX
+2023,matches/eco_stats.csv,Type,10830,0,Pistol Won | Eco (won) | $ (won)
+2023,matches/eco_stats.csv,Initiated,8664,2166,2 | 8 | 12
+2023,matches/eco_stats.csv,Won,10830,0,2 | 0 | 4
+2023,matches/kills.csv,Tournament,81225,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,matches/kills.csv,Stage,81225,0,Group Stage | Playoffs | Main Event
+2023,matches/kills.csv,Match Type,81225,0,Opening (D) | Opening (B) | Winner's (D)
+2023,matches/kills.csv,Match Name,81225,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,matches/kills.csv,Map,81225,0,All Maps | Fracture | Bind
+2023,matches/kills.csv,Player Team,81225,0,Team Liquid | DRX | FUT Esports
+2023,matches/kills.csv,Player,81225,0,Jamppi | nAts | soulcas
+2023,matches/kills.csv,Enemy Team,81225,0,Natus Vincere | LOUD | T1
+2023,matches/kills.csv,Enemy,81225,0,ANGE1 | SUYGETSU | Zyppan
+2023,matches/kills.csv,Player Kills,48049,33176,9 | 6 | 8
+2023,matches/kills.csv,Enemy Kills,48049,33176,12 | 10 | 7
+2023,matches/kills.csv,Difference,47356,33869,-3 | -4 | 1
+2023,matches/kills.csv,Kill Type,81225,0,All Kills | First Kills | Op Kills
+2023,matches/kills_stats.csv,Tournament,10868,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,matches/kills_stats.csv,Stage,10868,0,Group Stage | Playoffs | Main Event
+2023,matches/kills_stats.csv,Match Type,10868,0,Opening (D) | Opening (B) | Winner's (D)
+2023,matches/kills_stats.csv,Match Name,10868,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,matches/kills_stats.csv,Map,10868,0,All Maps | Fracture | Bind
+2023,matches/kills_stats.csv,Team,10868,0,Team Liquid | Natus Vincere | DRX
+2023,matches/kills_stats.csv,Player,10868,0,soulcas | Sayf | nAts
+2023,matches/kills_stats.csv,Agents,10868,0,"astra, skye | breach, raze | viper"
+2023,matches/kills_stats.csv,2k,10245,623,4 | 8 | 13
+2023,matches/kills_stats.csv,3k,6734,4134,1 | 3 | 2
+2023,matches/kills_stats.csv,4k,2160,8708,1 | 2 | 4
+2023,matches/kills_stats.csv,5k,315,10553,1 | 2
+2023,matches/kills_stats.csv,1v1,2727,8141,1 | 2 | 4
+2023,matches/kills_stats.csv,1v2,1573,9295,1 | 3 | 2
+2023,matches/kills_stats.csv,1v3,418,10450,1 | 2
+2023,matches/kills_stats.csv,1v4,64,10804,1
+2023,matches/kills_stats.csv,1v5,8,10860,1.0
+2023,matches/kills_stats.csv,Econ,10868,0,30 | 48 | 58
+2023,matches/kills_stats.csv,Spike Plants,10868,0,2 | 4 | 5
+2023,matches/kills_stats.csv,Spike Defuses,10868,0,0 | 1 | 2
+2023,matches/rounds_kills.csv,Tournament,70078,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,matches/rounds_kills.csv,Stage,70078,0,Group Stage | Playoffs | Main Event
+2023,matches/rounds_kills.csv,Match Type,70078,0,Opening (D) | Opening (B) | Winner's (D)
+2023,matches/rounds_kills.csv,Match Name,70078,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,matches/rounds_kills.csv,Map,70078,0,Fracture | Bind | Lotus
+2023,matches/rounds_kills.csv,Round Number,70078,0,1 | 17 | 18
+2023,matches/rounds_kills.csv,Eliminator Team,70078,0,Team Liquid | Natus Vincere | DRX
+2023,matches/rounds_kills.csv,Eliminator,70078,0,soulcas | Sayf | nAts
+2023,matches/rounds_kills.csv,Eliminator Agent,70078,0,astra | breach | viper
+2023,matches/rounds_kills.csv,Eliminated Team,70078,0,Natus Vincere | Team Liquid | LOUD
+2023,matches/rounds_kills.csv,Eliminated,70078,0,cNed | Shao | ANGE1
+2023,matches/rounds_kills.csv,Eliminated Agent,70078,0,killjoy | fade | omen
+2023,matches/rounds_kills.csv,Kill Type,70078,0,2k | 3k | 1v1
+2023,matches/team_mapping.csv,Abbreviated,51,0,TL | NAVI | DRX
+2023,matches/team_mapping.csv,Full Name,51,0,Team Liquid | Natus Vincere | DRX
+2023,matches/win_loss_methods_count.csv,Tournament,1660,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,matches/win_loss_methods_count.csv,Stage,1660,0,Group Stage | Playoffs | Main Event
+2023,matches/win_loss_methods_count.csv,Match Type,1660,0,Opening (D) | Opening (B) | Winner's (D)
+2023,matches/win_loss_methods_count.csv,Match Name,1660,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,matches/win_loss_methods_count.csv,Map,1660,0,Fracture | Bind | Lotus
+2023,matches/win_loss_methods_count.csv,Team,1660,0,Team Liquid | Natus Vincere | DRX
+2023,matches/win_loss_methods_count.csv,Elimination,1660,0,8 | 6 | 11
+2023,matches/win_loss_methods_count.csv,Detonated,1660,0,2 | 5 | 1
+2023,matches/win_loss_methods_count.csv,Defused,1660,0,1 | 2 | 4
+2023,matches/win_loss_methods_count.csv,Time Expiry (No Plant),1660,0,0 | 1 | 2
+2023,matches/win_loss_methods_count.csv,Eliminated,1660,0,6 | 8 | 11
+2023,matches/win_loss_methods_count.csv,Defused Failed,1660,0,5 | 2 | 1
+2023,matches/win_loss_methods_count.csv,Detonation Denied,1660,0,1 | 4 | 2
+2023,matches/win_loss_methods_count.csv,Time Expiry (Failed to Plant),1660,0,1 | 0 | 2
+2023,matches/win_loss_methods_round_number.csv,Tournament,35514,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,matches/win_loss_methods_round_number.csv,Stage,35514,0,Group Stage | Playoffs | Main Event
+2023,matches/win_loss_methods_round_number.csv,Match Type,35514,0,Opening (D) | Opening (B) | Winner's (D)
+2023,matches/win_loss_methods_round_number.csv,Match Name,35514,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,matches/win_loss_methods_round_number.csv,Map,35514,0,Fracture | Bind | Lotus
+2023,matches/win_loss_methods_round_number.csv,Round Number,35514,0,1 | 2 | 3
+2023,matches/win_loss_methods_round_number.csv,Team,35514,0,Team Liquid | Natus Vincere | LOUD
+2023,matches/win_loss_methods_round_number.csv,Method,35514,0,Elimination | Eliminated | Detonated
+2023,matches/win_loss_methods_round_number.csv,Outcome,35514,0,Win | Loss
+2023,players_stats/players_stats.csv,Tournament,11249,0,Champions Tour 2023: EMEA Last Chance Qualifier | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: Pacific Last Chance Qualifier
+2023,players_stats/players_stats.csv,Stage,11249,0,Playoffs | All Stages | Main Event
+2023,players_stats/players_stats.csv,Match Type,11249,0,Knockout Round | Upper Semifinals | Upper Final
+2023,players_stats/players_stats.csv,Player,11249,0,Wolfen | koldamenta | sheydos
+2023,players_stats/players_stats.csv,Teams,11249,0,KOI | Team Heretics | Karmine Corp
+2023,players_stats/players_stats.csv,Agents,11249,0,"cypher | jett | cypher, jett"
+2023,players_stats/players_stats.csv,Rounds Played,11249,0,21 | 42 | 63
+2023,players_stats/players_stats.csv,Rating,10592,657,1.03 | 1.25 | 1.18
+2023,players_stats/players_stats.csv,Average Combat Score,11236,13,209 | 300 | 269
+2023,players_stats/players_stats.csv,Kills:Deaths,11249,0,1.0 | 1.36 | 1.24
+2023,players_stats/players_stats.csv,"Kill, Assist, Trade, Survive %",10592,657,86% | 71% | 76%
+2023,players_stats/players_stats.csv,Average Damage Per Round,10592,657,140 | 180 | 167
+2023,players_stats/players_stats.csv,Kills Per Round,11249,0,0.76 | 1.07 | 0.97
+2023,players_stats/players_stats.csv,Assists Per Round,11249,0,0.33 | 0.14 | 0.21
+2023,players_stats/players_stats.csv,First Kills Per Round,10615,634,0.14 | 0.29 | 0.24
+2023,players_stats/players_stats.csv,First Deaths Per Round,10592,657,0.1 | 0.29 | 0.22
+2023,players_stats/players_stats.csv,Headshot %,10589,660,21% | 26% | 25%
+2023,players_stats/players_stats.csv,Clutch Success %,9967,1282,0% | 100% | 25%
+2023,players_stats/players_stats.csv,Clutches (won/played),9967,1282,0/2 | 0/1 | 0/3
+2023,players_stats/players_stats.csv,Maximum Kills in a Single Map,11249,0,16 | 25 | 5
+2023,players_stats/players_stats.csv,Kills,11249,0,16 | 45 | 61
+2023,players_stats/players_stats.csv,Deaths,11249,0,16 | 33 | 49
+2023,players_stats/players_stats.csv,Assists,11249,0,7 | 6 | 13
+2023,players_stats/players_stats.csv,First Kills,11249,0,3 | 12 | 15
+2023,players_stats/players_stats.csv,First Deaths,11249,0,2 | 12 | 14
+2024,ids/players_ids.csv,Player,260,0,t3xture | Meteor | Lakia
+2024,ids/players_ids.csv,Player ID,260,0,9196 | 13039 | 773
+2024,ids/teams_ids.csv,Team,44,0,Gen.G | Sentinels | FunPlus Phoenix
+2024,ids/teams_ids.csv,Team ID,44,0,17 | 2 | 11328
+2024,ids/tournaments_stages_match_types_ids.csv,Tournament,197,0,Valorant Champions 2024 | Champions Tour 2024: China Stage 2 | Champions Tour 2024: EMEA Stage 2
+2024,ids/tournaments_stages_match_types_ids.csv,Tournament ID,197,0,2097 | 2096 | 2094
+2024,ids/tournaments_stages_match_types_ids.csv,Stage,197,0,Playoffs | Group Stage | All Stages
+2024,ids/tournaments_stages_match_types_ids.csv,Stage ID,182,15,4131 | 4035 | 4034
+2024,ids/tournaments_stages_match_types_ids.csv,Match Type,197,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2024,ids/tournaments_stages_match_types_ids.csv,Match Type ID,182,15,26235 | 26236 | 26237
+2024,ids/tournaments_stages_matches_games_ids.csv,Tournament,1104,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: China Stage 2
+2024,ids/tournaments_stages_matches_games_ids.csv,Tournament ID,1104,0,2097 | 2095 | 2096
+2024,ids/tournaments_stages_matches_games_ids.csv,Stage,1104,0,Group Stage | Playoffs | Regular Season
+2024,ids/tournaments_stages_matches_games_ids.csv,Stage ID,1104,0,4035 | 4131 | 4031
+2024,ids/tournaments_stages_matches_games_ids.csv,Match Type,1104,0,Opening (B) | Opening (A) | Opening (C)
+2024,ids/tournaments_stages_matches_games_ids.csv,Match Name,1104,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,ids/tournaments_stages_matches_games_ids.csv,Match ID,1104,0,378662 | 378663 | 378657
+2024,ids/tournaments_stages_matches_games_ids.csv,Map,1104,0,Haven | Ascent | Abyss
+2024,ids/tournaments_stages_matches_games_ids.csv,Game ID,1104,0,180369 | 180370 | 180372
+2024,matches/draft_phase.csv,Tournament,2604,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: China Stage 2
+2024,matches/draft_phase.csv,Stage,2604,0,Group Stage | Playoffs | Regular Season
+2024,matches/draft_phase.csv,Match Type,2604,0,Opening (B) | Opening (A) | Opening (C)
+2024,matches/draft_phase.csv,Match Name,2604,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,matches/draft_phase.csv,Team,2604,0,Sentinels | Gen.G | FunPlus Phoenix
+2024,matches/draft_phase.csv,Action,2604,0,ban | pick
+2024,matches/draft_phase.csv,Map,2604,0,Icebox | Sunset | Haven
+2024,matches/eco_rounds.csv,Tournament,34514,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: Pacific Stage 2
+2024,matches/eco_rounds.csv,Stage,34514,0,Group Stage | Playoffs | Regular Season
+2024,matches/eco_rounds.csv,Match Type,34514,0,Opening (B) | Opening (A) | Opening (C)
+2024,matches/eco_rounds.csv,Match Name,34514,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,matches/eco_rounds.csv,Map,34514,0,Haven | Ascent | Abyss
+2024,matches/eco_rounds.csv,Round Number,34514,0,1 | 2 | 3
+2024,matches/eco_rounds.csv,Team,34514,0,Gen.G | Sentinels | FunPlus Phoenix
+2024,matches/eco_rounds.csv,Loadout Value,34514,0,3.9k | 3.8k | 14.5k
+2024,matches/eco_rounds.csv,Remaining Credits,34514,0,0.3k | 0.2k | 2.4k
+2024,matches/eco_rounds.csv,Type,34514,0,Eco: 0-5k | Semi-buy: 10-20k | Full buy: 20k+
+2024,matches/eco_rounds.csv,Outcome,34514,0,Win | Loss
+2024,matches/eco_stats.csv,Tournament,11350,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: Pacific Stage 2
+2024,matches/eco_stats.csv,Stage,11350,0,Group Stage | Playoffs | Regular Season
+2024,matches/eco_stats.csv,Match Type,11350,0,Opening (B) | Opening (A) | Opening (C)
+2024,matches/eco_stats.csv,Match Name,11350,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,matches/eco_stats.csv,Map,11350,0,Haven | Ascent | All Maps
+2024,matches/eco_stats.csv,Team,11350,0,Gen.G | Sentinels | FunPlus Phoenix
+2024,matches/eco_stats.csv,Type,11350,0,Pistol Won | Eco (won) | $ (won)
+2024,matches/eco_stats.csv,Initiated,9080,2270,2 | 1 | 6
+2024,matches/eco_stats.csv,Won,11350,0,2 | 0 | 4
+2024,matches/kills.csv,Tournament,85125,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: Pacific Stage 2
+2024,matches/kills.csv,Stage,85125,0,Group Stage | Playoffs | Regular Season
+2024,matches/kills.csv,Match Type,85125,0,Opening (B) | Opening (A) | Opening (C)
+2024,matches/kills.csv,Match Name,85125,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,matches/kills.csv,Map,85125,0,All Maps | Haven | Ascent
+2024,matches/kills.csv,Player Team,85125,0,Gen.G | FunPlus Phoenix | DRX
+2024,matches/kills.csv,Player,85125,0,Lakia | Munchkin | t3xture
+2024,matches/kills.csv,Enemy Team,85125,0,Sentinels | Team Heretics | KRÜ Esports
+2024,matches/kills.csv,Enemy,85125,0,zekken | johnqt | Zellsis
+2024,matches/kills.csv,Player Kills,49397,35728,2 | 5 | 4
+2024,matches/kills.csv,Enemy Kills,49397,35728,2 | 7 | 4
+2024,matches/kills.csv,Difference,49286,35839,0 | -2 | 3
+2024,matches/kills.csv,Kill Type,85125,0,All Kills | First Kills | Op Kills
+2024,matches/kills_stats.csv,Tournament,11354,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: Pacific Stage 2
+2024,matches/kills_stats.csv,Stage,11354,0,Group Stage | Playoffs | Regular Season
+2024,matches/kills_stats.csv,Match Type,11354,0,Opening (B) | Opening (A) | Opening (C)
+2024,matches/kills_stats.csv,Match Name,11354,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,matches/kills_stats.csv,Map,11354,0,All Maps | Haven | Ascent
+2024,matches/kills_stats.csv,Team,11354,0,Gen.G | Sentinels | FunPlus Phoenix
+2024,matches/kills_stats.csv,Player,11354,0,Lakia | Munchkin | t3xture
+2024,matches/kills_stats.csv,Agents,11354,0,"skye, sova | kayo, viper | jett"
+2024,matches/kills_stats.csv,2k,10720,634,6 | 3 | 9
+2024,matches/kills_stats.csv,3k,7094,4260,3 | 1 | 2
+2024,matches/kills_stats.csv,4k,2299,9055,1 | 2 | 4
+2024,matches/kills_stats.csv,5k,306,11048,1 | 2 | 3
+2024,matches/kills_stats.csv,1v1,2686,8668,1 | 2 | 4
+2024,matches/kills_stats.csv,1v2,1538,9816,1 | 2 | 3
+2024,matches/kills_stats.csv,1v3,474,10880,1 | 2 | 3
+2024,matches/kills_stats.csv,1v4,84,11270,1
+2024,matches/kills_stats.csv,1v5,14,11340,1.0
+2024,matches/kills_stats.csv,Econ,11354,0,40 | 49 | 73
+2024,matches/kills_stats.csv,Spike Plants,11354,0,6 | 0 | 1
+2024,matches/kills_stats.csv,Spike Defuses,11354,0,0 | 3 | 1
+2024,matches/rounds_kills.csv,Tournament,72660,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: Pacific Stage 2
+2024,matches/rounds_kills.csv,Stage,72660,0,Group Stage | Playoffs | Regular Season
+2024,matches/rounds_kills.csv,Match Type,72660,0,Opening (B) | Opening (A) | Opening (C)
+2024,matches/rounds_kills.csv,Match Name,72660,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,matches/rounds_kills.csv,Map,72660,0,Haven | Ascent | Abyss
+2024,matches/rounds_kills.csv,Round Number,72660,0,9 | 11 | 14
+2024,matches/rounds_kills.csv,Eliminator Team,72660,0,Gen.G | Sentinels | FunPlus Phoenix
+2024,matches/rounds_kills.csv,Eliminator,72660,0,Lakia | Munchkin | t3xture
+2024,matches/rounds_kills.csv,Eliminator Agent,72660,0,skye | viper | jett
+2024,matches/rounds_kills.csv,Eliminated Team,72660,0,Sentinels | Gen.G | Team Heretics
+2024,matches/rounds_kills.csv,Eliminated,72660,0,TenZ | Zellsis | johnqt
+2024,matches/rounds_kills.csv,Eliminated Agent,72660,0,omen | breach | cypher
+2024,matches/rounds_kills.csv,Kill Type,72660,0,2k | 3k | 4k
+2024,matches/team_mapping.csv,Abbreviated,44,0,GEN | SEN | FPX
+2024,matches/team_mapping.csv,Full Name,44,0,Gen.G | Sentinels | FunPlus Phoenix
+2024,matches/win_loss_methods_count.csv,Tournament,2208,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: China Stage 2
+2024,matches/win_loss_methods_count.csv,Stage,2208,0,Group Stage | Playoffs | Regular Season
+2024,matches/win_loss_methods_count.csv,Match Type,2208,0,Opening (B) | Opening (A) | Opening (C)
+2024,matches/win_loss_methods_count.csv,Match Name,2208,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,matches/win_loss_methods_count.csv,Map,2208,0,Haven | Ascent | Abyss
+2024,matches/win_loss_methods_count.csv,Team,2208,0,Gen.G | Sentinels | FunPlus Phoenix
+2024,matches/win_loss_methods_count.csv,Elimination,2208,0,7 | 3 | 9
+2024,matches/win_loss_methods_count.csv,Detonated,2208,0,1 | 2 | 4
+2024,matches/win_loss_methods_count.csv,Defused,2208,0,4 | 3 | 0
+2024,matches/win_loss_methods_count.csv,Time Expiry (No Plant),2208,0,1 | 0 | 2
+2024,matches/win_loss_methods_count.csv,Eliminated,2208,0,3 | 7 | 5
+2024,matches/win_loss_methods_count.csv,Defused Failed,2208,0,2 | 1 | 0
+2024,matches/win_loss_methods_count.csv,Detonation Denied,2208,0,3 | 4 | 2
+2024,matches/win_loss_methods_count.csv,Time Expiry (Failed to Plant),2208,0,0 | 1 | 2
+2024,matches/win_loss_methods_round_number.csv,Tournament,46754,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: China Stage 2
+2024,matches/win_loss_methods_round_number.csv,Stage,46754,0,Group Stage | Playoffs | Regular Season
+2024,matches/win_loss_methods_round_number.csv,Match Type,46754,0,Opening (B) | Opening (A) | Opening (C)
+2024,matches/win_loss_methods_round_number.csv,Match Name,46754,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,matches/win_loss_methods_round_number.csv,Map,46754,0,Haven | Ascent | Abyss
+2024,matches/win_loss_methods_round_number.csv,Round Number,46754,0,1 | 2 | 3
+2024,matches/win_loss_methods_round_number.csv,Team,46754,0,Gen.G | Sentinels | Team Heretics
+2024,matches/win_loss_methods_round_number.csv,Method,46754,0,Defused | Detonated Denied | Elimination
+2024,matches/win_loss_methods_round_number.csv,Outcome,46754,0,Win | Loss
+2024,players_stats/players_stats.csv,Tournament,15030,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: EMEA Stage 2
+2024,players_stats/players_stats.csv,Stage,15030,0,Playoffs | Group Stage | All Stages
+2024,players_stats/players_stats.csv,Match Type,15030,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2024,players_stats/players_stats.csv,Player,15030,0,Boo | benjyfishy | Wo0t
+2024,players_stats/players_stats.csv,Teams,15030,0,Team Heretics | G2 Esports | FNATIC
+2024,players_stats/players_stats.csv,Agents,15030,0,"astra | fade | astra, fade"
+2024,players_stats/players_stats.csv,Rounds Played,15030,0,26 | 16 | 42
+2024,players_stats/players_stats.csv,Rating,11052,3978,0.75 | 1.1 | 0.88
+2024,players_stats/players_stats.csv,Average Combat Score,15030,0,138 | 185 | 162
+2024,players_stats/players_stats.csv,Kills:Deaths,15030,0,0.58 | 1.38 | 0.81
+2024,players_stats/players_stats.csv,"Kill, Assist, Trade, Survive %",11052,3978,73% | 81% | 76%
+2024,players_stats/players_stats.csv,Average Damage Per Round,13047,1983,92 | 122 | 104
+2024,players_stats/players_stats.csv,Kills Per Round,15030,0,0.42 | 0.69 | 0.52
+2024,players_stats/players_stats.csv,Assists Per Round,15030,0,0.54 | 0.19 | 0.4
+2024,players_stats/players_stats.csv,First Kills Per Round,13047,1983,0.04 | 0.13 | 0.07
+2024,players_stats/players_stats.csv,First Deaths Per Round,13047,1983,0.08 | 0.0 | 0.05
+2024,players_stats/players_stats.csv,Headshot %,11051,3979,21% | 34% | 28%
+2024,players_stats/players_stats.csv,Clutch Success %,10377,4653,22% | 50% | 0%
+2024,players_stats/players_stats.csv,Clutches (won/played),10377,4653,2/9 | 1/2 | 0/2
+2024,players_stats/players_stats.csv,Maximum Kills in a Single Map,15030,0,11 | 18 | 12
+2024,players_stats/players_stats.csv,Kills,15030,0,11 | 22 | 18
+2024,players_stats/players_stats.csv,Deaths,15030,0,19 | 8 | 27
+2024,players_stats/players_stats.csv,Assists,15030,0,14 | 3 | 17
+2024,players_stats/players_stats.csv,First Kills,15030,0,1 | 2 | 3
+2024,players_stats/players_stats.csv,First Deaths,15030,0,2 | 0 | 4
+2025,ids/players_ids.csv,Player,349,0,something | Jinggg | f0rsakeN
+2025,ids/players_ids.csv,Player ID,347,2,17086 | 7378 | 9801
+2025,ids/teams_ids.csv,Team,58,0,Paper Rex | Xi Lai Gaming | GIANTX
+2025,ids/teams_ids.csv,Team ID,58,0,624 | 13581 | 14419
+2025,ids/tournaments_stages_match_types_ids.csv,Tournament,202,0,Valorant Champions 2025 | VCT 2025: Pacific Stage 2 | VCT 2025: China Stage 2
+2025,ids/tournaments_stages_match_types_ids.csv,Tournament ID,202,0,2283 | 2500 | 2499
+2025,ids/tournaments_stages_match_types_ids.csv,Stage,202,0,Playoffs | Group Stage | All Stages
+2025,ids/tournaments_stages_match_types_ids.csv,Stage ID,187,15,5080 | 5079 | 4862
+2025,ids/tournaments_stages_match_types_ids.csv,Match Type,202,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2025,ids/tournaments_stages_match_types_ids.csv,Match Type ID,187,15,33667 | 33668 | 33669
+2025,ids/tournaments_stages_matches_games_ids.csv,Tournament,1277,0,Valorant Champions 2025 | VCT 2025: Americas Stage 2 | VCT 2025: EMEA Stage 2
+2025,ids/tournaments_stages_matches_games_ids.csv,Tournament ID,1277,0,2283 | 2501 | 2498
+2025,ids/tournaments_stages_matches_games_ids.csv,Stage,1277,0,Group Stage | Playoffs | Showmatch
+2025,ids/tournaments_stages_matches_games_ids.csv,Stage ID,1277,0,5079 | 5080 | 4859
+2025,ids/tournaments_stages_matches_games_ids.csv,Match Type,1277,0,Opening (A) | Opening (C) | Opening (D)
+2025,ids/tournaments_stages_matches_games_ids.csv,Match Name,1277,0,Paper Rex vs Xi Lai Gaming | GIANTX vs Sentinels | NRG vs EDward Gaming
+2025,ids/tournaments_stages_matches_games_ids.csv,Match ID,1277,0,542195 | 542196 | 542207
+2025,ids/tournaments_stages_matches_games_ids.csv,Map,1277,0,Bind | Sunset | Corrode
+2025,ids/tournaments_stages_matches_games_ids.csv,Game ID,1277,0,233397 | 233398 | 233400
+2025,matches/draft_phase.csv,Tournament,2988,0,Valorant Champions 2025 | VCT 2025: Americas Stage 2 | VCT 2025: EMEA Stage 2
+2025,matches/draft_phase.csv,Stage,2988,0,Group Stage | Playoffs | Swiss Stage
+2025,matches/draft_phase.csv,Match Type,2988,0,Opening (A) | Opening (C) | Opening (D)
+2025,matches/draft_phase.csv,Match Name,2988,0,Paper Rex vs Xi Lai Gaming | GIANTX vs Sentinels | NRG vs EDward Gaming
+2025,matches/draft_phase.csv,Team,2988,0,Xi Lai Gaming | Paper Rex | Sentinels
+2025,matches/draft_phase.csv,Action,2988,0,ban | pick
+2025,matches/draft_phase.csv,Map,2988,0,Lotus | Abyss | Bind
+2025,matches/eco_rounds.csv,Tournament,25182,0,Valorant Masters Toronto 2025 | Champions Tour 2025: EMEA Stage 1 | Champions Tour 2025: Pacific Stage 1
+2025,matches/eco_rounds.csv,Stage,25182,0,Swiss Stage | Playoffs | Group Stage
+2025,matches/eco_rounds.csv,Match Type,25182,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2025,matches/eco_rounds.csv,Match Name,25182,0,Team Heretics vs Paper Rex | Bilibili Gaming vs Team Liquid | Sentinels vs Wolves Esports
+2025,matches/eco_rounds.csv,Map,25182,0,Pearl | Icebox | Haven
+2025,matches/eco_rounds.csv,Round Number,25182,0,1 | 2 | 3
+2025,matches/eco_rounds.csv,Team,25182,0,Team Heretics | Paper Rex | Bilibili Gaming
+2025,matches/eco_rounds.csv,Loadout Value,22632,2550,3.9k | 3.7k | 13.5k
+2025,matches/eco_rounds.csv,Remaining Credits,25182,0,0.2k | 0.5k | 10.2k
+2025,matches/eco_rounds.csv,Type,25182,0,Eco: 0-5k | Semi-buy: 10-20k | Full buy: 20k+
+2025,matches/eco_rounds.csv,Outcome,25182,0,Loss | Win
+2025,matches/eco_stats.csv,Tournament,13940,0,Valorant Champions 2025 | VCT 2025: Americas Stage 2 | VCT 2025: EMEA Stage 2
+2025,matches/eco_stats.csv,Stage,13940,0,Group Stage | Playoffs | Showmatch
+2025,matches/eco_stats.csv,Match Type,13940,0,Opening (A) | Opening (C) | Opening (D)
+2025,matches/eco_stats.csv,Match Name,13940,0,Paper Rex vs Xi Lai Gaming | GIANTX vs Sentinels | NRG vs EDward Gaming
+2025,matches/eco_stats.csv,Map,13940,0,Bind | Sunset | All Maps
+2025,matches/eco_stats.csv,Team,13940,0,Paper Rex | Xi Lai Gaming | GIANTX
+2025,matches/eco_stats.csv,Type,13940,0,Pistol Won | Eco (won) | $ (won)
+2025,matches/eco_stats.csv,Initiated,11152,2788,4 | 0 | 3
+2025,matches/eco_stats.csv,Won,13940,0,1 | 2 | 0
+2025,matches/kills.csv,Tournament,104325,0,Valorant Champions 2025 | VCT 2025: Americas Stage 2 | VCT 2025: EMEA Stage 2
+2025,matches/kills.csv,Stage,104325,0,Group Stage | Playoffs | Swiss Stage
+2025,matches/kills.csv,Match Type,104325,0,Opening (A) | Opening (C) | Opening (D)
+2025,matches/kills.csv,Match Name,104325,0,Paper Rex vs Xi Lai Gaming | GIANTX vs Sentinels | NRG vs EDward Gaming
+2025,matches/kills.csv,Map,104325,0,All Maps | Bind | Sunset
+2025,matches/kills.csv,Player Team,104325,0,Paper Rex | GIANTX | Mega Minors
+2025,matches/kills.csv,Player,104325,0,PatMen | d4v41 | something
+2025,matches/kills.csv,Enemy Team,104325,0,Xi Lai Gaming | Sentinels | EDward Gaming
+2025,matches/kills.csv,Enemy,104325,0,NoMan | happywei | Viva
+2025,matches/kills.csv,Player Kills,60961,43364,4 | 3 | 5
+2025,matches/kills.csv,Enemy Kills,60961,43364,6 | 7 | 2
+2025,matches/kills.csv,Difference,60865,43460,-2 | -4 | 1
+2025,matches/kills.csv,Kill Type,104325,0,All Kills | First Kills | Op Kills
+2025,matches/kills_stats.csv,Tournament,13912,0,Valorant Champions 2025 | VCT 2025: Americas Stage 2 | VCT 2025: EMEA Stage 2
+2025,matches/kills_stats.csv,Stage,13912,0,Group Stage | Playoffs | Swiss Stage
+2025,matches/kills_stats.csv,Match Type,13912,0,Opening (A) | Opening (C) | Opening (D)
+2025,matches/kills_stats.csv,Match Name,13912,0,Paper Rex vs Xi Lai Gaming | GIANTX vs Sentinels | NRG vs EDward Gaming
+2025,matches/kills_stats.csv,Map,13912,0,All Maps | Bind | Sunset
+2025,matches/kills_stats.csv,Team,13912,0,Paper Rex | Xi Lai Gaming | GIANTX
+2025,matches/kills_stats.csv,Player,13912,0,Jinggg | f0rsakeN | d4v41
+2025,matches/kills_stats.csv,Agents,13912,0,"raze | brimstone, omen | sage, viper"
+2025,matches/kills_stats.csv,2k,13092,820,8 | 5 | 2
+2025,matches/kills_stats.csv,3k,8702,5210,5 | 1 | 2
+2025,matches/kills_stats.csv,4k,2835,11077,3 | 1 | 2
+2025,matches/kills_stats.csv,5k,408,13504,1 | 3 | 2
+2025,matches/kills_stats.csv,1v1,3427,10485,3 | 1 | 2
+2025,matches/kills_stats.csv,1v2,1928,11984,1 | 2 | 4
+2025,matches/kills_stats.csv,1v3,544,13368,1 | 2 | 3
+2025,matches/kills_stats.csv,1v4,102,13810,1
+2025,matches/kills_stats.csv,1v5,10,13902,1.0
+2025,matches/kills_stats.csv,Econ,13912,0,73 | 66 | 43
+2025,matches/kills_stats.csv,Spike Plants,13912,0,0 | 1 | 5
+2025,matches/kills_stats.csv,Spike Defuses,13912,0,2 | 0 | 3
+2025,matches/rounds_kills.csv,Tournament,89088,0,Valorant Champions 2025 | VCT 2025: Americas Stage 2 | VCT 2025: EMEA Stage 2
+2025,matches/rounds_kills.csv,Stage,89088,0,Group Stage | Playoffs | Swiss Stage
+2025,matches/rounds_kills.csv,Match Type,89088,0,Opening (A) | Opening (C) | Opening (D)
+2025,matches/rounds_kills.csv,Match Name,89088,0,Paper Rex vs Xi Lai Gaming | GIANTX vs Sentinels | NRG vs EDward Gaming
+2025,matches/rounds_kills.csv,Map,89088,0,Bind | Sunset | Corrode
+2025,matches/rounds_kills.csv,Round Number,89088,0,3 | 5 | 13
+2025,matches/rounds_kills.csv,Eliminator Team,89088,0,Paper Rex | Xi Lai Gaming | GIANTX
+2025,matches/rounds_kills.csv,Eliminator,89088,0,Jinggg | f0rsakeN | d4v41
+2025,matches/rounds_kills.csv,Eliminator Agent,89088,0,raze | brimstone | viper
+2025,matches/rounds_kills.csv,Eliminated Team,89088,0,Xi Lai Gaming | Paper Rex | Sentinels
+2025,matches/rounds_kills.csv,Eliminated,89088,0,coconut | NoMan | Rarga
+2025,matches/rounds_kills.csv,Eliminated Agent,89088,0,gekko | skye | raze
+2025,matches/rounds_kills.csv,Kill Type,89088,0,2k | 3k | 4k
+2025,matches/team_mapping.csv,Abbreviated,58,0,PRX | XLG | GX
+2025,matches/team_mapping.csv,Full Name,58,0,Paper Rex | Xi Lai Gaming | GIANTX
+2025,matches/win_loss_methods_count.csv,Tournament,2554,0,Valorant Champions 2025 | VCT 2025: Americas Stage 2 | VCT 2025: EMEA Stage 2
+2025,matches/win_loss_methods_count.csv,Stage,2554,0,Group Stage | Playoffs | Showmatch
+2025,matches/win_loss_methods_count.csv,Match Type,2554,0,Opening (A) | Opening (C) | Opening (D)
+2025,matches/win_loss_methods_count.csv,Match Name,2554,0,Paper Rex vs Xi Lai Gaming | GIANTX vs Sentinels | NRG vs EDward Gaming
+2025,matches/win_loss_methods_count.csv,Map,2554,0,Bind | Sunset | Corrode
+2025,matches/win_loss_methods_count.csv,Team,2554,0,Paper Rex | Xi Lai Gaming | GIANTX
+2025,matches/win_loss_methods_count.csv,Elimination,2554,0,8 | 3 | 9
+2025,matches/win_loss_methods_count.csv,Detonated,2554,0,1 | 3 | 0
+2025,matches/win_loss_methods_count.csv,Defused,2554,0,3 | 2 | 4
+2025,matches/win_loss_methods_count.csv,Time Expiry (No Plant),2554,0,1 | 0 | 3
+2025,matches/win_loss_methods_count.csv,Eliminated,2554,0,3 | 8 | 9
+2025,matches/win_loss_methods_count.csv,Defused Failed,2554,0,3 | 1 | 2
+2025,matches/win_loss_methods_count.csv,Detonation Denied,2554,0,2 | 3 | 0
+2025,matches/win_loss_methods_count.csv,Time Expiry (Failed to Plant),2554,0,1 | 0 | 3
+2025,matches/win_loss_methods_round_number.csv,Tournament,53950,0,Valorant Champions 2025 | VCT 2025: Americas Stage 2 | VCT 2025: EMEA Stage 2
+2025,matches/win_loss_methods_round_number.csv,Stage,53950,0,Group Stage | Playoffs | Showmatch
+2025,matches/win_loss_methods_round_number.csv,Match Type,53950,0,Opening (A) | Opening (C) | Opening (D)
+2025,matches/win_loss_methods_round_number.csv,Match Name,53950,0,Paper Rex vs Xi Lai Gaming | GIANTX vs Sentinels | NRG vs EDward Gaming
+2025,matches/win_loss_methods_round_number.csv,Map,53950,0,Bind | Sunset | Corrode
+2025,matches/win_loss_methods_round_number.csv,Round Number,53950,0,1 | 2 | 3
+2025,matches/win_loss_methods_round_number.csv,Team,53950,0,Xi Lai Gaming | Paper Rex | GIANTX
+2025,matches/win_loss_methods_round_number.csv,Method,53950,0,Elimination | Eliminated | Detonated
+2025,matches/win_loss_methods_round_number.csv,Outcome,53950,0,Win | Loss
+2025,players_stats/players_stats.csv,Tournament,17996,0,Valorant Champions 2025 | VCT 2025: EMEA Stage 2 | VCT 2025: Americas Stage 2
+2025,players_stats/players_stats.csv,Stage,17996,0,Playoffs | Group Stage | All Stages
+2025,players_stats/players_stats.csv,Match Type,17996,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2025,players_stats/players_stats.csv,Player,17996,0,Boo | RieNs | Wo0t
+2025,players_stats/players_stats.csv,Teams,17996,0,Team Heretics | GIANTX | G2 Esports
+2025,players_stats/players_stats.csv,Agents,17996,0,"astra | omen | astra, omen"
+2025,players_stats/players_stats.csv,Rounds Played,17996,0,26 | 19 | 45
+2025,players_stats/players_stats.csv,Rating,16604,1392,0.68 | 0.46 | 0.59
+2025,players_stats/players_stats.csv,Average Combat Score,17986,10,129 | 98 | 114
+2025,players_stats/players_stats.csv,Kills:Deaths,17996,0,0.61 | 0.4 | 0.52
+2025,players_stats/players_stats.csv,"Kill, Assist, Trade, Survive %",16692,1304,69% | 42% | 58%
+2025,players_stats/players_stats.csv,Average Damage Per Round,16626,1370,89 | 55 | 74
+2025,players_stats/players_stats.csv,Kills Per Round,17996,0,0.42 | 0.32 | 0.38
+2025,players_stats/players_stats.csv,Assists Per Round,17996,0,0.15 | 0.26 | 0.2
+2025,players_stats/players_stats.csv,First Kills Per Round,16645,1351,0.12 | 0.05 | 0.09
+2025,players_stats/players_stats.csv,First Deaths Per Round,16646,1350,0.12 | 0.26 | 0.18
+2025,players_stats/players_stats.csv,Headshot %,16688,1308,44% | 37% | 41%
+2025,players_stats/players_stats.csv,Clutch Success %,6659,11337,33% | 14% | 29%
+2025,players_stats/players_stats.csv,Clutches (won/played),13263,4733,0/4 | 1/3 | 1/7
+2025,players_stats/players_stats.csv,Maximum Kills in a Single Map,17996,0,11 | 6 | 18
+2025,players_stats/players_stats.csv,Kills,17996,0,11 | 6 | 17
+2025,players_stats/players_stats.csv,Deaths,17996,0,18 | 15 | 33
+2025,players_stats/players_stats.csv,Assists,17996,0,4 | 5 | 9
+2025,players_stats/players_stats.csv,First Kills,17996,0,3 | 1 | 4
+2025,players_stats/players_stats.csv,First Deaths,17996,0,3 | 5 | 8
+2026,ids/players_ids.csv,Player,284,0,NoMan | Lysoar | happywei
+2026,ids/players_ids.csv,Player ID,284,0,11527 | 37489 | 37927
+2026,ids/teams_ids.csv,Team,49,0,Xi Lai Gaming | NRG | Team Vitality
+2026,ids/teams_ids.csv,Team ID,49,0,13581 | 1034 | 2059
+2026,ids/tournaments_stages_match_types_ids.csv,Tournament,132,0,VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1 | VCT 2026: China Stage 1
+2026,ids/tournaments_stages_match_types_ids.csv,Tournament ID,132,0,2860 | 2863 | 2864
+2026,ids/tournaments_stages_match_types_ids.csv,Stage,132,0,Playoffs | Group Stage | All Stages
+2026,ids/tournaments_stages_match_types_ids.csv,Stage ID,123,9,5557 | 5556 | 5560
+2026,ids/tournaments_stages_match_types_ids.csv,Match Type,132,0,Upper Round 1 | Upper Semifinals | Upper Final
+2026,ids/tournaments_stages_match_types_ids.csv,Match Type ID,123,9,37954 | 37955 | 37956
+2026,ids/tournaments_stages_matches_games_ids.csv,Tournament,886,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,ids/tournaments_stages_matches_games_ids.csv,Tournament ID,886,0,2765 | 2860 | 2863
+2026,ids/tournaments_stages_matches_games_ids.csv,Stage,886,0,Swiss Stage | Playoffs | Group Stage
+2026,ids/tournaments_stages_matches_games_ids.csv,Stage ID,886,0,5767 | 5768 | 5556
+2026,ids/tournaments_stages_matches_games_ids.csv,Match Type,886,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,ids/tournaments_stages_matches_games_ids.csv,Match Name,886,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,ids/tournaments_stages_matches_games_ids.csv,Match ID,886,0,684613 | 684610 | 684611
+2026,ids/tournaments_stages_matches_games_ids.csv,Map,886,0,Pearl | Lotus | Breeze
+2026,ids/tournaments_stages_matches_games_ids.csv,Game ID,886,0,270746 | 270747 | 270737
+2026,matches/draft_phase.csv,Tournament,2052,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,matches/draft_phase.csv,Stage,2052,0,Swiss Stage | Playoffs | Group Stage
+2026,matches/draft_phase.csv,Match Type,2052,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,matches/draft_phase.csv,Match Name,2052,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,matches/draft_phase.csv,Team,2052,0,Mega Minors | Xi Lai Gaming | Dragon Ranger Gaming
+2026,matches/draft_phase.csv,Action,2052,0,ban | pick
+2026,matches/draft_phase.csv,Map,2052,0,Split | Breeze | Pearl
+2026,matches/eco_rounds.csv,Tournament,28944,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,matches/eco_rounds.csv,Stage,28944,0,Swiss Stage | Playoffs | Group Stage
+2026,matches/eco_rounds.csv,Match Type,28944,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,matches/eco_rounds.csv,Match Name,28944,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,matches/eco_rounds.csv,Map,28944,0,Pearl | Lotus | Breeze
+2026,matches/eco_rounds.csv,Round Number,28944,0,1 | 2 | 3
+2026,matches/eco_rounds.csv,Team,28944,0,Xi Lai Gaming | Mega Minors | Team Vitality
+2026,matches/eco_rounds.csv,Loadout Value,0,28944,
+2026,matches/eco_rounds.csv,Remaining Credits,28944,0,0.3k | 0.1k | 9.8k
+2026,matches/eco_rounds.csv,Type,28944,0,Eco: 0-5k | Semi-buy: 10-20k | Full buy: 20k+
+2026,matches/eco_rounds.csv,Outcome,28944,0,Loss | Win
+2026,matches/eco_stats.csv,Tournament,9440,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,matches/eco_stats.csv,Stage,9440,0,Swiss Stage | Playoffs | Group Stage
+2026,matches/eco_stats.csv,Match Type,9440,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,matches/eco_stats.csv,Match Name,9440,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,matches/eco_stats.csv,Map,9440,0,Pearl | Lotus | All Maps
+2026,matches/eco_stats.csv,Team,9440,0,Xi Lai Gaming | Mega Minors | Team Vitality
+2026,matches/eco_stats.csv,Type,9440,0,Pistol Won | Eco (won) | $ (won)
+2026,matches/eco_stats.csv,Initiated,7552,1888,4 | 3 | 1
+2026,matches/eco_stats.csv,Won,9440,0,0 | 1 | 5
+2026,matches/kills.csv,Tournament,70800,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,matches/kills.csv,Stage,70800,0,Swiss Stage | Playoffs | Group Stage
+2026,matches/kills.csv,Match Type,70800,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,matches/kills.csv,Match Name,70800,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,matches/kills.csv,Map,70800,0,All Maps | Pearl | Lotus
+2026,matches/kills.csv,Player Team,70800,0,Xi Lai Gaming | Team Vitality | FULL SENSE
+2026,matches/kills.csv,Player,70800,0,happywei | NoMan | Lysoar
+2026,matches/kills.csv,Enemy Team,70800,0,Mega Minors | Dragon Ranger Gaming | FUT Esports
+2026,matches/kills.csv,Enemy,70800,0,skuba | Ethan | mada
+2026,matches/kills.csv,Player Kills,42338,28462,5 | 12 | 7
+2026,matches/kills.csv,Enemy Kills,42338,28462,6 | 8 | 4
+2026,matches/kills.csv,Difference,42290,28510,-1 | 4 | 1
+2026,matches/kills.csv,Kill Type,70800,0,All Kills | First Kills | Op Kills
+2026,matches/kills_stats.csv,Tournament,9440,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,matches/kills_stats.csv,Stage,9440,0,Swiss Stage | Playoffs | Group Stage
+2026,matches/kills_stats.csv,Match Type,9440,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,matches/kills_stats.csv,Match Name,9440,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,matches/kills_stats.csv,Map,9440,0,All Maps | Pearl | Lotus
+2026,matches/kills_stats.csv,Team,9440,0,Xi Lai Gaming | Mega Minors | Team Vitality
+2026,matches/kills_stats.csv,Player,9440,0,NoMan | Rarga | WsLeo
+2026,matches/kills_stats.csv,Agents,9440,0,"deadlock, jett | phoenix, sage | fade"
+2026,matches/kills_stats.csv,2k,8901,539,5 | 4 | 7
+2026,matches/kills_stats.csv,3k,5929,3511,2 | 1 | 3
+2026,matches/kills_stats.csv,4k,1923,7517,1 | 2 | 3
+2026,matches/kills_stats.csv,5k,266,9174,1 | 2
+2026,matches/kills_stats.csv,1v1,2263,7177,1 | 2 | 3
+2026,matches/kills_stats.csv,1v2,1187,8253,1 | 2 | 3
+2026,matches/kills_stats.csv,1v3,288,9152,1 | 2
+2026,matches/kills_stats.csv,1v4,62,9378,1
+2026,matches/kills_stats.csv,1v5,4,9436,1.0
+2026,matches/kills_stats.csv,Econ,9440,0,52 | 41 | 48
+2026,matches/kills_stats.csv,Spike Plants,9440,0,0 | 11 | 2
+2026,matches/kills_stats.csv,Spike Defuses,9440,0,1 | 0 | 5
+2026,matches/rounds_kills.csv,Tournament,60895,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,matches/rounds_kills.csv,Stage,60895,0,Swiss Stage | Playoffs | Group Stage
+2026,matches/rounds_kills.csv,Match Type,60895,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,matches/rounds_kills.csv,Match Name,60895,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,matches/rounds_kills.csv,Map,60895,0,Pearl | Lotus | Breeze
+2026,matches/rounds_kills.csv,Round Number,60895,0,1 | 2 | 6
+2026,matches/rounds_kills.csv,Eliminator Team,60895,0,Xi Lai Gaming | Mega Minors | Team Vitality
+2026,matches/rounds_kills.csv,Eliminator,60895,0,NoMan | Rarga | WsLeo
+2026,matches/rounds_kills.csv,Eliminator Agent,60895,0,jett | phoenix | fade
+2026,matches/rounds_kills.csv,Eliminated Team,60895,0,Mega Minors | Xi Lai Gaming | Dragon Ranger Gaming
+2026,matches/rounds_kills.csv,Eliminated,60895,0,mada | keiko | brawk
+2026,matches/rounds_kills.csv,Eliminated Agent,60895,0,waylay | vyse | sova
+2026,matches/rounds_kills.csv,Kill Type,60895,0,2k | 3k | 1v2
+2026,matches/team_mapping.csv,Abbreviated,49,0,XLG | NRG | VIT
+2026,matches/team_mapping.csv,Full Name,49,0,Xi Lai Gaming | NRG | Team Vitality
+2026,matches/win_loss_methods_count.csv,Tournament,1772,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,matches/win_loss_methods_count.csv,Stage,1772,0,Swiss Stage | Playoffs | Group Stage
+2026,matches/win_loss_methods_count.csv,Match Type,1772,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,matches/win_loss_methods_count.csv,Match Name,1772,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,matches/win_loss_methods_count.csv,Map,1772,0,Pearl | Lotus | Breeze
+2026,matches/win_loss_methods_count.csv,Team,1772,0,Xi Lai Gaming | Mega Minors | Team Vitality
+2026,matches/win_loss_methods_count.csv,Elimination,1772,0,3 | 6 | 8
+2026,matches/win_loss_methods_count.csv,Detonated,1772,0,0 | 2 | 1
+2026,matches/win_loss_methods_count.csv,Defused,1772,0,3 | 4 | 1
+2026,matches/win_loss_methods_count.csv,Time Expiry (No Plant),1772,0,0 | 1 | 2
+2026,matches/win_loss_methods_count.csv,Eliminated,1772,0,6 | 3 | 7
+2026,matches/win_loss_methods_count.csv,Defused Failed,1772,0,2 | 0 | 1
+2026,matches/win_loss_methods_count.csv,Detonation Denied,1772,0,4 | 3 | 1
+2026,matches/win_loss_methods_count.csv,Time Expiry (Failed to Plant),1772,0,1 | 0 | 2
+2026,matches/win_loss_methods_round_number.csv,Tournament,37502,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,matches/win_loss_methods_round_number.csv,Stage,37502,0,Swiss Stage | Playoffs | Group Stage
+2026,matches/win_loss_methods_round_number.csv,Match Type,37502,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,matches/win_loss_methods_round_number.csv,Match Name,37502,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,matches/win_loss_methods_round_number.csv,Map,37502,0,Pearl | Lotus | Breeze
+2026,matches/win_loss_methods_round_number.csv,Round Number,37502,0,1 | 2 | 3
+2026,matches/win_loss_methods_round_number.csv,Team,37502,0,Mega Minors | Xi Lai Gaming | Team Vitality
+2026,matches/win_loss_methods_round_number.csv,Method,37502,0,Elimination | Eliminated | Detonated
+2026,matches/win_loss_methods_round_number.csv,Outcome,37502,0,Win | Loss
+2026,players_stats/players_stats.csv,Tournament,11821,0,Valorant Masters London 2026 | VCT 2026: EMEA Stage 1 | VCT 2026: Americas Stage 1
+2026,players_stats/players_stats.csv,Stage,11821,0,Playoffs | Swiss Stage | All Stages
+2026,players_stats/players_stats.csv,Match Type,11821,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2026,players_stats/players_stats.csv,Player,11821,0,CHICHOO | Jieni7 | nobody
+2026,players_stats/players_stats.csv,Teams,11821,0,EDward Gaming | FUT Esports | G2 Esports
+2026,players_stats/players_stats.csv,Agents,11821,0,astra | cypher | omen
+2026,players_stats/players_stats.csv,Rounds Played,11821,0,26 | 18 | 17
+2026,players_stats/players_stats.csv,Rating,11630,191,1.27 | 1.14 | 0.84
+2026,players_stats/players_stats.csv,Average Combat Score,11821,0,204 | 192 | 131
+2026,players_stats/players_stats.csv,Kills:Deaths,11821,0,1.36 | 1.56 | 0.73
+2026,players_stats/players_stats.csv,"Kill, Assist, Trade, Survive %",11638,183,69% | 78% | 53%
+2026,players_stats/players_stats.csv,Average Damage Per Round,11642,179,136 | 93 | 124
+2026,players_stats/players_stats.csv,Kills Per Round,11821,0,0.73 | 0.78 | 0.47
+2026,players_stats/players_stats.csv,Assists Per Round,11821,0,0.46 | 0.17 | 0.12
+2026,players_stats/players_stats.csv,First Kills Per Round,11642,179,0.0 | 0.11 | 0.12
+2026,players_stats/players_stats.csv,First Deaths Per Round,11642,179,0.08 | 0.06 | 0.12
+2026,players_stats/players_stats.csv,Headshot %,11637,184,23% | 28% | 29%
+2026,players_stats/players_stats.csv,Clutch Success %,4338,7483,20% | 100% | 22%
+2026,players_stats/players_stats.csv,Clutches (won/played),8807,3014,1/5 | 1/1 | 0/3
+2026,players_stats/players_stats.csv,Maximum Kills in a Single Map,11821,0,19 | 14 | 8
+2026,players_stats/players_stats.csv,Kills,11821,0,19 | 14 | 8
+2026,players_stats/players_stats.csv,Deaths,11821,0,14 | 9 | 11
+2026,players_stats/players_stats.csv,Assists,11821,0,12 | 3 | 2
+2026,players_stats/players_stats.csv,First Kills,11821,0,0 | 2 | 4
+2026,players_stats/players_stats.csv,First Deaths,11821,0,2 | 1 | 5

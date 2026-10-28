@@ -1,0 +1,439 @@
+﻿Year,File,Column,Nonempty Rows,Empty Rows,Example Values
+2021,matches/overview.csv,Tournament,599355,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,matches/overview.csv,Stage,599355,0,Group Stage | Playoffs | Main Event
+2021,matches/overview.csv,Match Type,599355,0,Opening (D) | Opening (C) | Opening (B)
+2021,matches/overview.csv,Match Name,599355,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,matches/overview.csv,Map,599295,60,Haven | All Maps | Breeze
+2021,matches/overview.csv,Player,599355,0,MaKo | stax | Rb
+2021,matches/overview.csv,Team,599355,0,Vision Strikers | FULL SENSE | Team Vikings
+2021,matches/overview.csv,Agents,599355,0,astra | breach | skye
+2021,matches/overview.csv,Rating,376257,223098,1.36 | 1.38 | 1.31
+2021,matches/overview.csv,Average Combat Score,523387,75968,209 | 211 | 207
+2021,matches/overview.csv,Kills,598237,1118,13 | 9 | 4
+2021,matches/overview.csv,Deaths,598237,1118,8 | 5 | 3
+2021,matches/overview.csv,Assists,598237,1118,6 | 4 | 2
+2021,matches/overview.csv,Kills - Deaths (KD),597658,1697,5 | 4 | 1
+2021,matches/overview.csv,"Kill, Assist, Trade, Survive %",375536,223819,78% | 75% | 83%
+2021,matches/overview.csv,Average Damage Per Round,521317,78038,154 | 165 | 132
+2021,matches/overview.csv,Headshot %,592292,7063,24% | 18% | 42%
+2021,matches/overview.csv,First Kills,597994,1361,1 | 0 | 2
+2021,matches/overview.csv,First Deaths,597708,1647,1 | 0 | 2
+2021,matches/overview.csv,Kills - Deaths (FKD),597708,1647,0 | 1 | -1
+2021,matches/overview.csv,Side,599355,0,both | attack | defend
+2021,matches/maps_played.csv,Tournament,14486,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,matches/maps_played.csv,Stage,14486,0,Group Stage | Playoffs | Main Event
+2021,matches/maps_played.csv,Match Type,14486,0,Opening (D) | Opening (C) | Opening (B)
+2021,matches/maps_played.csv,Match Name,14486,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,matches/maps_played.csv,Map,14481,5,Haven | Breeze | Icebox
+2021,matches/maps_scores.csv,Tournament,14503,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,matches/maps_scores.csv,Stage,14503,0,Group Stage | Playoffs | Main Event
+2021,matches/maps_scores.csv,Match Type,14503,0,Opening (D) | Opening (C) | Opening (B)
+2021,matches/maps_scores.csv,Match Name,14503,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,matches/maps_scores.csv,Map,14482,21,Haven | Breeze | Icebox
+2021,matches/maps_scores.csv,Team A,14503,0,Vision Strikers | Team Vikings | FNATIC
+2021,matches/maps_scores.csv,Team A Score,14503,0,13 | 11 | 14
+2021,matches/maps_scores.csv,Team A Attacker Score,14503,0,9 | 6 | 7
+2021,matches/maps_scores.csv,Team A Defender Score,14503,0,4 | 7 | 6
+2021,matches/maps_scores.csv,Team A Overtime Score,1247,13256,2 | 0 | 1
+2021,matches/maps_scores.csv,Team B,14503,0,FULL SENSE | Crazy Raccoon | Cloud9
+2021,matches/maps_scores.csv,Team B Score,14503,0,5 | 9 | 8
+2021,matches/maps_scores.csv,Team B Attacker Score,14503,0,2 | 3 | 6
+2021,matches/maps_scores.csv,Team B Defender Score,14502,1,3 | 6 | 5
+2021,matches/maps_scores.csv,Team B Overtime Score,1247,13256,0 | 2 | 3
+2021,matches/maps_scores.csv,Duration,14414,89,59:11 | 44:30 | 59:48
+2021,matches/scores.csv,Tournament,7224,0,Valorant Champions 2021 | Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier
+2021,matches/scores.csv,Stage,7224,0,Group Stage | Playoffs | Main Event
+2021,matches/scores.csv,Match Type,7224,0,Opening (D) | Opening (C) | Opening (B)
+2021,matches/scores.csv,Match Name,7224,0,Vision Strikers vs FULL SENSE | Team Vikings vs Crazy Raccoon | FNATIC vs Cloud9
+2021,matches/scores.csv,Team A,7224,0,Vision Strikers | Team Vikings | FNATIC
+2021,matches/scores.csv,Team B,7224,0,FULL SENSE | Crazy Raccoon | Cloud9
+2021,matches/scores.csv,Team A Score,7224,0,2 | 0 | 1
+2021,matches/scores.csv,Team B Score,7224,0,0 | 1 | 2
+2021,matches/scores.csv,Match Result,7224,0,Vision Strikers won | Team Vikings won | FNATIC won
+2021,agents/agents_pick_rates.csv,Tournament,192120,0,Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier | Champions Tour Asia-Pacific: Last Chance Qualifier
+2021,agents/agents_pick_rates.csv,Stage,192120,0,Main Event | All Stages | Playoffs
+2021,agents/agents_pick_rates.csv,Match Type,192120,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2021,agents/agents_pick_rates.csv,Map,192120,0,All Maps | Breeze | Ascent
+2021,agents/agents_pick_rates.csv,Agent,192120,0,jett | sova | viper
+2021,agents/agents_pick_rates.csv,Pick Rate,192120,0,91% | 77% | 68%
+2021,agents/maps_stats.csv,Tournament,8005,0,Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier | Champions Tour Asia-Pacific: Last Chance Qualifier
+2021,agents/maps_stats.csv,Stage,8005,0,Main Event | All Stages | Playoffs
+2021,agents/maps_stats.csv,Match Type,8005,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2021,agents/maps_stats.csv,Map,8005,0,All Maps | Breeze | Ascent
+2021,agents/maps_stats.csv,Total Maps Played,8005,0,11 | 3 | 2
+2021,agents/maps_stats.csv,Attacker Side Win Percentage,8005,0,46% | 61% | 36%
+2021,agents/maps_stats.csv,Defender Side Win Percentage,8005,0,54% | 39% | 64%
+2021,agents/teams_picked_agents.csv,Tournament,224050,0,Champions Tour North America: Last Chance Qualifier | Champions Tour South America: Last Chance Qualifier | Champions Tour Asia-Pacific: Last Chance Qualifier
+2021,agents/teams_picked_agents.csv,Stage,224050,0,Main Event | All Stages | Playoffs
+2021,agents/teams_picked_agents.csv,Match Type,224050,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2021,agents/teams_picked_agents.csv,Map,224050,0,Breeze | Split | Icebox
+2021,agents/teams_picked_agents.csv,Team,224050,0,100 Thieves | Gen.G | FaZe Clan
+2021,agents/teams_picked_agents.csv,Agent,224050,0,jett | sova | viper
+2021,agents/teams_picked_agents.csv,Total Wins By Map,224050,0,0 | 1 | 4
+2021,agents/teams_picked_agents.csv,Total Loss By Map,224050,0,1 | 0 | 3
+2021,agents/teams_picked_agents.csv,Total Maps Played,224050,0,1 | 5 | 4
+2022,matches/overview.csv,Tournament,379378,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,matches/overview.csv,Stage,379378,0,Group Stage | Playoffs | Main Event
+2022,matches/overview.csv,Match Type,379378,0,Opening (A) | Opening (B) | Winner's (A)
+2022,matches/overview.csv,Match Name,379378,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,matches/overview.csv,Map,379378,0,Pearl | All Maps | Icebox
+2022,matches/overview.csv,Player,379378,0,Benkai | d4v41 | mindfreak
+2022,matches/overview.csv,Team,379378,0,Paper Rex | EDward Gaming | LEVIATÁN
+2022,matches/overview.csv,Agents,379368,10,fade | sage | astra
+2022,matches/overview.csv,Rating,378642,736,1.31 | 1.18 | 1.45
+2022,matches/overview.csv,Average Combat Score,378520,858,242 | 243 | 219
+2022,matches/overview.csv,Kills,379058,320,22 | 11 | 20
+2022,matches/overview.csv,Deaths,379058,320,16 | 9 | 7
+2022,matches/overview.csv,Assists,379058,320,13 | 5 | 8
+2022,matches/overview.csv,Kills - Deaths (KD),378763,615,6 | 2 | 4
+2022,matches/overview.csv,"Kill, Assist, Trade, Survive %",378154,1224,88% | 75% | 100%
+2022,matches/overview.csv,Average Damage Per Round,378414,964,156 | 167 | 146
+2022,matches/overview.csv,Headshot %,377841,1537,34% | 32% | 35%
+2022,matches/overview.csv,First Kills,378993,385,1 | 0 | 2
+2022,matches/overview.csv,First Deaths,378903,475,0 | 4 | 2
+2022,matches/overview.csv,Kills - Deaths (FKD),378903,475,1 | 0 | -4
+2022,matches/overview.csv,Side,379378,0,both | attack | defend
+2022,matches/maps_played.csv,Tournament,8864,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,matches/maps_played.csv,Stage,8864,0,Group Stage | Playoffs | Main Event
+2022,matches/maps_played.csv,Match Type,8864,0,Opening (A) | Opening (B) | Winner's (A)
+2022,matches/maps_played.csv,Match Name,8864,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,matches/maps_played.csv,Map,8864,0,Pearl | Icebox | Haven
+2022,matches/maps_scores.csv,Tournament,8884,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,matches/maps_scores.csv,Stage,8884,0,Group Stage | Playoffs | Main Event
+2022,matches/maps_scores.csv,Match Type,8884,0,Opening (A) | Opening (B) | Winner's (A)
+2022,matches/maps_scores.csv,Match Name,8884,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,matches/maps_scores.csv,Map,8864,20,Pearl | Icebox | Haven
+2022,matches/maps_scores.csv,Team A,8884,0,Paper Rex | LEVIATÁN | ZETA DIVISION
+2022,matches/maps_scores.csv,Team A Score,8884,0,13 | 5 | 8
+2022,matches/maps_scores.csv,Team A Attacker Score,8884,0,6 | 2 | 7
+2022,matches/maps_scores.csv,Team A Defender Score,8884,0,7 | 3 | 6
+2022,matches/maps_scores.csv,Team A Overtime Score,793,8091,4 | 2 | 6
+2022,matches/maps_scores.csv,Team B,8884,0,EDward Gaming | Team Liquid | LOUD
+2022,matches/maps_scores.csv,Team B Score,8884,0,11 | 13 | 8
+2022,matches/maps_scores.csv,Team B Attacker Score,8884,0,5 | 3 | 6
+2022,matches/maps_scores.csv,Team B Defender Score,8884,0,6 | 10 | 5
+2022,matches/maps_scores.csv,Team B Overtime Score,793,8091,6 | 2 | 0
+2022,matches/maps_scores.csv,Duration,8834,50,1:16:34 | 40:51 | 45:32
+2022,matches/scores.csv,Tournament,3842,0,Valorant Champions 2022 | Champions Tour South America: Last Chance Qualifier | Champions Tour North America: Last Chance Qualifier
+2022,matches/scores.csv,Stage,3842,0,Group Stage | Playoffs | Main Event
+2022,matches/scores.csv,Match Type,3842,0,Opening (A) | Opening (B) | Winner's (A)
+2022,matches/scores.csv,Match Name,3842,0,Paper Rex vs EDward Gaming | LEVIATÁN vs Team Liquid | ZETA DIVISION vs LOUD
+2022,matches/scores.csv,Team A,3842,0,Paper Rex | LEVIATÁN | ZETA DIVISION
+2022,matches/scores.csv,Team B,3842,0,EDward Gaming | Team Liquid | LOUD
+2022,matches/scores.csv,Team A Score,3842,0,2 | 0 | 1
+2022,matches/scores.csv,Team B Score,3842,0,1 | 0 | 2
+2022,matches/scores.csv,Match Result,3842,0,Paper Rex won | Leviatán won | LOUD won
+2022,agents/agents_pick_rates.csv,Tournament,132336,0,Champions Tour South America: Last Chance Qualifier | Champions Tour EMEA: Last Chance Qualifier | Champions Tour East Asia: Last Chance Qualifier
+2022,agents/agents_pick_rates.csv,Stage,132336,0,Main Event | All Stages | Playoffs
+2022,agents/agents_pick_rates.csv,Match Type,132336,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2022,agents/agents_pick_rates.csv,Map,132336,0,All Maps | Ascent | Fracture
+2022,agents/agents_pick_rates.csv,Agent,132336,0,chamber | fade | kayo
+2022,agents/agents_pick_rates.csv,Pick Rate,132336,0,80% | 50% | 45%
+2022,agents/maps_stats.csv,Tournament,5514,0,Champions Tour South America: Last Chance Qualifier | Champions Tour EMEA: Last Chance Qualifier | Champions Tour East Asia: Last Chance Qualifier
+2022,agents/maps_stats.csv,Stage,5514,0,Main Event | All Stages | Playoffs
+2022,agents/maps_stats.csv,Match Type,5514,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2022,agents/maps_stats.csv,Map,5514,0,All Maps | Ascent | Fracture
+2022,agents/maps_stats.csv,Total Maps Played,5514,0,10 | 3 | 2
+2022,agents/maps_stats.csv,Attacker Side Win Percentage,5514,0,52% | 48% | 54%
+2022,agents/maps_stats.csv,Defender Side Win Percentage,5514,0,48% | 52% | 46%
+2022,agents/teams_picked_agents.csv,Tournament,131546,0,Champions Tour South America: Last Chance Qualifier | Champions Tour EMEA: Last Chance Qualifier | Champions Tour East Asia: Last Chance Qualifier
+2022,agents/teams_picked_agents.csv,Stage,131546,0,Main Event | All Stages | Playoffs
+2022,agents/teams_picked_agents.csv,Match Type,131546,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2022,agents/teams_picked_agents.csv,Map,131546,0,Haven | Ascent | Fracture
+2022,agents/teams_picked_agents.csv,Team,131546,0,Ninjas In Pyjamas | 9z Team | KRÜ Esports
+2022,agents/teams_picked_agents.csv,Agent,131546,0,chamber | kayo | omen
+2022,agents/teams_picked_agents.csv,Total Wins By Map,131546,0,0 | 1 | 2
+2022,agents/teams_picked_agents.csv,Total Loss By Map,131546,0,1 | 0 | 2
+2022,agents/teams_picked_agents.csv,Total Maps Played,131546,0,1 | 3 | 2
+2023,matches/overview.csv,Tournament,34944,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,matches/overview.csv,Stage,34944,0,Group Stage | Playoffs | Main Event
+2023,matches/overview.csv,Match Type,34944,0,Opening (D) | Opening (B) | Winner's (D)
+2023,matches/overview.csv,Match Name,34944,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,matches/overview.csv,Map,34944,0,Fracture | All Maps | Bind
+2023,matches/overview.csv,Player,34944,0,nAts | Sayf | soulcas
+2023,matches/overview.csv,Team,34944,0,Team Liquid | Natus Vincere | DRX
+2023,matches/overview.csv,Agents,34944,0,viper | breach | astra
+2023,matches/overview.csv,Rating,32604,2340,1.2 | 1.4 | 1.0
+2023,matches/overview.csv,Average Combat Score,33271,1673,242 | 268 | 217
+2023,matches/overview.csv,Kills,33384,1560,20 | 12 | 8
+2023,matches/overview.csv,Deaths,33384,1560,15 | 7 | 8
+2023,matches/overview.csv,Assists,33384,1560,3 | 1 | 2
+2023,matches/overview.csv,Kills - Deaths (KD),33378,1566,5 | 0 | -2
+2023,matches/overview.csv,"Kill, Assist, Trade, Survive %",32592,2352,67% | 75% | 58%
+2023,matches/overview.csv,Average Damage Per Round,32590,2354,144 | 162 | 125
+2023,matches/overview.csv,Headshot %,32574,2370,33% | 46% | 21%
+2023,matches/overview.csv,First Kills,32623,2321,3 | 1 | 2
+2023,matches/overview.csv,First Deaths,32604,2340,3 | 1 | 2
+2023,matches/overview.csv,Kills - Deaths (FKD),32604,2340,0 | -1 | -2
+2023,matches/overview.csv,Side,34944,0,both | attack | defend
+2023,matches/maps_played.csv,Tournament,830,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,matches/maps_played.csv,Stage,830,0,Group Stage | Playoffs | Main Event
+2023,matches/maps_played.csv,Match Type,830,0,Opening (D) | Opening (B) | Winner's (D)
+2023,matches/maps_played.csv,Match Name,830,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,matches/maps_played.csv,Map,830,0,Fracture | Bind | Lotus
+2023,matches/maps_scores.csv,Tournament,830,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,matches/maps_scores.csv,Stage,830,0,Group Stage | Playoffs | Main Event
+2023,matches/maps_scores.csv,Match Type,830,0,Opening (D) | Opening (B) | Winner's (D)
+2023,matches/maps_scores.csv,Match Name,830,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,matches/maps_scores.csv,Map,830,0,Fracture | Bind | Lotus
+2023,matches/maps_scores.csv,Team A,830,0,Team Liquid | DRX | FUT Esports
+2023,matches/maps_scores.csv,Team A Score,830,0,11 | 15 | 13
+2023,matches/maps_scores.csv,Team A Attacker Score,830,0,6 | 7 | 8
+2023,matches/maps_scores.csv,Team A Defender Score,830,0,5 | 4 | 6
+2023,matches/maps_scores.csv,Team A Overtime Score,103,727,3 | 1 | 0
+2023,matches/maps_scores.csv,Team B,830,0,Natus Vincere | LOUD | T1
+2023,matches/maps_scores.csv,Team B Score,830,0,13 | 17 | 15
+2023,matches/maps_scores.csv,Team B Attacker Score,830,0,7 | 2 | 4
+2023,matches/maps_scores.csv,Team B Defender Score,830,0,6 | 5 | 4
+2023,matches/maps_scores.csv,Team B Overtime Score,103,727,5 | 3 | 2
+2023,matches/maps_scores.csv,Duration,771,59,1:18:55 | 1:22:57 | 1:17:19
+2023,matches/scores.csv,Tournament,331,0,Valorant Champions 2023 | Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,matches/scores.csv,Stage,331,0,Group Stage | Playoffs | Main Event
+2023,matches/scores.csv,Match Type,331,0,Opening (D) | Opening (B) | Winner's (D)
+2023,matches/scores.csv,Match Name,331,0,Team Liquid vs Natus Vincere | DRX vs LOUD | FUT Esports vs T1
+2023,matches/scores.csv,Team A,331,0,Team Liquid | DRX | FUT Esports
+2023,matches/scores.csv,Team B,331,0,Natus Vincere | LOUD | T1
+2023,matches/scores.csv,Team A Score,331,0,0 | 2 | 1
+2023,matches/scores.csv,Team B Score,331,0,2 | 1 | 0
+2023,matches/scores.csv,Match Result,331,0,Natus Vincere won | DRX won | FUT Esports won
+2023,agents/agents_pick_rates.csv,Tournament,17712,0,Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: Pacific Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,agents/agents_pick_rates.csv,Stage,17712,0,Main Event | All Stages | Playoffs
+2023,agents/agents_pick_rates.csv,Match Type,17712,0,Upper Round 1 | Upper Quarterfinals | Upper Semifinals
+2023,agents/agents_pick_rates.csv,Map,17712,0,All Maps | Bind | Lotus
+2023,agents/agents_pick_rates.csv,Agent,17712,0,viper | skye | raze
+2023,agents/agents_pick_rates.csv,Pick Rate,17712,0,100% | 50% | 25%
+2023,agents/maps_stats.csv,Tournament,738,0,Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: Pacific Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,agents/maps_stats.csv,Stage,738,0,Main Event | All Stages | Playoffs
+2023,agents/maps_stats.csv,Match Type,738,0,Upper Round 1 | Upper Quarterfinals | Upper Semifinals
+2023,agents/maps_stats.csv,Map,738,0,All Maps | Bind | Lotus
+2023,agents/maps_stats.csv,Total Maps Played,738,0,2 | 1 | 6
+2023,agents/maps_stats.csv,Attacker Side Win Percentage,738,0,51% | 35% | 67%
+2023,agents/maps_stats.csv,Defender Side Win Percentage,738,0,49% | 65% | 33%
+2023,agents/teams_picked_agents.csv,Tournament,11751,0,Champions Tour 2023: Americas Last Chance Qualifier | Champions Tour 2023: Pacific Last Chance Qualifier | Champions Tour 2023: EMEA Last Chance Qualifier
+2023,agents/teams_picked_agents.csv,Stage,11751,0,Main Event | All Stages | Playoffs
+2023,agents/teams_picked_agents.csv,Match Type,11751,0,Upper Round 1 | Upper Quarterfinals | Upper Semifinals
+2023,agents/teams_picked_agents.csv,Map,11751,0,Bind | Lotus | Pearl
+2023,agents/teams_picked_agents.csv,Team,11751,0,MIBR | KRÜ Esports | Sentinels
+2023,agents/teams_picked_agents.csv,Agent,11751,0,viper | skye | raze
+2023,agents/teams_picked_agents.csv,Total Wins By Map,11751,0,0 | 1 | 2
+2023,agents/teams_picked_agents.csv,Total Loss By Map,11751,0,1 | 0 | 3
+2023,agents/teams_picked_agents.csv,Total Maps Played,11751,0,1 | 2 | 3
+2024,matches/overview.csv,Tournament,46152,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: China Stage 2
+2024,matches/overview.csv,Stage,46152,0,Group Stage | Playoffs | Regular Season
+2024,matches/overview.csv,Match Type,46152,0,Opening (B) | Opening (A) | Opening (C)
+2024,matches/overview.csv,Match Name,46152,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,matches/overview.csv,Map,46152,0,Haven | All Maps | Ascent
+2024,matches/overview.csv,Player,46152,0,t3xture | Meteor | Lakia
+2024,matches/overview.csv,Team,46152,0,Gen.G | Sentinels | FunPlus Phoenix
+2024,matches/overview.csv,Agents,46152,0,jett | killjoy | skye
+2024,matches/overview.csv,Rating,34062,12090,1.6 | 1.71 | 1.52
+2024,matches/overview.csv,Average Combat Score,38083,8069,305 | 364 | 261
+2024,matches/overview.csv,Kills,38092,8060,24 | 12 | 17
+2024,matches/overview.csv,Deaths,38092,8060,12 | 5 | 7
+2024,matches/overview.csv,Assists,38092,8060,4 | 2 | 1
+2024,matches/overview.csv,Kills - Deaths (KD),38090,8062,12 | 7 | 5
+2024,matches/overview.csv,"Kill, Assist, Trade, Survive %",34052,12100,81% | 89% | 75%
+2024,matches/overview.csv,Average Damage Per Round,36101,10051,188 | 216 | 168
+2024,matches/overview.csv,Headshot %,36084,10068,31% | 37% | 24%
+2024,matches/overview.csv,First Kills,36112,10040,3 | 2 | 1
+2024,matches/overview.csv,First Deaths,36112,10040,4 | 2 | 1
+2024,matches/overview.csv,Kills - Deaths (FKD),36112,10040,-1 | 0 | -3
+2024,matches/overview.csv,Side,46152,0,both | attack | defend
+2024,matches/maps_played.csv,Tournament,1104,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: China Stage 2
+2024,matches/maps_played.csv,Stage,1104,0,Group Stage | Playoffs | Regular Season
+2024,matches/maps_played.csv,Match Type,1104,0,Opening (B) | Opening (A) | Opening (C)
+2024,matches/maps_played.csv,Match Name,1104,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,matches/maps_played.csv,Map,1104,0,Haven | Ascent | Abyss
+2024,matches/maps_scores.csv,Tournament,1104,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: China Stage 2
+2024,matches/maps_scores.csv,Stage,1104,0,Group Stage | Playoffs | Regular Season
+2024,matches/maps_scores.csv,Match Type,1104,0,Opening (B) | Opening (A) | Opening (C)
+2024,matches/maps_scores.csv,Match Name,1104,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,matches/maps_scores.csv,Map,1104,0,Haven | Ascent | Abyss
+2024,matches/maps_scores.csv,Team A,1104,0,Gen.G | FunPlus Phoenix | DRX
+2024,matches/maps_scores.csv,Team A Score,1104,0,13 | 12 | 2
+2024,matches/maps_scores.csv,Team A Attacker Score,1104,0,7 | 8 | 6
+2024,matches/maps_scores.csv,Team A Defender Score,1104,0,6 | 5 | 4
+2024,matches/maps_scores.csv,Team A Overtime Score,112,992,0 | 1 | 2
+2024,matches/maps_scores.csv,Team B,1104,0,Sentinels | Team Heretics | KRÜ Esports
+2024,matches/maps_scores.csv,Team B Score,1104,0,8 | 7 | 14
+2024,matches/maps_scores.csv,Team B Attacker Score,1104,0,3 | 8 | 5
+2024,matches/maps_scores.csv,Team B Defender Score,1104,0,5 | 4 | 6
+2024,matches/maps_scores.csv,Team B Overtime Score,112,992,2 | 3 | 0
+2024,matches/maps_scores.csv,Duration,815,289,1:02:40 | 46:45 | 1:10:12
+2024,matches/scores.csv,Tournament,434,0,Valorant Champions 2024 | Champions Tour 2024: Americas Stage 2 | Champions Tour 2024: China Stage 2
+2024,matches/scores.csv,Stage,434,0,Group Stage | Playoffs | Regular Season
+2024,matches/scores.csv,Match Type,434,0,Opening (B) | Opening (A) | Opening (C)
+2024,matches/scores.csv,Match Name,434,0,Gen.G vs Sentinels | FunPlus Phoenix vs Team Heretics | DRX vs KRÜ Esports
+2024,matches/scores.csv,Team A,434,0,Gen.G | FunPlus Phoenix | DRX
+2024,matches/scores.csv,Team B,434,0,Sentinels | Team Heretics | KRÜ Esports
+2024,matches/scores.csv,Team A Score,434,0,2 | 1 | 0
+2024,matches/scores.csv,Team B Score,434,0,0 | 2 | 1
+2024,matches/scores.csv,Match Result,434,0,Gen.G won | Team Heretics won | DRX won
+2024,agents/agents_pick_rates.csv,Tournament,24840,0,Valorant Champions 2024 | Champions Tour 2024: China Stage 2 | Champions Tour 2024: EMEA Stage 2
+2024,agents/agents_pick_rates.csv,Stage,24840,0,Playoffs | Group Stage | All Stages
+2024,agents/agents_pick_rates.csv,Match Type,24840,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2024,agents/agents_pick_rates.csv,Map,24840,0,All Maps | Sunset | Abyss
+2024,agents/agents_pick_rates.csv,Agent,24840,0,sova | cypher | omen
+2024,agents/agents_pick_rates.csv,Pick Rate,24840,0,69% | 56% | 44%
+2024,agents/maps_stats.csv,Tournament,1035,0,Valorant Champions 2024 | Champions Tour 2024: China Stage 2 | Champions Tour 2024: EMEA Stage 2
+2024,agents/maps_stats.csv,Stage,1035,0,Playoffs | Group Stage | All Stages
+2024,agents/maps_stats.csv,Match Type,1035,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2024,agents/maps_stats.csv,Map,1035,0,All Maps | Sunset | Abyss
+2024,agents/maps_stats.csv,Total Maps Played,1035,0,8 | 2 | 1
+2024,agents/maps_stats.csv,Attacker Side Win Percentage,1035,0,53% | 36% | 64%
+2024,agents/maps_stats.csv,Defender Side Win Percentage,1035,0,47% | 64% | 36%
+2024,agents/teams_picked_agents.csv,Tournament,15647,0,Valorant Champions 2024 | Champions Tour 2024: China Stage 2 | Champions Tour 2024: EMEA Stage 2
+2024,agents/teams_picked_agents.csv,Stage,15647,0,Playoffs | Group Stage | All Stages
+2024,agents/teams_picked_agents.csv,Match Type,15647,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2024,agents/teams_picked_agents.csv,Map,15647,0,Sunset | Haven | Bind
+2024,agents/teams_picked_agents.csv,Team,15647,0,DRX | Sentinels | Trace Esports
+2024,agents/teams_picked_agents.csv,Agent,15647,0,sova | cypher | omen
+2024,agents/teams_picked_agents.csv,Total Wins By Map,15647,0,0 | 1 | 2
+2024,agents/teams_picked_agents.csv,Total Loss By Map,15647,0,1 | 0 | 2
+2024,agents/teams_picked_agents.csv,Total Maps Played,15647,0,1 | 3 | 4
+2025,matches/overview.csv,Tournament,53226,0,Valorant Champions 2025 | VCT 2025: Americas Stage 2 | VCT 2025: EMEA Stage 2
+2025,matches/overview.csv,Stage,53226,0,Group Stage | Playoffs | Showmatch
+2025,matches/overview.csv,Match Type,53226,0,Opening (A) | Opening (C) | Opening (D)
+2025,matches/overview.csv,Match Name,53226,0,Paper Rex vs Xi Lai Gaming | GIANTX vs Sentinels | NRG vs EDward Gaming
+2025,matches/overview.csv,Map,53226,0,Bind | All Maps | Sunset
+2025,matches/overview.csv,Player,53226,0,something | Jinggg | f0rsakeN
+2025,matches/overview.csv,Team,53226,0,Paper Rex | Xi Lai Gaming | GIANTX
+2025,matches/overview.csv,Agents,53226,0,yoru | raze | brimstone
+2025,matches/overview.csv,Rating,49146,4080,1.63 | 1.33 | 1.88
+2025,matches/overview.csv,Average Combat Score,50481,2745,258 | 199 | 308
+2025,matches/overview.csv,Kills,50676,2550,21 | 7 | 14
+2025,matches/overview.csv,Deaths,50676,2550,12 | 5 | 7
+2025,matches/overview.csv,Assists,50676,2550,12 | 6 | 7
+2025,matches/overview.csv,Kills - Deaths (KD),50670,2556,9 | 2 | 7
+2025,matches/overview.csv,"Kill, Assist, Trade, Survive %",49344,3882,91% | 100% | 83%
+2025,matches/overview.csv,Average Damage Per Round,49170,4056,167 | 137 | 192
+2025,matches/overview.csv,Headshot %,49377,3849,15% | 16% | 13%
+2025,matches/overview.csv,First Kills,49266,3960,4 | 1 | 3
+2025,matches/overview.csv,First Deaths,49269,3957,0 | 2 | 5
+2025,matches/overview.csv,Kills - Deaths (FKD),49269,3957,4 | 1 | 3
+2025,matches/overview.csv,Side,53226,0,both | attack | defend
+2025,matches/maps_played.csv,Tournament,1277,0,Valorant Champions 2025 | VCT 2025: Americas Stage 2 | VCT 2025: EMEA Stage 2
+2025,matches/maps_played.csv,Stage,1277,0,Group Stage | Playoffs | Showmatch
+2025,matches/maps_played.csv,Match Type,1277,0,Opening (A) | Opening (C) | Opening (D)
+2025,matches/maps_played.csv,Match Name,1277,0,Paper Rex vs Xi Lai Gaming | GIANTX vs Sentinels | NRG vs EDward Gaming
+2025,matches/maps_played.csv,Map,1277,0,Bind | Sunset | Corrode
+2025,matches/maps_scores.csv,Tournament,1277,0,Valorant Champions 2025 | VCT 2025: Americas Stage 2 | VCT 2025: EMEA Stage 2
+2025,matches/maps_scores.csv,Stage,1277,0,Group Stage | Playoffs | Showmatch
+2025,matches/maps_scores.csv,Match Type,1277,0,Opening (A) | Opening (C) | Opening (D)
+2025,matches/maps_scores.csv,Match Name,1277,0,Paper Rex vs Xi Lai Gaming | GIANTX vs Sentinels | NRG vs EDward Gaming
+2025,matches/maps_scores.csv,Map,1277,0,Bind | Sunset | Corrode
+2025,matches/maps_scores.csv,Team A,1277,0,Paper Rex | GIANTX | Mega Minors
+2025,matches/maps_scores.csv,Team A Score,1277,0,13 | 6 | 17
+2025,matches/maps_scores.csv,Team A Attacker Score,1277,0,6 | 8 | 10
+2025,matches/maps_scores.csv,Team A Defender Score,1277,0,7 | 5 | 0
+2025,matches/maps_scores.csv,Team A Overtime Score,145,1132,5 | 1 | 2
+2025,matches/maps_scores.csv,Team B,1277,0,Xi Lai Gaming | Sentinels | EDward Gaming
+2025,matches/maps_scores.csv,Team B Score,1277,0,9 | 5 | 13
+2025,matches/maps_scores.csv,Team B Attacker Score,1277,0,3 | 1 | 7
+2025,matches/maps_scores.csv,Team B Defender Score,1277,0,6 | 4 | 2
+2025,matches/maps_scores.csv,Team B Overtime Score,145,1132,3 | 4 | 1
+2025,matches/maps_scores.csv,Duration,1179,98,48:56 | 39:04 | 41:17
+2025,matches/scores.csv,Tournament,503,0,Valorant Champions 2025 | VCT 2025: Americas Stage 2 | VCT 2025: EMEA Stage 2
+2025,matches/scores.csv,Stage,503,0,Group Stage | Playoffs | Showmatch
+2025,matches/scores.csv,Match Type,503,0,Opening (A) | Opening (C) | Opening (D)
+2025,matches/scores.csv,Match Name,503,0,Paper Rex vs Xi Lai Gaming | GIANTX vs Sentinels | NRG vs EDward Gaming
+2025,matches/scores.csv,Team A,503,0,Paper Rex | GIANTX | Mega Minors
+2025,matches/scores.csv,Team B,503,0,Xi Lai Gaming | Sentinels | EDward Gaming
+2025,matches/scores.csv,Team A Score,503,0,2 | 0 | 1
+2025,matches/scores.csv,Team B Score,503,0,0 | 1 | 2
+2025,matches/scores.csv,Match Result,503,0,Paper Rex won | GIANTX won | NRG won
+2025,agents/agents_pick_rates.csv,Tournament,30294,0,Valorant Champions 2025 | VCT 2025: Pacific Stage 2 | VCT 2025: China Stage 2
+2025,agents/agents_pick_rates.csv,Stage,30294,0,Playoffs | Group Stage | All Stages
+2025,agents/agents_pick_rates.csv,Match Type,30294,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2025,agents/agents_pick_rates.csv,Map,30294,0,All Maps | Lotus | Ascent
+2025,agents/agents_pick_rates.csv,Agent,30294,0,omen | yoru | viper
+2025,agents/agents_pick_rates.csv,Pick Rate,30294,0,95% | 60% | 55%
+2025,agents/maps_stats.csv,Tournament,1122,0,Valorant Champions 2025 | VCT 2025: Pacific Stage 2 | VCT 2025: China Stage 2
+2025,agents/maps_stats.csv,Stage,1122,0,Playoffs | Group Stage | All Stages
+2025,agents/maps_stats.csv,Match Type,1122,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2025,agents/maps_stats.csv,Map,1122,0,All Maps | Lotus | Ascent
+2025,agents/maps_stats.csv,Total Maps Played,1122,0,10 | 3 | 2
+2025,agents/maps_stats.csv,Attacker Side Win Percentage,1122,0,62% | 56% | 67%
+2025,agents/maps_stats.csv,Defender Side Win Percentage,1122,0,38% | 44% | 33%
+2025,agents/teams_picked_agents.csv,Tournament,18396,0,Valorant Champions 2025 | VCT 2025: Pacific Stage 2 | VCT 2025: China Stage 2
+2025,agents/teams_picked_agents.csv,Stage,18396,0,Playoffs | Group Stage | All Stages
+2025,agents/teams_picked_agents.csv,Match Type,18396,0,Upper Quarterfinals | Upper Semifinals | Upper Final
+2025,agents/teams_picked_agents.csv,Map,18396,0,Haven | Ascent | Lotus
+2025,agents/teams_picked_agents.csv,Team,18396,0,FNATIC | DRX | Mega Minors
+2025,agents/teams_picked_agents.csv,Agent,18396,0,omen | yoru | viper
+2025,agents/teams_picked_agents.csv,Total Wins By Map,18396,0,1 | 0 | 3
+2025,agents/teams_picked_agents.csv,Total Loss By Map,18396,0,0 | 1 | 2
+2025,agents/teams_picked_agents.csv,Total Maps Played,18396,0,1 | 3 | 4
+2026,matches/overview.csv,Tournament,36840,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,matches/overview.csv,Stage,36840,0,Swiss Stage | Playoffs | Group Stage
+2026,matches/overview.csv,Match Type,36840,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,matches/overview.csv,Match Name,36840,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,matches/overview.csv,Map,36840,0,Pearl | All Maps | Lotus
+2026,matches/overview.csv,Player,36840,0,NoMan | Lysoar | happywei
+2026,matches/overview.csv,Team,36840,0,Xi Lai Gaming | Mega Minors | Team Vitality
+2026,matches/overview.csv,Agents,36840,0,jett | astra | vyse
+2026,matches/overview.csv,Rating,36120,720,1.17 | 0.89 | 1.34
+2026,matches/overview.csv,Average Combat Score,36368,472,236 | 214 | 249
+2026,matches/overview.csv,Kills,36380,460,15 | 5 | 10
+2026,matches/overview.csv,Deaths,36380,460,14 | 6 | 8
+2026,matches/overview.csv,Assists,36380,460,2 | 1 | 8
+2026,matches/overview.csv,Kills - Deaths (KD),36376,464,1 | -1 | 2
+2026,matches/overview.csv,"Kill, Assist, Trade, Survive %",36110,730,68% | 57% | 75%
+2026,matches/overview.csv,Average Damage Per Round,36148,692,139 | 121 | 149
+2026,matches/overview.csv,Headshot %,36132,708,52% | 56% | 50%
+2026,matches/overview.csv,First Kills,36160,680,2 | 1 | 0
+2026,matches/overview.csv,First Deaths,36160,680,3 | 2 | 1
+2026,matches/overview.csv,Kills - Deaths (FKD),36160,680,-1 | 0 | 1
+2026,matches/overview.csv,Side,36840,0,both | attack | defend
+2026,matches/maps_played.csv,Tournament,886,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,matches/maps_played.csv,Stage,886,0,Swiss Stage | Playoffs | Group Stage
+2026,matches/maps_played.csv,Match Type,886,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,matches/maps_played.csv,Match Name,886,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,matches/maps_played.csv,Map,886,0,Pearl | Lotus | Breeze
+2026,matches/maps_scores.csv,Tournament,886,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,matches/maps_scores.csv,Stage,886,0,Swiss Stage | Playoffs | Group Stage
+2026,matches/maps_scores.csv,Match Type,886,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,matches/maps_scores.csv,Match Name,886,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,matches/maps_scores.csv,Map,886,0,Pearl | Lotus | Breeze
+2026,matches/maps_scores.csv,Team A,886,0,Xi Lai Gaming | Team Vitality | FULL SENSE
+2026,matches/maps_scores.csv,Team A Score,886,0,6 | 11 | 13
+2026,matches/maps_scores.csv,Team A Attacker Score,886,0,5 | 7 | 8
+2026,matches/maps_scores.csv,Team A Defender Score,886,0,1 | 4 | 5
+2026,matches/maps_scores.csv,Team A Overtime Score,87,799,2 | 1 | 3
+2026,matches/maps_scores.csv,Team B,886,0,Mega Minors | Dragon Ranger Gaming | FUT Esports
+2026,matches/maps_scores.csv,Team B Score,886,0,13 | 5 | 3
+2026,matches/maps_scores.csv,Team B Attacker Score,886,0,6 | 8 | 1
+2026,matches/maps_scores.csv,Team B Defender Score,886,0,7 | 5 | 4
+2026,matches/maps_scores.csv,Team B Overtime Score,87,799,0 | 3 | 1
+2026,matches/maps_scores.csv,Duration,868,18,44:32 | 56:56 | 43:10
+2026,matches/scores.csv,Tournament,342,0,Valorant Masters London 2026 | VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1
+2026,matches/scores.csv,Stage,342,0,Swiss Stage | Playoffs | Group Stage
+2026,matches/scores.csv,Match Type,342,0,Round 1 | Round 2 (1-0) | Round 2 (0-1)
+2026,matches/scores.csv,Match Name,342,0,Xi Lai Gaming vs NRG | Team Vitality vs Dragon Ranger Gaming | FULL SENSE vs FUT Esports
+2026,matches/scores.csv,Team A,342,0,Xi Lai Gaming | Team Vitality | FULL SENSE
+2026,matches/scores.csv,Team B,342,0,Mega Minors | Dragon Ranger Gaming | FUT Esports
+2026,matches/scores.csv,Team A Score,342,0,0 | 2 | 1
+2026,matches/scores.csv,Team B Score,342,0,2 | 0 | 1
+2026,matches/scores.csv,Match Result,342,0,NRG won | Team Vitality won | FUT Esports won
+2026,agents/agents_pick_rates.csv,Tournament,21547,0,VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1 | VCT 2026: China Stage 1
+2026,agents/agents_pick_rates.csv,Stage,21547,0,Playoffs | Group Stage | All Stages
+2026,agents/agents_pick_rates.csv,Match Type,21547,0,Upper Round 1 | Upper Semifinals | Upper Final
+2026,agents/agents_pick_rates.csv,Map,21547,0,All Maps | Pearl | Lotus
+2026,agents/agents_pick_rates.csv,Agent,21547,0,neon | fade | phoenix
+2026,agents/agents_pick_rates.csv,Pick Rate,21547,0,80% | 70% | 50%
+2026,agents/maps_stats.csv,Tournament,743,0,VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1 | VCT 2026: China Stage 1
+2026,agents/maps_stats.csv,Stage,743,0,Playoffs | Group Stage | All Stages
+2026,agents/maps_stats.csv,Match Type,743,0,Upper Round 1 | Upper Semifinals | Upper Final
+2026,agents/maps_stats.csv,Map,743,0,All Maps | Pearl | Lotus
+2026,agents/maps_stats.csv,Total Maps Played,743,0,5 | 2 | 1
+2026,agents/maps_stats.csv,Attacker Side Win Percentage,743,0,44% | 39% | 45%
+2026,agents/maps_stats.csv,Defender Side Win Percentage,743,0,56% | 61% | 55%
+2026,agents/teams_picked_agents.csv,Tournament,11848,0,VCT 2026: Americas Stage 1 | VCT 2026: EMEA Stage 1 | VCT 2026: China Stage 1
+2026,agents/teams_picked_agents.csv,Stage,11848,0,Playoffs | Group Stage | All Stages
+2026,agents/teams_picked_agents.csv,Match Type,11848,0,Upper Round 1 | Upper Semifinals | Upper Final
+2026,agents/teams_picked_agents.csv,Map,11848,0,Breeze | Split | Pearl
+2026,agents/teams_picked_agents.csv,Team,11848,0,FURIA | LEVIATÁN | G2 Esports
+2026,agents/teams_picked_agents.csv,Agent,11848,0,viper | sova | jett
+2026,agents/teams_picked_agents.csv,Total Wins By Map,11848,0,1 | 0 | 5
+2026,agents/teams_picked_agents.csv,Total Loss By Map,11848,0,0 | 1 | 2
+2026,agents/teams_picked_agents.csv,Total Maps Played,11848,0,1 | 6 | 5

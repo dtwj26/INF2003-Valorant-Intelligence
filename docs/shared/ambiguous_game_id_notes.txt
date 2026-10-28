@@ -1,0 +1,11 @@
+AMBIGUOUS GAME ID INVESTIGATION (2021-2022)
+Raw data and cleaned candidates were NOT modified.
+
+Key: Tournament + Stage + Match Type + Match Name + Map.
+Each summary row is a key with multiple distinct Game IDs and at least one agent candidate row.
+GAME_ID_MAPPING evidence shows the actual candidate Game IDs and Match IDs.
+MAP_SCORE evidence shows available score rows, which do NOT contain Game ID.
+AGENT_CANDIDATE evidence shows player/agent records with no Game ID.
+Possible Explanation is a diagnostic hint, NOT a proven cause.
+Never arbitrarily choose a Game ID or duplicate one candidate across all IDs.
+Further identity data or a deterministic source key may be required.
