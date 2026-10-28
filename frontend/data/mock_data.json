@@ -1,0 +1,461 @@
+{
+  "is_mock": true,
+  "description": "Fictional university frontend fixture. Not actual VCT records.",
+  "seasons": [
+    2023,
+    2022
+  ],
+  "teams": [
+    {
+      "id": "northstar",
+      "name": "Northstar"
+    },
+    {
+      "id": "vector",
+      "name": "Vector"
+    },
+    {
+      "id": "orbit",
+      "name": "Orbit"
+    },
+    {
+      "id": "atlas",
+      "name": "Atlas"
+    }
+  ],
+  "tournaments": [
+    {
+      "id": "summer",
+      "name": "Mock Summer Cup"
+    },
+    {
+      "id": "regional",
+      "name": "Mock Regional Series"
+    }
+  ],
+  "maps": [
+    {
+      "id": "ascent",
+      "name": "Ascent",
+      "image": "maps/ascent.webp"
+    },
+    {
+      "id": "haven",
+      "name": "Haven",
+      "image": "maps/haven.webp"
+    },
+    {
+      "id": "lotus",
+      "name": "Lotus",
+      "image": "maps/lotus.webp"
+    },
+    {
+      "id": "split",
+      "name": "Split",
+      "image": "maps/split.webp"
+    },
+    {
+      "id": "bind",
+      "name": "Bind",
+      "image": "maps/bind.webp"
+    }
+  ],
+  "agents": [
+    {
+      "id": "jett",
+      "name": "Jett",
+      "role": "Duelist",
+      "image": "agents/jett.webp"
+    },
+    {
+      "id": "omen",
+      "name": "Omen",
+      "role": "Controller",
+      "image": "agents/omen.webp"
+    },
+    {
+      "id": "killjoy",
+      "name": "Killjoy",
+      "role": "Sentinel",
+      "image": "agents/killjoy.webp"
+    },
+    {
+      "id": "sova",
+      "name": "Sova",
+      "role": "Initiator",
+      "image": "agents/sova.webp"
+    },
+    {
+      "id": "raze",
+      "name": "Raze",
+      "role": "Duelist",
+      "image": "agents/raze.webp"
+    },
+    {
+      "id": "viper",
+      "name": "Viper",
+      "role": "Controller",
+      "image": "agents/viper.webp"
+    },
+    {
+      "id": "cypher",
+      "name": "Cypher",
+      "role": "Sentinel",
+      "image": "agents/cypher.webp"
+    },
+    {
+      "id": "fade",
+      "name": "Fade",
+      "role": "Initiator",
+      "image": "agents/fade.webp"
+    }
+  ],
+  "matches": [
+    {
+      "id": "m1",
+      "season": 2023,
+      "tournament_id": "summer",
+      "team_ids": [
+        "northstar",
+        "vector"
+      ],
+      "map_games": [
+        {
+          "id": "m1-g1",
+          "map_id": "ascent",
+          "agent_picks": {
+            "northstar": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "raze"
+            ],
+            "vector": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "viper"
+            ]
+          }
+        },
+        {
+          "id": "m1-g2",
+          "map_id": "haven",
+          "agent_picks": {
+            "northstar": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "viper"
+            ],
+            "vector": [
+              "jett",
+              "omen",
+              "killjoy",
+              "fade",
+              "raze"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "season": 2023,
+      "tournament_id": "summer",
+      "team_ids": [
+        "northstar",
+        "orbit"
+      ],
+      "map_games": [
+        {
+          "id": "m2-g1",
+          "map_id": "ascent",
+          "agent_picks": {
+            "northstar": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "viper"
+            ],
+            "orbit": [
+              "jett",
+              "omen",
+              "killjoy",
+              "fade",
+              "raze"
+            ]
+          }
+        },
+        {
+          "id": "m2-g2",
+          "map_id": "lotus",
+          "agent_picks": {
+            "northstar": [
+              "jett",
+              "omen",
+              "killjoy",
+              "fade",
+              "raze"
+            ],
+            "orbit": [
+              "jett",
+              "omen",
+              "cypher",
+              "sova",
+              "raze"
+            ]
+          }
+        },
+        {
+          "id": "m2-g3",
+          "map_id": "split",
+          "agent_picks": {
+            "northstar": [
+              "jett",
+              "omen",
+              "cypher",
+              "sova",
+              "raze"
+            ],
+            "orbit": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "raze"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "season": 2023,
+      "tournament_id": "summer",
+      "team_ids": [
+        "northstar",
+        "atlas"
+      ],
+      "map_games": [
+        {
+          "id": "m3-g1",
+          "map_id": "haven",
+          "agent_picks": {
+            "northstar": [
+              "jett",
+              "omen",
+              "killjoy",
+              "fade",
+              "raze"
+            ],
+            "atlas": [
+              "jett",
+              "omen",
+              "cypher",
+              "sova",
+              "raze"
+            ]
+          }
+        },
+        {
+          "id": "m3-g2",
+          "map_id": "bind",
+          "agent_picks": {
+            "northstar": [
+              "jett",
+              "omen",
+              "cypher",
+              "sova",
+              "raze"
+            ],
+            "atlas": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "raze"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "season": 2023,
+      "tournament_id": "regional",
+      "team_ids": [
+        "northstar",
+        "vector"
+      ],
+      "map_games": [
+        {
+          "id": "m4-g1",
+          "map_id": "ascent",
+          "agent_picks": {
+            "northstar": [
+              "jett",
+              "omen",
+              "cypher",
+              "sova",
+              "raze"
+            ],
+            "vector": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "raze"
+            ]
+          }
+        },
+        {
+          "id": "m4-g2",
+          "map_id": "haven",
+          "agent_picks": {
+            "northstar": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "raze"
+            ],
+            "vector": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "viper"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "season": 2023,
+      "tournament_id": "regional",
+      "team_ids": [
+        "vector",
+        "orbit"
+      ],
+      "map_games": [
+        {
+          "id": "m5-g1",
+          "map_id": "split",
+          "agent_picks": {
+            "vector": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "raze"
+            ],
+            "orbit": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "viper"
+            ]
+          }
+        },
+        {
+          "id": "m5-g2",
+          "map_id": "haven",
+          "agent_picks": {
+            "vector": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "viper"
+            ],
+            "orbit": [
+              "jett",
+              "omen",
+              "killjoy",
+              "fade",
+              "raze"
+            ]
+          }
+        },
+        {
+          "id": "m5-g3",
+          "map_id": "ascent",
+          "agent_picks": {
+            "vector": [
+              "jett",
+              "omen",
+              "killjoy",
+              "fade",
+              "raze"
+            ],
+            "orbit": [
+              "jett",
+              "omen",
+              "cypher",
+              "sova",
+              "raze"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "season": 2023,
+      "tournament_id": "regional",
+      "team_ids": [
+        "orbit",
+        "atlas"
+      ],
+      "map_games": [
+        {
+          "id": "m6-g1",
+          "map_id": "haven",
+          "agent_picks": {
+            "orbit": [
+              "jett",
+              "omen",
+              "killjoy",
+              "sova",
+              "viper"
+            ],
+            "atlas": [
+              "jett",
+              "omen",
+              "killjoy",
+              "fade",
+              "raze"
+            ]
+          }
+        },
+        {
+          "id": "m6-g2",
+          "map_id": "bind",
+          "agent_picks": {
+            "orbit": [
+              "jett",
+              "omen",
+              "killjoy",
+              "fade",
+              "raze"
+            ],
+            "atlas": [
+              "jett",
+              "omen",
+              "cypher",
+              "sova",
+              "raze"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
