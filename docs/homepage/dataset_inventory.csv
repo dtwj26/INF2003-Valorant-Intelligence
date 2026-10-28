@@ -1,0 +1,132 @@
+season,file,size_mb,column_count,columns
+all_ids,all_ids\all_matches_games_ids.csv,3.51,11,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Type ID | Match Name | Match ID | Map | Game ID | Year
+all_ids,all_ids\all_players_ids.csv,0.19,2,Player | Player ID
+all_ids,all_ids\all_teams_ids.csv,0.06,2,Team | Team ID
+all_ids,all_ids\all_teams_mapping.csv,0.06,2,Abbreviated | Full Name
+all_ids,all_ids\all_tournaments_stages_match_types_ids.csv,0.3,7,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Type ID | Year
+vct_2021,vct_2021\agents\agents_pick_rates.csv,16.28,6,Tournament | Stage | Match Type | Map | Agent | Pick Rate
+vct_2021,vct_2021\agents\maps_stats.csv,0.68,7,Tournament | Stage | Match Type | Map | Total Maps Played | Attacker Side Win Percentage | Defender Side Win Percentage
+vct_2021,vct_2021\agents\teams_picked_agents.csv,21.91,9,Tournament | Stage | Match Type | Map | Team | Agent | Total Wins By Map | Total Loss By Map | Total Maps Played
+vct_2021,vct_2021\ids\players_ids.csv,0.13,2,Player | Player ID
+vct_2021,vct_2021\ids\teams_ids.csv,0.04,2,Team | Team ID
+vct_2021,vct_2021\ids\tournaments_stages_match_types_ids.csv,0.14,6,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Type ID
+vct_2021,vct_2021\ids\tournaments_stages_matches_games_ids.csv,1.73,9,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Name | Match ID | Map | Game ID
+vct_2021,vct_2021\matches\draft_phase.csv,0.39,7,Tournament | Stage | Match Type | Match Name | Team | Action | Map
+vct_2021,vct_2021\matches\eco_rounds.csv,52.15,11,Tournament | Stage | Match Type | Match Name | Map | Round Number | Team | Loadout Value | Remaining Credits | Type | Outcome
+vct_2021,vct_2021\matches\eco_stats.csv,15.88,9,Tournament | Stage | Match Type | Match Name | Map | Team | Type | Initiated | Won
+vct_2021,vct_2021\matches\kills.csv,143.67,13,Tournament | Stage | Match Type | Match Name | Map | Player Team | Player | Enemy Team | Enemy | Player Kills | Enemy Kills | Difference | Kill Type
+vct_2021,vct_2021\matches\kills_stats.csv,18.09,20,Tournament | Stage | Match Type | Match Name | Map | Team | Player | Agents | 2k | 3k | 4k | 5k | 1v1 | 1v2 | 1v3 | 1v4 | 1v5 | Econ | Spike Plants | Spike Defuses
+vct_2021,vct_2021\matches\maps_played.csv,1.45,5,Tournament | Stage | Match Type | Match Name | Map
+vct_2021,vct_2021\matches\maps_scores.csv,2.08,16,Tournament | Stage | Match Type | Match Name | Map | Team A | Team A Score | Team A Attacker Score | Team A Defender Score | Team A Overtime Score | Team B | Team B Score | Team B Attacker Score | Team B Defender Score | Team B Overtime Score | Duration
+vct_2021,vct_2021\matches\overview.csv,97.92,21,"Tournament | Stage | Match Type | Match Name | Map | Player | Team | Agents | Rating | Average Combat Score | Kills | Deaths | Assists | Kills - Deaths (KD) | Kill, Assist, Trade, Survive % | Average Damage Per Round | Headshot % | First Kills | First Deaths | Kills - Deaths (FKD) | Side"
+vct_2021,vct_2021\matches\rounds_kills.csv,120.4,13,Tournament | Stage | Match Type | Match Name | Map | Round Number | Eliminator Team | Eliminator | Eliminator Agent | Eliminated Team | Eliminated | Eliminated Agent | Kill Type
+vct_2021,vct_2021\matches\scores.csv,0.98,9,Tournament | Stage | Match Type | Match Name | Team A | Team B | Team A Score | Team B Score | Match Result
+vct_2021,vct_2021\matches\team_mapping.csv,0.04,2,Abbreviated | Full Name
+vct_2021,vct_2021\matches\win_loss_methods_count.csv,3.68,14,Tournament | Stage | Match Type | Match Name | Map | Team | Elimination | Detonated | Defused | Time Expiry (No Plant) | Eliminated | Defused Failed | Detonation Denied | Time Expiry (Failed to Plant)
+vct_2021,vct_2021\matches\win_loss_methods_round_number.csv,75.16,9,Tournament | Stage | Match Type | Match Name | Map | Round Number | Team | Method | Outcome
+vct_2021,vct_2021\players_stats\players_stats.csv,31.28,25,"Tournament | Stage | Match Type | Player | Teams | Agents | Rounds Played | Rating | Average Combat Score | Kills:Deaths | Kill, Assist, Trade, Survive % | Average Damage Per Round | Kills Per Round | Assists Per Round | First Kills Per Round | First Deaths Per Round | Headshot % | Clutch Success % | Clutches (won/played) | Maximum Kills in a Single Map | Kills | Deaths | Assists | First Kills | First Deaths"
+vct_2022,vct_2022\agents\agents_pick_rates.csv,11.38,6,Tournament | Stage | Match Type | Map | Agent | Pick Rate
+vct_2022,vct_2022\agents\maps_stats.csv,0.48,7,Tournament | Stage | Match Type | Map | Total Maps Played | Attacker Side Win Percentage | Defender Side Win Percentage
+vct_2022,vct_2022\agents\teams_picked_agents.csv,13.02,9,Tournament | Stage | Match Type | Map | Team | Agent | Total Wins By Map | Total Loss By Map | Total Maps Played
+vct_2022,vct_2022\ids\players_ids.csv,0.09,2,Player | Player ID
+vct_2022,vct_2022\ids\teams_ids.csv,0.03,2,Team | Team ID
+vct_2022,vct_2022\ids\tournaments_stages_match_types_ids.csv,0.09,6,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Type ID
+vct_2022,vct_2022\ids\tournaments_stages_matches_games_ids.csv,1.09,9,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Name | Match ID | Map | Game ID
+vct_2022,vct_2022\matches\draft_phase.csv,0.85,7,Tournament | Stage | Match Type | Match Name | Team | Action | Map
+vct_2022,vct_2022\matches\eco_rounds.csv,52.02,11,Tournament | Stage | Match Type | Match Name | Map | Round Number | Team | Loadout Value | Remaining Credits | Type | Outcome
+vct_2022,vct_2022\matches\eco_stats.csv,16.06,9,Tournament | Stage | Match Type | Match Name | Map | Team | Type | Initiated | Won
+vct_2022,vct_2022\matches\kills.csv,145.24,13,Tournament | Stage | Match Type | Match Name | Map | Player Team | Player | Enemy Team | Enemy | Player Kills | Enemy Kills | Difference | Kill Type
+vct_2022,vct_2022\matches\kills_stats.csv,18.43,20,Tournament | Stage | Match Type | Match Name | Map | Team | Player | Agents | 2k | 3k | 4k | 5k | 1v1 | 1v2 | 1v3 | 1v4 | 1v5 | Econ | Spike Plants | Spike Defuses
+vct_2022,vct_2022\matches\maps_played.csv,0.91,5,Tournament | Stage | Match Type | Match Name | Map
+vct_2022,vct_2022\matches\maps_scores.csv,1.29,16,Tournament | Stage | Match Type | Match Name | Map | Team A | Team A Score | Team A Attacker Score | Team A Defender Score | Team A Overtime Score | Team B | Team B Score | Team B Attacker Score | Team B Defender Score | Team B Overtime Score | Duration
+vct_2022,vct_2022\matches\overview.csv,64.36,21,"Tournament | Stage | Match Type | Match Name | Map | Player | Team | Agents | Rating | Average Combat Score | Kills | Deaths | Assists | Kills - Deaths (KD) | Kill, Assist, Trade, Survive % | Average Damage Per Round | Headshot % | First Kills | First Deaths | Kills - Deaths (FKD) | Side"
+vct_2022,vct_2022\matches\rounds_kills.csv,120.14,13,Tournament | Stage | Match Type | Match Name | Map | Round Number | Eliminator Team | Eliminator | Eliminator Agent | Eliminated Team | Eliminated | Eliminated Agent | Kill Type
+vct_2022,vct_2022\matches\scores.csv,0.53,9,Tournament | Stage | Match Type | Match Name | Team A | Team B | Team A Score | Team B Score | Match Result
+vct_2022,vct_2022\matches\team_mapping.csv,0.02,2,Abbreviated | Full Name
+vct_2022,vct_2022\matches\win_loss_methods_count.csv,2.29,14,Tournament | Stage | Match Type | Match Name | Map | Team | Elimination | Detonated | Defused | Time Expiry (No Plant) | Eliminated | Defused Failed | Detonation Denied | Time Expiry (Failed to Plant)
+vct_2022,vct_2022\matches\win_loss_methods_round_number.csv,47.37,9,Tournament | Stage | Match Type | Match Name | Map | Round Number | Team | Method | Outcome
+vct_2022,vct_2022\players_stats\players_stats.csv,20.81,25,"Tournament | Stage | Match Type | Player | Teams | Agents | Rounds Played | Rating | Average Combat Score | Kills:Deaths | Kill, Assist, Trade, Survive % | Average Damage Per Round | Kills Per Round | Assists Per Round | First Kills Per Round | First Deaths Per Round | Headshot % | Clutch Success % | Clutches (won/played) | Maximum Kills in a Single Map | Kills | Deaths | Assists | First Kills | First Deaths"
+vct_2023,vct_2023\agents\agents_pick_rates.csv,1.32,6,Tournament | Stage | Match Type | Map | Agent | Pick Rate
+vct_2023,vct_2023\agents\maps_stats.csv,0.06,7,Tournament | Stage | Match Type | Map | Total Maps Played | Attacker Side Win Percentage | Defender Side Win Percentage
+vct_2023,vct_2023\agents\teams_picked_agents.csv,1.04,9,Tournament | Stage | Match Type | Map | Team | Agent | Total Wins By Map | Total Loss By Map | Total Maps Played
+vct_2023,vct_2023\ids\players_ids.csv,0.0,2,Player | Player ID
+vct_2023,vct_2023\ids\teams_ids.csv,0.0,2,Team | Team ID
+vct_2023,vct_2023\ids\tournaments_stages_match_types_ids.csv,0.01,6,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Type ID
+vct_2023,vct_2023\ids\tournaments_stages_matches_games_ids.csv,0.09,9,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Name | Match ID | Map | Game ID
+vct_2023,vct_2023\matches\draft_phase.csv,0.2,7,Tournament | Stage | Match Type | Match Name | Team | Action | Map
+vct_2023,vct_2023\matches\eco_rounds.csv,4.3,11,Tournament | Stage | Match Type | Match Name | Map | Round Number | Team | Loadout Value | Remaining Credits | Type | Outcome
+vct_2023,vct_2023\matches\eco_stats.csv,1.22,9,Tournament | Stage | Match Type | Match Name | Map | Team | Type | Initiated | Won
+vct_2023,vct_2023\matches\kills.csv,11.14,13,Tournament | Stage | Match Type | Match Name | Map | Player Team | Player | Enemy Team | Enemy | Player Kills | Enemy Kills | Difference | Kill Type
+vct_2023,vct_2023\matches\kills_stats.csv,1.42,20,Tournament | Stage | Match Type | Match Name | Map | Team | Player | Agents | 2k | 3k | 4k | 5k | 1v1 | 1v2 | 1v3 | 1v4 | 1v5 | Econ | Spike Plants | Spike Defuses
+vct_2023,vct_2023\matches\maps_played.csv,0.07,5,Tournament | Stage | Match Type | Match Name | Map
+vct_2023,vct_2023\matches\maps_scores.csv,0.11,16,Tournament | Stage | Match Type | Match Name | Map | Team A | Team A Score | Team A Attacker Score | Team A Defender Score | Team A Overtime Score | Team B | Team B Score | Team B Attacker Score | Team B Defender Score | Team B Overtime Score | Duration
+vct_2023,vct_2023\matches\overview.csv,5.4,21,"Tournament | Stage | Match Type | Match Name | Map | Player | Team | Agents | Rating | Average Combat Score | Kills | Deaths | Assists | Kills - Deaths (KD) | Kill, Assist, Trade, Survive % | Average Damage Per Round | Headshot % | First Kills | First Deaths | Kills - Deaths (FKD) | Side"
+vct_2023,vct_2023\matches\rounds_kills.csv,9.71,13,Tournament | Stage | Match Type | Match Name | Map | Round Number | Eliminator Team | Eliminator | Eliminator Agent | Eliminated Team | Eliminated | Eliminated Agent | Kill Type
+vct_2023,vct_2023\matches\scores.csv,0.04,9,Tournament | Stage | Match Type | Match Name | Team A | Team B | Team A Score | Team B Score | Match Result
+vct_2023,vct_2023\matches\team_mapping.csv,0.0,2,Abbreviated | Full Name
+vct_2023,vct_2023\matches\win_loss_methods_count.csv,0.19,14,Tournament | Stage | Match Type | Match Name | Map | Team | Elimination | Detonated | Defused | Time Expiry (No Plant) | Eliminated | Defused Failed | Detonation Denied | Time Expiry (Failed to Plant)
+vct_2023,vct_2023\matches\win_loss_methods_round_number.csv,4.2,9,Tournament | Stage | Match Type | Match Name | Map | Round Number | Team | Method | Outcome
+vct_2023,vct_2023\players_stats\players_stats.csv,1.71,25,"Tournament | Stage | Match Type | Player | Teams | Agents | Rounds Played | Rating | Average Combat Score | Kills:Deaths | Kill, Assist, Trade, Survive % | Average Damage Per Round | Kills Per Round | Assists Per Round | First Kills Per Round | First Deaths Per Round | Headshot % | Clutch Success % | Clutches (won/played) | Maximum Kills in a Single Map | Kills | Deaths | Assists | First Kills | First Deaths"
+vct_2024,vct_2024\agents\agents_pick_rates.csv,1.77,6,Tournament | Stage | Match Type | Map | Agent | Pick Rate
+vct_2024,vct_2024\agents\maps_stats.csv,0.07,7,Tournament | Stage | Match Type | Map | Total Maps Played | Attacker Side Win Percentage | Defender Side Win Percentage
+vct_2024,vct_2024\agents\teams_picked_agents.csv,1.32,9,Tournament | Stage | Match Type | Map | Team | Agent | Total Wins By Map | Total Loss By Map | Total Maps Played
+vct_2024,vct_2024\ids\players_ids.csv,0.0,2,Player | Player ID
+vct_2024,vct_2024\ids\teams_ids.csv,0.0,2,Team | Team ID
+vct_2024,vct_2024\ids\tournaments_stages_match_types_ids.csv,0.01,6,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Type ID
+vct_2024,vct_2024\ids\tournaments_stages_matches_games_ids.csv,0.12,9,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Name | Match ID | Map | Game ID
+vct_2024,vct_2024\matches\draft_phase.csv,0.26,7,Tournament | Stage | Match Type | Match Name | Team | Action | Map
+vct_2024,vct_2024\matches\eco_rounds.csv,4.31,11,Tournament | Stage | Match Type | Match Name | Map | Round Number | Team | Loadout Value | Remaining Credits | Type | Outcome
+vct_2024,vct_2024\matches\eco_stats.csv,1.22,9,Tournament | Stage | Match Type | Match Name | Map | Team | Type | Initiated | Won
+vct_2024,vct_2024\matches\kills.csv,11.21,13,Tournament | Stage | Match Type | Match Name | Map | Player Team | Player | Enemy Team | Enemy | Player Kills | Enemy Kills | Difference | Kill Type
+vct_2024,vct_2024\matches\kills_stats.csv,1.43,20,Tournament | Stage | Match Type | Match Name | Map | Team | Player | Agents | 2k | 3k | 4k | 5k | 1v1 | 1v2 | 1v3 | 1v4 | 1v5 | Econ | Spike Plants | Spike Defuses
+vct_2024,vct_2024\matches\maps_played.csv,0.09,5,Tournament | Stage | Match Type | Match Name | Map
+vct_2024,vct_2024\matches\maps_scores.csv,0.14,16,Tournament | Stage | Match Type | Match Name | Map | Team A | Team A Score | Team A Attacker Score | Team A Defender Score | Team A Overtime Score | Team B | Team B Score | Team B Attacker Score | Team B Defender Score | Team B Overtime Score | Duration
+vct_2024,vct_2024\matches\overview.csv,6.81,21,"Tournament | Stage | Match Type | Match Name | Map | Player | Team | Agents | Rating | Average Combat Score | Kills | Deaths | Assists | Kills - Deaths (KD) | Kill, Assist, Trade, Survive % | Average Damage Per Round | Headshot % | First Kills | First Deaths | Kills - Deaths (FKD) | Side"
+vct_2024,vct_2024\matches\rounds_kills.csv,9.64,13,Tournament | Stage | Match Type | Match Name | Map | Round Number | Eliminator Team | Eliminator | Eliminator Agent | Eliminated Team | Eliminated | Eliminated Agent | Kill Type
+vct_2024,vct_2024\matches\scores.csv,0.05,9,Tournament | Stage | Match Type | Match Name | Team A | Team B | Team A Score | Team B Score | Match Result
+vct_2024,vct_2024\matches\team_mapping.csv,0.0,2,Abbreviated | Full Name
+vct_2024,vct_2024\matches\win_loss_methods_count.csv,0.25,14,Tournament | Stage | Match Type | Match Name | Map | Team | Elimination | Detonated | Defused | Time Expiry (No Plant) | Eliminated | Defused Failed | Detonation Denied | Time Expiry (Failed to Plant)
+vct_2024,vct_2024\matches\win_loss_methods_round_number.csv,5.37,9,Tournament | Stage | Match Type | Match Name | Map | Round Number | Team | Method | Outcome
+vct_2024,vct_2024\players_stats\players_stats.csv,2.18,25,"Tournament | Stage | Match Type | Player | Teams | Agents | Rounds Played | Rating | Average Combat Score | Kills:Deaths | Kill, Assist, Trade, Survive % | Average Damage Per Round | Kills Per Round | Assists Per Round | First Kills Per Round | First Deaths Per Round | Headshot % | Clutch Success % | Clutches (won/played) | Maximum Kills in a Single Map | Kills | Deaths | Assists | First Kills | First Deaths"
+vct_2025,vct_2025\agents\agents_pick_rates.csv,1.88,6,Tournament | Stage | Match Type | Map | Agent | Pick Rate
+vct_2025,vct_2025\agents\maps_stats.csv,0.07,7,Tournament | Stage | Match Type | Map | Total Maps Played | Attacker Side Win Percentage | Defender Side Win Percentage
+vct_2025,vct_2025\agents\teams_picked_agents.csv,1.37,9,Tournament | Stage | Match Type | Map | Team | Agent | Total Wins By Map | Total Loss By Map | Total Maps Played
+vct_2025,vct_2025\ids\players_ids.csv,0.0,2,Player | Player ID
+vct_2025,vct_2025\ids\teams_ids.csv,0.0,2,Team | Team ID
+vct_2025,vct_2025\ids\tournaments_stages_match_types_ids.csv,0.01,6,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Type ID
+vct_2025,vct_2025\ids\tournaments_stages_matches_games_ids.csv,0.13,9,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Name | Match ID | Map | Game ID
+vct_2025,vct_2025\matches\draft_phase.csv,0.27,7,Tournament | Stage | Match Type | Match Name | Team | Action | Map
+vct_2025,vct_2025\matches\eco_rounds.csv,3.14,11,Tournament | Stage | Match Type | Match Name | Map | Round Number | Team | Loadout Value | Remaining Credits | Type | Outcome
+vct_2025,vct_2025\matches\eco_stats.csv,1.36,9,Tournament | Stage | Match Type | Match Name | Map | Team | Type | Initiated | Won
+vct_2025,vct_2025\matches\kills.csv,12.7,13,Tournament | Stage | Match Type | Match Name | Map | Player Team | Player | Enemy Team | Enemy | Player Kills | Enemy Kills | Difference | Kill Type
+vct_2025,vct_2025\matches\kills_stats.csv,1.61,20,Tournament | Stage | Match Type | Match Name | Map | Team | Player | Agents | 2k | 3k | 4k | 5k | 1v1 | 1v2 | 1v3 | 1v4 | 1v5 | Econ | Spike Plants | Spike Defuses
+vct_2025,vct_2025\matches\maps_played.csv,0.1,5,Tournament | Stage | Match Type | Match Name | Map
+vct_2025,vct_2025\matches\maps_scores.csv,0.15,16,Tournament | Stage | Match Type | Match Name | Map | Team A | Team A Score | Team A Attacker Score | Team A Defender Score | Team A Overtime Score | Team B | Team B Score | Team B Attacker Score | Team B Defender Score | Team B Overtime Score | Duration
+vct_2025,vct_2025\matches\overview.csv,7.48,21,"Tournament | Stage | Match Type | Match Name | Map | Player | Team | Agents | Rating | Average Combat Score | Kills | Deaths | Assists | Kills - Deaths (KD) | Kill, Assist, Trade, Survive % | Average Damage Per Round | Headshot % | First Kills | First Deaths | Kills - Deaths (FKD) | Side"
+vct_2025,vct_2025\matches\rounds_kills.csv,10.92,13,Tournament | Stage | Match Type | Match Name | Map | Round Number | Eliminator Team | Eliminator | Eliminator Agent | Eliminated Team | Eliminated | Eliminated Agent | Kill Type
+vct_2025,vct_2025\matches\scores.csv,0.05,9,Tournament | Stage | Match Type | Match Name | Team A | Team B | Team A Score | Team B Score | Match Result
+vct_2025,vct_2025\matches\team_mapping.csv,0.0,2,Abbreviated | Full Name
+vct_2025,vct_2025\matches\win_loss_methods_count.csv,0.26,14,Tournament | Stage | Match Type | Match Name | Map | Team | Elimination | Detonated | Defused | Time Expiry (No Plant) | Eliminated | Defused Failed | Detonation Denied | Time Expiry (Failed to Plant)
+vct_2025,vct_2025\matches\win_loss_methods_round_number.csv,5.63,9,Tournament | Stage | Match Type | Match Name | Map | Round Number | Team | Method | Outcome
+vct_2025,vct_2025\players_stats\players_stats.csv,2.46,25,"Tournament | Stage | Match Type | Player | Teams | Agents | Rounds Played | Rating | Average Combat Score | Kills:Deaths | Kill, Assist, Trade, Survive % | Average Damage Per Round | Kills Per Round | Assists Per Round | First Kills Per Round | First Deaths Per Round | Headshot % | Clutch Success % | Clutches (won/played) | Maximum Kills in a Single Map | Kills | Deaths | Assists | First Kills | First Deaths"
+vct_2026,vct_2026\agents\agents_pick_rates.csv,1.34,6,Tournament | Stage | Match Type | Map | Agent | Pick Rate
+vct_2026,vct_2026\agents\maps_stats.csv,0.05,7,Tournament | Stage | Match Type | Map | Total Maps Played | Attacker Side Win Percentage | Defender Side Win Percentage
+vct_2026,vct_2026\agents\teams_picked_agents.csv,0.9,9,Tournament | Stage | Match Type | Map | Team | Agent | Total Wins By Map | Total Loss By Map | Total Maps Played
+vct_2026,vct_2026\ids\players_ids.csv,0.0,2,Player | Player ID
+vct_2026,vct_2026\ids\teams_ids.csv,0.0,2,Team | Team ID
+vct_2026,vct_2026\ids\tournaments_stages_match_types_ids.csv,0.01,6,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Type ID
+vct_2026,vct_2026\ids\tournaments_stages_matches_games_ids.csv,0.09,9,Tournament | Tournament ID | Stage | Stage ID | Match Type | Match Name | Match ID | Map | Game ID
+vct_2026,vct_2026\matches\draft_phase.csv,0.19,7,Tournament | Stage | Match Type | Match Name | Team | Action | Map
+vct_2026,vct_2026\matches\eco_rounds.csv,3.29,11,Tournament | Stage | Match Type | Match Name | Map | Round Number | Team | Loadout Value | Remaining Credits | Type | Outcome
+vct_2026,vct_2026\matches\eco_stats.csv,0.95,9,Tournament | Stage | Match Type | Match Name | Map | Team | Type | Initiated | Won
+vct_2026,vct_2026\matches\kills.csv,8.92,13,Tournament | Stage | Match Type | Match Name | Map | Player Team | Player | Enemy Team | Enemy | Player Kills | Enemy Kills | Difference | Kill Type
+vct_2026,vct_2026\matches\kills_stats.csv,1.12,20,Tournament | Stage | Match Type | Match Name | Map | Team | Player | Agents | 2k | 3k | 4k | 5k | 1v1 | 1v2 | 1v3 | 1v4 | 1v5 | Econ | Spike Plants | Spike Defuses
+vct_2026,vct_2026\matches\maps_played.csv,0.07,5,Tournament | Stage | Match Type | Match Name | Map
+vct_2026,vct_2026\matches\maps_scores.csv,0.11,16,Tournament | Stage | Match Type | Match Name | Map | Team A | Team A Score | Team A Attacker Score | Team A Defender Score | Team A Overtime Score | Team B | Team B Score | Team B Attacker Score | Team B Defender Score | Team B Overtime Score | Duration
+vct_2026,vct_2026\matches\overview.csv,5.31,21,"Tournament | Stage | Match Type | Match Name | Map | Player | Team | Agents | Rating | Average Combat Score | Kills | Deaths | Assists | Kills - Deaths (KD) | Kill, Assist, Trade, Survive % | Average Damage Per Round | Headshot % | First Kills | First Deaths | Kills - Deaths (FKD) | Side"
+vct_2026,vct_2026\matches\rounds_kills.csv,7.72,13,Tournament | Stage | Match Type | Match Name | Map | Round Number | Eliminator Team | Eliminator | Eliminator Agent | Eliminated Team | Eliminated | Eliminated Agent | Kill Type
+vct_2026,vct_2026\matches\scores.csv,0.04,9,Tournament | Stage | Match Type | Match Name | Team A | Team B | Team A Score | Team B Score | Match Result
+vct_2026,vct_2026\matches\team_mapping.csv,0.0,2,Abbreviated | Full Name
+vct_2026,vct_2026\matches\win_loss_methods_count.csv,0.18,14,Tournament | Stage | Match Type | Match Name | Map | Team | Elimination | Detonated | Defused | Time Expiry (No Plant) | Eliminated | Defused Failed | Detonation Denied | Time Expiry (Failed to Plant)
+vct_2026,vct_2026\matches\win_loss_methods_round_number.csv,4.01,9,Tournament | Stage | Match Type | Match Name | Map | Round Number | Team | Method | Outcome
+vct_2026,vct_2026\players_stats\players_stats.csv,1.65,25,"Tournament | Stage | Match Type | Player | Teams | Agents | Rounds Played | Rating | Average Combat Score | Kills:Deaths | Kill, Assist, Trade, Survive % | Average Damage Per Round | Kills Per Round | Assists Per Round | First Kills Per Round | First Deaths Per Round | Headshot % | Clutch Success % | Clutches (won/played) | Maximum Kills in a Single Map | Kills | Deaths | Assists | First Kills | First Deaths"

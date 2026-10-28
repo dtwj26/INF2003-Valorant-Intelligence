@@ -1,0 +1,7 @@
+year,id_rows,tournaments_with_games,unique_match_ids,unique_game_ids,missing_id_rows,repeated_game_id_rows,scores_rows,distinct_team_names_in_scores,maps_scores_rows,matched_scored_game_ids,maps_scores_unmatched_to_id,maps_scores_ambiguous_to_id,overview_rows,overview_side_both,overview_side_attack,overview_side_defend,both_rows_unmatched_to_game_id,both_rows_ambiguous_to_game_id,unique_both_player_game_agent_rows,repeated_both_player_game_agent_rows,agent_pick_rate_rows,agent_pick_rate_all_maps_rows
+2021,14489,142,7224,14488,1,0,7224,2740,14503,14443,19,39,599355,199785,199785,199785,56079,210,143496,0,192120,42648
+2022,8864,58,3842,8864,0,0,3842,1572,8884,8856,20,8,379378,126466,126456,126456,38080,40,88346,0,132336,25824
+2023,830,10,331,830,0,0,331,51,830,830,0,0,34944,11648,11648,11648,3348,0,8300,0,17712,3288
+2024,1104,15,434,1104,0,0,434,44,1104,1104,0,0,46152,15384,15384,15384,4344,0,11040,0,24840,4728
+2025,1277,15,503,1277,0,0,503,58,1277,1277,0,0,53226,17742,17742,17742,4982,0,12760,0,30294,5454
+2026,886,10,342,886,0,0,342,49,886,886,0,0,36840,12280,12280,12280,3420,0,8860,0,21547,3828

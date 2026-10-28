@@ -1,0 +1,13 @@
+Homepage data profile notes
+Counts are diagnostics, not final UI numbers.
+Team-name counts may include aliases; confirm team IDs before use.
+A map game is not necessarily completed just because it has a Game ID.
+
+2021: candidate multi-agent 'Agents' values: [('omen, sova', 4), ('sova, viper', 3), ('jett, sova', 2), ('astra, sova', 2), ('killjoy, omen', 1), ('brimstone, sova', 1), ('raze, sova', 1), ('reyna, sova', 1)]
+2021: overview Side distribution: {'both': 199785, 'attack': 199785, 'defend': 199785}
+2022: candidate multi-agent 'Agents' values: [('astra, skye', 5), ('astra, sova', 4), ('omen, sage', 3), ('jett, omen', 2), ('sova, viper', 2), ('astra, chamber', 2), ('chamber, omen', 2), ('astra, jett', 2)]
+2022: overview Side distribution: {'both': 126466, 'attack': 126456, 'defend': 126456}
+2023: overview Side distribution: {'both': 11648, 'attack': 11648, 'defend': 11648}
+2024: overview Side distribution: {'both': 15384, 'attack': 15384, 'defend': 15384}
+2025: overview Side distribution: {'both': 17742, 'attack': 17742, 'defend': 17742}
+2026: overview Side distribution: {'both': 12280, 'attack': 12280, 'defend': 12280}
