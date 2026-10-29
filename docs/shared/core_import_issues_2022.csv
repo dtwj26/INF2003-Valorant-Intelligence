@@ -1,0 +1,9 @@
+﻿year,file,row,table,issue,identifier,detail
+2022,players_ids.csv,5260,players,invalid_identity,,Name='Mori'; skipped
+2022,database,0,teams,existing_name_variation,3478,Stored='PCIFIC Esports'; source='PCIFIC Espor'; stored name kept
+2022,database,0,players,existing_name_variation,53,Stored='Inspire'; source='BabyJ'; stored name kept
+2022,database,0,players,existing_name_variation,1851,Stored='oderus'; source='Oderus'; stored name kept
+2022,database,0,players,existing_name_variation,4866,Stored='Kushy'; source='Kush'; stored name kept
+2022,database,0,players,existing_name_variation,13219,Stored='Papi'; source='PapiChulo'; stored name kept
+2022,database,0,players,existing_name_variation,20140,Stored='vora'; source='Vora'; stored name kept
+2022,database,0,players,existing_name_variation,23365,Stored='koshmaras'; source='Koshmaras'; stored name kept
