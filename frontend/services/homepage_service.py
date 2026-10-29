@@ -1,12 +1,11 @@
-"""Member 1: connect your homepage backend at the two marked calls below.
-
+"""
 views/homepage.py calls only the two functions below. Replace the backend calls or adapt
 field names here; no Streamlit layout changes are needed.
 """
 
 # CONNECTION POINT: replace this import with your real backend module when ready.
 # Keep it while developing against the existing JSON file.
-from services import mock_homepage_service as backend
+from backend.homepage import service as backend
 
 
 class DataServiceError(Exception):

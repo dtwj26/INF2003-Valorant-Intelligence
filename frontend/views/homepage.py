@@ -117,7 +117,7 @@ def render():
                 for row in snapshot["agents"][:5]:
                     rows.append(
                         '<li class="agent-row">' + asset_image(get_agent_image(row["name"]), "agent-image")
-                        + f'<div><strong>{escape(row["name"])}</strong>'
+                        + f'<div><strong>{escape("KAY/O" if row["name"].lower() == "kay/o" else row["name"].title())}</strong>'
                         + f'<span class="agent-role">{escape(get_agent_role(row["name"]))}</span></div>'
                         + f'<span class="agent-value">{row["picks"]:,}<small>picks</small></span></li>'
                     )
