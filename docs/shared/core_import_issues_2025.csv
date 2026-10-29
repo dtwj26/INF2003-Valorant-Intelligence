@@ -1,0 +1,11 @@
+﻿year,file,row,table,issue,identifier,detail
+2025,players_ids.csv,333,players,invalid_identity,,Name='karsaj'; skipped
+2025,players_ids.csv,336,players,invalid_identity,,Name='heart bus'; skipped
+2025,database,0,teams,existing_name_variation,1034,Stored='NRG Esports'; source='NRG'; stored name kept
+2025,database,0,teams,existing_name_variation,8304,Stored='Talon Esports'; source='TALON'; stored name kept
+2025,database,0,players,existing_name_variation,6022,Stored='Yosemite'; source='yosemite'; stored name kept
+2025,database,0,players,existing_name_variation,7135,Stored='hfmi0dzjc9z7'; source='zjc'; stored name kept
+2025,database,0,players,existing_name_variation,9735,Stored='2ge'; source='2GE'; stored name kept
+2025,database,0,players,existing_name_variation,11494,Stored='Keiko'; source='keiko'; stored name kept
+2025,database,0,players,existing_name_variation,20871,Stored='K4DAVRA'; source='Kada'; stored name kept
+2025,database,0,players,existing_name_variation,31207,Stored='Carpe'; source='carpe'; stored name kept
