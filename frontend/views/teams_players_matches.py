@@ -19,12 +19,14 @@ from components.agent_names import format_agent_name
 
 
 ROOT = Path(__file__).resolve().parents[1]
+MATCH_MAPS = ['Abyss', 'Ascent', 'Bind', 'Breeze', 'Corrode', 'Fracture',
+              'Haven', 'Icebox', 'Lotus', 'Pearl', 'Split', 'Sunset', 'TBD']
 
 
 def _load_records(view, season, tournament_id='', map_name=''):
     # keep the existing matches service
     if view == 'Matches':
-        return service.get_records(
+        return service.get_match_records(
             season,
             tournament_id,
             map_name
@@ -520,7 +522,9 @@ def _match_table(matches, team_id=None, name='match_history'):
     for match in matches:
         side = match['team_ids'].index(team_id) if team_id else 0
         score = match['score']
-        row = {'Date': match['date'], 'Match / tournament': ' vs '.join(match['team_names']), 'Series score': f'{score[side]}–{score[1-side]}'}
+        row = {'Date': match['date']} if 'date' in match else {'Match ID': match['id']}
+        row.update({'Match / tournament': ' vs '.join(match['team_names']),
+                    'Series score': f'{score[side]}–{score[1-side]}'})
         if team_id:
             row['Result'] = 'Win' if score[side] > score[1-side] else 'Loss'
         rows.append(row)
@@ -545,17 +549,22 @@ def _browse(view, data, season):
         with columns[2]:
             second = _filter(view, 'second', 'Agent' if is_players else 'Map',
                              ['All agents'] + sorted({a['name'] for p in data['players'] for a in p['agents']})
-                             if is_players else ['All maps'] + data['maps'])
+                             if is_players else ['All maps'] + (MATCH_MAPS if is_matches else data['maps']))
         if is_matches:
             with columns[3]:
                 team_filter = _filter(view, 'team', 'Team', ['All teams'] + [t['name'] for t in data['teams']])
         with columns[-1]:
-            order = _filter(view, 'sort', 'Sort by', ['Newest first', 'Oldest first'] if is_matches
+            order = _filter(view, 'sort', 'Sort by', ['Match ID (descending)', 'Match ID (ascending)'] if is_matches
                             else ['Name A–Z', 'Most map games'])
     scoped = data
     if not is_players:
         event_id = next((t['id'] for t in data['tournaments'] if t['name'] == first), '')
-        scoped = service.get_records(season, event_id, '' if second == 'All maps' else second)
+        map_name = '' if second == 'All maps' else second
+        if is_matches:
+            if event_id or map_name:
+                scoped = service.get_match_records(season, event_id, map_name)
+        else:
+            scoped = service.get_records(season, event_id, map_name)
     rows = scoped[view.lower()]
     if is_players:
         rows = [p for p in rows if (first == 'All teams' or p['team_name'] == first)
@@ -566,9 +575,9 @@ def _browse(view, data, season):
                 and search in (' '.join(m['team_names']) + ' ' + m['tournament'] + ' ' + m['id']).casefold()]
     else:
         rows = [t for t in rows if search in t['name'].casefold()]
-    rows = sorted(rows, key=(lambda r: r['date']) if is_matches else
+    rows = sorted(rows, key=(lambda r: int(r['id'])) if is_matches else
                   ((lambda r: (-r['games'], r['name'])) if order == 'Most map games' else lambda r: r['name']),
-                  reverse=is_matches and order == 'Newest first')
+                  reverse=is_matches and order == 'Match ID (descending)')
     if is_matches:
         active = [label for label in [
             f'Team: {team_filter}' if team_filter != 'All teams' else '',
@@ -578,7 +587,7 @@ def _browse(view, data, season):
         if active:
             st.caption('Active filters: ' + ' / '.join(active) + '. Clear filters to see every team’s matches.')
         else:
-            st.caption(f'Search any team across all {len(data["matches"])} matches. The list starts with the newest results.')
+            st.caption(f'Search any team across all {len(data["matches"])} matches. Match IDs are not verified match dates.')
     count, clear = st.columns([4, 1], vertical_alignment='center')
     count.caption(f'{len(rows)} {view.lower()} found')
     with clear:
@@ -593,7 +602,7 @@ def _browse(view, data, season):
     visible = rows[(page-1)*8:page*8]
     if is_matches:
         st.caption('Map filters find series containing that map; scores show the full series.')
-        _match_table(visible, name='browse_matches')
+        _match_table(visible, name='live_matches')
     elif is_players:
         _table([{'Player': p['name'], 'Team': p['team_name'], 'Map games': p['games'],
                  'Avg. ACS': p['acs'], 'K/D': f"{p['kd']:.2f}" if p['kd'] is not None else '—'} for p in visible],
@@ -686,28 +695,32 @@ def _player_detail(player, data):
 
 def _match_detail(match, data):
     st.html(f'<h2 class="record-detail-title">Match {escape(match["id"])}</h2>')
-    st.caption(f"{match['tournament']} / {match['date']} / Completed")
+    st.caption(f"{match['tournament']} / {match['season']}")
     identity = ('<div class="match-scoreline">'
                 + _record_link(match['team_names'][0], 'Teams', match['team_ids'][0])
                 + f'<span>{match["score"][0]}–{match["score"][1]}</span>'
                 + _record_link(match['team_names'][1], 'Teams', match['team_ids'][1]) + '</div>')
     key = f'match_identity_{match["id"]}'
     _RECORD_TABLE(data={'html': identity}, key=key, on_open_change=partial(_table_open, key))
-    games = {g['id']: g for g in match['games']}
+    with st.spinner('Loading match maps and scoreboards…'):
+        game_rows = service.get_match_details(match['id'])
+    if not game_rows:
+        st.info('No scored maps are available for this match.')
+        return
+    games = {g['id']: g for g in game_rows}
     st.caption('Choose a map game to see its score and player records.')
     with st.container(key='record_map_tabs'):
         game_id = st.radio('Map game', list(games), horizontal=True, key=f'map_game_{match["id"]}',
                        format_func=lambda key: f"{games[key]['map']}  {games[key]['scores'][0]}–{games[key]['scores'][1]}")
     game = games[game_id]
     _section(f"{game['map']} scoreboard", f"{match['team_names'][0]} {game['scores'][0]}–{game['scores'][1]} {match['team_names'][1]} / {sum(game['scores'])} rounds")
-    players = {p['id']: p for p in data['players']}
     records = game['players']
     team_names = dict(zip(match['team_ids'], match['team_names']))
-    _table([{'Player / team': players[p['player_id']]['name'], 'Agent': p['agent'], 'ACS': p['acs'],
+    _table([{'Player / team': p['player_name'], 'Agent': p['agent'], 'ACS': p['acs'],
              'Kills': p['kills'], 'Deaths': p['deaths'], 'Assists': p['assists'],
-             'K/D': f"{p['kills']/p['deaths']:.2f}" if p['deaths'] else '—'} for p in records],
+             'K/D': f"{p['kills']/p['deaths']:.2f}" if p['kills'] is not None and p['deaths'] else '—'} for p in records],
            [p['player_id'] for p in records], 'Players', f'scoreboard_{game_id}', action=False, rich={
-               'Player / team': [_record_link(players[p['player_id']]['name'], 'Players', p['player_id'])
+               'Player / team': [_record_link(p['player_name'], 'Players', p['player_id'])
                                  + '<small>' + _record_link(team_names[p['team_id']], 'Teams', p['team_id']) + '</small>' for p in records],
                'Agent': ['<div class="roster-agent">' + _image(get_agent_image(p['agent']), 'table-agent-image')
                          + escape(p['agent']) + '</div>' for p in records]})
@@ -733,7 +746,7 @@ def render():
         )
 
         if active_view == "Matches":
-            seasons = service.get_seasons()
+            seasons = service.get_match_seasons()
         else:
             seasons = [2026, 2025, 2024, 2023, 2022, 2021]
 
@@ -749,7 +762,8 @@ def render():
         
         if active_view == "Matches":
             text.caption(
-                "Coverage: Valorant Champions 2023 (existing JSON preview data)."
+                f"Coverage: VCT {st.session_state.season} "
+                "match results from PostgreSQL."
             )
         else:
             text.caption(
