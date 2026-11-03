@@ -90,7 +90,20 @@ def _table(rows, ids=None, view=None, name='records', rich=None, action=True):
     if caption:
         content += f'<caption>{caption} / Valorant Champions 2023</caption>'
     content += '<thead><tr>'
-    content += ''.join(f'<th scope="col">{escape(label)}</th>' for label in headers)
+    for label in headers:    
+        team_stat = (
+            (
+                view == "Teams"
+                and label in ("Match series", "Map games", "Recorded players")
+            )
+            or (
+                view == "Players"
+                and label in ("Map games", "Avg. ACS", "K/D")
+            )
+        )
+        align = ' style="text-align: center !important;"' if team_stat else ""
+        content += f'<th scope="col"{align}>{escape(label)}</th>'
+
     if ids is not None and action:
         content += '<th scope="col">' + ('Details' if view == 'Matches' else 'Profile') + '</th>'
     content += '</tr></thead><tbody>'
@@ -101,7 +114,23 @@ def _table(rows, ids=None, view=None, name='records', rich=None, action=True):
         for label, value in row.items():
             cell = rich[label][index] if label in rich else escape(str(value if value is not None else '—'))
             numeric = isinstance(value, (int, float)) or label in ('K/D', 'Win rate', 'Score', 'Series score', 'Result')
-            content += f'<td class="{"numeric" if numeric else ""}">{cell}</td>'
+                
+            team_stat = (
+                (
+                    view == "Teams"
+                    and label in ("Match series", "Map games", "Recorded players")
+                )
+                or (
+                    view == "Players"
+                    and label in ("Map games", "Avg. ACS", "K/D")
+                )
+            )
+
+            cell_class = "" if team_stat else ("numeric" if numeric else "")
+            cell_style = ' style="text-align: center !important;"' if team_stat else ""
+            content += f'<td class="{cell_class}"{cell_style}>{cell}</td>'
+
+
         if ids is not None and action:
             action_label = {'Teams': 'View team', 'Players': 'View player', 'Matches': 'View match'}[view]
             content += '<td>' + _record_link(action_label, view, ids[index]) + '</td>'
