@@ -1,5 +1,13 @@
 """Application entry point. Run: python -m streamlit run app.py"""
 from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parent
+
+# Streamlit adds frontend/ to the import path; backend/ lives at the repo root.
+PROJECT_ROOT = ROOT.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 import streamlit as st
 
@@ -7,8 +15,6 @@ from components.sidebar import render_sidebar
 from views.homepage import render as render_homepage
 from views.teams_players_matches import render as render_records
 from views.competitive_analysis import render as render_analysis
-
-ROOT = Path(__file__).resolve().parent
 
 
 def main():
