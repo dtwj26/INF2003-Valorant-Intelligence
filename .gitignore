@@ -222,3 +222,6 @@ __marimo__/
 # Valorant datasets
 /data/raw/
 /data/cleaned/
+
+# local database exports
+/data/local/

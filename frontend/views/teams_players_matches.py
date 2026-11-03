@@ -14,10 +14,453 @@ from services import teams_players_matches_service as service
 from components.record_table import _RECORD_TABLE, _table_open, _record_link, _image, _section, _metrics, _pct, _table, _open
 from components.sidebar import open_analysis
 
+from services.live_teams_players_service import get_live_records
+from components.agent_names import format_agent_name
+
+
 ROOT = Path(__file__).resolve().parents[1]
 MATCH_MAPS = ['Abyss', 'Ascent', 'Bind', 'Breeze', 'Corrode', 'Fracture',
               'Haven', 'Icebox', 'Lotus', 'Pearl', 'Split', 'Sunset', 'TBD']
 
+
+def _load_records(view, season, tournament_id='', map_name=''):
+    # keep the existing matches service
+    if view == 'Matches':
+        return service.get_match_records(
+            season,
+            tournament_id,
+            map_name
+        )
+
+    # use PostgreSQL for teams and players
+    data = get_live_records(
+        season,
+        tournament_id,
+        map_name
+    )
+
+    return {
+        **data,
+        'matches': []
+    }
+
+
+def _browse_live(view, data):
+    if view == "Teams":
+        c1, c2, c3, c4 = st.columns([2, 1, 1, 1])
+
+        with c1:
+            search = st.text_input(
+                "Search teams",
+                placeholder="Team name",
+                key="live_records_search_Teams"
+            ).strip().casefold()
+
+        tournament_names = {"": "All tournaments"}
+        tournament_names.update({
+            t["id"]: t["name"]
+            for t in data["tournaments"]
+        })
+
+        with c2:
+            tournament_id = st.selectbox(
+                "Tournament",
+                list(tournament_names),
+                format_func=lambda x: tournament_names[x],
+                key="live_team_tournament"
+            )
+
+        with c3:
+            map_name = st.selectbox(
+                "Map",
+                [""] + data["maps"],
+                format_func=lambda x: x or "All maps",
+                key="live_team_map"
+            )
+
+        with c4:
+            sort_by = st.selectbox(
+                "Sort by",
+                ["Name A-Z", "Most map games"],
+                key="live_team_sort"
+            )
+
+        scoped = _load_records(
+            "Teams",
+            st.session_state.season,
+            tournament_id,
+            map_name
+        )
+
+        records = [
+            t for t in scoped["teams"]
+            if search in t["name"].casefold()
+        ]
+
+        if sort_by == "Most map games":
+            records.sort(
+                key=lambda t: (-t["games"], t["name"].casefold())
+            )
+        else:
+            records.sort(key=lambda t: t["name"].casefold())
+
+    else:
+        c1, c2, c3, c4 = st.columns(
+            [2, 1, 1, 1],
+            gap="medium"
+        )
+
+        with c1:
+            search = st.text_input(
+                "Search players",
+                placeholder="Player name",
+                key="live_records_search_Players"
+            ).strip().casefold()
+
+        team_names = sorted({
+            p["team_name"]
+            for p in data["players"]
+            if p.get("team_name")
+        })
+
+        with c2:
+            selected_team = st.selectbox(
+                "Team",
+                ["All teams"] + team_names,
+                key="live_player_team"
+            )
+
+        agent_names = sorted({
+            a["name"]
+            for p in data["players"]
+            for a in p.get("agents", [])
+            if a.get("name")
+        })
+
+        
+        with c3:
+            selected_agent = st.selectbox(
+                "Agent",
+                ["All agents"] + agent_names,
+                format_func=format_agent_name,
+                key="live_player_agent"
+            )
+
+
+        with c4:
+            sort_by = st.selectbox(
+                "Sort by",
+                ["Name A-Z", "Most map games"],
+                key="live_player_sort"
+            )
+
+        records = [
+            p for p in data["players"]
+            if (
+                selected_team == "All teams"
+                or p["team_name"] == selected_team
+            )
+            and (
+                selected_agent == "All agents"
+                or any(
+                    a["name"] == selected_agent
+                    for a in p.get("agents", [])
+                )
+            )
+            and search in (
+                f"{p['name']} {p['team_name']}"
+            ).casefold()
+        ]
+
+        if sort_by == "Most map games":
+            records.sort(
+                key=lambda p: (
+                    -p["games"],
+                    p["name"].casefold()
+                )
+            )
+        else:
+            records.sort(
+                key=lambda p: p["name"].casefold()
+            )
+
+
+    st.caption(f"{len(records)} {view.lower()} found")
+    
+    # paginate teams and players
+    total_records = len(records)
+    page_size = 8
+    page_key = f"live_page_{view}"
+
+    total_pages = max(
+        1,
+        (total_records + page_size - 1) // page_size
+    )
+
+    page = max(
+        1,
+        min(st.session_state.get(page_key, 1), total_pages)
+    )
+
+    st.session_state[page_key] = page
+
+    records = records[
+        (page - 1) * page_size : page * page_size
+    ]
+
+
+
+
+    if view == "Teams":
+        rows = [
+            {
+                "Team": t["name"],
+                "Match series": t["matches"],
+                "Map games": t["games"],
+                "Recorded players": len(t["roster"]),
+            }
+            for t in records
+        ]
+    else:
+        rows = [
+            {
+                "Player": p["name"],
+                "Team": p["team_name"],
+                "Map games": p["games"],
+                "Avg. ACS": p["acs"],
+                "K/D": f"{p['kd']:.2f}" if p["kd"] is not None else "—",
+            }
+            for p in records
+        ]
+
+    
+    
+    rich = {}
+
+    
+    if view == "Teams":
+        rich["Team"] = [
+            '<div class="record-name">'
+            + _image(get_team_logo(t["id"]), "table-team-logo")
+            + _record_link(t["name"], "Teams", t["id"])
+            + '</div>'
+            for t in records
+        ]
+
+
+    
+    else:
+        rich["Player"] = [
+            _record_link(p["name"], "Players", p["id"])
+            for p in records
+        ]
+
+        rich["Team"] = [
+            '<div class="record-name">'
+            + _image(get_team_logo(p["team"]), "table-team-logo")
+            + f'<span>{escape(p["team_name"])}</span></div>'
+            for p in records
+        ]
+
+
+
+
+    
+    
+    _table(
+        rows,
+        ids=[r["id"] for r in records],
+        view=view,
+        name=f"live_records_{view.lower()}",
+        action=True,
+        rich=rich
+    )
+
+
+
+    
+    # pagination controls
+    first_record = (
+        (page - 1) * page_size + 1
+        if total_records else 0
+    )
+    last_record = min(page * page_size, total_records)
+
+    footer, previous, next_page = st.columns(
+        [5, 1, 1],
+        vertical_alignment="center"
+    )
+
+    footer.caption(
+        f"Showing {first_record}-{last_record} "
+        f"of {total_records} / "
+        f"Page {page} of {total_pages}"
+    )
+
+    if previous.button(
+        "Previous",
+        disabled=page == 1,
+        key=f"live_previous_{view}",
+        width="stretch"
+    ):
+        st.session_state[page_key] = page - 1
+        st.rerun()
+
+    if next_page.button(
+        "Next",
+        disabled=page == total_pages,
+        key=f"live_next_{view}",
+        width="stretch"
+    ):
+        st.session_state[page_key] = page + 1
+        st.rerun()
+
+
+def _team_detail_live(team, data, season):
+    # team identity
+    st.html(
+        '<div class="record-identity">'
+        + _image(get_team_logo(team["id"]), "team-logo")
+        + f'<div><h2>{escape(team["name"])}</h2>'
+        + f'Season overview / VCT {season} (all tournaments and maps)'
+        + '</div></div>'
+    )
+
+    # verified PostgreSQL statistics
+    _metrics([
+        ("Match series", team["matches"], "Recorded series"),
+        ("Map games", team["games"], "Recorded map appearances"),
+        ("Recorded players", len(team["roster"]), "Players with recorded statistics")
+    ])
+
+    # recorded team roster
+    _section(
+        "Recorded Roster",
+        "Players identified from recorded map games."
+    )
+
+    roster_ids = set(team["roster"])
+
+    roster = sorted(
+        [
+            p for p in data["players"]
+            if p["id"] in roster_ids
+        ],
+        key=lambda p: p["name"].casefold()
+    )
+
+    roster_rows = [
+        {
+            "Player": p["name"],
+            "Most used agent": format_agent_name(p.get("agent"))
+        }
+        for p in roster
+    ]
+
+    
+    _table(
+        roster_rows,
+        ids=[p["id"] for p in roster],
+        view="Players",
+        name="live_team_roster",
+        action=True,
+        rich={
+            "Player": [
+                _record_link(p["name"], "Players", p["id"])
+                for p in roster
+            ]
+        }
+    )
+
+
+    st.caption(
+        "Match results and win rates will be available "
+        "after the Matches backend is integrated."
+    )
+
+
+def _player_detail_live(player, data, season):
+    # player identity
+    st.html(
+        f'<h2 class="record-detail-title">'
+        f'{escape(player["name"])}</h2>'
+    )
+
+
+    st.caption(
+        f'Season overview / VCT {season} (all tournaments and maps) / '
+        f'{player.get("team_name") or "Team not recorded"}'
+    )
+
+
+    # verified performance statistics
+    acs = player.get("acs")
+    kd = player.get("kd")
+
+    _metrics([
+        (
+            "Avg. ACS",
+            f"{acs:.2f}" if acs is not None else "—",
+            "Average combat score"
+        ),
+        (
+            "K/D",
+            f"{kd:.2f}" if kd is not None else "—",
+            "Kills divided by deaths"
+        ),
+        (
+            "Map games",
+            player["games"],
+            "Recorded player-map appearances"
+        )
+    ])
+
+    _section(
+        "Performance Statistics",
+        "Aggregated statistics from recorded map games."
+    )
+
+    _table([
+        {"Measure": "Kills", "Value": player.get("kills")},
+        {"Measure": "Deaths", "Value": player.get("deaths")},
+        {"Measure": "Assists", "Value": player.get("assists")}
+    ], name="live_player_performance", action=False)
+
+    _section(
+        "Agent Usage",
+        "Agents recorded across the player's map games."
+    )
+
+    agents = player.get("agents", [])
+
+    agent_rows = [
+        {
+            "Agent": format_agent_name(a["name"]),
+            "Map picks": a["picks"],
+            "Usage share (%)": a["share"]
+        }
+        for a in agents
+    ]
+
+    _table(
+        agent_rows,
+        name="live_player_agents",
+        action=False,
+        rich={
+            "Agent": [
+                '<div class="roster-agent">'
+                + _image(get_agent_image(a["name"]), "table-agent-image")
+                + escape(format_agent_name(a["name"]))
+                + '</div>'
+                for a in agents
+            ]
+        }
+    )
+
+    st.caption(
+        "Match-level results will be connected when "
+        "the Matches backend is integrated."
+    )
 
 def _back():
     st.session_state.record_view_saved = st.session_state.get('record_view', 'Teams')
@@ -296,8 +739,17 @@ def _match_detail(match, data):
 def render():
     st.title('Teams, Players & Matches')
     try:
-        active_view = st.session_state.get('record_view', st.session_state.get('record_view_saved', 'Teams'))
-        seasons = service.get_match_seasons() if active_view == 'Matches' else service.get_seasons()
+        
+        active_view = st.session_state.get(
+            "record_view",
+            st.session_state.get("record_view_saved", "Teams")
+        )
+
+        if active_view == "Matches":
+            seasons = service.get_match_seasons()
+        else:
+            seasons = [2026, 2025, 2024, 2023, 2022, 2021]
+
         if not seasons:
             st.info('No seasons are available yet. Refresh after records have been added.')
             st.button('Refresh records')
@@ -307,10 +759,18 @@ def render():
             _reset_scope()
         text, selector = st.columns([3, 1], vertical_alignment='center')
         text.write('Explore the records. Follow teams and players into their matches.')
-        if active_view == 'Matches':
-            text.caption(f'Coverage: VCT {st.session_state.season} match results from PostgreSQL.')
+        
+        if active_view == "Matches":
+            text.caption(
+                f"Coverage: VCT {st.session_state.season} "
+                "match results from PostgreSQL."
+            )
         else:
-            text.caption('Coverage: Valorant Champions 2023. Statistics reflect this tournament.')
+            text.caption(
+                f"Coverage: VCT {st.session_state.season} records from PostgreSQL. "
+                "Statistics reflect recorded tournaments in the selected season."
+            )
+
         with selector:
             st.selectbox('Season', seasons, key='season', on_change=_reset_scope)
         if 'record_view' not in st.session_state:
@@ -319,25 +779,82 @@ def render():
             view = st.radio('Record type', ['Teams', 'Players', 'Matches'], horizontal=True,
                             key='record_view', label_visibility='collapsed', on_change=_back)
         season = st.session_state.season
+        # clear selected profile when season changes
+        previous_season = st.session_state.get(
+            "records_last_season"
+        )
+
+        if (
+            previous_season is not None
+            and previous_season != season
+        ):
+            st.session_state.records_detail = None
+            st.session_state.records_revision = (
+                st.session_state.get("records_revision", 0) + 1
+            )
+
+        st.session_state.records_last_season = season
         with st.spinner('Loading records…'):
-            data = service.get_match_records(season) if view == 'Matches' else service.get_records(season)
-        if not data['matches']:
-            st.info(f'No records are available for {season}. Choose another season to continue.')
+            data = _load_records(view, season)
+        
+        records_by_view = {
+            'Teams': data.get('teams', []),
+            'Players': data.get('players', []),
+            'Matches': data.get('matches', []),
+        }
+
+        
+        if view == "Players" and season == 2021:
+            st.warning(
+                "2021 player-performance statistics have not "
+                "been imported into PostgreSQL. "
+                "Team and match records may still be available."
+            )
             return
+
+
+        if not records_by_view[view]:
+            st.info(
+                f'No {view.lower()} records are available for {season}. '
+                'Choose another season to continue.'
+            )
+            return
+
+        
+        # explain incomplete 2022 player statistics
+        if view == "Players" and season == 2022:
+            st.info(
+                "2022 player statistics have partial coverage. "
+                "Some unmatched or ambiguous source records "
+                "were excluded during validation to maintain "
+                "data accuracy."
+            )
+
         detail = st.session_state.get('records_detail')
         if detail:
             st.button(f'Back to {view.lower()}', on_click=_back)
-            record = next((row for row in data[view.lower()] if row['id'] == detail), None)
+            
+            record = next(
+                (
+                    row for row in data[view.lower()]
+                    if str(row["id"]) == str(detail)
+                ),
+                None
+            )
+
             if record is None:
                 st.warning('This record is no longer available. Return to the list and choose another record.')
             elif view == 'Teams':
-                _team_detail(record, data, season)
+                _team_detail_live(record, data, season)
             elif view == 'Players':
-                _player_detail(record, data)
+                _player_detail_live(record, data, season)
             else:
                 _match_detail(record, data)
         else:
-            _browse(view, data, season)
+            if view in ("Teams", "Players"):
+                _browse_live(view, data)
+            else:
+                _browse(view, data, season)
     except service.DataServiceError:
         st.error('Records could not be loaded. Your selections are kept. Retry loading to continue.')
         st.button('Retry loading', type='primary')
