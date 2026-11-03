@@ -15,7 +15,9 @@ def main():
     st.set_page_config(page_title="Valorant Competitive Intelligence System", layout="wide")
     st.html(ROOT / "styles.css")
     render_sidebar()
+
     if st.session_state.get('page', 'home') == 'records':
+
         with st.container(key='records_page'):
             render_records()
     elif st.session_state.get('page') == 'analysis':
