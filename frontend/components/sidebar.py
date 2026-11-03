@@ -22,3 +22,11 @@ def render_sidebar():
                   type='primary' if page == 'records' else 'secondary', on_click=_navigate, args=('records',))
         st.button('Competitive Analysis', key='analysis_nav', width='stretch',
                   type='primary' if page == 'analysis' else 'secondary', on_click=_navigate, args=('analysis',))
+        st.button(
+            "Teams & Players (Live Test)",
+            key="live_tp_nav",
+            width="stretch",
+            type="primary" if page == "tp_live" else "secondary",
+            on_click=_navigate,
+            args=("tp_live",)
+        )
