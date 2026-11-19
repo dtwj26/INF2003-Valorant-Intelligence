@@ -1,0 +1,314 @@
+﻿season,tournament,stage,match_type,match_name,map,reason,excluded_outcome_rows
+2021,Champions Tour Brazil Stage 1: Challengers 3,Main Event,Elimination (A),FREEAGENTS vs paiN Gaming,Haven,PostgreSQL participant mismatch,44
+2021,Champions Tour Brazil Stage 1: Challengers 3,Main Event,Elimination (A),FREEAGENTS vs paiN Gaming,Split,PostgreSQL participant mismatch,40
+2021,Champions Tour Brazil Stage 1: Challengers 3,Main Event,Opening (A),Imperial Esports vs FREEAGENTS,Haven,PostgreSQL participant mismatch,42
+2021,Champions Tour Brazil Stage 1: Challengers 3,Open Qualifier,Quarterfinals,FREEAGENTS vs favela aimers,Bind,PostgreSQL participant mismatch,38
+2021,Champions Tour Brazil Stage 1: Challengers 3,Open Qualifier,Quarterfinals,FREEAGENTS vs favela aimers,Haven,PostgreSQL participant mismatch,46
+2021,Champions Tour Brazil Stage 1: Challengers 3,Open Qualifier,Quarterfinals,FREEAGENTS vs favela aimers,Split,PostgreSQL participant mismatch,34
+2021,Champions Tour Brazil Stage 1: Challengers 3,Open Qualifier,Round of 16,Keyd Stars vs FREEAGENTS,Bind,PostgreSQL participant mismatch,48
+2021,Champions Tour Brazil Stage 1: Challengers 3,Open Qualifier,Round of 16,Keyd Stars vs FREEAGENTS,Icebox,PostgreSQL participant mismatch,38
+2021,Champions Tour Brazil Stage 2: Challengers 1,Main Event,Elimination (A),FREEAGENTS vs SLICK,Haven,PostgreSQL participant mismatch,30
+2021,Champions Tour Brazil Stage 2: Challengers 1,Main Event,Elimination (A),FREEAGENTS vs SLICK,Icebox,PostgreSQL participant mismatch,42
+2021,Champions Tour Brazil Stage 2: Challengers 1,Main Event,Opening (A),Team Vikings vs FREEAGENTS,Icebox,PostgreSQL participant mismatch,38
+2021,Champions Tour Brazil Stage 2: Challengers 1,Open Qualifier,Round of 16,tftteam vs FREEAGENTS,Ascent,PostgreSQL participant mismatch,32
+2021,Champions Tour Brazil Stage 2: Challengers 1,Open Qualifier,Round of 16,tftteam vs FREEAGENTS,Icebox,PostgreSQL participant mismatch,36
+2021,Champions Tour Brazil Stage 2: Challengers 1,Open Qualifier,Round of 32,FREEAGENTS vs Athletico Zombies,Ascent,PostgreSQL participant mismatch,44
+2021,Champions Tour Brazil Stage 2: Challengers 1,Open Qualifier,Round of 32,FREEAGENTS vs Athletico Zombies,Haven,PostgreSQL participant mismatch,40
+2021,Champions Tour Brazil Stage 2: Challengers 1,Open Qualifier,Round of 32,FREEAGENTS vs Athletico Zombies,Icebox,PostgreSQL participant mismatch,30
+2021,Champions Tour CIS Stage 1: Challengers 1,Qualifier,Round of 128,Project X vs FR1END5,Haven,PostgreSQL participant mismatch,38
+2021,Champions Tour CIS Stage 1: Challengers 2,Open Qualifier,Round of 16,Project X vs Jeremiah,Haven,PostgreSQL participant mismatch,42
+2021,Champions Tour CIS Stage 1: Challengers 2,Open Qualifier,Round of 16,Project X vs Jeremiah,Icebox,PostgreSQL participant mismatch,42
+2021,Champions Tour CIS Stage 1: Challengers 2,Open Qualifier,Round of 16,Project X vs Jeremiah,Split,PostgreSQL participant mismatch,40
+2021,Champions Tour CIS Stage 1: Challengers 2,Open Qualifier,Round of 32,No Fear vs Project X,Bind,PostgreSQL participant mismatch,34
+2021,Champions Tour CIS Stage 1: Challengers 2,Open Qualifier,Round of 32,No Fear vs Project X,Haven,PostgreSQL participant mismatch,30
+2021,Champions Tour CIS Stage 1: Challengers 2,Open Qualifier,Round of 32,No Fear vs Project X,Icebox,PostgreSQL participant mismatch,44
+2021,Champions Tour CIS Stage 1: Challengers 2,Open Qualifier,Round of 64,positive mental attitude vs Project X,Bind,PostgreSQL participant mismatch,30
+2021,Champions Tour CIS Stage 1: Challengers 2,Open Qualifier,Round of 64,positive mental attitude vs Project X,Split,PostgreSQL participant mismatch,28
+2021,Champions Tour CIS Stage 1: Challengers 2,Qualifier Play-in,Quarterfinals,Team Divinity vs Project X,Bind,PostgreSQL participant mismatch,38
+2021,Champions Tour CIS Stage 1: Challengers 2,Qualifier Play-in,Quarterfinals,Team Divinity vs Project X,Split,PostgreSQL participant mismatch,36
+2021,Champions Tour CIS Stage 1: Challengers 3,Qualifier,Round of 16,Project X vs Deja Vu,Ascent,PostgreSQL participant mismatch,60
+2021,Champions Tour CIS Stage 1: Challengers 3,Qualifier,Round of 16,Project X vs Deja Vu,Haven,PostgreSQL participant mismatch,60
+2021,Champions Tour CIS Stage 1: Challengers 3,Qualifier,Round of 32,KronBars vs Project X,Ascent,PostgreSQL participant mismatch,36
+2021,Champions Tour CIS Stage 1: Challengers 3,Qualifier,Round of 32,KronBars vs Project X,Haven,PostgreSQL participant mismatch,30
+2021,Champions Tour CIS Stage 1: Challengers 3,Qualifier,Round of 64,Project X vs team04ka,Haven,PostgreSQL participant mismatch,34
+2021,Champions Tour CIS Stage 1: Challengers 3,Qualifier,Round of 64,Project X vs team04ka,Split,PostgreSQL participant mismatch,48
+2021,Champions Tour CIS Stage 1: Challengers 3,Qualifier,Round of 64,positive mental attitude vs Deja Vu,Bind,PostgreSQL participant mismatch,32
+2021,Champions Tour CIS Stage 1: Challengers 3,Qualifier,Round of 64,positive mental attitude vs Deja Vu,Haven,PostgreSQL participant mismatch,30
+2021,Champions Tour CIS Stage 3: Challengers 1,Open Qualifier,Round of 64,tyeasy vs Young Talents,Ascent,PostgreSQL participant mismatch,52
+2021,Champions Tour CIS Stage 3: Challengers 1,Open Qualifier,Round of 64,tyeasy vs Young Talents,Icebox,PostgreSQL participant mismatch,48
+2021,Champions Tour Europe Stage 1: Challengers 1,Qualifier,Round of 128,Rix.GG Thunder vs Team Questionmark,Split,PostgreSQL participant mismatch,38
+2021,Champions Tour Europe Stage 1: Challengers 1,Qualifier,Round of 256,BIG vs ORGLESS5,Icebox,PostgreSQL participant mismatch,46
+2021,Champions Tour Europe Stage 1: Challengers 1,Qualifier,Round of 256,The Streets vs Team Questionmark,Split,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 128,19esports vs ORGLESS5,Ascent,PostgreSQL participant mismatch,38
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 128,19esports vs ORGLESS5,Bind,PostgreSQL participant mismatch,46
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 128,19esports vs ORGLESS5,Split,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 128,Unsigned Losers vs Team Questionmark,Ascent,PostgreSQL participant mismatch,44
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 128,Unsigned Losers vs Team Questionmark,Bind,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 128,peanutz vs run it back,Ascent,PostgreSQL participant mismatch,38
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 128,peanutz vs run it back,Bind,PostgreSQL participant mismatch,36
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 128,peanutz vs run it back,Split,PostgreSQL participant mismatch,34
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 256,ORGLESS5 vs False Alarm,Bind,PostgreSQL participant mismatch,34
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 256,TBD vs HONK,Ascent,missing or ambiguous team ID,46
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 256,run it back vs eMonkeyz Club,Ascent,PostgreSQL participant mismatch,68
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 256,young talents vs Team Questionmark,Haven,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 64,HEET vs Team Questionmark,Ascent,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 64,HEET vs Team Questionmark,Haven,PostgreSQL participant mismatch,46
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 64,S2V Esports vs ORGLESS5,Ascent,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 64,S2V Esports vs ORGLESS5,Icebox,PostgreSQL participant mismatch,44
+2021,Champions Tour Europe Stage 1: Challengers 2,Open Qualifier,Round of 64,S2V Esports vs ORGLESS5,Split,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 1: Challengers 2,Qualifier Playoffs,Round of 32,IVY vs animel,Ascent,PostgreSQL participant mismatch,48
+2021,Champions Tour Europe Stage 1: Challengers 2,Qualifier Playoffs,Round of 32,IVY vs animel,Icebox,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 1: Challengers 2,Qualifier Playoffs,Round of 32,IVY vs animel,Split,PostgreSQL participant mismatch,44
+2021,Champions Tour Europe Stage 1: Challengers 3,Open Qualifier,Round of 128,Team Questionmark vs ShockDart,Haven,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 1: Challengers 3,Open Qualifier,Round of 128,Team Questionmark vs ShockDart,Split,PostgreSQL participant mismatch,36
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 128,IVY vs McDDonalds Esports,Ascent,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 128,IVY vs McDDonalds Esports,Bind,PostgreSQL participant mismatch,34
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 128,SAW vs Team Questionmark,Ascent,PostgreSQL participant mismatch,28
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 128,SAW vs Team Questionmark,Haven,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 128,young talents vs TEMPO,Ascent,PostgreSQL participant mismatch,46
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 128,young talents vs TEMPO,Haven,PostgreSQL participant mismatch,60
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 128,young talents vs TEMPO,Split,PostgreSQL participant mismatch,34
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 256,Bref vs Team Sampi,Bind,PostgreSQL participant mismatch,30
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 256,Bref vs Team Sampi,Haven,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 256,IVY vs Team MCE,Ascent,PostgreSQL participant mismatch,72
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 256,IVY vs Team MCE,Bind,PostgreSQL participant mismatch,38
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 256,IVY vs Team MCE,Haven,PostgreSQL participant mismatch,44
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 256,Team Questionmark vs GrandSpirit,Ascent,PostgreSQL participant mismatch,32
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 256,Team Questionmark vs GrandSpirit,Bind,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 256,TryToWin vs FreeAgents,Bind,PostgreSQL participant mismatch,34
+2021,Champions Tour Europe Stage 2: Challengers 1,Open Qualifier,Round of 256,TryToWin vs FreeAgents,Split,PostgreSQL participant mismatch,38
+2021,Champions Tour Europe Stage 2: Challengers 1,Qualifier Playoffs,Round of 64,IVY vs FunPlus Phoenix,Bind,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 2: Challengers 1,Qualifier Playoffs,Round of 64,IVY vs FunPlus Phoenix,Haven,PostgreSQL participant mismatch,36
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 128,Bref vs Hardcl1ck Esports,Ascent,PostgreSQL participant mismatch,32
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 128,Bref vs Hardcl1ck Esports,Split,PostgreSQL participant mismatch,38
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 128,IVY vs Rix.GG Thunder,Bind,PostgreSQL participant mismatch,52
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 128,IVY vs Rix.GG Thunder,Haven,PostgreSQL participant mismatch,44
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 128,IVY vs Rix.GG Thunder,Split,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 128,LDV Esports vs Underdogs,Ascent,PostgreSQL participant mismatch,32
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 128,LDV Esports vs Underdogs,Bind,PostgreSQL participant mismatch,32
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 128,LDV Esports vs Underdogs,Haven,PostgreSQL participant mismatch,44
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 256,Bref vs Invicta Gaming,Ascent,PostgreSQL participant mismatch,38
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 256,Bref vs Invicta Gaming,Icebox,PostgreSQL participant mismatch,36
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 256,Taunt vs Underdogs,Ascent,PostgreSQL participant mismatch,46
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 256,Taunt vs Underdogs,Bind,PostgreSQL participant mismatch,56
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 256,Taunt vs Underdogs,Split,PostgreSQL participant mismatch,56
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 256,iPon Esport vs IVY,Bind,PostgreSQL participant mismatch,34
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 256,iPon Esport vs IVY,Haven,PostgreSQL participant mismatch,36
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 256,iPon Esport vs IVY,Split,PostgreSQL participant mismatch,44
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 256,young talents vs No Witness,Ascent,PostgreSQL participant mismatch,34
+2021,Champions Tour Europe Stage 2: Challengers 2,Open Qualifier,Round of 256,young talents vs No Witness,Haven,PostgreSQL participant mismatch,32
+2021,Champions Tour Europe Stage 2: Challengers 2,Qualifier Playoffs,Round of 64,Bref vs KLATWA,Ascent,PostgreSQL participant mismatch,48
+2021,Champions Tour Europe Stage 2: Challengers 2,Qualifier Playoffs,Round of 64,Bref vs KLATWA,Split,PostgreSQL participant mismatch,52
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 128,BIG vs UnderDogs,Ascent,PostgreSQL participant mismatch,52
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 128,BIG vs UnderDogs,Bind,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 128,BIG vs UnderDogs,Icebox,PostgreSQL participant mismatch,34
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 128,IVY vs Rave Party,Ascent,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 128,IVY vs Rave Party,Split,PostgreSQL participant mismatch,30
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 128,bref vs WakaWaka,Ascent,PostgreSQL participant mismatch,44
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 128,bref vs WakaWaka,Haven,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 16,IVY vs TENSTAR,Bind,PostgreSQL participant mismatch,34
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 16,IVY vs TENSTAR,Split,PostgreSQL participant mismatch,46
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 256,DeftFox vs bref,Ascent,PostgreSQL participant mismatch,32
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 256,DeftFox vs bref,Breeze,PostgreSQL participant mismatch,52
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 256,DeftFox vs bref,Split,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 256,IVY vs WiLD MultiGaming,Bind,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 256,IVY vs WiLD MultiGaming,Split,PostgreSQL participant mismatch,56
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 256,Judge Rush vs Project X,Ascent,PostgreSQL participant mismatch,48
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 256,Judge Rush vs Project X,Breeze,PostgreSQL participant mismatch,38
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 256,Judge Rush vs Project X,Haven,PostgreSQL participant mismatch,38
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 32,Giants Gaming vs bref,Ascent,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 32,Giants Gaming vs bref,Bind,PostgreSQL participant mismatch,34
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 32,Giants Gaming vs bref,Breeze,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 32,SAW vs IVY,Bind,PostgreSQL participant mismatch,56
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 32,SAW vs IVY,Haven,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 64,IVY vs Masonic,Ascent,PostgreSQL participant mismatch,36
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 64,IVY vs Masonic,Split,PostgreSQL participant mismatch,26
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 64,bref vs YAZDA,Ascent,PostgreSQL participant mismatch,38
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 64,bref vs YAZDA,Breeze,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 3: Challengers 1,Open Qualifier,Round of 64,bref vs YAZDA,Icebox,PostgreSQL participant mismatch,46
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 128,IVY vs Team Endavant,Haven,PostgreSQL participant mismatch,38
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 128,IVY vs Team Endavant,Split,PostgreSQL participant mismatch,46
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 128,bref vs kapten mint,Haven,PostgreSQL participant mismatch,32
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 128,bref vs kapten mint,Split,PostgreSQL participant mismatch,36
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 16,IVY vs WiLD MultiGaming,Ascent,PostgreSQL participant mismatch,46
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 16,IVY vs WiLD MultiGaming,Bind,PostgreSQL participant mismatch,42
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 16,bref vs Team Heretics,Bind,PostgreSQL participant mismatch,46
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 16,bref vs Team Heretics,Haven,PostgreSQL participant mismatch,48
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 16,bref vs Team Heretics,Icebox,PostgreSQL participant mismatch,52
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 32,IVY vs AXIBYTE ESPORTS,Ascent,PostgreSQL participant mismatch,44
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 32,IVY vs AXIBYTE ESPORTS,Bind,PostgreSQL participant mismatch,38
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 32,bref vs Megastitut,Ascent,PostgreSQL participant mismatch,46
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 32,bref vs Megastitut,Haven,PostgreSQL participant mismatch,40
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 64,IVY vs Ovation eSports,Breeze,PostgreSQL participant mismatch,48
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 64,IVY vs Ovation eSports,Haven,PostgreSQL participant mismatch,48
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 64,bref vs GrandSpirit,Icebox,PostgreSQL participant mismatch,46
+2021,Champions Tour Europe Stage 3: Challengers 2,Open Qualifier,Round of 64,bref vs GrandSpirit,Split,PostgreSQL participant mismatch,36
+2021,Champions Tour Hong Kong & Taiwan Stage 1: Challengers 1,Main Event,Quarterfinals,Five Ace Esports vs TRAITORS,Icebox,ambiguous game ID,102
+2021,Champions Tour Hong Kong & Taiwan Stage 1: Challengers 1,Main Event,Semifinals,CBT Gaming vs Looking For Sponsor,Split,ambiguous game ID,90
+2021,Champions Tour Hong Kong & Taiwan Stage 1: Challengers 2,Main Event,Quarterfinals,Five Ace Esports vs Wolfpack,Ascent,PostgreSQL participant mismatch,42
+2021,Champions Tour Hong Kong & Taiwan Stage 1: Challengers 2,Main Event,Quarterfinals,Five Ace Esports vs Wolfpack,Haven,PostgreSQL participant mismatch,34
+2021,Champions Tour Hong Kong & Taiwan Stage 2: Challengers 1,Qualifier,Round of 16,Lightning vs Wolfpack,Bind,PostgreSQL participant mismatch,40
+2021,Champions Tour Hong Kong & Taiwan Stage 2: Challengers 2,Main Event,Grand Final,CBT Gaming vs KPC Computer Studio,Bind,ambiguous game ID,80
+2021,Champions Tour Hong Kong & Taiwan Stage 2: Challengers 2,Qualifier,Quarterfinals,aqua vs Victory Formula,Bind,PostgreSQL participant mismatch,52
+2021,Champions Tour Hong Kong & Taiwan Stage 2: Challengers 3,Main Event,Quarterfinals,Lightning vs Griffin E-Sports,Ascent,ambiguous game ID,96
+2021,Champions Tour Hong Kong & Taiwan Stage 3: Challengers 1,Qualifier,Round of 16,Team GMM vs No Name,Ascent,PostgreSQL participant mismatch,46
+2021,Champions Tour Indonesia Stage 1: Challengers 1,Main Event,Final Match,Alter Ego vs BOOM Esports,Split,ambiguous game ID,130
+2021,Champions Tour Indonesia Stage 1: Challengers 2,Main Event,Quarterfinals,BOOM Esports vs WOLFPACK,Ascent,PostgreSQL participant mismatch,34
+2021,Champions Tour Indonesia Stage 1: Challengers 2,Main Event,Quarterfinals,BOOM Esports vs WOLFPACK,Split,PostgreSQL participant mismatch,34
+2021,Champions Tour Indonesia Stage 1: Challengers 2,Qualifier,Round of 16,Noir vs WOLFPACK,Ascent,PostgreSQL participant mismatch,42
+2021,Champions Tour Indonesia Stage 1: Challengers 2,Qualifier,Round of 32,JJ ESPORT vs WOLFPACK,Ascent,PostgreSQL participant mismatch,38
+2021,Champions Tour Indonesia Stage 1: Challengers 2,Qualifier,Round of 64,Pig Head vs WOLFPACK,Ascent,PostgreSQL participant mismatch,36
+2021,Champions Tour Indonesia Stage 1: Challengers 2,Qualifier,Round of 8,WOLFPACK vs ex-AING MAUNG Esports,Ascent,PostgreSQL participant mismatch,36
+2021,Champions Tour Indonesia Stage 1: Challengers 3,Qualifier,Round of 32,WOLFPACK vs GOLDEN5,Ascent,PostgreSQL participant mismatch,76
+2021,Champions Tour Indonesia Stage 1: Challengers 3,Qualifier,Round of 64,Trigger Esports vs WOLFPACK,Bind,PostgreSQL participant mismatch,30
+2021,Champions Tour Indonesia Stage 2: Challengers 1,Qualifier,5th Seed Qualifier,WOLFPACK vs Ethereal,Bind,PostgreSQL participant mismatch,40
+2021,Champions Tour Indonesia Stage 2: Challengers 1,Qualifier,5th Seed Qualifier,WOLFPACK vs Ethereal,Haven,PostgreSQL participant mismatch,34
+2021,Champions Tour Indonesia Stage 2: Challengers 1,Qualifier,5th Seed Qualifier,WOLFPACK vs Ethereal,Split,PostgreSQL participant mismatch,34
+2021,Champions Tour Indonesia Stage 2: Challengers 1,Qualifier,Round of 16,WOLFPACK vs WAY Esports,Ascent,PostgreSQL participant mismatch,46
+2021,Champions Tour Indonesia Stage 2: Challengers 1,Qualifier,Round of 16,WOLFPACK vs WAY Esports,Bind,PostgreSQL participant mismatch,44
+2021,Champions Tour Indonesia Stage 2: Challengers 1,Qualifier,Round of 16,WOLFPACK vs WAY Esports,Split,PostgreSQL participant mismatch,60
+2021,Champions Tour Indonesia Stage 2: Challengers 1,Qualifier,Round of 32,Proxymine vs WOLFPACK,Bind,PostgreSQL participant mismatch,38
+2021,Champions Tour Indonesia Stage 2: Challengers 1,Qualifier,Round of 64,WOLFPACK vs VVV,Ascent,PostgreSQL participant mismatch,42
+2021,Champions Tour Indonesia Stage 2: Challengers 1,Qualifier,Round of 64,WOLFPACK vs VVV,Haven,PostgreSQL participant mismatch,42
+2021,Champions Tour Indonesia Stage 2: Challengers 1,Qualifier,Round of 8,Bigetron Arctic vs WOLFPACK,Ascent,PostgreSQL participant mismatch,30
+2021,Champions Tour Indonesia Stage 2: Challengers 1,Qualifier,Round of 8,Bigetron Arctic vs WOLFPACK,Haven,PostgreSQL participant mismatch,46
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,5th Place Final,WOLFPACK vs WAY Esports,Ascent,PostgreSQL participant mismatch,40
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,5th Place Final,WOLFPACK vs WAY Esports,Split,PostgreSQL participant mismatch,42
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,5th Place Semifinals,EX COMMUNICADO vs WOLFPACK,Ascent,PostgreSQL participant mismatch,40
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,5th Place Semifinals,EX COMMUNICADO vs WOLFPACK,Split,PostgreSQL participant mismatch,44
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,Round of 16,Power Danger Esport vs ANARCHY,Split,ambiguous game ID,60
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,Round of 16,WOLFPACK vs Dewa United Esports,Ascent,PostgreSQL participant mismatch,40
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,Round of 16,WOLFPACK vs Dewa United Esports,Bind,PostgreSQL participant mismatch,48
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,Round of 16,WOLFPACK vs Dewa United Esports,Split,PostgreSQL participant mismatch,40
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,Round of 32,WOLFPACK vs CUEK,Ascent,PostgreSQL participant mismatch,32
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,Round of 32,WOLFPACK vs CUEK,Bind,PostgreSQL participant mismatch,34
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,Round of 64,BOS Zero vs Proxymine,Ascent,ambiguous game ID,68
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,Round of 8,Reckless Lads vs WOLFPACK,Bind,PostgreSQL participant mismatch,38
+2021,Champions Tour Indonesia Stage 2: Challengers 2,Qualifier,Round of 8,Reckless Lads vs WOLFPACK,Haven,PostgreSQL participant mismatch,40
+2021,Champions Tour Japan Stage 1: Challengers 2,Qualifier,Group B,BLUE BEES.ESP vs LFT,Split,ambiguous game ID,80
+2021,Champions Tour Japan Stage 2: Challengers 2,Open Qualifier,Group C,No Country vs Sengoku Gaming,Ascent,ambiguous game ID,104
+2021,Champions Tour Japan Stage 3: Challengers 1,Open Qualifier,Group A,BLUE BEES.ESP vs no name,Ascent,PostgreSQL participant mismatch,42
+2021,Champions Tour Japan Stage 3: Challengers 1,Open Qualifier,Group A,no name vs INREGS,Bind,PostgreSQL participant mismatch,46
+2021,Champions Tour Japan Stage 3: Challengers 1,Open Qualifier,Group A,no name vs Icicle Conflict,Ascent,PostgreSQL participant mismatch,48
+2021,Champions Tour Japan Stage 3: Challengers 1,Open Qualifier,Group A,no name vs Insomnia,Ascent,PostgreSQL participant mismatch,52
+2021,Champions Tour Japan Stage 3: Challengers 1,Open Qualifier,Group A,no name vs SchwarzerLand,Bind,PostgreSQL participant mismatch,36
+2021,Champions Tour Japan Stage 3: Challengers 1,Open Qualifier,Group C,Run it Back vs Creatives,Bind,PostgreSQL participant mismatch,32
+2021,Champions Tour Japan Stage 3: Challengers 1,Open Qualifier,Group C,Run it Back vs Defect,Ascent,PostgreSQL participant mismatch,36
+2021,Champions Tour Japan Stage 3: Challengers 1,Open Qualifier,Group C,Run it Back vs FIRST Gaming,Haven,PostgreSQL participant mismatch,36
+2021,Champions Tour Japan Stage 3: Challengers 1,Open Qualifier,Group C,Run it Back vs FUKUSHIMA IBUSHIGIN,Ascent,PostgreSQL participant mismatch,40
+2021,Champions Tour Japan Stage 3: Challengers 1,Open Qualifier,Group C,Run it Back vs Gaming Team SELECTOR,Icebox,PostgreSQL participant mismatch,40
+2021,Champions Tour Japan Stage 3: Challengers 1,Open Qualifier,Group C,Run it Back vs NeoAimer,Ascent,PostgreSQL participant mismatch,48
+2021,Champions Tour Japan Stage 3: Challengers 2,Open Qualifier,Group A,Break 7 vs Run it Back,Bind,PostgreSQL participant mismatch,30
+2021,Champions Tour Japan Stage 3: Challengers 2,Open Qualifier,Group A,Run it Back vs Insomnia,Haven,PostgreSQL participant mismatch,40
+2021,Champions Tour Japan Stage 3: Challengers 2,Open Qualifier,Group A,Run it Back vs NEXUS,Ascent,PostgreSQL participant mismatch,36
+2021,Champions Tour Japan Stage 3: Challengers 2,Open Qualifier,Group A,narrative vs Run it Back,Ascent,PostgreSQL participant mismatch,40
+2021,Champions Tour Japan Stage 3: Challengers 2,Open Qualifier,Group G,Feeling vs no name,Bind,PostgreSQL participant mismatch,30
+2021,Champions Tour Japan Stage 3: Challengers 2,Open Qualifier,Group G,no name vs NeoAimer,Ascent,PostgreSQL participant mismatch,56
+2021,Champions Tour Japan Stage 3: Challengers 2,Open Qualifier,Group G,no name vs Shimada Family,Ascent,PostgreSQL participant mismatch,36
+2021,Champions Tour Japan Stage 3: Challengers 2,Open Qualifier,Group G,no name vs THE SHABLES,Ascent,PostgreSQL participant mismatch,36
+2021,Champions Tour LATAM Stage 1: Challengers 1,Open Qualifier: LAS,Round of 16,9z Team vs Infamous Gaming,Ascent,ambiguous game ID,96
+2021,Champions Tour LATAM Stage 1: Challengers 2,Open Qualifier: LAN,Round of 16,Kaizen Esports vs Zwan Gaming,Haven,ambiguous game ID,72
+2021,Champions Tour LATAM Stage 1: Challengers 2,Open Qualifier: LAN,Round of 16,WALTEM Gaming vs Synergy Esports,Haven,ambiguous game ID,82
+2021,Champions Tour Malaysia & Singapore Stage 1: Challengers 1,Qualifier,Round of 32,Broskis vs Underdogs,Bind,PostgreSQL participant mismatch,42
+2021,Champions Tour Malaysia & Singapore Stage 2: Challengers 1,Qualifiers,Round of 32,Underdogs vs Renaissance,Split,PostgreSQL participant mismatch,40
+2021,Champions Tour Malaysia & Singapore Stage 3: Challengers 2,Qualifiers,Round of 16,Equinox Esports vs Team Nasi Lemak,Bind,PostgreSQL participant mismatch,46
+2021,Champions Tour Malaysia & Singapore Stage 3: Challengers 2,Qualifiers,Round of 16,Equinox Esports vs Team Nasi Lemak,Haven,PostgreSQL participant mismatch,40
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 128,BLAHAJ vs ATK Mode,Split,ambiguous game ID,68
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 128,Equinox Esports vs Bounty Esports,Ascent,PostgreSQL participant mismatch,44
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 128,Equinox Esports vs Bounty Esports,Bind,PostgreSQL participant mismatch,32
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 128,Immortals vs Aqua,Ascent,PostgreSQL participant mismatch,28
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 128,Immortals vs Aqua,Haven,PostgreSQL participant mismatch,32
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 128,PROJECT X vs ExPandable,Ascent,PostgreSQL participant mismatch,46
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 128,PROJECT X vs ExPandable,Bind,PostgreSQL participant mismatch,68
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 16,Envy vs Equinox Esports,Ascent,PostgreSQL participant mismatch,46
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 16,Envy vs Equinox Esports,Split,PostgreSQL participant mismatch,38
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 32,Equinox Esports vs Complexity,Ascent,PostgreSQL participant mismatch,48
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 32,Equinox Esports vs Complexity,Haven,PostgreSQL participant mismatch,46
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 32,Equinox Esports vs Complexity,Split,PostgreSQL participant mismatch,38
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 64,Dignitas vs PROJECT X,Ascent,PostgreSQL participant mismatch,34
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 64,Dignitas vs PROJECT X,Icebox,PostgreSQL participant mismatch,38
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 64,Equinox Esports vs CPC,Ascent,PostgreSQL participant mismatch,38
+2021,Champions Tour North America Stage 1: Challengers 1,Qualifier,Round of 64,Equinox Esports vs CPC,Bind,PostgreSQL participant mismatch,38
+2021,Champions Tour North America Stage 1: Challengers 2,Qualifier,Round of 128,Aqua vs D2E Gold,Ascent,PostgreSQL participant mismatch,32
+2021,Champions Tour North America Stage 1: Challengers 2,Qualifier,Round of 128,Aqua vs D2E Gold,Icebox,PostgreSQL participant mismatch,44
+2021,Champions Tour North America Stage 1: Challengers 2,Qualifier,Round of 128,Equinox Esports vs GamerDuderGuys,Ascent,PostgreSQL participant mismatch,26
+2021,Champions Tour North America Stage 1: Challengers 2,Qualifier,Round of 128,Equinox Esports vs GamerDuderGuys,Haven,PostgreSQL participant mismatch,42
+2021,Champions Tour North America Stage 1: Challengers 2,Qualifier,Round of 128,PROJECT X vs NBKS CENTURIONS,Ascent,PostgreSQL participant mismatch,44
+2021,Champions Tour North America Stage 1: Challengers 2,Qualifier,Round of 128,PROJECT X vs NBKS CENTURIONS,Bind,PostgreSQL participant mismatch,34
+2021,Champions Tour North America Stage 1: Challengers 2,Qualifier,Round of 128,PROJECT X vs NBKS CENTURIONS,Haven,PostgreSQL participant mismatch,34
+2021,Champions Tour North America Stage 1: Challengers 2,Qualifier,Round of 32,Equinox Esports vs Rise,Ascent,PostgreSQL participant mismatch,38
+2021,Champions Tour North America Stage 1: Challengers 2,Qualifier,Round of 32,Equinox Esports vs Rise,Bind,PostgreSQL participant mismatch,46
+2021,Champions Tour North America Stage 1: Challengers 2,Qualifier,Round of 32,Equinox Esports vs Rise,Split,PostgreSQL participant mismatch,52
+2021,Champions Tour North America Stage 1: Challengers 2,Qualifier,Round of 64,Equinox Esports vs Spotlight,Bind,PostgreSQL participant mismatch,26
+2021,Champions Tour North America Stage 1: Challengers 2,Qualifier,Round of 64,Equinox Esports vs Spotlight,Haven,PostgreSQL participant mismatch,48
+2021,Champions Tour North America Stage 1: Challengers 3,Qualifier,Round of 128,Equinox Esports vs sadHours,Ascent,PostgreSQL participant mismatch,30
+2021,Champions Tour North America Stage 1: Challengers 3,Qualifier,Round of 128,Equinox Esports vs sadHours,Split,PostgreSQL participant mismatch,28
+2021,Champions Tour North America Stage 1: Challengers 3,Qualifier,Round of 128,Evil Geniuses vs Aqua,Haven,PostgreSQL participant mismatch,32
+2021,Champions Tour North America Stage 1: Challengers 3,Qualifier,Round of 128,Evil Geniuses vs Aqua,Icebox,PostgreSQL participant mismatch,38
+2021,Champions Tour North America Stage 1: Challengers 3,Qualifier,Round of 128,VZN vs Divine,Icebox,ambiguous game ID,56
+2021,Champions Tour North America Stage 1: Challengers 3,Qualifier,Round of 32,Equinox Esports vs On The Way,Ascent,PostgreSQL participant mismatch,36
+2021,Champions Tour North America Stage 1: Challengers 3,Qualifier,Round of 32,Equinox Esports vs On The Way,Bind,PostgreSQL participant mismatch,36
+2021,Champions Tour North America Stage 1: Challengers 3,Qualifier,Round of 32,Equinox Esports vs On The Way,Icebox,PostgreSQL participant mismatch,38
+2021,Champions Tour North America Stage 1: Challengers 3,Qualifier,Round of 64,Equinox Esports vs YFP Gaming,Haven,PostgreSQL participant mismatch,48
+2021,Champions Tour North America Stage 1: Challengers 3,Qualifier,Round of 64,Equinox Esports vs YFP Gaming,Icebox,PostgreSQL participant mismatch,46
+2021,Champions Tour North America Stage 2: Challengers 1,Open Qualifier,Round of 128,FREELO vs Rage's Rangos,Ascent,PostgreSQL participant mismatch,28
+2021,Champions Tour North America Stage 2: Challengers 1,Open Qualifier,Round of 128,FREELO vs Rage's Rangos,Split,PostgreSQL participant mismatch,34
+2021,Champions Tour North America Stage 2: Challengers 1,Open Qualifier,Round of 64,Ghost Gaming vs FREELO,Ascent,PostgreSQL participant mismatch,40
+2021,Champions Tour North America Stage 2: Challengers 1,Open Qualifier,Round of 64,Ghost Gaming vs FREELO,Bind,PostgreSQL participant mismatch,40
+2021,Champions Tour North America Stage 2: Challengers 2,Open Qualifier,Round of 128,Archons vs Aqua,Ascent,PostgreSQL participant mismatch,34
+2021,Champions Tour North America Stage 2: Challengers 2,Open Qualifier,Round of 128,Archons vs Aqua,Bind,PostgreSQL participant mismatch,40
+2021,Champions Tour North America Stage 2: Challengers 2,Open Qualifier,Round of 128,FREELO vs Chicken CLUB,Ascent,PostgreSQL participant mismatch,42
+2021,Champions Tour North America Stage 2: Challengers 2,Open Qualifier,Round of 128,FREELO vs Chicken CLUB,Haven,PostgreSQL participant mismatch,28
+2021,Champions Tour North America Stage 2: Challengers 2,Open Qualifier,Round of 128,Team Name vs To Da Crib,Ascent,ambiguous game ID,64
+2021,Champions Tour North America Stage 2: Challengers 2,Open Qualifier,Round of 128,ez5 vs Ivy,Ascent,PostgreSQL participant mismatch,34
+2021,Champions Tour North America Stage 2: Challengers 2,Open Qualifier,Round of 128,ez5 vs Ivy,Icebox,PostgreSQL participant mismatch,44
+2021,Champions Tour North America Stage 2: Challengers 2,Open Qualifier,Round of 64,Resonate vs FREELO,Ascent,PostgreSQL participant mismatch,32
+2021,Champions Tour North America Stage 2: Challengers 2,Open Qualifier,Round of 64,Resonate vs FREELO,Bind,PostgreSQL participant mismatch,36
+2021,Champions Tour North America Stage 3: Challengers 2,Open Qualifier,Round of 128,FYB vs Positive Mental Attitude,Ascent,PostgreSQL participant mismatch,38
+2021,Champions Tour North America Stage 3: Challengers 2,Open Qualifier,Round of 128,FYB vs Positive Mental Attitude,Icebox,PostgreSQL participant mismatch,36
+2021,Champions Tour North America Stage 3: Challengers 2,Open Qualifier,Round of 128,Organic Gamers vs freelo,Breeze,PostgreSQL participant mismatch,32
+2021,Champions Tour North America Stage 3: Challengers 2,Open Qualifier,Round of 128,Valkyrie vs Crowd Pleasers,Split,ambiguous game ID,84
+2021,Champions Tour North America Stage 3: Challengers 2,Open Qualifier,Round of 64,YFP Gaming vs Positive Mental Attitude,Ascent,PostgreSQL participant mismatch,36
+2021,Champions Tour North America Stage 3: Challengers 2,Open Qualifier,Round of 64,YFP Gaming vs Positive Mental Attitude,Split,PostgreSQL participant mismatch,40
+2021,Champions Tour Philippines Stage 2: Challengers 2,Qualifier 2,Round of 16,Positive Mental Attitude vs Sunsparks,Bind,PostgreSQL participant mismatch,42
+2021,Champions Tour Philippines Stage 3: Challengers 3,Qualifier Day 2,Round of 16,Equinox eSports vs META Southrons,Haven,PostgreSQL participant mismatch,36
+2021,Champions Tour Turkey Stage 1: Challengers 2,Open Qualifier,Round of 16,BEATOFFYOU vs No Org Found,Ascent,PostgreSQL participant mismatch,30
+2021,Champions Tour Turkey Stage 1: Challengers 2,Open Qualifier,Round of 16,BEATOFFYOU vs No Org Found,Haven,PostgreSQL participant mismatch,32
+2021,Champions Tour Turkey Stage 1: Challengers 2,Open Qualifier,Round of 32,BARÇA vs BEATOFFYOU,Ascent,PostgreSQL participant mismatch,40
+2021,Champions Tour Turkey Stage 1: Challengers 2,Open Qualifier,Round of 32,BARÇA vs BEATOFFYOU,Bind,PostgreSQL participant mismatch,30
+2021,Champions Tour Turkey Stage 1: Challengers 3,Open Qualifier,Round of 16,Sangal Esports vs Orgless5,Ascent,PostgreSQL participant mismatch,36
+2021,Champions Tour Turkey Stage 1: Challengers 3,Open Qualifier,Round of 16,Sangal Esports vs Orgless5,Icebox,PostgreSQL participant mismatch,36
+2021,Champions Tour Turkey Stage 1: Challengers 3,Open Qualifier,Round of 32,FREAKSINACTION vs Orgless5,Ascent,PostgreSQL participant mismatch,42
+2021,Champions Tour Turkey Stage 1: Challengers 3,Open Qualifier,Round of 32,FREAKSINACTION vs Orgless5,Bind,PostgreSQL participant mismatch,46
+2021,Champions Tour Turkey Stage 2: Challengers 1,Open Qualifier,Round of 64,ATL Esports vs COUSINS,Bind,ambiguous game ID,96
+2021,Champions Tour Turkey Stage 2: Challengers 1,Open Qualifier,Round of 64,RARE Esports vs Team QuestionMark,Ascent,PostgreSQL participant mismatch,34
+2021,Champions Tour Turkey Stage 2: Challengers 1,Open Qualifier,Round of 64,RARE Esports vs Team QuestionMark,Split,PostgreSQL participant mismatch,42
+2021,Champions Tour Turkey Stage 2: Challengers 2,Main Event,Quarterfinals,RARE Esports vs Orgless5,Bind,PostgreSQL participant mismatch,40
+2021,Champions Tour Turkey Stage 2: Challengers 2,Main Event,Quarterfinals,RARE Esports vs Orgless5,Haven,PostgreSQL participant mismatch,40
+2021,Champions Tour Turkey Stage 2: Challengers 2,Open Qualifier,Round of 16,Kafalar eSports vs Orgless5,Ascent,PostgreSQL participant mismatch,42
+2021,Champions Tour Turkey Stage 2: Challengers 2,Open Qualifier,Round of 16,Kafalar eSports vs Orgless5,Haven,PostgreSQL participant mismatch,30
+2021,Champions Tour Turkey Stage 2: Challengers 2,Open Qualifier,Round of 32,Orgless5 vs RAGING FIRE ESPORTS,Ascent,PostgreSQL participant mismatch,56
+2021,Champions Tour Turkey Stage 2: Challengers 2,Open Qualifier,Round of 32,Orgless5 vs RAGING FIRE ESPORTS,Haven,PostgreSQL participant mismatch,46
+2021,Champions Tour Turkey Stage 2: Challengers 2,Open Qualifier,Round of 64,Orgless5 vs Team QuestionMark,Ascent,PostgreSQL participant mismatch,48
+2021,Champions Tour Turkey Stage 2: Challengers 2,Open Qualifier,Round of 64,Orgless5 vs Team QuestionMark,Bind,PostgreSQL participant mismatch,56
+2021,Champions Tour Turkey Stage 2: Challengers 2,Qualifier Play-In,Quarterfinals,Unity Esports vs Orgless5,Ascent,PostgreSQL participant mismatch,40
+2021,Champions Tour Turkey Stage 2: Challengers 2,Qualifier Play-In,Quarterfinals,Unity Esports vs Orgless5,Bind,PostgreSQL participant mismatch,48
+2021,Champions Tour Turkey Stage 2: Challengers 2,Qualifier Play-In,Quarterfinals,Unity Esports vs Orgless5,Icebox,PostgreSQL participant mismatch,46
+2021,Champions Tour Turkey Stage 3: Challengers 1,Closed Qualifier,Lower Round 1,Orgless5 vs Fire Flux Esports,Ascent,PostgreSQL participant mismatch,34
+2021,Champions Tour Turkey Stage 3: Challengers 1,Closed Qualifier,Lower Round 1,Orgless5 vs Fire Flux Esports,Bind,PostgreSQL participant mismatch,46
+2021,Champions Tour Turkey Stage 3: Challengers 1,Closed Qualifier,Upper Round of 16,Galakticos vs Orgless5,Ascent,PostgreSQL participant mismatch,40
+2021,Champions Tour Turkey Stage 3: Challengers 1,Closed Qualifier,Upper Round of 16,Galakticos vs Orgless5,Haven,PostgreSQL participant mismatch,36
+2021,Champions Tour Turkey Stage 3: Challengers 1,Open Qualifier,Round of 16,Orgless5 vs Anatolia Esports,Ascent,PostgreSQL participant mismatch,42
+2021,Champions Tour Turkey Stage 3: Challengers 1,Open Qualifier,Round of 16,Orgless5 vs Anatolia Esports,Breeze,PostgreSQL participant mismatch,42
+2021,Champions Tour Turkey Stage 3: Challengers 1,Open Qualifier,Round of 32,Orgless5 vs GİVEMEORG,Bind,PostgreSQL participant mismatch,36
+2021,Champions Tour Turkey Stage 3: Challengers 1,Open Qualifier,Round of 32,Orgless5 vs GİVEMEORG,Haven,PostgreSQL participant mismatch,52
+2021,Champions Tour Turkey Stage 3: Challengers 1,Open Qualifier,Round of 64,Orgless5 vs WHATS POPPIN,Icebox,PostgreSQL participant mismatch,52
+2021,Champions Tour Turkey Stage 3: Challengers 1,Open Qualifier,Round of 64,Orgless5 vs WHATS POPPIN,Split,PostgreSQL participant mismatch,40
+2021,Champions Tour Turkey Stage 3: Challengers 2,Open Qualifier,Round of 32,SHN Esports vs Beatoffyou,Bind,PostgreSQL participant mismatch,52
+2021,Champions Tour Turkey Stage 3: Challengers 2,Open Qualifier,Round of 32,SHN Esports vs Beatoffyou,Haven,PostgreSQL participant mismatch,44
+2021,Champions Tour Turkey Stage 3: Challengers 2,Open Qualifier,Round of 32,SHN Esports vs Beatoffyou,Icebox,PostgreSQL participant mismatch,36
+2021,Champions Tour Turkey Stage 3: Challengers 2,Open Qualifier,Round of 64,Saviors Esports vs Beatoffyou,Ascent,PostgreSQL participant mismatch,34
+2021,Champions Tour Turkey Stage 3: Challengers 2,Open Qualifier,Round of 64,Saviors Esports vs Beatoffyou,Haven,PostgreSQL participant mismatch,46
+2021,Champions Tour Turkey Stage 3: Challengers 2,Open Qualifier,Round of 64,Saviors Esports vs Beatoffyou,Split,PostgreSQL participant mismatch,36
+2021,Champions Tour Vietnam Stage 3: Challengers 3,Qualifier,Round of 16,StormiG vs HE Gaming,Bind,ambiguous game ID,72
+2021,Valorant Conquerors Championship,India Qualifier #1,Round of 16,Enigma Gaming vs W Gaming,Ascent,ambiguous game ID,64
