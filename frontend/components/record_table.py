@@ -4,6 +4,7 @@ from html import escape
 import streamlit as st
 import streamlit.components.v2 as components
 
+
 def _open(view, record_id, game_id=None):
     st.session_state.page = 'records'
     st.session_state.record_view = view
@@ -12,7 +13,6 @@ def _open(view, record_id, game_id=None):
     if game_id is not None:
         st.session_state[f'map_game_{record_id}'] = game_id
     st.session_state.records_revision = st.session_state.get('records_revision', 0) + 1
-
 
 
 _RECORD_TABLE = components.component(
@@ -39,12 +39,10 @@ _RECORD_TABLE = components.component(
 )
 
 
-
 def _table_open(key):
     record = st.session_state[key].get('open')
     if record:
         _open(record['view'], record['id'], record.get('game'))
-
 
 
 def _record_link(text, view, record_id, game_id=None):
@@ -53,12 +51,10 @@ def _record_link(text, view, record_id, game_id=None):
             f'data-view="{escape(view, quote=True)}"{game_attribute}>{escape(str(text))}</button>')
 
 
-
 def _image(filename, css_class):
     if not filename:
         return ''
     return f'<img class="{css_class}" src="app/static/{escape(filename, quote=True)}" alt="">'
-
 
 
 def _section(title, note=''):
@@ -66,17 +62,14 @@ def _section(title, note=''):
             f'<p>{escape(note)}</p></div>')
 
 
-
 def _metrics(items):
     st.html('<dl class="coverage-strip">' + ''.join(
-        f'<div class="metric"><dt>{escape(label)}</dt><dd>{escape(str(value if value is not None else '—'))}</dd>'
+        f'<div class="metric"><dt>{escape(label)}</dt><dd>{escape(str(value if value is not None else "—"))}</dd>'
         f'<p>{escape(note)}</p></div>' for label, value, note in items) + '</dl>')
-
 
 
 def _pct(value):
     return f'{value:.1f}%' if value is not None else '—'
-
 
 
 def _table(rows, ids=None, view=None, name='records', rich=None, action=True):
@@ -88,9 +81,9 @@ def _table(rows, ids=None, view=None, name='records', rich=None, action=True):
     content = '<div class="record-table-wrap"><table class="record-table">'
     caption = {'browse_teams': 'Team records', 'browse_players': 'Individual performance', 'browse_matches': 'Match series'}.get(name)
     if caption:
-        content += f'<caption>{caption} / Valorant Champions 2023</caption>'
+        content += f'<caption>{caption}</caption>'
     content += '<thead><tr>'
-    for label in headers:    
+    for label in headers:
         team_stat = (
             (
                 view == "Teams"
@@ -114,7 +107,7 @@ def _table(rows, ids=None, view=None, name='records', rich=None, action=True):
         for label, value in row.items():
             cell = rich[label][index] if label in rich else escape(str(value if value is not None else '—'))
             numeric = isinstance(value, (int, float)) or label in ('K/D', 'Win rate', 'Score', 'Series score', 'Result')
-                
+
             team_stat = (
                 (
                     view == "Teams"
@@ -130,7 +123,6 @@ def _table(rows, ids=None, view=None, name='records', rich=None, action=True):
             cell_style = ' style="text-align: center !important;"' if team_stat else ""
             content += f'<td class="{cell_class}"{cell_style}>{cell}</td>'
 
-
         if ids is not None and action:
             action_label = {'Teams': 'View team', 'Players': 'View player', 'Matches': 'View match'}[view]
             content += '<td>' + _record_link(action_label, view, ids[index]) + '</td>'
@@ -141,4 +133,3 @@ def _table(rows, ids=None, view=None, name='records', rich=None, action=True):
     else:
         key = f'{name}_{st.session_state.get("records_revision", 0)}'
         _RECORD_TABLE(data={'html': content}, key=key, on_open_change=partial(_table_open, key))
-
