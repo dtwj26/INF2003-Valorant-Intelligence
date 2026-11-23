@@ -21,7 +21,7 @@ def get_match_seasons():
 
 
 def get_match_records(season, tournament_id='', map_name=''):
-    """Return match results and the team/tournament labels used by filters."""
+    """Return match results and the team/tournament/map labels used by filters."""
     try:
         matches = matches_service.get_matches(season, tournament_id, map_name)
         teams = {}
@@ -40,6 +40,7 @@ def get_match_records(season, tournament_id='', map_name=''):
                 {'id': tournament_id, 'name': name}
                 for tournament_id, name in sorted(tournaments.items(), key=lambda item: item[1])
             ],
+            'maps': matches_service.get_season_maps(season),
         }
     except Exception as error:
         raise DataServiceError('Match records could not be loaded.') from error

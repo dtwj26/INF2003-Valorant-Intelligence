@@ -39,6 +39,21 @@ def get_connection():
     )
 
 
+def fetch_seasons():
+    """Return all available seasons from PostgreSQL."""
+
+    query = """
+        SELECT DISTINCT season
+        FROM match_series
+        ORDER BY season DESC;
+    """
+
+    with closing(get_connection()) as conn:
+        with conn.cursor() as cursor:
+            cursor.execute("SET TRANSACTION READ ONLY")
+            cursor.execute(query)
+            return [int(row[0]) for row in cursor.fetchall()]
+
 
 def fetch_player_summaries(
     season,
@@ -123,7 +138,6 @@ def fetch_player_summaries(
         }
         for row in rows
     ]
-
 
 
 def fetch_team_summaries(

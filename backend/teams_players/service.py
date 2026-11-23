@@ -1,7 +1,12 @@
-
 """Service layer for Teams and Players."""
 
 from . import repository
+
+
+def get_seasons():
+    """Return available seasons from PostgreSQL."""
+
+    return repository.fetch_seasons()
 
 
 def get_team_summaries(
@@ -16,7 +21,6 @@ def get_team_summaries(
         tournament_id,
         map_name
     )
-
 
 
 def get_player_summaries(
@@ -35,7 +39,6 @@ def get_player_summaries(
     )
 
 
-
 def get_player_agent_usage(
     season,
     tournament_id=None,
@@ -48,7 +51,6 @@ def get_player_agent_usage(
         tournament_id,
         map_name
     )
-
 
 
 def get_player_directory(
@@ -136,7 +138,6 @@ def get_player_profiles(
         # role is not available in the current database
         player["role"] = "Not recorded"
 
-
     return players
 
 
@@ -183,7 +184,6 @@ def get_team_profiles(
         })
 
     return results
-
 
 
 def get_teams_players_data(

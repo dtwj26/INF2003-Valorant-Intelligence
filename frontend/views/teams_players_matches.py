@@ -14,13 +14,11 @@ from services import teams_players_matches_service as service
 from components.record_table import _RECORD_TABLE, _table_open, _record_link, _image, _section, _metrics, _pct, _table, _open
 from components.sidebar import open_analysis
 
-from services.live_teams_players_service import get_live_records
+from services.live_teams_players_service import get_live_records, get_live_seasons
 from components.agent_names import format_agent_name
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MATCH_MAPS = ['Abyss', 'Ascent', 'Bind', 'Breeze', 'Corrode', 'Fracture',
-              'Haven', 'Icebox', 'Lotus', 'Pearl', 'Split', 'Sunset', 'TBD']
 
 
 def _load_records(view, season, tournament_id='', map_name=''):
@@ -137,7 +135,6 @@ def _browse_live(view, data):
             if a.get("name")
         })
 
-        
         with c3:
             selected_agent = st.selectbox(
                 "Agent",
@@ -145,7 +142,6 @@ def _browse_live(view, data):
                 format_func=format_agent_name,
                 key="live_player_agent"
             )
-
 
         with c4:
             sort_by = st.selectbox(
@@ -184,9 +180,8 @@ def _browse_live(view, data):
                 key=lambda p: p["name"].casefold()
             )
 
-
     st.caption(f"{len(records)} {view.lower()} found")
-    
+
     # paginate teams and players
     total_records = len(records)
     page_size = 8
@@ -207,9 +202,6 @@ def _browse_live(view, data):
     records = records[
         (page - 1) * page_size : page * page_size
     ]
-
-
-
 
     if view == "Teams":
         rows = [
@@ -233,11 +225,8 @@ def _browse_live(view, data):
             for p in records
         ]
 
-    
-    
     rich = {}
 
-    
     if view == "Teams":
         rich["Team"] = [
             '<div class="record-name">'
@@ -247,8 +236,6 @@ def _browse_live(view, data):
             for t in records
         ]
 
-
-    
     else:
         rich["Player"] = [
             _record_link(p["name"], "Players", p["id"])
@@ -262,11 +249,6 @@ def _browse_live(view, data):
             for p in records
         ]
 
-
-
-
-    
-    
     _table(
         rows,
         ids=[r["id"] for r in records],
@@ -276,9 +258,6 @@ def _browse_live(view, data):
         rich=rich
     )
 
-
-
-    
     # pagination controls
     first_record = (
         (page - 1) * page_size + 1
@@ -357,7 +336,6 @@ def _team_detail_live(team, data, season):
         for p in roster
     ]
 
-    
     _table(
         roster_rows,
         ids=[p["id"] for p in roster],
@@ -372,7 +350,6 @@ def _team_detail_live(team, data, season):
         }
     )
 
-
     st.caption(
         "Match results and win rates will be available "
         "after the Matches backend is integrated."
@@ -386,12 +363,10 @@ def _player_detail_live(player, data, season):
         f'{escape(player["name"])}</h2>'
     )
 
-
     st.caption(
         f'Season overview / VCT {season} (all tournaments and maps) / '
         f'{player.get("team_name") or "Team not recorded"}'
     )
-
 
     # verified performance statistics
     acs = player.get("acs")
@@ -461,6 +436,7 @@ def _player_detail_live(player, data, season):
         "Match-level results will be connected when "
         "the Matches backend is integrated."
     )
+
 
 def _back():
     st.session_state.record_view_saved = st.session_state.get('record_view', 'Teams')
@@ -549,7 +525,7 @@ def _browse(view, data, season):
         with columns[2]:
             second = _filter(view, 'second', 'Agent' if is_players else 'Map',
                              ['All agents'] + sorted({a['name'] for p in data['players'] for a in p['agents']})
-                             if is_players else ['All maps'] + (MATCH_MAPS if is_matches else data['maps']))
+                             if is_players else ['All maps'] + data['maps'])
         if is_matches:
             with columns[3]:
                 team_filter = _filter(view, 'team', 'Team', ['All teams'] + [t['name'] for t in data['teams']])
@@ -739,7 +715,6 @@ def _match_detail(match, data):
 def render():
     st.title('Teams, Players & Matches')
     try:
-        
         active_view = st.session_state.get(
             "record_view",
             st.session_state.get("record_view_saved", "Teams")
@@ -748,7 +723,7 @@ def render():
         if active_view == "Matches":
             seasons = service.get_match_seasons()
         else:
-            seasons = [2026, 2025, 2024, 2023, 2022, 2021]
+            seasons = get_live_seasons()
 
         if not seasons:
             st.info('No seasons are available yet. Refresh after records have been added.')
@@ -759,7 +734,7 @@ def render():
             _reset_scope()
         text, selector = st.columns([3, 1], vertical_alignment='center')
         text.write('Explore the records. Follow teams and players into their matches.')
-        
+
         if active_view == "Matches":
             text.caption(
                 f"Coverage: VCT {st.session_state.season} "
@@ -796,14 +771,13 @@ def render():
         st.session_state.records_last_season = season
         with st.spinner('Loading records…'):
             data = _load_records(view, season)
-        
+
         records_by_view = {
             'Teams': data.get('teams', []),
             'Players': data.get('players', []),
             'Matches': data.get('matches', []),
         }
 
-        
         if view == "Players" and season == 2021:
             st.warning(
                 "2021 player-performance statistics have not "
@@ -812,7 +786,6 @@ def render():
             )
             return
 
-
         if not records_by_view[view]:
             st.info(
                 f'No {view.lower()} records are available for {season}. '
@@ -820,7 +793,6 @@ def render():
             )
             return
 
-        
         # explain incomplete 2022 player statistics
         if view == "Players" and season == 2022:
             st.info(
@@ -833,7 +805,7 @@ def render():
         detail = st.session_state.get('records_detail')
         if detail:
             st.button(f'Back to {view.lower()}', on_click=_back)
-            
+
             record = next(
                 (
                     row for row in data[view.lower()]
@@ -855,6 +827,6 @@ def render():
                 _browse_live(view, data)
             else:
                 _browse(view, data, season)
-    except service.DataServiceError:
+    except Exception:
         st.error('Records could not be loaded. Your selections are kept. Retry loading to continue.')
         st.button('Retry loading', type='primary')

@@ -43,6 +43,22 @@ def fetch_seasons():
             return [int(row[0]) for row in cursor.fetchall()]
 
 
+def fetch_season_maps(season):
+    """Return distinct map names played in scored matches for a season."""
+    query = """
+        SELECT DISTINCT g.map_name
+        FROM map_games g
+        JOIN match_series m ON m.match_id = g.match_id
+        JOIN match_scores s ON s.match_id = m.match_id
+        WHERE m.season = %s AND g.map_name IS NOT NULL
+        ORDER BY g.map_name;
+    """
+    with closing(get_connection()) as conn:
+        with conn.cursor() as cursor:
+            cursor.execute(query, (int(season),))
+            return [row[0] for row in cursor.fetchall()]
+
+
 def fetch_matches(season, tournament_id="", map_name=""):
     """Return match results, optionally filtered by tournament or map.
 
@@ -59,9 +75,9 @@ def fetch_matches(season, tournament_id="", map_name=""):
         with conn.cursor(cursor_factory=RealDictCursor) as cursor:
             cursor.execute(query, parameters)
             return [dict(row) for row in cursor.fetchall()]
-        
-def fetch_match_games(match_id):
 
+
+def fetch_match_games(match_id):
     parameters = {
         "match_id": int(match_id)
     }
@@ -70,6 +86,7 @@ def fetch_match_games(match_id):
         with conn.cursor(cursor_factory=RealDictCursor) as cursor:
             cursor.execute(query, parameters)
             return [dict(row) for row in cursor.fetchall()]
+
 
 def fetch_player_scoreboard(game_id):
     parameters = {
