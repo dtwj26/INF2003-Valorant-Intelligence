@@ -8,6 +8,7 @@ categories come from MongoDB (valorant_intelligence.team_game_rounds).
 
 from collections import Counter
 from backend.competitive_analysis import repository as repo
+from components.agent_names import format_agent_name
 
 
 class DataServiceError(Exception):
@@ -276,14 +277,14 @@ def _recommendations(report, games):
         {
             "title": "Prepare against the most-used composition",
             "body": (
-                f"{', '.join(composition['agents'])} appears in {composition['games']} of {len(games)} "
-                f"games ({composition['usage']:.1f}% usage). {agent['name']} is the most-used "
+                f"{', '.join(format_agent_name(a) for a in composition['agents'])} appears in {composition['games']} of {len(games)} "
+                f"games ({composition['usage']:.1f}% usage). {format_agent_name(agent['name'])} is the most-used "
                 f"individual agent ({agent['picks']} / {len(games)} games). Review the map context "
                 "before choosing a practice focus."
             ),
             "note": "Usage indicates what to review; it does not establish the best counter-composition.",
             "value": f"{agent['picks']} / {len(games)} games",
-            "detail": agent["name"] + " selections / team-map denominator",
+            "detail": format_agent_name(agent["name"]) + " selections / team-map denominator",
             "evidence": evidence(
                 [g for g in games if g["composition"] == composition["agents"]]
             ),

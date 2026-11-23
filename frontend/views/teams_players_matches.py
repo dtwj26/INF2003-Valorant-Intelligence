@@ -576,14 +576,14 @@ def _match_detail(match, data):
     _section(f"{game['map']} scoreboard", f"{match['team_names'][0]} {game['scores'][0]}–{game['scores'][1]} {match['team_names'][1]} / {sum(game['scores'])} rounds")
     records = game['players']
     team_names = dict(zip(match['team_ids'], match['team_names']))
-    _table([{'Player / team': p['player_name'], 'Agent': p['agent'], 'ACS': p['acs'],
+    _table([{'Player / team': p['player_name'], 'Agent': format_agent_name(p['agent']), 'ACS': p['acs'],
              'Kills': p['kills'], 'Deaths': p['deaths'], 'Assists': p['assists'],
              'K/D': f"{p['kills']/p['deaths']:.2f}" if p['kills'] is not None and p['deaths'] else '—'} for p in records],
            [p['player_id'] for p in records], 'Players', f'scoreboard_{game_id}', action=False, rich={
                'Player / team': [_record_link(p['player_name'], 'Players', p['player_id'])
                                  + '<small>' + _record_link(team_names[p['team_id']], 'Teams', p['team_id']) + '</small>' for p in records],
                'Agent': ['<div class="roster-agent">' + _image(get_agent_image(p['agent']), 'table-agent-image')
-                         + escape(p['agent']) + '</div>' for p in records]})
+                         + escape(format_agent_name(p['agent'])) + '</div>' for p in records]})
     st.caption('ACS: average combat score. A dash indicates a value missing from the imported records.')
     with st.container(key='record_match_scout'):
         description, actions = st.columns([1.2, 1], vertical_alignment='center')

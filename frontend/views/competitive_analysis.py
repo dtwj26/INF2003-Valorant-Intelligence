@@ -9,6 +9,7 @@ from html import escape
 import streamlit as st
 
 from services import competitive_analysis_service as service
+from components.agent_names import format_agent_name
 from components.asset_catalog import get_agent_image, get_agent_role, get_map_image, get_team_logo
 from components.record_table import (_table, _image, _record_link, _section, _metrics, _pct,
                                      _RECORD_TABLE, _table_open)
@@ -120,9 +121,9 @@ def _maps_agents(report):
     picks, compositions = st.columns([1.3, 1], gap='large')
     with picks:
         _section('Agent picks', f'{total} team-map games / {total*5} player-map selections')
-        _table([{'Agent': a['name'], 'Selections': a['picks'], 'Team-map pick share': _pct(a['share'])} for a in report['agents']],
+        _table([{'Agent': format_agent_name(a['name']), 'Selections': a['picks'], 'Team-map pick share': _pct(a['share'])} for a in report['agents']],
                rich={'Agent': ['<div class="roster-agent">' + _image(get_agent_image(a['name']), 'table-agent-image')
-                      + '<span>' + escape(a['name']) + '<small>' + escape(get_agent_role(a['name'])) + '</small></span></div>'
+                      + '<span>' + escape(format_agent_name(a['name'])) + '<small>' + escape(get_agent_role(a['name'])) + '</small></span></div>'
                       for a in report['agents']]}, name='analysis_agent_picks')
         st.caption('Shares can exceed 100% when added because each team uses five agents.')
     with compositions:
@@ -130,7 +131,7 @@ def _maps_agents(report):
         rows = []
         for composition in report['compositions']:
             chips = ''.join('<span class="analysis-agent-chip">' + _image(get_agent_image(a), 'table-agent-image')
-                            + escape(a) + '</span>' for a in composition['agents'])
+                            + escape(format_agent_name(a)) + '</span>' for a in composition['agents'])
             rows.append('<div class="analysis-composition-row"><div class="analysis-composition-agents">'+chips+'</div>'
                         + f'<p><strong>{composition["games"]} / {total} games ({_pct(composition["usage"])} usage)</strong><br>'
                         + f'{composition["wins"]} wins / {composition["games"]} games ({_pct(composition["win_rate"])} observed win rate)</p></div>')
