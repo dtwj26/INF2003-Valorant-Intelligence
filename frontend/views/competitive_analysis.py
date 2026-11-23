@@ -175,16 +175,22 @@ def _map_context(report):
 
 
 def _round_chart(report):
-    """Observed match rates on a fixed scale; points use equal index spacing."""
+    """Observed match rates on a fixed scale; shows every Match ID without overlap."""
     rows = report['trends']
     if not rows:
         return
     matches = {m['id']: m for m in report['matches']}
-    width, height, left, right, top, bottom = 1000, 320, 64, 60, 38, 58
     count = len(rows)
+    rotate_labels = count > 8
+    min_spacing = 52 if rotate_labels else 95
+    left, right, top = 78, 56, 40
+    bottom = 96 if rotate_labels else 74
+    width = max(1000, left + right + max(0, count - 1) * min_spacing)
+    height = 350 if rotate_labels else 330
     span = count - 1
     baseline = height - bottom
     plot_height = baseline - top
+
     points = [
         (
             left + idx / span * (width - left - right) if span else width / 2,
@@ -192,26 +198,71 @@ def _round_chart(report):
         )
         for idx, r in enumerate(rows)
     ]
-    svg = '<div class="analysis-connected-chart"><svg viewBox="0 0 1000 320" role="group" aria-label="Round win rate by match">'
-    svg += '<title>Round win rate by match</title><desc>Completed series on a fixed 0 to 100 percent scale. Exact match names and round counts are listed below. Select a point to open the match.</desc>'
+
+    wrap_style = ' style="overflow-x:auto;"' if width > 1000 else ''
+    svg_style = f' style="min-width:{width}px;display:block;"' if width > 1000 else ''
+    svg = (
+        f'<div class="analysis-connected-chart"{wrap_style}>'
+        f'<svg viewBox="0 0 {width} {height}"{svg_style} role="group" aria-label="Round win rate by match">'
+    )
+    svg += (
+        '<title>Round win rate by match</title>'
+        '<desc>Completed series on a fixed 0 to 100 percent scale. '
+        'Exact match names and round counts are listed below. Select a point to open the match.</desc>'
+    )
+
+    # Y-axis title ("Win rate (%)")
+    y_mid = top + plot_height / 2
+    svg += (
+        f'<text x="20" y="{y_mid:.1f}" transform="rotate(-90 20 {y_mid:.1f})" '
+        'text-anchor="middle" class="chart-axis-label" style="font-weight:600;">Win rate (%)</text>'
+    )
+
+    # Horizontal gridlines & percentage ticks
     for value in range(0, 101, 25):
         y = baseline - value / 100 * plot_height
         dash = ' stroke-dasharray="5 5"' if value == 50 else ''
         color = '#8290a0' if value == 50 else '#e5eaf0'
         svg += f'<line x1="{left}" y1="{y}" x2="{width-right}" y2="{y}" stroke="{color}"{dash}/>'
-        svg += f'<text x="{left-14}" y="{y+4}" text-anchor="end" class="chart-axis-label">{value}%</text>'
+        svg += f'<text x="{left-12}" y="{y+4}" text-anchor="end" class="chart-axis-label">{value}%</text>'
+
+    # X-axis title ("Match ID")
+    x_mid = left + (width - left - right) / 2
+    svg += (
+        f'<text x="{x_mid:.1f}" y="{height - 10}" text-anchor="middle" '
+        'class="chart-axis-label" style="font-weight:600;">Match ID</text>'
+    )
+
     coords = ' '.join(f'{x:.2f},{y:.2f}' for x, y in points)
     svg += f'<polyline points="{coords}" fill="none" stroke="#8290a0" stroke-width="2"/>'
+
     for row, (x, y) in zip(rows, points):
         match = matches[row['match_id']]
         label = ' vs '.join(match['team_names'])
-        match_label = row['date']
-        aria = f'{label}, {match_label}, {_pct(row["rate"])}, {row["wins"]} of {row["rounds"]} rounds. Open match.'
-        svg += f'<g class="analysis-chart-point" data-record="{escape(match["id"], quote=True)}" data-view="Matches" tabindex="0" role="link" aria-label="{escape(aria, quote=True)}">'
+        short_label = f"#{row['match_id']}"
+        aria = f'{label}, {row["date"]}, {_pct(row["rate"])}, {row["wins"]} of {row["rounds"]} rounds. Open match.'
+        tooltip = f"{label} ({row['date']}) — {_pct(row['rate'])}"
+        svg += (
+            f'<g class="analysis-chart-point" data-record="{escape(match["id"], quote=True)}" '
+            f'data-view="Matches" tabindex="0" role="link" aria-label="{escape(aria, quote=True)}">'
+        )
+        svg += f'<title>{escape(tooltip)}</title>'
         svg += f'<circle class="chart-point-hit" cx="{x}" cy="{y}" r="16" fill="transparent"/>'
         svg += f'<circle class="chart-point-dot" cx="{x}" cy="{y}" r="6" fill="#17212d" stroke="#fff" stroke-width="2"/>'
-        svg += f'<text x="{x}" y="{y-17}" text-anchor="middle" class="chart-value-label">{_pct(row["rate"])}</text>'
-        svg += f'<text x="{x}" y="{baseline+28}" text-anchor="middle" class="chart-axis-label">{escape(match_label)}</text></g>'
+        svg += f'<text x="{x}" y="{y-15}" text-anchor="middle" class="chart-value-label">{_pct(row["rate"])}</text>'
+        if rotate_labels:
+            tick_y = baseline + 16
+            svg += (
+                f'<text x="{x:.1f}" y="{tick_y}" transform="rotate(-45 {x:.1f} {tick_y})" '
+                f'text-anchor="end" class="chart-axis-label">{escape(short_label)}</text>'
+            )
+        else:
+            svg += (
+                f'<text x="{x:.1f}" y="{baseline+24}" text-anchor="middle" '
+                f'class="chart-axis-label">{escape(short_label)}</text>'
+            )
+        svg += '</g>'
+
     _links(svg + '</svg></div>', 'connected_chart')
 
 
