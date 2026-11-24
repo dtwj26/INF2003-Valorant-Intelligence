@@ -15,6 +15,7 @@ from components.sidebar import render_sidebar
 from views.homepage import render as render_homepage
 from views.teams_players_matches import render as render_records
 from views.competitive_analysis import render as render_analysis
+from views.forum import render as render_forums
 
 
 def main():
@@ -29,6 +30,9 @@ def main():
     elif st.session_state.get('page') == 'analysis':
         with st.container(key='analysis_page'):
             render_analysis()
+    elif st.session_state.get('page') == 'forums':
+        with st.container(key='forums_page'):
+            render_forums()
     else:
         render_homepage()
 
