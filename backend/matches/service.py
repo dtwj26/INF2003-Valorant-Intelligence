@@ -27,3 +27,6 @@ def get_match_details(match_id):
     for game in games:
         game["players"] = get_player_scoreboard(game["game_id"])
     return games
+
+def get_season_maps(season):
+    return repository.fetch_season_maps(season)

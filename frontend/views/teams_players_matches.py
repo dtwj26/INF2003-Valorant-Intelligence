@@ -505,6 +505,8 @@ def _match_table(matches, team_id=None, name='match_history'):
 
 
 def _browse(view, data, season):
+    is_players = view == "Players"
+    is_matches = view == "Matches"
     with st.container(key='record_filters'):
         columns = st.columns([1.5, 1, 1, 1, 1], gap='medium')
         with columns[0]:
@@ -516,7 +518,7 @@ def _browse(view, data, season):
         with columns[2]:
             second = _filter(view, 'second', 'Agent' if is_players else 'Map',
                              ['All agents'] + sorted({a['name'] for p in data['players'] for a in p['agents']})
-                             if is_players else ['All maps'] + (MATCH_MAPS if is_matches else data['maps']))
+                             if is_players else ['All maps'] + data['maps'])
         if is_matches:
             with columns[3]:
                 team_filter = _filter(view, 'team', 'Team', ['All teams'] + [t['name'] for t in data['teams']])
@@ -737,5 +739,8 @@ def render():
             else:
                 _browse(view, data, season)
     except Exception:
-        st.error('Records could not be loaded. Your selections are kept. Retry loading to continue.')
-        st.button('Retry loading', type='primary')
+        st.error(
+            "Records could not be loaded. "
+            "Your selections are kept. Retry loading to continue."
+        )
+        st.button("Retry loading", type="primary")

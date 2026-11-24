@@ -82,3 +82,19 @@ def fetch_player_scoreboard(game_id):
         with conn.cursor(cursor_factory=RealDictCursor) as cursor:
             cursor.execute(query, parameters)
             return [dict(row) for row in cursor.fetchall()]
+
+
+def fetch_season_maps(season):
+    query = """
+        SELECT DISTINCT g.map_name
+        FROM map_games g
+        JOIN match_series m ON m.match_id = g.match_id
+        WHERE m.season = %s
+          AND g.map_name IS NOT NULL
+        ORDER BY g.map_name
+    """
+
+    with closing(get_connection()) as conn:
+        with conn.cursor() as cursor:
+            cursor.execute(query, (int(season),))
+            return [row[0] for row in cursor.fetchall()]

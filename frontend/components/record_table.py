@@ -94,8 +94,21 @@ def _table(rows, ids=None, view=None, name='records', rich=None, action=True):
                 and label in ("Map games", "Avg. ACS", "K/D")
             )
         )
-        align = ' style="text-align: center !important;"' if team_stat else ""
+
+        numeric = (
+            any(isinstance(row.get(label), (int, float)) for row in rows)
+            or label in ('K/D', 'Win rate', 'Score', 'Series score', 'Result')
+        )
+
+        if team_stat:
+            align = ' style="text-align: center !important;"'
+        elif numeric:
+            align = ' style="text-align: right !important;"'
+        else:
+            align = ""
+
         content += f'<th scope="col"{align}>{escape(label)}</th>'
+
 
     if ids is not None and action:
         content += '<th scope="col">' + ('Details' if view == 'Matches' else 'Profile') + '</th>'
