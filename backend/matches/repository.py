@@ -60,9 +60,9 @@ def fetch_matches(season, tournament_id="", map_name="", search=""):
         with conn.cursor(cursor_factory=RealDictCursor) as cursor:
             cursor.execute(query, parameters)
             return [dict(row) for row in cursor.fetchall()]
-        
-def fetch_match_games(match_id):
 
+
+def fetch_match_games(match_id):
     parameters = {
         "match_id": int(match_id)
     }
@@ -71,6 +71,7 @@ def fetch_match_games(match_id):
         with conn.cursor(cursor_factory=RealDictCursor) as cursor:
             cursor.execute(query, parameters)
             return [dict(row) for row in cursor.fetchall()]
+
 
 def fetch_player_scoreboard(game_id):
     parameters = {

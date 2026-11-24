@@ -4,9 +4,11 @@ from pathlib import Path
 import streamlit as st
 from services import homepage_service, competitive_analysis_service
 from components.sidebar import open_analysis
+from components.agent_names import format_agent_name
 from components.asset_catalog import get_agent_image, get_agent_role, get_map_image
 
 ROOT = Path(__file__).resolve().parents[1]
+
 
 def html(text):
     st.html(text)
@@ -117,7 +119,7 @@ def render():
                 for row in snapshot["agents"][:5]:
                     rows.append(
                         '<li class="agent-row">' + asset_image(get_agent_image(row["name"]), "agent-image")
-                        + f'<div><strong>{escape("KAY/O" if row["name"].lower() == "kay/o" else row["name"].title())}</strong>'
+                        + f'<div><strong>{escape(format_agent_name(row["name"]))}</strong>'
                         + f'<span class="agent-role">{escape(get_agent_role(row["name"]))}</span></div>'
                         + f'<span class="agent-value">{row["picks"]:,}<small>picks</small></span></li>'
                     )

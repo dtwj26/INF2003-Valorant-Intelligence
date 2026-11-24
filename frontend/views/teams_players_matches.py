@@ -9,18 +9,16 @@ from pathlib import Path
 
 import streamlit as st
 
-from components.asset_catalog import get_agent_image, get_map_image, get_team_logo
+from components.asset_catalog import get_agent_image, get_team_logo
 from services import teams_players_matches_service as service
-from components.record_table import _RECORD_TABLE, _table_open, _record_link, _image, _section, _metrics, _pct, _table, _open
+from components.record_table import _RECORD_TABLE, _table_open, _record_link, _image, _section, _metrics, _table
 from components.sidebar import open_analysis
 
-from services.live_teams_players_service import get_live_records
+from services.live_teams_players_service import get_live_records, get_live_seasons
 from components.agent_names import format_agent_name
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MATCH_MAPS = ['Abyss', 'Ascent', 'Bind', 'Breeze', 'Corrode', 'Fracture',
-              'Haven', 'Icebox', 'Lotus', 'Pearl', 'Split', 'Sunset', 'TBD']
 
 
 def _load_records(view, season, tournament_id='', map_name=''):
@@ -137,7 +135,6 @@ def _browse_live(view, data):
             if a.get("name")
         })
 
-        
         with c3:
             selected_agent = st.selectbox(
                 "Agent",
@@ -145,7 +142,6 @@ def _browse_live(view, data):
                 format_func=format_agent_name,
                 key="live_player_agent"
             )
-
 
         with c4:
             sort_by = st.selectbox(
@@ -184,9 +180,8 @@ def _browse_live(view, data):
                 key=lambda p: p["name"].casefold()
             )
 
-
     st.caption(f"{len(records)} {view.lower()} found")
-    
+
     # paginate teams and players
     total_records = len(records)
     page_size = 8
@@ -207,9 +202,6 @@ def _browse_live(view, data):
     records = records[
         (page - 1) * page_size : page * page_size
     ]
-
-
-
 
     if view == "Teams":
         rows = [
@@ -233,11 +225,8 @@ def _browse_live(view, data):
             for p in records
         ]
 
-    
-    
     rich = {}
 
-    
     if view == "Teams":
         rich["Team"] = [
             '<div class="record-name">'
@@ -247,8 +236,6 @@ def _browse_live(view, data):
             for t in records
         ]
 
-
-    
     else:
         rich["Player"] = [
             _record_link(p["name"], "Players", p["id"])
@@ -262,11 +249,6 @@ def _browse_live(view, data):
             for p in records
         ]
 
-
-
-
-    
-    
     _table(
         rows,
         ids=[r["id"] for r in records],
@@ -276,9 +258,6 @@ def _browse_live(view, data):
         rich=rich
     )
 
-
-
-    
     # pagination controls
     first_record = (
         (page - 1) * page_size + 1
@@ -357,7 +336,6 @@ def _team_detail_live(team, data, season):
         for p in roster
     ]
 
-    
     _table(
         roster_rows,
         ids=[p["id"] for p in roster],
@@ -373,12 +351,6 @@ def _team_detail_live(team, data, season):
     )
 
 
-    st.caption(
-        "Match results and win rates will be available "
-        "after the Matches backend is integrated."
-    )
-
-
 def _player_detail_live(player, data, season):
     # player identity
     st.html(
@@ -386,12 +358,10 @@ def _player_detail_live(player, data, season):
         f'{escape(player["name"])}</h2>'
     )
 
-
     st.caption(
         f'Season overview / VCT {season} (all tournaments and maps) / '
         f'{player.get("team_name") or "Team not recorded"}'
     )
-
 
     # verified performance statistics
     acs = player.get("acs")
@@ -457,10 +427,6 @@ def _player_detail_live(player, data, season):
         }
     )
 
-    st.caption(
-        "Match-level results will be connected when "
-        "the Matches backend is integrated."
-    )
 
 def _back():
     st.session_state.record_view_saved = st.session_state.get('record_view', 'Teams')
@@ -539,16 +505,14 @@ def _match_table(matches, team_id=None, name='match_history'):
 
 
 def _browse(view, data, season):
-    is_players, is_matches = view == 'Players', view == 'Matches'
     with st.container(key='record_filters'):
-        columns = st.columns([1.5, 1, 1, 1, 1] if is_matches else [2, 1, 1, 1], gap='medium')
+        columns = st.columns([1.5, 1, 1, 1, 1], gap='medium')
         with columns[0]:
-            search = _filter(view, 'search', f'Search {view.lower()}',
-                             placeholder='Player or team name' if is_players else ('Team, tournament or match ID' if is_matches else 'Team name')).strip().casefold()
+            search = _filter(view, 'search', 'Search matches',
+                             placeholder='Team, tournament or match ID').strip().casefold()
         with columns[1]:
-            first = _filter(view, 'first', 'Team' if is_players else 'Tournament',
-                            ['All teams'] + [t['name'] for t in data['teams']] if is_players
-                            else ['All tournaments'] + [t['name'] for t in data['tournaments']])
+            first = _filter(view, 'first', 'Tournament',
+                            ['All tournaments'] + [t['name'] for t in data['tournaments']])
         with columns[2]:
             second = _filter(view, 'second', 'Agent' if is_players else 'Map',
                              ['All agents'] + sorted({a['name'] for p in data['players'] for a in p['agents']})
@@ -595,7 +559,7 @@ def _browse(view, data, season):
         else:
             st.caption(f'Search any team across all {len(data["matches"])} matches. Match IDs are not verified match dates.')
     count, clear = st.columns([4, 1], vertical_alignment='center')
-    count.caption(f'{len(rows)} {view.lower()} found')
+    count.caption(f'{len(rows)} matches found')
     with clear:
         with st.container(key='record_clear'):
             st.button('Clear filters', on_click=_clear, args=(view,), width='stretch')
@@ -606,97 +570,12 @@ def _browse(view, data, season):
     saved_page = st.session_state.get('records_preferences', {}).get(view, {}).get('page', 1)
     page = min(saved_page, total_pages)
     visible = rows[(page-1)*8:page*8]
-    if is_matches:
-        st.caption('Map filters find series containing that map; scores show the full series.')
-        _match_table(visible, name='live_matches')
-    elif is_players:
-        _table([{'Player': p['name'], 'Team': p['team_name'], 'Map games': p['games'],
-                 'Avg. ACS': p['acs'], 'K/D': f"{p['kd']:.2f}" if p['kd'] is not None else '—'} for p in visible],
-               [p['id'] for p in visible], view, 'browse_players', rich={
-                   'Player': [_record_link(p['name'], 'Players', p['id']) for p in visible],
-                   'Team': ['<div class="record-name">' + _image(get_team_logo(p['team']), 'table-team-logo')
-                            + _record_link(p['team_name'], 'Teams', p['team']) + '</div>' for p in visible]})
-        st.caption('ACS: average combat score. K/D: total kills divided by total deaths.')
-    else:
-        _table([{'Team': t['name'], 'Match series': t['matches'],
-                 'Series record': f"{t['wins']}W / {t['losses']}L", 'Map games': t['games']} for t in visible],
-               [t['id'] for t in visible], view, 'browse_teams', rich={
-                   'Team': ['<div class="record-name">' + _image(get_team_logo(t['id']), 'table-team-logo')
-                            + _record_link(t['name'], 'Teams', t['id']) + '</div>' for t in visible]})
+    st.caption('Map filters find series containing that map; scores show the full series.')
+    _match_table(visible, name='live_matches')
     footer, previous, next_page = st.columns([5, 1, 1], vertical_alignment='center')
     footer.caption(f'Showing {(page-1)*8+1}–{min(page*8, len(rows))} of {len(rows)} / Page {page} of {total_pages}')
     previous.button('Previous', disabled=page == 1, on_click=_page, args=(view, -1, total_pages), width='stretch')
     next_page.button('Next', disabled=page == total_pages, on_click=_page, args=(view, 1, total_pages), width='stretch')
-
-
-def _browse_team_matches(team_name):
-    _back()
-    st.session_state.record_view = 'Matches'
-    st.session_state.record_view_saved = 'Matches'
-    prefs = st.session_state.setdefault('records_preferences', {})
-    prefs['Matches'] = {'team': team_name, 'first': prefs.get('Teams', {}).get('first', 'All tournaments')}
-    for key in list(st.session_state):
-        if key.startswith('_records_Matches_'):
-            del st.session_state[key]
-
-
-def _team_detail(team, data, season):
-    prefs = st.session_state.get('records_preferences', {}).get('Teams', {})
-    event_name = prefs.get('first', 'All tournaments')
-    event_id = next((t['id'] for t in data['tournaments'] if t['name'] == event_name), '')
-    scoped = service.get_records(season, event_id)
-    team = next((t for t in scoped['teams'] if t['id'] == team['id']), team)
-    identity, actions = st.columns([1.4, 1], vertical_alignment='center')
-    with identity:
-        st.html('<div class="record-identity">' + _image(get_team_logo(team['id']), 'team-logo')
-                + f'<div><h2>{escape(team["name"])}</h2><p>Team profile / {escape(event_name)} / all maps</p></div></div>')
-    with actions:
-        scout, browse = st.columns([1, 1.4])
-        scout.button('Scout this team', type='primary', width='stretch', on_click=open_analysis, args=(team['id'], season, event_id))
-        browse.button('Browse team matches', on_click=_browse_team_matches, args=(team['name'],), width='stretch')
-    _metrics([('Match series', team['matches'], f"{team['wins']} wins / {team['losses']} losses"),
-              ('Map games', team['games'], f"{team['map_wins']} wins / {team['games']-team['map_wins']} losses"),
-              ('Map win rate', _pct(team['win_rate']), 'Map games, not series')])
-    roster_col, maps_col = st.columns([1.3, 1], gap='large')
-    with roster_col:
-        _section('Roster', 'Open a player to inspect their performance.')
-        roster = [p for p in data['players'] if p['id'] in team['roster']]
-        _table([{'Player': p['name'], 'Primary role': p['role']} for p in roster],
-               [p['id'] for p in roster], 'Players', 'team_roster', rich={
-                   'Primary role': ['<div class="roster-agent">' + _image(get_agent_image(p['agent']), 'table-agent-image')
-                                    + '<span>' + escape(p['role']) + '<small>' + escape(p['agent']) + '</small></span></div>' for p in roster]})
-    with maps_col:
-        _section('Map performance', 'Outcomes across all maps in the tournament scope.')
-        _table([{'Map': m['name'], 'Games': m['games'], 'Record': f"{m['wins']}W / {m['losses']}L",
-                 'Win rate': _pct(m['win_rate'])} for m in team['maps']])
-    _section('Match history', 'Series scores are shown from this team’s perspective.')
-    _match_table([m for m in scoped['matches'] if team['id'] in m['team_ids']], team['id'])
-
-
-def _player_detail(player, data):
-    heading, action = st.columns([3, 1], vertical_alignment='center')
-    with heading:
-        st.html(f'<h2 class="record-detail-title">{escape(player["name"])}</h2>')
-        st.caption(f"Player profile / {player['team_name']}")
-    action.button('View team', on_click=_open, args=('Teams', player['team']), width='stretch')
-    _metrics([('Avg. ACS', player['acs'], 'Average combat score'),
-              ('K/D', f"{player['kd']:.2f}" if player['kd'] is not None else '—', f"{player['kills']} kills / {player['deaths']} deaths"),
-              ('Map games', player['games'], 'One player record per map game')])
-    performance, agents = st.columns([1, 1], gap='large')
-    with performance:
-        _section('Performance statistics', 'Totals within the selected tournament.')
-        _table([{'Measure': label, 'Value': value} for label, value in [
-            ('Kills', player['kills']), ('Deaths', player['deaths']), ('Assists', player['assists']),
-            ('Average kills per map', round(player['kills']/player['games'], 1))]])
-    with agents:
-        _section('Agent usage', 'Selections across the player’s map games.')
-        st.html('<ul class="agent-list">' + ''.join('<li class="agent-row">'
-            + _image(get_agent_image(a['name']), 'agent-image')
-            + f'<div><strong>{escape(a["name"])}</strong><span class="agent-role">{a["picks"]} map games</span></div>'
-            + f'<span class="agent-value">{_pct(a["share"])}</span></li>' for a in player['agents']) + '</ul>')
-    _section('Match appearances', 'Open a match to inspect its map scoreboard.')
-    _match_table([m for m in data['matches'] if any(p['player_id'] == player['id']
-                  for g in m['games'] for p in g['players'])], player['team'], 'player_history')
 
 
 def _match_detail(match, data):
@@ -722,14 +601,14 @@ def _match_detail(match, data):
     _section(f"{game['map']} scoreboard", f"{match['team_names'][0]} {game['scores'][0]}–{game['scores'][1]} {match['team_names'][1]} / {sum(game['scores'])} rounds")
     records = game['players']
     team_names = dict(zip(match['team_ids'], match['team_names']))
-    _table([{'Player / team': p['player_name'], 'Agent': p['agent'], 'ACS': p['acs'],
+    _table([{'Player / team': p['player_name'], 'Agent': format_agent_name(p['agent']), 'ACS': p['acs'],
              'Kills': p['kills'], 'Deaths': p['deaths'], 'Assists': p['assists'],
              'K/D': f"{p['kills']/p['deaths']:.2f}" if p['kills'] is not None and p['deaths'] else '—'} for p in records],
            [p['player_id'] for p in records], 'Players', f'scoreboard_{game_id}', action=False, rich={
                'Player / team': [_record_link(p['player_name'], 'Players', p['player_id'])
                                  + '<small>' + _record_link(team_names[p['team_id']], 'Teams', p['team_id']) + '</small>' for p in records],
                'Agent': ['<div class="roster-agent">' + _image(get_agent_image(p['agent']), 'table-agent-image')
-                         + escape(p['agent']) + '</div>' for p in records]})
+                         + escape(format_agent_name(p['agent'])) + '</div>' for p in records]})
     st.caption('ACS: average combat score. A dash indicates a value missing from the imported records.')
     with st.container(key='record_match_scout'):
         description, actions = st.columns([1.2, 1], vertical_alignment='center')
@@ -745,7 +624,6 @@ def _match_detail(match, data):
 def render():
     st.title('Teams, Players & Matches')
     try:
-        
         active_view = st.session_state.get(
             "record_view",
             st.session_state.get("record_view_saved", "Teams")
@@ -754,7 +632,7 @@ def render():
         if active_view == "Matches":
             seasons = service.get_match_seasons()
         else:
-            seasons = [2026, 2025, 2024, 2023, 2022, 2021]
+            seasons = get_live_seasons()
 
         if not seasons:
             st.info('No seasons are available yet. Refresh after records have been added.')
@@ -765,7 +643,7 @@ def render():
             _reset_scope()
         text, selector = st.columns([3, 1], vertical_alignment='center')
         text.write('Explore the records. Follow teams and players into their matches.')
-        
+
         if active_view == "Matches":
             text.caption(
                 f"Coverage: VCT {st.session_state.season} "
@@ -802,14 +680,13 @@ def render():
         st.session_state.records_last_season = season
         with st.spinner('Loading records…'):
             data = _load_records(view, season)
-        
+
         records_by_view = {
             'Teams': data.get('teams', []),
             'Players': data.get('players', []),
             'Matches': data.get('matches', []),
         }
 
-        
         if view == "Players" and season == 2021:
             st.warning(
                 "2021 player-performance statistics have not "
@@ -818,7 +695,6 @@ def render():
             )
             return
 
-
         if not records_by_view[view]:
             st.info(
                 f'No {view.lower()} records are available for {season}. '
@@ -826,7 +702,6 @@ def render():
             )
             return
 
-        
         # explain incomplete 2022 player statistics
         if view == "Players" and season == 2022:
             st.info(
@@ -839,7 +714,7 @@ def render():
         detail = st.session_state.get('records_detail')
         if detail:
             st.button(f'Back to {view.lower()}', on_click=_back)
-            
+
             record = next(
                 (
                     row for row in data[view.lower()]
@@ -861,6 +736,6 @@ def render():
                 _browse_live(view, data)
             else:
                 _browse(view, data, season)
-    except service.DataServiceError:
+    except Exception:
         st.error('Records could not be loaded. Your selections are kept. Retry loading to continue.')
         st.button('Retry loading', type='primary')

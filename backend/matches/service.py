@@ -12,8 +12,10 @@ def get_matches(season, tournament_id="", map_name="", search=""):
     """Return overall match results for the selected scope."""
     return repository.fetch_matches(season, tournament_id, map_name, search)
 
+
 def get_match_games(match_id):
     return repository.fetch_match_games(match_id)
+
 
 def get_player_scoreboard(game_id):
     return repository.fetch_player_scoreboard(game_id)

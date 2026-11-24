@@ -4,12 +4,12 @@ Keep the four wireframe sections and their information hierarchy. Members 3/4
 supply analysis through competitive_analysis_service; this module renders it.
 """
 from functools import partial
-from datetime import date
 from html import escape
 
 import streamlit as st
 
 from services import competitive_analysis_service as service
+from components.agent_names import format_agent_name
 from components.asset_catalog import get_agent_image, get_agent_role, get_map_image, get_team_logo
 from components.record_table import (_table, _image, _record_link, _section, _metrics, _pct,
                                      _RECORD_TABLE, _table_open)
@@ -78,7 +78,7 @@ def _supporting_matches(report):
         side = match['team_ids'].index(team_id)
         score = match['score']
         result = 'Win' if score[side] > score[1-side] else 'Loss'
-        rows.append({'Date': match['date'], 'Match / tournament': ' vs '.join(match['team_names']),
+        rows.append({'Match': match['date'], 'Match / tournament': ' vs '.join(match['team_names']),
                      'Full series result': f'{score[side]}–{score[1-side]} / {result}'})
     identity = ['<div class="match-teams">' + _image(get_team_logo(m['team_ids'][0]), 'table-team-logo')
                 + _record_link(m['team_names'][0], 'Teams', m['team_ids'][0]) + '<span>vs</span>'
@@ -92,7 +92,6 @@ def _supporting_matches(report):
                        + f'<span class="analysis-result-badge is-{result.lower()}">{result}</span></div>')
     _table(rows, [m['id'] for m in matches], 'Matches', 'scout_matches',
            rich={'Match / tournament': identity, 'Full series result': results})
-
 
 
 def _overview(report):
@@ -122,9 +121,9 @@ def _maps_agents(report):
     picks, compositions = st.columns([1.3, 1], gap='large')
     with picks:
         _section('Agent picks', f'{total} team-map games / {total*5} player-map selections')
-        _table([{'Agent': a['name'], 'Selections': a['picks'], 'Team-map pick share': _pct(a['share'])} for a in report['agents']],
+        _table([{'Agent': format_agent_name(a['name']), 'Selections': a['picks'], 'Team-map pick share': _pct(a['share'])} for a in report['agents']],
                rich={'Agent': ['<div class="roster-agent">' + _image(get_agent_image(a['name']), 'table-agent-image')
-                      + '<span>' + escape(a['name']) + '<small>' + escape(get_agent_role(a['name'])) + '</small></span></div>'
+                      + '<span>' + escape(format_agent_name(a['name'])) + '<small>' + escape(get_agent_role(a['name'])) + '</small></span></div>'
                       for a in report['agents']]}, name='analysis_agent_picks')
         st.caption('Shares can exceed 100% when added because each team uses five agents.')
     with compositions:
@@ -132,7 +131,7 @@ def _maps_agents(report):
         rows = []
         for composition in report['compositions']:
             chips = ''.join('<span class="analysis-agent-chip">' + _image(get_agent_image(a), 'table-agent-image')
-                            + escape(a) + '</span>' for a in composition['agents'])
+                            + escape(format_agent_name(a)) + '</span>' for a in composition['agents'])
             rows.append('<div class="analysis-composition-row"><div class="analysis-composition-agents">'+chips+'</div>'
                         + f'<p><strong>{composition["games"]} / {total} games ({_pct(composition["usage"])} usage)</strong><br>'
                         + f'{composition["wins"]} wins / {composition["games"]} games ({_pct(composition["win_rate"])} observed win rate)</p></div>')
@@ -176,40 +175,95 @@ def _map_context(report):
 
 
 def _round_chart(report):
-    """Observed match rates on a fixed scale; dates use actual elapsed spacing."""
+    """Observed match rates on a fixed scale; shows every Match ID without overlap."""
     rows = report['trends']
     if not rows:
         return
     matches = {m['id']: m for m in report['matches']}
-    width, height, left, right, top, bottom = 1000, 320, 64, 60, 38, 58
-    dates = [date.fromisoformat(r['date']).toordinal() for r in rows]
-    first, last = min(dates), max(dates)
-    span = last-first
-    baseline = height-bottom
-    plot_height = baseline-top
-    points = [(left+(n-first)/span*(width-left-right) if span else width/2,
-               baseline-(r['rate'] or 0)/100*plot_height) for n,r in zip(dates, rows)]
-    svg = '<div class="analysis-connected-chart"><svg viewBox="0 0 1000 320" role="group" aria-label="Round win rate by match">'
-    svg += '<title>Round win rate by match</title><desc>Completed series on a fixed 0 to 100 percent scale. Exact match names and round counts are listed below. Select a point to open the match.</desc>'
+    count = len(rows)
+    rotate_labels = count > 8
+    min_spacing = 52 if rotate_labels else 95
+    left, right, top = 78, 56, 40
+    bottom = 96 if rotate_labels else 74
+    width = max(1000, left + right + max(0, count - 1) * min_spacing)
+    height = 350 if rotate_labels else 330
+    span = count - 1
+    baseline = height - bottom
+    plot_height = baseline - top
+
+    points = [
+        (
+            left + idx / span * (width - left - right) if span else width / 2,
+            baseline - (r['rate'] or 0) / 100 * plot_height,
+        )
+        for idx, r in enumerate(rows)
+    ]
+
+    wrap_style = ' style="overflow-x:auto;"' if width > 1000 else ''
+    svg_style = f' style="min-width:{width}px;display:block;"' if width > 1000 else ''
+    svg = (
+        f'<div class="analysis-connected-chart"{wrap_style}>'
+        f'<svg viewBox="0 0 {width} {height}"{svg_style} role="group" aria-label="Round win rate by match">'
+    )
+    svg += (
+        '<title>Round win rate by match</title>'
+        '<desc>Completed series on a fixed 0 to 100 percent scale. '
+        'Exact match names and round counts are listed below. Select a point to open the match.</desc>'
+    )
+
+    # Y-axis title ("Win rate (%)")
+    y_mid = top + plot_height / 2
+    svg += (
+        f'<text x="20" y="{y_mid:.1f}" transform="rotate(-90 20 {y_mid:.1f})" '
+        'text-anchor="middle" class="chart-axis-label" style="font-weight:600;">Win rate (%)</text>'
+    )
+
+    # Horizontal gridlines & percentage ticks
     for value in range(0, 101, 25):
-        y = baseline-value/100*plot_height
-        dash = ' stroke-dasharray="5 5"' if value==50 else ''
-        color = '#8290a0' if value==50 else '#e5eaf0'
+        y = baseline - value / 100 * plot_height
+        dash = ' stroke-dasharray="5 5"' if value == 50 else ''
+        color = '#8290a0' if value == 50 else '#e5eaf0'
         svg += f'<line x1="{left}" y1="{y}" x2="{width-right}" y2="{y}" stroke="{color}"{dash}/>'
-        svg += f'<text x="{left-14}" y="{y+4}" text-anchor="end" class="chart-axis-label">{value}%</text>'
-    coords = ' '.join(f'{x:.2f},{y:.2f}' for x,y in points)
+        svg += f'<text x="{left-12}" y="{y+4}" text-anchor="end" class="chart-axis-label">{value}%</text>'
+
+    # X-axis title ("Match ID")
+    x_mid = left + (width - left - right) / 2
+    svg += (
+        f'<text x="{x_mid:.1f}" y="{height - 10}" text-anchor="middle" '
+        'class="chart-axis-label" style="font-weight:600;">Match ID</text>'
+    )
+
+    coords = ' '.join(f'{x:.2f},{y:.2f}' for x, y in points)
     svg += f'<polyline points="{coords}" fill="none" stroke="#8290a0" stroke-width="2"/>'
-    for row,(x,y) in zip(rows, points):
+
+    for row, (x, y) in zip(rows, points):
         match = matches[row['match_id']]
         label = ' vs '.join(match['team_names'])
-        day = date.fromisoformat(row['date']).strftime('%d %b')
-        aria = f'{label}, {day}, {_pct(row["rate"])}, {row["wins"]} of {row["rounds"]} rounds. Open match.'
-        svg += f'<g class="analysis-chart-point" data-record="{escape(match["id"], quote=True)}" data-view="Matches" tabindex="0" role="link" aria-label="{escape(aria, quote=True)}">'
+        short_label = f"#{row['match_id']}"
+        aria = f'{label}, {row["date"]}, {_pct(row["rate"])}, {row["wins"]} of {row["rounds"]} rounds. Open match.'
+        tooltip = f"{label} ({row['date']}) — {_pct(row['rate'])}"
+        svg += (
+            f'<g class="analysis-chart-point" data-record="{escape(match["id"], quote=True)}" '
+            f'data-view="Matches" tabindex="0" role="link" aria-label="{escape(aria, quote=True)}">'
+        )
+        svg += f'<title>{escape(tooltip)}</title>'
         svg += f'<circle class="chart-point-hit" cx="{x}" cy="{y}" r="16" fill="transparent"/>'
         svg += f'<circle class="chart-point-dot" cx="{x}" cy="{y}" r="6" fill="#17212d" stroke="#fff" stroke-width="2"/>'
-        svg += f'<text x="{x}" y="{y-17}" text-anchor="middle" class="chart-value-label">{_pct(row["rate"])}</text>'
-        svg += f'<text x="{x}" y="{baseline+28}" text-anchor="middle" class="chart-axis-label">{day}</text></g>'
-    _links(svg+'</svg></div>', 'connected_chart')
+        svg += f'<text x="{x}" y="{y-15}" text-anchor="middle" class="chart-value-label">{_pct(row["rate"])}</text>'
+        if rotate_labels:
+            tick_y = baseline + 16
+            svg += (
+                f'<text x="{x:.1f}" y="{tick_y}" transform="rotate(-45 {x:.1f} {tick_y})" '
+                f'text-anchor="end" class="chart-axis-label">{escape(short_label)}</text>'
+            )
+        else:
+            svg += (
+                f'<text x="{x:.1f}" y="{baseline+24}" text-anchor="middle" '
+                f'class="chart-axis-label">{escape(short_label)}</text>'
+            )
+        svg += '</g>'
+
+    _links(svg + '</svg></div>', 'connected_chart')
 
 
 def _rounds_economy(report):
@@ -218,7 +272,7 @@ def _rounds_economy(report):
     if coverage['complete_maps'] < coverage['total_maps']:
         st.warning(f"Round-level records cover {coverage['complete_maps']} of {coverage['total_maps']} map games "
                    f"({coverage['recorded_rounds']} of {coverage['expected_rounds']} rounds). Missing rounds are excluded from pistol and economy denominators.")
-    _section('Round win rate by match', 'Completed series, oldest to newest / selected maps / fixed 0–100% scale')
+    _section('Round win rate by match', 'Completed series, ordered by match ID / selected maps / fixed 0–100% scale')
     _round_chart(report)
     trends, pistol = st.columns([1.3, 1], gap='large')
     with trends:
@@ -233,7 +287,7 @@ def _rounds_economy(report):
             scope = report['map_name']+' only' if report['map_name'] else str(len(match['games']))+' maps'
             rows.append(f'<button type="button" class="analysis-trend-match" data-record="{escape(match["id"], quote=True)}" data-view="Matches">'
                         + '<span><strong>'+escape(' vs '.join(match['team_names']))+'</strong><small>'
-                        + escape(date.fromisoformat(match['date']).strftime('%d %b %Y'))+' / '+escape(scope)+'</small></span>'
+                        + escape(row['date'])+' / '+escape(scope)+'</small></span>'
                         + f'<span class="analysis-trend-outcome"><span class="analysis-result-badge is-{outcome.lower()}">{outcome}</span>'
                         + f'<span>{score[side]}–{score[1-side]}</span><small>'+escape(report['team_name'])+' series result</small></span>'
                         + f'<span class="analysis-trend-rate"><strong>{_pct(row["rate"])}</strong><small>{row["wins"]} / {row["rounds"]} rounds</small></span></button>')
@@ -312,7 +366,7 @@ def render():
             st.session_state[key] = default
     heading, season = st.columns([3, 1], vertical_alignment='center')
     heading.write('Prepare an opponent brief. Follow each observation back to its evidence.')
-    heading.caption('Coverage: Valorant Champions 2023. Statistics reflect this tournament.')
+    heading.caption(f"Coverage: VCT {st.session_state.season} (PostgreSQL + MongoDB).")
     with season:
         st.selectbox('Season', options['seasons'], key='season', on_change=_season_changed)
     with st.container(key='analysis_filters'):

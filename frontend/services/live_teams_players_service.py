@@ -1,4 +1,3 @@
-
 """Frontend adapter for live Teams and Players data."""
 
 import sys
@@ -11,6 +10,12 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from backend.teams_players import service as backend_service
+
+
+def get_live_seasons():
+    """Retrieve available seasons from Neon PostgreSQL."""
+
+    return backend_service.get_seasons()
 
 
 def get_live_records(

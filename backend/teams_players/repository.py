@@ -1,11 +1,11 @@
-
 """PostgreSQL repository for Teams & Players."""
 
+import os
 from contextlib import closing
 from pathlib import Path
 
 import psycopg2
-from dotenv import dotenv_values
+from dotenv import load_dotenv
 from psycopg2.extras import RealDictCursor
 
 
@@ -20,30 +20,17 @@ SQL_DIR = (
     / "teams_players"
 )
 
-DEV_ENV_FILE = (
-    ROOT
-    / "data"
-    / "local"
-    / "teams_players"
-    / "dev_connection.env"
-)
+load_dotenv(dotenv_path=ROOT / ".env")
 
 
 def get_connection():
-    """Connect to Neon development database."""
+    """Connect to Neon PostgreSQL database."""
 
-    if not DEV_ENV_FILE.is_file():
-        raise FileNotFoundError(
-            f"Development connection file missing: {DEV_ENV_FILE}"
-        )
-
-    database_url = dotenv_values(
-        DEV_ENV_FILE
-    ).get("DATABASE_URL")
+    database_url = os.getenv("DATABASE_URL")
 
     if not database_url:
         raise RuntimeError(
-            "DATABASE_URL is missing from dev_connection.env"
+            "DATABASE_URL is missing from the .env file."
         )
 
     return psycopg2.connect(
@@ -51,6 +38,21 @@ def get_connection():
         connect_timeout=20
     )
 
+
+def fetch_seasons():
+    """Return all available seasons from PostgreSQL."""
+
+    query = """
+        SELECT DISTINCT season
+        FROM match_series
+        ORDER BY season DESC;
+    """
+
+    with closing(get_connection()) as conn:
+        with conn.cursor() as cursor:
+            cursor.execute("SET TRANSACTION READ ONLY")
+            cursor.execute(query)
+            return [int(row[0]) for row in cursor.fetchall()]
 
 
 def fetch_player_summaries(
@@ -136,7 +138,6 @@ def fetch_player_summaries(
         }
         for row in rows
     ]
-
 
 
 def fetch_team_summaries(

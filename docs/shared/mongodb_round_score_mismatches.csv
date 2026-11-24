@@ -1,0 +1,96 @@
+﻿season,game_id,team_1,team_1_round_wins,team_2,team_2_round_wins,postgres_score_low,postgres_score_high,mongodb_score_low,mongodb_score_high,total_round_difference
+2021,15332,Gen.G,15,Deadlife,2,1,13,2,15,3
+2021,15353,Zelo,8,ex-Phoenix1,16,4,13,8,16,7
+2021,15439,Sakura Storm,14,Radiant Roombas,4,4,13,4,14,1
+2021,15561,Sentinels,14,Techno Monks,7,7,13,7,14,1
+2021,15958,Saviors,5,LFS,19,2,13,5,19,9
+2021,18854,Finest,14,On The Run Esports,5,5,13,5,14,1
+2021,20220,Meta Gaming,11,Typhoon,13,9,13,11,13,2
+2021,20478,Yendez,10,99Percent.,14,10,13,10,14,1
+2021,21064,RARE Esports,11,red deers,1,1,13,1,11,-2
+2021,21151,PÊEK Gaming,0,Reven Esports,24,11,13,0,24,0
+2021,21152,PÊEK Gaming,0,Reven Esports,16,3,13,0,16,0
+2021,21697,PeaceKeeper,0,Average 20,21,8,13,0,21,0
+2021,22239,Ksenox,5,XacTJlePbI,3,3,13,3,5,-8
+2021,25726,Team SMG,13,Paper Rex,6,4,13,6,13,2
+2021,27205,ExtraOrdinary,14,Purple Puff Gang,7,4,13,7,14,4
+2021,27244,CE Calling,16,Virgeneshastalos40,4,1,13,4,16,6
+2021,27284,ECENI,4,SUPD,15,4,13,4,15,2
+2021,27370,Voltage,2,UCAM Esports Club,15,2,13,2,15,2
+2021,27374,Twister Reloaded,1,couchless,7,1,13,1,7,-6
+2021,28007,ALFA Esport,7,No Org No Pracc,14,7,13,7,14,1
+2021,28110,Cyber Skull Esports,8,hunterr,2,2,13,2,8,-5
+2021,29260,ehehxd,17,Catalyst Esports,2,2,13,2,17,4
+2021,29638,Gr1nd,13,1234,8,6,13,8,13,2
+2021,29714,eMonkeyz Club,14,Hyferion5 Esports,3,3,13,3,14,1
+2021,30230,Giants Gaming,14,Ignite,4,4,13,4,14,1
+2021,30722,Bigetron Arctic,15,Morph Impact,3,1,13,3,15,4
+2021,30728,XcN Gaming,8,NXL LIGAGAME,14,8,13,8,14,1
+2021,30996,6045Pirates,13,Alpha Esports Pro,9,8,13,9,13,1
+2021,31785,6045Pirates,17,Vendetta,5,4,13,5,17,5
+2021,31793,Looking For Org,10,Walküre,14,10,13,10,14,1
+2021,33915,YaLLa Esports,19,Piercer Esports,20,16,18,19,20,5
+2021,38386,Mindfreak,11,Wildcard Gaming,13,9,13,11,13,2
+2021,38645,PURPURE,10,deathwish,14,8,13,10,14,3
+2021,39306,NEBULAA,3,15 Kings,6,6,13,3,6,-10
+2021,39377,Deviance,15,ValorEitis,3,3,13,3,15,2
+2021,39919,Sbread Gaming,4,Astral,0,0,13,0,4,-9
+2021,39928,BASILISK,16,Boosted Immortals,3,2,13,3,16,4
+2021,40360,Team Singularity,12,Aspire,8,8,13,8,12,-1
+2021,40538,BBL Esports,20,Fire Flux Esports,18,18,19,18,20,1
+2021,40694,Full Zen,13,Saints,6,5,13,6,13,1
+2021,40752,Noble Experience,16,Zero Risk,4,2,13,4,16,5
+2021,41328,Team Liquid,9,FNATIC,12,10,13,9,12,-2
+2021,41774,World Game Star,14,Alpha Six Gaming,4,4,13,4,14,1
+2021,43175,Alter Ego,16,Vatra Esports,2,1,13,2,16,4
+2021,43985,McTeam,1,aaaa,11,1,13,1,11,-2
+2021,44457,Un Mix Ta Peur,10,MANGO,14,9,13,10,14,2
+2021,45401,Squirtle Squad,10,FLu Esports,0,0,13,0,10,-3
+2021,45654,NoAvocado,6,human Zeal,0,0,13,0,6,-7
+2021,45662,FORMULA 1,12,Black Flower,0,0,13,0,12,-1
+2021,46119,Anatolia Esports,8,Team Evo Seek,3,3,13,3,8,-5
+2021,46125,Gringo Team,15,Navy Blue,8,7,13,8,15,3
+2021,46226,Save's eSports,18,Indigo Children,3,1,13,3,18,7
+2021,46227,Save's eSports,16,Indigo Children,8,3,13,8,16,8
+2021,46479,FUT Esports,19,Beşiktaş Esports,17,17,17,17,19,2
+2021,46603,Gen.G,21,TSM,23,20,20,21,23,4
+2021,47561,Rex Regum Qeon,15,VOIN DRIP,8,7,13,8,15,3
+2021,47594,Cynical,16,Young.ID,6,1,13,6,16,8
+2021,47709,JAKKAJEE,2,The Infinity Esport,14,2,13,2,14,1
+2021,47801,MAXD Esports,5,Team Arrow,14,5,13,5,14,1
+2021,49553,Alter Ego,16,Team Big BAAM,8,8,13,8,16,3
+2021,50867,La7zag Esports,14,RTG eSports,10,6,13,10,14,5
+2021,55526,Cloud9,13,Rise,15,13,14,13,15,1
+2022,61112,No Aim Assist,8,Sleepless,13,7,13,8,13,1
+2022,61406,PENTA,14,Keanu's Backpack,3,2,13,3,14,2
+2022,61488,Mantis,13,Team 86,7,6,13,7,13,1
+2022,61646,Anonymo Esports,14,Falchion Gaming,7,1,13,7,14,7
+2022,63127,Funcrew,13,Bonkers,8,7,13,8,13,1
+2022,63489,tremb4l4,12,Medellin,7,12,13,7,12,-6
+2022,63517,Turma do Canal,8,Motos Muito Rápidas,16,5,13,8,16,6
+2022,63571,RDW Esports,3,RD E-SPORTS,16,2,13,3,16,4
+2022,63578,Só Deus Sabe,7,Looking for Contract,0,0,13,0,7,-6
+2022,64510,Monkey Momentum,15,Cavalry Esports,9,8,13,9,15,3
+2022,65937,Action PH,8,717 Monster Esports,1,1,13,1,8,-5
+2022,67366,Fenix Gaming,5,Canine 9,0,0,13,0,5,-8
+2022,68888,M1syl and friends,14,Aurelius Esports,9,3,13,9,14,7
+2022,69981,Team 69,3,Team Valor,3,3,13,3,3,-10
+2022,70069,Alpha Six Gaming,13,INS4NE,11,6,13,11,13,5
+2022,70108,Fiat Lux,10,VPZ,14,6,13,10,14,5
+2022,71998,IGZIST,16,SYSTEM e-Sports,0,0,13,0,16,3
+2022,73991,BOD Esports,15,tropa do mata rindo,7,6,13,7,15,3
+2022,74034,ODDIK,17,Flow e Amigos,1,1,13,1,17,4
+2022,74055,Team Liquid Brazil,6,tropa do mata rindo,2,2,13,2,6,-7
+2022,74366,INFINITY,8,Six Karma,15,6,13,8,15,4
+2022,74367,INFINITY,3,Six Karma,16,2,13,3,16,4
+2022,79031,Ghost Gaming,18,Nation Gaming,4,3,13,4,18,6
+2022,80739,NW Esports,13,Nemesis,8,3,13,8,13,5
+2022,81801,100 Thieves,14,Soniqs,3,3,13,3,14,1
+2022,82991,Persija Esports,13,ARF TEAM,7,5,13,7,13,2
+2022,85497,ONIC G,14,Persija Esports,10,10,13,10,14,1
+2022,85923,Alter Ego,12,ONIC G,14,12,13,12,14,1
+2022,86195,FENNEL,16,SYSTEM e-Sports,4,2,13,4,16,5
+2022,93489,FaZe Clan,7,The Guard,15,7,13,7,15,2
+2025,203538,Nova Esports,9,Titan Esports Club,12,9,13,9,12,-1
+2025,231313,DRX,8,Talon Esports,14,7,13,8,14,2
+2025,233445,T1,16,Dragon Ranger Gaming,13,13,15,13,16,1

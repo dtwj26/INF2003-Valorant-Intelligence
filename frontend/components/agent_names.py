@@ -1,4 +1,3 @@
-
 # format agent names for display
 
 def format_agent_name(name):
@@ -8,7 +7,8 @@ def format_agent_name(name):
     agent = str(name).strip().lower()
 
     special_names = {
-        "kayo": "KAY/O"
+        "kayo": "KAY/O",
+        "kay/o": "KAY/O",
     }
 
     return special_names.get(agent, agent.capitalize())

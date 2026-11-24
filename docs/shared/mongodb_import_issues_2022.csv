@@ -1,0 +1,137 @@
+﻿season,tournament,stage,match_type,match_name,map,reason,excluded_outcome_rows
+2022,Champions Tour Brazil Stage 1: Challengers 1,Open Qualifier #1,Round of 64,Utah Bless vs mira fofinha,Breeze,ambiguous game ID,76
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #1,Round of 16,Rise Gaming vs REiGN,Ascent,PostgreSQL participant mismatch,48
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #1,Round of 16,Rise Gaming vs REiGN,Haven,PostgreSQL participant mismatch,46
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #1,Round of 16,Rise Gaming vs REiGN,Icebox,PostgreSQL participant mismatch,32
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #1,Round of 32,tier2sussinha vs REiGN,Ascent,PostgreSQL participant mismatch,42
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #1,Round of 32,tier2sussinha vs REiGN,Haven,PostgreSQL participant mismatch,52
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #1,Round of 64,NovaTempestade vs REiGN,Bind,PostgreSQL participant mismatch,38
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #1,Round of 64,NovaTempestade vs REiGN,Breeze,PostgreSQL participant mismatch,46
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #1,Round of 64,NovaTempestade vs REiGN,Icebox,PostgreSQL participant mismatch,38
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #2,Quarterfinals (Decisive),REiGN vs Tropinha do TIKTOK 2.0,Bind,PostgreSQL participant mismatch,42
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #2,Quarterfinals (Decisive),REiGN vs Tropinha do TIKTOK 2.0,Haven,PostgreSQL participant mismatch,38
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #2,Round of 16,REiGN vs 3P eSports,Ascent,PostgreSQL participant mismatch,48
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #2,Round of 16,REiGN vs 3P eSports,Bind,PostgreSQL participant mismatch,42
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #2,Round of 16,REiGN vs 3P eSports,Haven,PostgreSQL participant mismatch,40
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #2,Round of 32,não temos um plano vs REiGN,Breeze,PostgreSQL participant mismatch,44
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #2,Round of 32,não temos um plano vs REiGN,Icebox,PostgreSQL participant mismatch,44
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #2,Round of 64,Só Deus Sabe vs REiGN,Ascent,PostgreSQL participant mismatch,42
+2022,Champions Tour Brazil Stage 2: Challengers,Open Qualifier #2,Round of 64,Só Deus Sabe vs REiGN,Haven,PostgreSQL participant mismatch,46
+2022,Champions Tour Europe Stage 1: Challengers 1,Open Qualifier,Round of 256,Ignite Academy vs Victoire Gaming,Ascent,ambiguous game ID,84
+2022,Champions Tour Malaysia & Singapore Stage 1: Challengers,Open Qualifier,Lower Round 2,Inertia vs ReigN,Icebox,PostgreSQL participant mismatch,34
+2022,Champions Tour Malaysia & Singapore Stage 1: Challengers,Open Qualifier,Lower Round 2,Inertia vs ReigN,Split,PostgreSQL participant mismatch,52
+2022,Champions Tour Malaysia & Singapore Stage 1: Challengers,Open Qualifier,Upper Round of 32,Delta Heat vs Ghosty Esports,Breeze,ambiguous game ID,76
+2022,Champions Tour Malaysia & Singapore Stage 1: Challengers,Open Qualifier,Upper Round of 32,ReigN vs Team UNN,Bind,PostgreSQL participant mismatch,38
+2022,Champions Tour Malaysia & Singapore Stage 1: Challengers,Open Qualifier,Upper Round of 32,ReigN vs Team UNN,Icebox,PostgreSQL participant mismatch,36
+2022,Champions Tour Malaysia & Singapore Stage 2: Challengers,Open Qualifier (Elimination),Lower Round 2,V1XON Rising vs ReigN,Ascent,PostgreSQL participant mismatch,44
+2022,Champions Tour Malaysia & Singapore Stage 2: Challengers,Open Qualifier (Elimination),Lower Round 2,V1XON Rising vs ReigN,Haven,PostgreSQL participant mismatch,44
+2022,Champions Tour Malaysia & Singapore Stage 2: Challengers,Open Qualifier (Elimination),Lower Round 2,V1XON Rising vs ReigN,Split,PostgreSQL participant mismatch,40
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #1,Round of 128,Run it Down vs Neons Ninjas,Icebox,PostgreSQL participant mismatch,42
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #1,Round of 128,Team Mystic vs NANO,Haven,PostgreSQL participant mismatch,32
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #1,Round of 128,Team Mystic vs NANO,Icebox,PostgreSQL participant mismatch,32
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #1,Round of 64,Complexity vs Run it Down,Fracture,PostgreSQL participant mismatch,60
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #1,Round of 64,Complexity vs Run it Down,Haven,PostgreSQL participant mismatch,36
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #1,Round of 64,Radiance vs Team Mystic,Bind,PostgreSQL participant mismatch,40
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #1,Round of 64,Radiance vs Team Mystic,Icebox,PostgreSQL participant mismatch,48
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #2,Lower Round 1,Team Rocket vs Run it Down,Breeze,PostgreSQL participant mismatch,44
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #2,Lower Round 1,Team Rocket vs Run it Down,Haven,PostgreSQL participant mismatch,46
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #2,Lower Round 2,TSM vs Run it Down,Breeze,PostgreSQL participant mismatch,60
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #2,Lower Round 2,TSM vs Run it Down,Fracture,PostgreSQL participant mismatch,44
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #2,Round of 128,Run it Down vs LionHeart,Ascent,PostgreSQL participant mismatch,32
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #2,Round of 128,Run it Down vs LionHeart,Haven,PostgreSQL participant mismatch,36
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #2,Round of 64,IlluZion vs Run it Down,Breeze,PostgreSQL participant mismatch,48
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #2,Round of 64,IlluZion vs Run it Down,Haven,PostgreSQL participant mismatch,40
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #2,Round of 64,IlluZion vs Run it Down,Icebox,PostgreSQL participant mismatch,46
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #2,Upper Round of 32,Soniqs vs Run it Down,Breeze,PostgreSQL participant mismatch,56
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #2,Upper Round of 32,Soniqs vs Run it Down,Haven,PostgreSQL participant mismatch,32
+2022,Champions Tour North America Stage 1: Challengers,Open Qualifier #2,Upper Round of 32,Soniqs vs Run it Down,Split,PostgreSQL participant mismatch,36
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Lower Round 1,Nearest Airport vs Run it Down,Fracture,PostgreSQL participant mismatch,42
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Lower Round 1,Nearest Airport vs Run it Down,Icebox,PostgreSQL participant mismatch,40
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Lower Round 1,Nearest Airport vs Run it Down,Split,PostgreSQL participant mismatch,32
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Round of 128,Run it Down vs Conquest Esports,Bind,PostgreSQL participant mismatch,40
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Round of 128,Run it Down vs Conquest Esports,Icebox,PostgreSQL participant mismatch,42
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Round of 128,Run it Down vs Conquest Esports,Split,PostgreSQL participant mismatch,44
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Round of 128,Team MystiC vs Dallas Vendetta,Breeze,PostgreSQL participant mismatch,46
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Round of 128,Team MystiC vs Dallas Vendetta,Haven,PostgreSQL participant mismatch,40
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Round of 64,Gen.G vs Team MystiC,Bind,PostgreSQL participant mismatch,34
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Round of 64,Gen.G vs Team MystiC,Breeze,PostgreSQL participant mismatch,28
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Round of 64,Skwirel Warriers vs Run it Down,Ascent,PostgreSQL participant mismatch,36
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Round of 64,Skwirel Warriers vs Run it Down,Fracture,PostgreSQL participant mismatch,46
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Upper Round of 32,FaZe Clan vs Run it Down,Bind,PostgreSQL participant mismatch,38
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #1,Upper Round of 32,FaZe Clan vs Run it Down,Breeze,PostgreSQL participant mismatch,40
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Lower Round 1,Team Mystic vs Cloud9 White,Bind,PostgreSQL participant mismatch,34
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Lower Round 1,Team Mystic vs Cloud9 White,Icebox,PostgreSQL participant mismatch,46
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Lower Round 1,Team Mystic vs Cloud9 White,Split,PostgreSQL participant mismatch,48
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Lower Round 2,Soniqs vs Team Mystic,Breeze,PostgreSQL participant mismatch,32
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Lower Round 2,Soniqs vs Team Mystic,Split,PostgreSQL participant mismatch,40
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Round of 128,ONi vs FaRt Clan,Icebox,PostgreSQL participant mismatch,36
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Round of 128,Run it Down vs Team Opulence Black,Breeze,PostgreSQL participant mismatch,34
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Round of 128,Run it Down vs Team Opulence Black,Fracture,PostgreSQL participant mismatch,32
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Round of 128,Team MystiC vs Exotic,Breeze,PostgreSQL participant mismatch,48
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Round of 128,Team MystiC vs Exotic,Haven,PostgreSQL participant mismatch,42
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Round of 128,Team Mystic vs Team Blank,Haven,PostgreSQL participant mismatch,60
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Round of 128,Team Mystic vs Team Blank,Icebox,PostgreSQL participant mismatch,32
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Round of 64,Cloud9 White vs ONi,Haven,PostgreSQL participant mismatch,40
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Round of 64,Cloud9 White vs ONi,Icebox,PostgreSQL participant mismatch,36
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Round of 64,Run it Down vs Team Mystic,Breeze,PostgreSQL participant mismatch,48
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Round of 64,Run it Down vs Team Mystic,Icebox,PostgreSQL participant mismatch,60
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Upper Round of 32,VIRTUOSO vs Team Mystic,Fracture,PostgreSQL participant mismatch,38
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Upper Round of 32,VIRTUOSO vs Team Mystic,Icebox,PostgreSQL participant mismatch,38
+2022,Champions Tour North America Stage 2: Challengers,Open Qualifier #2,Upper Round of 32,VIRTUOSO vs Team Mystic,Split,PostgreSQL participant mismatch,52
+2022,Champions Tour Philippines Stage 2: Challengers,Open Qualifier Week 1,Lower Round 1,Run It Down vs Outplay Uprising,Ascent,PostgreSQL participant mismatch,38
+2022,Champions Tour Philippines Stage 2: Challengers,Open Qualifier Week 1,Lower Round 1,Run It Down vs Outplay Uprising,Bind,PostgreSQL participant mismatch,40
+2022,Champions Tour Philippines Stage 2: Challengers,Open Qualifier Week 1,Lower Round 1,Run It Down vs Outplay Uprising,Split,PostgreSQL participant mismatch,42
+2022,Champions Tour Philippines Stage 2: Challengers,Open Qualifier Week 1,Lower Seeding,Run It Down vs G6 Super Mega Dingdong,Haven,PostgreSQL participant mismatch,60
+2022,Champions Tour Philippines Stage 2: Challengers,Open Qualifier Week 1,Upper Round of 16,Alpha Esports Pro vs Run It Down,Haven,PostgreSQL participant mismatch,52
+2022,Champions Tour Philippines Stage 2: Challengers,Open Qualifier Week 1,Upper Round of 16,Alpha Esports Pro vs Run It Down,Split,PostgreSQL participant mismatch,32
+2022,Champions Tour Philippines Stage 2: Challengers,Open Qualifier Week 2,Lower Round 1,Run It Down vs Talon Esports,Haven,PostgreSQL participant mismatch,48
+2022,Champions Tour Philippines Stage 2: Challengers,Open Qualifier Week 2,Lower Round 1,Run It Down vs Talon Esports,Icebox,PostgreSQL participant mismatch,72
+2022,Champions Tour Philippines Stage 2: Challengers,Open Qualifier Week 2,Upper Preliminary Round,KADILIMAN vs Run It Down,Bind,PostgreSQL participant mismatch,52
+2022,Champions Tour Philippines Stage 2: Challengers,Open Qualifier Week 2,Upper Preliminary Round,KADILIMAN vs Run It Down,Haven,PostgreSQL participant mismatch,42
+2022,Champions Tour Philippines Stage 2: Challengers,Open Qualifier Week 2,Upper Round of 16,Bren Esports vs Run It Down,Bind,PostgreSQL participant mismatch,36
+2022,Champions Tour Philippines Stage 2: Challengers,Open Qualifier Week 2,Upper Round of 16,Bren Esports vs Run It Down,Fracture,PostgreSQL participant mismatch,56
+2022,Oceania Tour: Championship,Main Event,Lower Round 1,REIGN vs HONEY BADGERS,Ascent,PostgreSQL participant mismatch,48
+2022,Oceania Tour: Championship,Main Event,Lower Round 1,REIGN vs HONEY BADGERS,Haven,PostgreSQL participant mismatch,48
+2022,Oceania Tour: Championship,Main Event,Lower Round 1,REIGN vs HONEY BADGERS,Split,PostgreSQL participant mismatch,36
+2022,Oceania Tour: Championship,Main Event,Lower Round 2,ORDER vs REIGN,Bind,PostgreSQL participant mismatch,40
+2022,Oceania Tour: Championship,Main Event,Lower Round 2,ORDER vs REIGN,Fracture,PostgreSQL participant mismatch,42
+2022,Oceania Tour: Championship,Main Event,Upper Semifinals,BOBO vs REIGN,Bind,PostgreSQL participant mismatch,38
+2022,Oceania Tour: Championship,Main Event,Upper Semifinals,BOBO vs REIGN,Fracture,PostgreSQL participant mismatch,60
+2022,Oceania Tour: Championship,Main Event,Upper Semifinals,BOBO vs REIGN,Haven,PostgreSQL participant mismatch,28
+2022,Oceania Tour: Stage 1,Open Qualifier,Lower Bracket Consolation Finals,ex-Wildcard Gaming vs HEHE,Breeze,PostgreSQL participant mismatch,36
+2022,Oceania Tour: Stage 1,Open Qualifier,Lower Bracket Consolation Finals,ex-Wildcard Gaming vs HEHE,Haven,PostgreSQL participant mismatch,26
+2022,Oceania Tour: Stage 1,Open Qualifier,Lower Bracket Semifinals,HEHE vs Iconic,Ascent,PostgreSQL participant mismatch,44
+2022,Oceania Tour: Stage 1,Open Qualifier,Lower Bracket Semifinals,HEHE vs Iconic,Bind,PostgreSQL participant mismatch,46
+2022,Oceania Tour: Stage 1,Open Qualifier,Lower Bracket Semifinals,HEHE vs Iconic,Haven,PostgreSQL participant mismatch,36
+2022,Oceania Tour: Stage 1,Open Qualifier,Quarterfinals,Crima's Disciples vs HEHE,Bind,PostgreSQL participant mismatch,34
+2022,Oceania Tour: Stage 1,Open Qualifier,Quarterfinals,Crima's Disciples vs HEHE,Breeze,PostgreSQL participant mismatch,44
+2022,Oceania Tour: Stage 1,Open Qualifier,Round of 16,Hectic Habibs vs HEHE,Ascent,PostgreSQL participant mismatch,48
+2022,Oceania Tour: Stage 1,Open Qualifier,Round of 16,Hectic Habibs vs HEHE,Haven,PostgreSQL participant mismatch,52
+2022,Oceania Tour: Stage 1,Open Qualifier,Round of 16,Hectic Habibs vs HEHE,Icebox,PostgreSQL participant mismatch,48
+2022,Oceania Tour: Stage 2,Group Stage,Week 1,REIGN vs BOBO,Bind,PostgreSQL participant mismatch,34
+2022,Oceania Tour: Stage 2,Group Stage,Week 1,REIGN vs BOBO,Haven,PostgreSQL participant mismatch,48
+2022,Oceania Tour: Stage 2,Group Stage,Week 1,REIGN vs BOBO,Icebox,PostgreSQL participant mismatch,42
+2022,Oceania Tour: Stage 2,Group Stage,Week 2,REIGN vs Catgirls,Ascent,PostgreSQL participant mismatch,38
+2022,Oceania Tour: Stage 2,Group Stage,Week 2,REIGN vs Catgirls,Haven,PostgreSQL participant mismatch,52
+2022,Oceania Tour: Stage 2,Group Stage,Week 2,REIGN vs Catgirls,Icebox,PostgreSQL participant mismatch,46
+2022,Oceania Tour: Stage 2,Regional Playoffs,Lower Bracket Final,BOBO vs REIGN,Ascent,PostgreSQL participant mismatch,36
+2022,Oceania Tour: Stage 2,Regional Playoffs,Lower Bracket Final,BOBO vs REIGN,Bind,PostgreSQL participant mismatch,38
+2022,Oceania Tour: Stage 2,Regional Playoffs,Lower Bracket Round 2,REIGN vs Funcrew,Bind,PostgreSQL participant mismatch,34
+2022,Oceania Tour: Stage 2,Regional Playoffs,Lower Bracket Round 2,REIGN vs Funcrew,Haven,PostgreSQL participant mismatch,36
+2022,Oceania Tour: Stage 2,Regional Playoffs,Lower Bracket Round 2,REIGN vs Funcrew,Icebox,PostgreSQL participant mismatch,68
+2022,Oceania Tour: Stage 2,Regional Playoffs,Lower Bracket Round 3,REIGN vs Bonkers,Ascent,PostgreSQL participant mismatch,42
+2022,Oceania Tour: Stage 2,Regional Playoffs,Lower Bracket Round 3,REIGN vs Bonkers,Bind,PostgreSQL participant mismatch,52
+2022,Oceania Tour: Stage 2,Regional Playoffs,Lower Bracket Round 3,REIGN vs Bonkers,Haven,PostgreSQL participant mismatch,40
+2022,Oceania Tour: Stage 2,Regional Playoffs,Upper Bracket Quarterfinals,Bonkers vs REIGN,Ascent,PostgreSQL participant mismatch,56
+2022,Oceania Tour: Stage 2,Regional Playoffs,Upper Bracket Quarterfinals,Bonkers vs REIGN,Bind,PostgreSQL participant mismatch,34
+2022,Oceania Tour: Stage 2,Regional Playoffs,Upper Bracket Quarterfinals,Bonkers vs REIGN,Icebox,PostgreSQL participant mismatch,32
+2022,Oceania Tour: Stage 2,Regional Playoffs,Upper Bracket Semifinals,REIGN vs BOBO,Bind,PostgreSQL participant mismatch,34
+2022,Oceania Tour: Stage 2,Regional Playoffs,Upper Bracket Semifinals,REIGN vs BOBO,Haven,PostgreSQL participant mismatch,38
+2022,Oceania Tour: Stage 2,Regional Playoffs,Upper Bracket Semifinals,REIGN vs BOBO,Icebox,PostgreSQL participant mismatch,34
+2022,Road to VCT 2022,Round 3,Quarterfinals,Hehe vs Dominus Esports,Bind,PostgreSQL participant mismatch,60
+2022,Road to VCT 2022,Round 3,Quarterfinals,Hehe vs Dominus Esports,Breeze,PostgreSQL participant mismatch,36
+2022,Road to VCT 2022,Round 3,Quarterfinals,Hehe vs Dominus Esports,Icebox,PostgreSQL participant mismatch,46
+2022,Road to VCT 2022,Round 3,Round of 16,The Mad Men 3 vs MXB South Side,Haven,ambiguous game ID,76
+2022,Valorant Conquerors Championship,Nepal and Bhutan Qualifier,Quarterfinals,ONI vs Everyone's Nemesis,Ascent,PostgreSQL participant mismatch,44
+2022,Valorant Conquerors Championship,Nepal and Bhutan Qualifier,Quarterfinals,ONI vs Everyone's Nemesis,Bind,PostgreSQL participant mismatch,48
+2022,Valorant Conquerors Championship,Nepal and Bhutan Qualifier,Quarterfinals,ONI vs Everyone's Nemesis,Breeze,PostgreSQL participant mismatch,38
