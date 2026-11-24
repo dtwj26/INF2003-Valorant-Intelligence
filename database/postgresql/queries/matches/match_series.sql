@@ -11,7 +11,17 @@ SELECT
     ARRAY[pa.team_id::TEXT, pb.team_id::TEXT] AS team_ids,
     ARRAY[ta.team_name, tb.team_name] AS team_names,
     ARRAY[s.team_a_score, s.team_b_score] AS score,
-    s.match_result
+    s.match_result,
+    CASE
+        WHEN %(search)s::TEXT IS NULL THEN 0::REAL
+        -- Exact text matches should appear before approximate name matches.
+        WHEN STRPOS(
+            LOWER(ta.team_name || ' ' || tb.team_name || ' ' ||
+                  t.tournament_name || ' ' || m.match_id::TEXT),
+            %(search)s
+        ) > 0 THEN 1::REAL
+        ELSE word_similarity(%(search)s, m.match_name)
+    END AS search_score
 FROM match_series m
 JOIN match_scores s ON s.match_id = m.match_id
 JOIN tournaments t ON t.tournament_id = m.tournament_id
@@ -29,4 +39,19 @@ WHERE m.season = %(season)s
           WHERE g.match_id = m.match_id AND g.map_name = %(map_name)s
       )
   )
-ORDER BY m.match_id DESC;
+  AND (
+      %(search)s::TEXT IS NULL
+      OR m.match_id IN (
+          SELECT search_match.match_id
+          FROM match_series search_match
+          -- psycopg2 requires a doubled percent sign for the pg_trgm operator.
+          WHERE search_match.match_name %%> %(search)s
+      )
+      -- Keep the existing literal search for team names, tournaments and IDs.
+      OR STRPOS(
+          LOWER(ta.team_name || ' ' || tb.team_name || ' ' ||
+                t.tournament_name || ' ' || m.match_id::TEXT),
+          %(search)s
+      ) > 0
+  )
+ORDER BY search_score DESC, m.match_id DESC;

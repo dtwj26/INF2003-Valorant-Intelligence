@@ -456,6 +456,9 @@ def _reset_scope():
 def _remember(view, field, key):
     prefs = st.session_state.setdefault('records_preferences', {})
     prefs.setdefault(view, {})[field] = st.session_state[key]
+    if view == 'Matches' and field == 'search':
+        prefs[view]['sort'] = 'Best match' if st.session_state[key].strip() else 'Match ID (descending)'
+        st.session_state.pop('_records_Matches_sort', None)
     # A changed filter returns the list to its first page.
     if field != 'page':
         prefs[view]['page'] = 1
@@ -511,28 +514,50 @@ def _browse(view, data, season):
             first = _filter(view, 'first', 'Tournament',
                             ['All tournaments'] + [t['name'] for t in data['tournaments']])
         with columns[2]:
-            second = _filter(view, 'second', 'Map', ['All maps'] + data['maps'])
-        with columns[3]:
-            team_filter = _filter(view, 'team', 'Team', ['All teams'] + [t['name'] for t in data['teams']])
-        with columns[4]:
-            order = _filter(view, 'sort', 'Sort by', ['Match ID (descending)', 'Match ID (ascending)'])
+            second = _filter(view, 'second', 'Agent' if is_players else 'Map',
+                             ['All agents'] + sorted({a['name'] for p in data['players'] for a in p['agents']})
+                             if is_players else ['All maps'] + (MATCH_MAPS if is_matches else data['maps']))
+        if is_matches:
+            with columns[3]:
+                team_filter = _filter(view, 'team', 'Team', ['All teams'] + [t['name'] for t in data['teams']])
+        with columns[-1]:
+            match_orders = ['Best match', 'Match ID (descending)', 'Match ID (ascending)'] if search else ['Match ID (descending)', 'Match ID (ascending)']
+            order = _filter(view, 'sort', 'Sort by', match_orders if is_matches
+                            else ['Name A–Z', 'Most map games'])
     scoped = data
-    event_id = next((t['id'] for t in data['tournaments'] if t['name'] == first), '')
-    map_name = '' if second == 'All maps' else second
-    if event_id or map_name:
-        scoped = service.get_match_records(season, event_id, map_name)
-    rows = [m for m in scoped['matches'] if (team_filter == 'All teams' or team_filter in m['team_names'])
-            and search in (' '.join(m['team_names']) + ' ' + m['tournament'] + ' ' + m['id']).casefold()]
-    rows = sorted(rows, key=lambda r: int(r['id']), reverse=order == 'Match ID (descending)')
-    active = [label for label in [
-        f'Team: {team_filter}' if team_filter != 'All teams' else '',
-        f'Tournament: {first}' if first != 'All tournaments' else '',
-        f'Map: {second}' if second != 'All maps' else '',
-        f'Search: {search}' if search else ''] if label]
-    if active:
-        st.caption('Active filters: ' + ' / '.join(active) + '. Clear filters to see every team’s matches.')
+    if not is_players:
+        event_id = next((t['id'] for t in data['tournaments'] if t['name'] == first), '')
+        map_name = '' if second == 'All maps' else second
+        if is_matches:
+            if event_id or map_name or search:
+                scoped = service.get_match_records(season, event_id, map_name, search)
+        else:
+            scoped = service.get_records(season, event_id, map_name)
+    rows = scoped[view.lower()]
+    if is_players:
+        rows = [p for p in rows if (first == 'All teams' or p['team_name'] == first)
+                and (second == 'All agents' or any(a['name'] == second for a in p['agents']))
+                and search in f"{p['name']} {p['team_name']}".casefold()]
+    elif is_matches:
+        rows = [m for m in rows if team_filter == 'All teams' or team_filter in m['team_names']]
     else:
-        st.caption(f'Search any team across all {len(data["matches"])} matches. Match IDs are not verified match dates.')
+        rows = [t for t in rows if search in t['name'].casefold()]
+    if is_matches and order == 'Best match':
+        rows = sorted(rows, key=lambda r: (r['search_score'], int(r['id'])), reverse=True)
+    else:
+        rows = sorted(rows, key=(lambda r: int(r['id'])) if is_matches else
+                      ((lambda r: (-r['games'], r['name'])) if order == 'Most map games' else lambda r: r['name']),
+                      reverse=is_matches and order == 'Match ID (descending)')
+    if is_matches:
+        active = [label for label in [
+            f'Team: {team_filter}' if team_filter != 'All teams' else '',
+            f'Tournament: {first}' if first != 'All tournaments' else '',
+            f'Map: {second}' if second != 'All maps' else '',
+            f'Search: {search}' if search else ''] if label]
+        if active:
+            st.caption('Active filters: ' + ' / '.join(active) + '. Clear filters to see every team’s matches.')
+        else:
+            st.caption(f'Search any team across all {len(data["matches"])} matches. Match IDs are not verified match dates.')
     count, clear = st.columns([4, 1], vertical_alignment='center')
     count.caption(f'{len(rows)} matches found')
     with clear:

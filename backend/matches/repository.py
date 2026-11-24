@@ -43,24 +43,8 @@ def fetch_seasons():
             return [int(row[0]) for row in cursor.fetchall()]
 
 
-def fetch_season_maps(season):
-    """Return distinct map names played in scored matches for a season."""
-    query = """
-        SELECT DISTINCT g.map_name
-        FROM map_games g
-        JOIN match_series m ON m.match_id = g.match_id
-        JOIN match_scores s ON s.match_id = m.match_id
-        WHERE m.season = %s AND g.map_name IS NOT NULL
-        ORDER BY g.map_name;
-    """
-    with closing(get_connection()) as conn:
-        with conn.cursor() as cursor:
-            cursor.execute(query, (int(season),))
-            return [row[0] for row in cursor.fetchall()]
-
-
-def fetch_matches(season, tournament_id="", map_name=""):
-    """Return match results, optionally filtered by tournament or map.
+def fetch_matches(season, tournament_id="", map_name="", search=""):
+    """Return match results, optionally filtered by tournament, map or search.
 
     Map filters select series containing that map; scores remain the full
     series result. IDs are strings to match the existing frontend format.
@@ -69,6 +53,7 @@ def fetch_matches(season, tournament_id="", map_name=""):
         "season": int(season),
         "tournament_id": int(tournament_id) if tournament_id else None,
         "map_name": map_name or None,
+        "search": (search or "").strip().casefold() or None,
     }
     query = load_query("match_series.sql")
     with closing(get_connection()) as conn:

@@ -8,14 +8,9 @@ def get_seasons():
     return repository.fetch_seasons()
 
 
-def get_season_maps(season):
-    """Return distinct maps played in scored matches for a season."""
-    return repository.fetch_season_maps(season)
-
-
-def get_matches(season, tournament_id="", map_name=""):
+def get_matches(season, tournament_id="", map_name="", search=""):
     """Return overall match results for the selected scope."""
-    return repository.fetch_matches(season, tournament_id, map_name)
+    return repository.fetch_matches(season, tournament_id, map_name, search)
 
 
 def get_match_games(match_id):
