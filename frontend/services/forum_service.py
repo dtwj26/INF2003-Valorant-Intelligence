@@ -58,6 +58,15 @@ def update_post(post_id, title, category, author_name, body, tags_input=""):
         raise DataServiceError("Post could not be updated.") from error
 
 
+def toggle_pin(post_id):
+    try:
+        return backend.toggle_pin(post_id)
+    except ValueError:
+        raise
+    except Exception as error:
+        raise DataServiceError("Post pin status could not be updated.") from error
+
+
 def delete_post(post_id):
     try:
         backend.delete_post(post_id)

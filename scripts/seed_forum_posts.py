@@ -53,12 +53,13 @@ def build_starter_posts():
             "match_id": None,
             "map_name": None,
             "agent_name": None,
-            "tags": ["welcome", "guide", "scouting"],
+            "tags": ["pinned", "welcome", "guide", "scouting"],
             "body": (
                 "Welcome to the **Valorant Competitive Intelligence (VCI) Forums**!\n\n"
                 "Use this space for both **long-form tactical breakdowns / scouting briefs** and **quick matchup discussions**:\n"
-                "- Use **Markdown** (`### headings`, `**bold**`, bullet lists) to format tactical write-ups cleanly.\n"
-                "- Add comma-separated **tags** (e.g., `ascent, pistol-round, eco`) so others can find threads quickly via the search bar."
+                "- Click **New Post** to start a thread, and use **Markdown** (`### headings`, `**bold**`, bullet lists) to format tactical write-ups cleanly.\n"
+                "- Add comma-separated **tags** (e.g., `ascent, pistol-round, eco`) so others can find threads quickly via the search bar.\n"
+                "- Open any thread to read the full write-up, post comments, edit/delete content, or **Pin / Unpin** important threads to the top of the feed."
             ),
             "initial_comments": [
                 {

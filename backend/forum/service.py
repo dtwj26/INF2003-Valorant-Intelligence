@@ -3,6 +3,7 @@
 from . import repository
 
 CATEGORIES = repository.CATEGORIES
+PINNED_TAG = "pinned"
 
 
 def _parse_tags_input(raw_tags):
@@ -10,7 +11,16 @@ def _parse_tags_input(raw_tags):
         items = raw_tags
     else:
         items = str(raw_tags or "").split(",")
-    return repository._normalize_tags(items)
+    return [t for t in repository._normalize_tags(items) if t != PINNED_TAG]
+
+
+def _enrich_post(post):
+    if not post:
+        return None
+    raw_tags = post.get("tags") or []
+    post["is_pinned"] = PINNED_TAG in raw_tags
+    post["display_tags"] = [t for t in raw_tags if t != PINNED_TAG]
+    return post
 
 
 def _validate_post_fields(title, category, author_name, body):
@@ -25,8 +35,8 @@ def _validate_post_fields(title, category, author_name, body):
 
 
 def list_posts(search="", category="", sort_by="Newest first"):
-    """Return filtered and sorted forum posts."""
-    all_posts = repository.fetch_all_posts()
+    """Return filtered and sorted forum posts, keeping pinned posts at the top."""
+    all_posts = [_enrich_post(p) for p in repository.fetch_all_posts()]
 
     term = (search or "").strip().casefold()
     filtered = []
@@ -42,7 +52,7 @@ def list_posts(search="", category="", sort_by="Newest first"):
                     post.get("team_name") or "",
                     post.get("map_name") or "",
                     post.get("agent_name") or "",
-                    " ".join(post.get("tags") or []),
+                    " ".join(post.get("display_tags") or []),
                 ]
             ).casefold()
             if term not in haystack:
@@ -51,11 +61,20 @@ def list_posts(search="", category="", sort_by="Newest first"):
 
     if sort_by == "Most commented":
         filtered.sort(
-            key=lambda p: (-p["comment_count"], -(p["created_at"].timestamp() if p.get("created_at") else 0))
+            key=lambda p: (
+                not p["is_pinned"],
+                -p["comment_count"],
+                -(p["created_at"].timestamp() if p.get("created_at") else 0),
+                -p["post_id"],
+            )
         )
     else:
         filtered.sort(
-            key=lambda p: (p["created_at"].timestamp() if p.get("created_at") else 0, p["post_id"]),
+            key=lambda p: (
+                p["is_pinned"],
+                p["created_at"].timestamp() if p.get("created_at") else 0,
+                p["post_id"],
+            ),
             reverse=True,
         )
 
@@ -67,7 +86,7 @@ def list_posts(search="", category="", sort_by="Newest first"):
 
 
 def get_post(post_id):
-    return repository.fetch_post_by_id(post_id)
+    return _enrich_post(repository.fetch_post_by_id(post_id))
 
 
 def create_post(title, category, author_name, body, tags_input=""):
@@ -84,7 +103,14 @@ def create_post(title, category, author_name, body, tags_input=""):
 
 def update_post(post_id, title, category, author_name, body, tags_input=""):
     _validate_post_fields(title, category, author_name, body)
+    existing = get_post(post_id)
+    if not existing:
+        raise ValueError(f"Post #{int(post_id)} was not found.")
+
     tags = _parse_tags_input(tags_input)
+    if existing["is_pinned"]:
+        tags = [PINNED_TAG, *tags]
+
     repository.update_post(
         post_id=post_id,
         title=title,
@@ -93,6 +119,34 @@ def update_post(post_id, title, category, author_name, body, tags_input=""):
         body=body,
         tags=tags,
     )
+
+
+def toggle_pin(post_id):
+    """Toggle the reserved 'pinned' tag in MongoDB without altering DB schemas."""
+    post = get_post(post_id)
+    if not post:
+        raise ValueError(f"Post #{int(post_id)} was not found.")
+
+    pid = int(post_id)
+    client, collection = repository.get_mongo_collection()
+    try:
+        if post["is_pinned"]:
+            collection.update_one(
+                {"post_id": pid},
+                {"$pull": {"tags": PINNED_TAG}},
+            )
+            return False
+        collection.update_one(
+            {"post_id": pid},
+            {
+                "$addToSet": {"tags": PINNED_TAG},
+                "$setOnInsert": {"comments": []},
+            },
+            upsert=True,
+        )
+        return True
+    finally:
+        client.close()
 
 
 def delete_post(post_id):

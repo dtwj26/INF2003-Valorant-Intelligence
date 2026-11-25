@@ -95,6 +95,42 @@ def _inject_forum_ui_enhancements():
             color: #ffffff !important;
         }
 
+        /* PIN ICON buttons: Unpinned state (soft amber) */
+        .st-key-forums_page [class*="st-key-pin_unpinned_"] button,
+        .st-key-forums_page [class*="st-key-pin_unpinned_"] button p {
+            background-color: #fffbeb !important;
+            border-color: #d97706 !important;
+            color: #92400e !important;
+            font-size: 1.05rem !important;
+            line-height: 1 !important;
+            padding-left: 0.4rem !important;
+            padding-right: 0.4rem !important;
+        }
+        .st-key-forums_page [class*="st-key-pin_unpinned_"] button:hover,
+        .st-key-forums_page [class*="st-key-pin_unpinned_"] button:hover p {
+            background-color: #fef3c7 !important;
+            border-color: #b45309 !important;
+            color: #78350f !important;
+        }
+
+        /* PIN ICON buttons: Active Pinned state (filled amber highlight) */
+        .st-key-forums_page [class*="st-key-pin_active_"] button,
+        .st-key-forums_page [class*="st-key-pin_active_"] button p {
+            background-color: #fde68a !important;
+            border-color: #b45309 !important;
+            color: #78350f !important;
+            font-size: 1.05rem !important;
+            line-height: 1 !important;
+            padding-left: 0.4rem !important;
+            padding-right: 0.4rem !important;
+        }
+        .st-key-forums_page [class*="st-key-pin_active_"] button:hover,
+        .st-key-forums_page [class*="st-key-pin_active_"] button:hover p {
+            background-color: #fcd34d !important;
+            border-color: #92400e !important;
+            color: #451a03 !important;
+        }
+
         /* GREEN buttons: New Post, Publish Post, Save Changes, Post Comment, Save Comment */
         .st-key-forums_page .st-key-forum_new_post button,
         .st-key-forums_page .st-key-forum_new_post button p,
@@ -268,17 +304,24 @@ def _asset_img(filename, size=20):
     )
 
 
-def _badge_html(label, bg="#eef2f6", color="#17212d", img_html=""):
+def _badge_html(label, bg="#eef2f6", color="#17212d", border="#d7e0e8", img_html=""):
     return (
         f'<span style="display:inline-flex;align-items:center;padding:3px 9px;'
         f'margin:2px 6px 2px 0;border-radius:2px;font-size:0.82rem;font-weight:500;'
-        f'background:{bg};color:{color};border:1px solid #d7e0e8;">'
+        f'background:{bg};color:{color};border:1px solid {border};">'
         f'{img_html}{escape(str(label))}</span>'
     )
 
 
 def _render_entity_badges(post):
-    badges = [_badge_html(post["category"], bg="#101821", color="#f1f4f7")]
+    badges = []
+
+    if post.get("is_pinned"):
+        badges.append(
+            _badge_html("📌 Pinned", bg="#fef3c7", color="#92400e", border="#f59e0b")
+        )
+
+    badges.append(_badge_html(post["category"], bg="#101821", color="#f1f4f7", border="#101821"))
 
     if post.get("season"):
         badges.append(_badge_html(f"Season {post['season']}"))
@@ -300,7 +343,11 @@ def _render_entity_badges(post):
         agent_img = _asset_img(get_agent_image(post["agent_name"]), size=16)
         badges.append(_badge_html(agent_display, img_html=agent_img))
 
-    for tag in post.get("tags") or []:
+    visible_tags = post.get("display_tags")
+    if visible_tags is None:
+        visible_tags = [t for t in (post.get("tags") or []) if t != "pinned"]
+
+    for tag in visible_tags:
         badges.append(_badge_html(f"#{tag}", bg="#f8fafc", color="#475569"))
 
     st.html('<div style="display:flex;flex-wrap:wrap;align-items:center;margin:6px 0 10px 0;">' + "".join(badges) + "</div>")
@@ -328,7 +375,13 @@ def _render_post_form(mode="create", post=None):
     default_title = post["title"] if post else ""
     default_category = post["category"] if post else service.CATEGORIES[0]
     default_author = post["author_name"] if post else ""
-    default_tags = ", ".join(post.get("tags") or []) if post else ""
+    if post:
+        visible_tags = post.get("display_tags")
+        if visible_tags is None:
+            visible_tags = [t for t in (post.get("tags") or []) if t != "pinned"]
+        default_tags = ", ".join(visible_tags)
+    else:
+        default_tags = ""
     default_body = post["body"] if post else ""
 
     title = st.text_input(
@@ -419,7 +472,7 @@ def _render_detail(post_id):
         return
 
     # Header & Actions
-    head_col, action_col = st.columns([3.5, 1.5], vertical_alignment="top")
+    head_col, action_col = st.columns([3.4, 1.85], vertical_alignment="top")
     with head_col:
         st.subheader(post["title"])
         meta = f"Posted by **{post['author_name']}** · {_format_timestamp(post['created_at'])}"
@@ -427,7 +480,22 @@ def _render_detail(post_id):
             meta += f" · Edited {_format_timestamp(post['updated_at'])}"
         st.caption(meta)
     with action_col:
-        b1, b2 = st.columns(2)
+        p_btn, b1, b2 = st.columns([0.55, 1, 1], gap="small")
+        is_pinned = bool(post.get("is_pinned"))
+        pin_key = f"pin_active_detail_{post_id}" if is_pinned else f"pin_unpinned_detail_{post_id}"
+        if p_btn.button(
+            "📍" if is_pinned else "📌",
+            help="Unpin post" if is_pinned else "Pin post to top of forum",
+            key=pin_key,
+            width="stretch",
+        ):
+            try:
+                service.toggle_pin(post_id)
+                st.rerun()
+            except ValueError as err:
+                st.warning(str(err))
+            except service.DataServiceError as err:
+                st.error(str(err))
         if b1.button(
             "Cancel Edit" if st.session_state.get("forum_editing_post") else "Edit Post",
             key=f"toggle_edit_post_{post_id}",
@@ -687,15 +755,31 @@ def _render_feed():
 
     for post in visible:
         with st.container(border=True):
-            top_left, top_right = st.columns([4.2, 1], vertical_alignment="center")
+            top_left, top_actions = st.columns([4.1, 1.35], vertical_alignment="center")
             with top_left:
                 st.markdown(f"#### {post['title']}")
                 st.caption(
                     f"By **{post['author_name']}** · {_format_timestamp(post['created_at'])} · "
                     f"**{post['comment_count']}** {'comment' if post['comment_count'] == 1 else 'comments'}"
                 )
-            with top_right:
-                st.button(
+            with top_actions:
+                pin_col, open_col = st.columns([0.42, 1.18], gap="small")
+                is_pinned = bool(post.get("is_pinned"))
+                pin_key = f"pin_active_feed_{post['post_id']}" if is_pinned else f"pin_unpinned_feed_{post['post_id']}"
+                if pin_col.button(
+                    "📍" if is_pinned else "📌",
+                    help="Unpin post" if is_pinned else "Pin post to top of forum",
+                    key=pin_key,
+                    width="stretch",
+                ):
+                    try:
+                        service.toggle_pin(post["post_id"])
+                        st.rerun()
+                    except ValueError as err:
+                        st.warning(str(err))
+                    except service.DataServiceError as err:
+                        st.error(str(err))
+                open_col.button(
                     "Open thread",
                     key=f"open_forum_post_{post['post_id']}",
                     on_click=_open_post,
