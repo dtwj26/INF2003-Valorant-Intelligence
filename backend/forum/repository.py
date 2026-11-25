@@ -23,6 +23,7 @@ CATEGORIES = (
 )
 
 _MONGO_INDEX_READY = False
+_UNSET = object()
 
 
 def get_pg_connection(readonly=False):
@@ -62,100 +63,6 @@ def _normalize_tags(tags):
             seen.add(tag)
             cleaned.append(tag)
     return cleaned
-
-
-# ---------------------------------------------------------------------------
-# Read-only VCT context options (for optional entity links in post forms)
-# ---------------------------------------------------------------------------
-
-def fetch_vct_link_options(season=None):
-    """Fetch seasons, teams, matches, maps, and agents from existing PG tables."""
-    with closing(get_pg_connection(readonly=True)) as conn:
-        with conn.cursor(cursor_factory=RealDictCursor) as cur:
-            cur.execute("SELECT DISTINCT season FROM match_series ORDER BY season DESC;")
-            seasons = [int(r["season"]) for r in cur.fetchall()]
-
-            if season is not None:
-                cur.execute(
-                    """
-                    SELECT DISTINCT t.team_id::TEXT AS id, t.team_name AS name
-                    FROM teams t
-                    JOIN match_participants mp ON mp.team_id = t.team_id
-                    JOIN match_series ms ON ms.match_id = mp.match_id
-                    WHERE ms.season = %s
-                    ORDER BY t.team_name ASC;
-                    """,
-                    (int(season),),
-                )
-            else:
-                cur.execute(
-                    """
-                    SELECT team_id::TEXT AS id, team_name AS name
-                    FROM teams
-                    ORDER BY team_name ASC;
-                    """
-                )
-            teams = [dict(r) for r in cur.fetchall()]
-
-            if season is not None:
-                cur.execute(
-                    """
-                    SELECT
-                        ms.match_id::TEXT AS id,
-                        ms.match_name AS name,
-                        ms.season,
-                        tr.tournament_name AS tournament
-                    FROM match_series ms
-                    JOIN tournaments tr ON tr.tournament_id = ms.tournament_id
-                    WHERE ms.season = %s
-                    ORDER BY ms.match_id DESC
-                    LIMIT 250;
-                    """,
-                    (int(season),),
-                )
-            else:
-                cur.execute(
-                    """
-                    SELECT
-                        ms.match_id::TEXT AS id,
-                        ms.match_name AS name,
-                        ms.season,
-                        tr.tournament_name AS tournament
-                    FROM match_series ms
-                    JOIN tournaments tr ON tr.tournament_id = ms.tournament_id
-                    ORDER BY ms.season DESC, ms.match_id DESC
-                    LIMIT 250;
-                    """
-                )
-            matches = [dict(r) for r in cur.fetchall()]
-
-            cur.execute(
-                """
-                SELECT DISTINCT map_name
-                FROM map_games
-                WHERE map_name IS NOT NULL
-                ORDER BY map_name ASC;
-                """
-            )
-            maps = [r["map_name"] for r in cur.fetchall()]
-
-            cur.execute(
-                """
-                SELECT DISTINCT agent_name
-                FROM agents
-                WHERE agent_name IS NOT NULL
-                ORDER BY agent_name ASC;
-                """
-            )
-            agents = [r["agent_name"] for r in cur.fetchall()]
-
-    return {
-        "seasons": seasons,
-        "teams": teams,
-        "matches": matches,
-        "maps": maps,
-        "agents": agents,
-    }
 
 
 # ---------------------------------------------------------------------------
@@ -366,47 +273,54 @@ def update_post(
     author_name,
     body,
     tags=None,
-    season=None,
-    team_id=None,
-    match_id=None,
-    map_name=None,
-    agent_name=None,
+    season=_UNSET,
+    team_id=_UNSET,
+    match_id=_UNSET,
+    map_name=_UNSET,
+    agent_name=_UNSET,
 ):
     """Update post row in PostgreSQL and tags array in MongoDB."""
     pid = int(post_id)
     clean_tags = _normalize_tags(tags)
 
+    set_clauses = [
+        "title = %s",
+        "category = %s",
+        "author_name = %s",
+        "body = %s",
+    ]
+    values = [
+        title.strip(),
+        category,
+        author_name.strip(),
+        body.strip(),
+    ]
+
+    if season is not _UNSET:
+        set_clauses.append("season = %s")
+        values.append(int(season) if season not in (None, "") else None)
+    if team_id is not _UNSET:
+        set_clauses.append("team_id = %s")
+        values.append(int(team_id) if team_id not in (None, "") else None)
+    if match_id is not _UNSET:
+        set_clauses.append("match_id = %s")
+        values.append(int(match_id) if match_id not in (None, "") else None)
+    if map_name is not _UNSET:
+        set_clauses.append("map_name = %s")
+        values.append(map_name.strip() if map_name else None)
+    if agent_name is not _UNSET:
+        set_clauses.append("agent_name = %s")
+        values.append(agent_name.strip() if agent_name else None)
+
+    set_clauses.append("updated_at = NOW()")
+    values.append(pid)
+
     with closing(get_pg_connection(readonly=False)) as conn:
         with conn:
             with conn.cursor() as cur:
                 cur.execute(
-                    """
-                    UPDATE forum_posts
-                    SET
-                        title = %s,
-                        category = %s,
-                        author_name = %s,
-                        body = %s,
-                        season = %s,
-                        team_id = %s,
-                        match_id = %s,
-                        map_name = %s,
-                        agent_name = %s,
-                        updated_at = NOW()
-                    WHERE post_id = %s;
-                    """,
-                    (
-                        title.strip(),
-                        category,
-                        author_name.strip(),
-                        body.strip(),
-                        int(season) if season not in (None, "") else None,
-                        int(team_id) if team_id not in (None, "") else None,
-                        int(match_id) if match_id not in (None, "") else None,
-                        map_name.strip() if map_name else None,
-                        agent_name.strip() if agent_name else None,
-                        pid,
-                    ),
+                    f"UPDATE forum_posts SET {', '.join(set_clauses)} WHERE post_id = %s;",
+                    tuple(values),
                 )
                 if cur.rowcount == 0:
                     raise ValueError(f"Post #{pid} was not found.")
@@ -447,6 +361,12 @@ def delete_post(post_id):
 def add_comment(post_id, author_name, body):
     """Append a flat comment to MongoDB forum_threads.comments via $push."""
     pid = int(post_id)
+    with closing(get_pg_connection(readonly=True)) as conn:
+        with conn.cursor() as cur:
+            cur.execute("SELECT 1 FROM forum_posts WHERE post_id = %s;", (pid,))
+            if cur.fetchone() is None:
+                raise ValueError(f"Post #{pid} was not found.")
+
     now = _utc_now()
     comment = {
         "comment_id": str(uuid.uuid4()),

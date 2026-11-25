@@ -489,8 +489,8 @@ def _render_detail(post_id):
                     and comment["updated_at"] != comment["created_at"]
                 )
                 c_head.markdown(
-                    f"**{comment['author_name']}** "
-                    f"<span style='color:#64748b;font-size:0.85rem;'>· {ts}"
+                    f"<strong>{escape(comment['author_name'])}</strong> "
+                    f"<span style='color:#64748b;font-size:0.85rem;'>· {escape(ts)}"
                     f"{' (edited)' if edited else ''}</span>",
                     unsafe_allow_html=True,
                 )
