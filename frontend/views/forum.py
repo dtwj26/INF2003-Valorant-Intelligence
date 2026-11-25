@@ -654,6 +654,7 @@ def _render_feed():
 
     posts = data["posts"]
     total = len(posts)
+    total_in_db = data["total_posts"]
 
     # Reset page to 1 whenever category/sort changes
     filter_sig = (applied_search, category, sort_by)
@@ -670,6 +671,10 @@ def _render_feed():
                 on_click=_clear_all_filters,
                 key="forum_clear_filters_action",
             )
+
+    if total_in_db == 0:
+        st.info("No posts in the forum yet. Be the first one!")
+        return
 
     if not posts:
         st.info("No forum threads match the current filters. Clear all filters or create a new post.")
